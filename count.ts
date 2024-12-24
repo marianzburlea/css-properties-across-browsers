@@ -3,6 +3,7 @@ import { cssPropertyList as chromeCanaryList } from './util/all-css-properties-i
 import { cssPropertyList as edgeList } from './util/all-css-properties-in-edge'
 import { cssPropertyList as firefoxList } from './util/all-css-properties-in-firefox'
 import { cssPropertyList as operaList } from './util/all-css-properties-in-opera'
+import { cssPropertyList as safariList } from './util/all-css-properties-in-safari'
 
 const browserMap = {
   chromeList,
@@ -10,6 +11,7 @@ const browserMap = {
   edgeList,
   firefoxList,
   operaList,
+  safariList,
 }
 const browserList = Object.keys(browserMap)
 
