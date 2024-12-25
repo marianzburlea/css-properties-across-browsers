@@ -1,0 +1,9 @@
+{
+  "dependencies": {},
+  "scripts": {
+    "dev": "bunx chokidar \"count.ts\" -c \"bun run count.ts\""
+  },
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0"
+  }
+}
