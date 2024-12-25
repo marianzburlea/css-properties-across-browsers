@@ -46,7 +46,7 @@ const kebabToCamelCase = (str = '') => {
   return str.replace(/-([a-z])/g, (match, letter) => letter.toUpperCase())
 }
 
-let allCSSCountFound = {}
+const allCSSCountFound = {}
 for (const listName of browserList) {
   for (const cssPropUnknownStyle of browserMap[listName]) {
     if (
