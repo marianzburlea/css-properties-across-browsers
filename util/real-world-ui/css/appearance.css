@@ -1,5 +1,4 @@
-.wow-ui-appearance {
+.appearance {
   --appearance: auto;
-  appearance: var(--appearance);
-
+  appearance: var(--appearance)
 }

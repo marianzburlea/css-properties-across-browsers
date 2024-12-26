@@ -1,0 +1,6 @@
+.scroll-padding-inline {
+  --scroll-padding-inline-start: 0;
+  scroll-padding-inline-start: var(--scroll-padding-inline-start);
+  --scroll-padding-inline-end: 0;
+  scroll-padding-inline-end: var(--scroll-padding-inline-end)
+}

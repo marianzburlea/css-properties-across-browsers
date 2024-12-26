@@ -1,5 +1,4 @@
-.wow-ui-optimization {
+.optimization {
   --will-change: auto;
-  will-change: var(--will-change);
-
+  will-change: var(--will-change)
 }

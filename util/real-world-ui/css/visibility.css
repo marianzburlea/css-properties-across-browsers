@@ -1,5 +1,4 @@
-.wow-ui-visibility {
+.visibility {
   --visibility: visible;
-  visibility: var(--visibility);
-
+  visibility: var(--visibility)
 }

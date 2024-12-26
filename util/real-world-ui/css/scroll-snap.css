@@ -1,0 +1,8 @@
+.scroll-snap {
+  --scroll-snap-align: none;
+  scroll-snap-align: var(--scroll-snap-align);
+  --scroll-snap-stop: normal;
+  scroll-snap-stop: var(--scroll-snap-stop);
+  --scroll-snap-type: none;
+  scroll-snap-type: var(--scroll-snap-type)
+}

@@ -1,0 +1,14 @@
+.border-inline {
+  --border-inline-end-color: currentcolor;
+  border-inline-end-color: var(--border-inline-end-color);
+  --border-inline-end-style: none;
+  border-inline-end-style: var(--border-inline-end-style);
+  --border-inline-end-width: medium;
+  border-inline-end-width: var(--border-inline-end-width);
+  --border-inline-start-color: currentcolor;
+  border-inline-start-color: var(--border-inline-start-color);
+  --border-inline-start-style: none;
+  border-inline-start-style: var(--border-inline-start-style);
+  --border-inline-start-width: medium;
+  border-inline-start-width: var(--border-inline-start-width)
+}

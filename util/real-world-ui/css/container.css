@@ -1,8 +1,6 @@
-.wow-ui-container {
+.container {
   --container-name: none;
   container-name: var(--container-name);
-
   --container-type: none;
-  container-type: var(--container-type);
-
+  container-type: var(--container-type)
 }

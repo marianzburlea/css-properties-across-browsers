@@ -1,5 +1,4 @@
-.wow-ui-cursor {
+.cursor {
   --cursor: auto;
-  cursor: var(--cursor);
-
+  cursor: var(--cursor)
 }

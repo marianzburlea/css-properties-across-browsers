@@ -1,0 +1,6 @@
+.width {
+  --width-min: initial;
+  width-min: var(--width-min);
+  --width-max: initial;
+  width-max: var(--width-max)
+}

@@ -1,0 +1,8 @@
+.page-break {
+  --page-break-after: auto;
+  page-break-after: var(--page-break-after);
+  --page-break-before: auto;
+  page-break-before: var(--page-break-before);
+  --page-break-inside: auto;
+  page-break-inside: var(--page-break-inside)
+}

@@ -1,5 +1,4 @@
-.wow-ui-caption {
+.caption {
   --caption-side: top;
-  caption-side: var(--caption-side);
-
+  caption-side: var(--caption-side)
 }

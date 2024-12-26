@@ -1,8 +1,6 @@
-.wow-ui-content {
+.content {
   --content: normal;
   content: var(--content);
-
   --content-visibility: visible;
-  content-visibility: var(--content-visibility);
-
+  content-visibility: var(--content-visibility)
 }

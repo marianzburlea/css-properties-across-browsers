@@ -1,5 +1,4 @@
-.wow-ui-display {
+.display {
   --display: inline;
-  display: var(--display);
-
+  display: var(--display)
 }

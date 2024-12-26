@@ -1,8 +1,6 @@
-.wow-ui-table {
+.table {
   --empty-cells: show;
   empty-cells: var(--empty-cells);
-
   --table-layout: auto;
-  table-layout: var(--table-layout);
-
+  table-layout: var(--table-layout)
 }

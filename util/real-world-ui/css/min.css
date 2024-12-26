@@ -1,0 +1,6 @@
+.min {
+  --min-block-size: auto;
+  min-block-size: var(--min-block-size);
+  --min-inline-size: auto;
+  min-inline-size: var(--min-inline-size)
+}

@@ -1,7 +1,16 @@
 export const cssCondensedPropertyMap = {
   animation: {
     className: 'animation',
-    condensed: true,
+    condensed: [
+      'name',
+      'duration',
+      'timingFunction',
+      'delay',
+      'iterationCount',
+      'direction',
+      'fillMode',
+      'playState',
+    ],
     children: {
       composition: 'replace',
       delay: 0,
@@ -16,7 +25,17 @@ export const cssCondensedPropertyMap = {
   },
   background: {
     className: 'background',
-    condensed: true,
+    condensed: [
+      'color',
+      'image',
+      'positionX',
+      'positionY',
+      'size',
+      'repeat',
+      'attachment',
+      'origin',
+      'clip',
+    ],
     children: {
       attachment: 'scroll',
       blendMode: 'normal',
@@ -32,7 +51,7 @@ export const cssCondensedPropertyMap = {
   },
   borderImage: {
     className: 'border-image',
-    condensed: true,
+    condensed: ['source', 'slice', 'width', 'outset', 'repeat'],
     children: {
       outset: 0,
       repeat: 'stretch',
@@ -41,33 +60,45 @@ export const cssCondensedPropertyMap = {
       width: 1,
     },
   },
-  borderBlock: {
-    className: 'border-block',
-    condensed: true,
+  borderBlockStart: {
+    className: 'border-block-start',
+    condensed: ['startWidth', 'startStyle', 'startColor'],
     children: {
-      endColor: 'currentcolor',
-      endStyle: 'none',
-      endWidth: 'medium',
       startColor: 'currentcolor',
       startStyle: 'none',
       startWidth: 'medium',
     },
   },
-  borderInline: {
-    className: 'border-inline',
-    condensed: true,
+  borderBlockEnd: {
+    className: 'border-block-end',
+    condensed: ['endWidth', 'endStyle', 'endColor'],
     children: {
       endColor: 'currentcolor',
       endStyle: 'none',
       endWidth: 'medium',
+    },
+  },
+  borderInlineStart: {
+    className: 'border-inline-start',
+    condensed: ['startWidth', 'startStyle', 'startColor'],
+    children: {
       startColor: 'currentcolor',
       startStyle: 'none',
       startWidth: 'medium',
+    },
+  },
+  borderInlineEnd: {
+    className: 'border-inline-end',
+    condensed: ['endWidth', 'endStyle', 'endColor'],
+    children: {
+      endColor: 'currentcolor',
+      endStyle: 'none',
+      endWidth: 'medium',
     },
   },
   borderTop: {
     className: 'border-top',
-    condensed: true,
+    condensed: ['width', 'style', 'color'],
     children: {
       leftRadius: 0,
       rightRadius: 0,
@@ -78,7 +109,7 @@ export const cssCondensedPropertyMap = {
   },
   borderRight: {
     className: 'border-right',
-    condensed: true,
+    condensed: ['width', 'style', 'color'],
     children: {
       color: 'currentcolor',
       style: 'none',
@@ -87,7 +118,7 @@ export const cssCondensedPropertyMap = {
   },
   borderBottom: {
     className: 'border-bottom',
-    condensed: true,
+    condensed: ['width', 'style', 'color'],
     children: {
       leftRadius: 0,
       rightRadius: 0,
@@ -98,7 +129,7 @@ export const cssCondensedPropertyMap = {
   },
   borderLeft: {
     className: 'border-left',
-    condensed: true,
+    condensed: ['width', 'style', 'color'],
     children: {
       color: 'currentcolor',
       style: 'none',
@@ -107,7 +138,7 @@ export const cssCondensedPropertyMap = {
   },
   borderStart: {
     className: 'border-start',
-    condensed: true,
+    condensed: false,
     children: {
       endRadius: 0,
       startRadius: 0,
@@ -115,7 +146,7 @@ export const cssCondensedPropertyMap = {
   },
   borderEnd: {
     className: 'border-end',
-    condensed: true,
+    condensed: false,
     children: {
       endRadius: 0,
       startRadius: 0,
@@ -123,7 +154,7 @@ export const cssCondensedPropertyMap = {
   },
   border: {
     className: 'border',
-    condensed: true,
+    condensed: ['width', 'style', 'color'],
     children: {
       width: 0,
       style: 'solid',
@@ -145,7 +176,7 @@ export const cssCondensedPropertyMap = {
   },
   padding: {
     className: 'padding',
-    condensed: true,
+    condensed: ['top', 'right', 'bottom', 'left'],
     children: {
       top: 'spacing',
       bottom: 'spacing',
@@ -156,7 +187,7 @@ export const cssCondensedPropertyMap = {
 
   paddingBlock: {
     className: 'padding-block',
-    condensed: true,
+    condensed: ['start', 'end'],
     children: {
       start: 'spacing',
       end: 'spacing',
@@ -165,7 +196,7 @@ export const cssCondensedPropertyMap = {
 
   paddingInline: {
     className: 'padding-inline',
-    condensed: true,
+    condensed: ['start', 'end'],
     children: {
       start: 'spacing',
       end: 'spacing',
@@ -173,7 +204,7 @@ export const cssCondensedPropertyMap = {
   },
   flex: {
     className: 'flex',
-    condensed: true,
+    condensed: ['basis', 'grow', 'shrink'],
     children: {
       basis: 'auto',
       grow: '0',
@@ -182,7 +213,15 @@ export const cssCondensedPropertyMap = {
   },
   font: {
     className: 'font',
-    condensed: true,
+    condensed: [
+      'style',
+      'variant',
+      'weight',
+      'stretch',
+      'size',
+      'lineHeight',
+      'family',
+    ],
     children: {
       style: 'normal',
       variant: 'normal',
@@ -204,7 +243,7 @@ export const cssCondensedPropertyMap = {
   },
   gap: {
     className: 'gap',
-    condensed: true,
+    condensed: ['row', 'column'],
     prefix: true,
     children: {
       row: 'normal',
@@ -229,7 +268,7 @@ export const cssCondensedPropertyMap = {
   },
   insetBlock: {
     className: 'inset-block',
-    condensed: true,
+    condensed: ['start', 'end'],
     children: {
       start: 'auto',
       end: 'auto',
@@ -237,7 +276,7 @@ export const cssCondensedPropertyMap = {
   },
   insetInline: {
     className: 'inset-inline',
-    condensed: true,
+    condensed: ['start', 'end'],
     children: {
       start: 'auto',
       end: 'auto',
@@ -245,7 +284,7 @@ export const cssCondensedPropertyMap = {
   },
   margin: {
     className: 'margin',
-    condensed: true,
+    condensed: ['top', 'right', 'bottom', 'left'],
     children: {
       top: '0',
       bottom: '0',
@@ -255,7 +294,7 @@ export const cssCondensedPropertyMap = {
   },
   marginBlock: {
     className: 'margin-block',
-    condensed: true,
+    condensed: ['start', 'end'],
     children: {
       start: '0',
       end: '0',
@@ -263,7 +302,7 @@ export const cssCondensedPropertyMap = {
   },
   marginInline: {
     className: 'margin-inline',
-    condensed: true,
+    condensed: ['start', 'end'],
     children: {
       start: '0',
       end: '0',
@@ -301,7 +340,16 @@ export const cssCondensedPropertyMap = {
 
   mask: {
     className: 'mask',
-    condensed: true,
+    condensed: [
+      'image',
+      'positionX',
+      'positionY',
+      'size',
+      'repeat',
+      'origin',
+      'clip',
+      'mode',
+    ],
     children: {
       value: 'none',
       clip: 'border-box',
@@ -354,7 +402,7 @@ export const cssCondensedPropertyMap = {
 
   outline: {
     className: 'outline',
-    condensed: true,
+    condensed: ['width', 'style', 'color'],
     children: {
       color: 'invert',
       style: 'none',
@@ -364,7 +412,7 @@ export const cssCondensedPropertyMap = {
 
   overflow: {
     className: 'overflow',
-    condensed: true,
+    condensed: ['x', 'y'],
     children: {
       x: 'visible',
       y: 'visible',
@@ -413,7 +461,7 @@ export const cssCondensedPropertyMap = {
 
   scrollMargin: {
     className: 'scroll-margin',
-    condensed: true,
+    condensed: ['top', 'right', 'bottom', 'left'],
     children: {
       top: 0,
       right: 0,
@@ -424,7 +472,7 @@ export const cssCondensedPropertyMap = {
 
   scrollMarginBlock: {
     className: 'scroll-margin-block',
-    condensed: false,
+    condensed: ['start', 'end'],
     children: {
       start: 0,
       end: 0,
@@ -433,7 +481,7 @@ export const cssCondensedPropertyMap = {
 
   scrollMarginInline: {
     className: 'scroll-margin-inline',
-    condensed: false,
+    condensed: ['start', 'end'],
     children: {
       start: 0,
       end: 0,
@@ -442,7 +490,7 @@ export const cssCondensedPropertyMap = {
 
   scrollPadding: {
     className: 'scroll-padding',
-    condensed: true,
+    condensed: ['top', 'right', 'bottom', 'left'],
     children: {
       top: 0,
       right: 0,
@@ -567,7 +615,7 @@ export const cssCondensedPropertyMap = {
 
   transition: {
     className: 'transition',
-    condensed: true,
+    condensed: ['property', 'duration', 'timingFunction', 'delay'],
     children: {
       delay: '0s',
       duration: '0s',
@@ -704,7 +752,7 @@ export const cssPropertyMap = {
   transitionBehavior: 'transition',
 
   translate: 'transform',
-  unicodeBidi: 'text',
+  unicodeBidi: 'unicode',
   userSelect: 'interaction',
   vectorEffect: 'svg',
   verticalAlign: 'text',

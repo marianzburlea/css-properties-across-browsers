@@ -1,0 +1,6 @@
+.scroll-margin-inline {
+  --scroll-margin-inline-start: 0;
+  scroll-margin-inline-start: var(--scroll-margin-inline-start);
+  --scroll-margin-inline-end: 0;
+  scroll-margin-inline-end: var(--scroll-margin-inline-end)
+}

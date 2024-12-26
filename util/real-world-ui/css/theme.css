@@ -1,8 +1,6 @@
-.wow-ui-theme {
+.theme {
   --accent-color: auto;
   accent-color: var(--accent-color);
-
   --color-scheme: normal;
-  color-scheme: var(--color-scheme);
-
+  color-scheme: var(--color-scheme)
 }
