@@ -1,0 +1,5 @@
+.wow-ui-cursor {
+  --cursor: initial;
+  cursor: var(--cursor);
+
+}

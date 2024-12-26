@@ -1,0 +1,17 @@
+.wow-ui-motion {
+  --offset-anchor: initial;
+  offset-anchor: var(--offset-anchor);
+
+  --offset-distance: initial;
+  offset-distance: var(--offset-distance);
+
+  --offset-path: initial;
+  offset-path: var(--offset-path);
+
+  --offset-position: initial;
+  offset-position: var(--offset-position);
+
+  --offset-rotate: initial;
+  offset-rotate: var(--offset-rotate);
+
+}

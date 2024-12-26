@@ -1,0 +1,107 @@
+.wow-ui-text {
+  --color: initial;
+  color: var(--color);
+
+  --color-interpolation: initial;
+  color-interpolation: var(--color-interpolation);
+
+  --color-interpolation-filters: initial;
+  color-interpolation-filters: var(--color-interpolation-filters);
+
+  --hyphenate-character: initial;
+  hyphenate-character: var(--hyphenate-character);
+
+  --hyphens: initial;
+  hyphens: var(--hyphens);
+
+  --line-break: initial;
+  line-break: var(--line-break);
+
+  --quotes: initial;
+  quotes: var(--quotes);
+
+  --ruby-align: initial;
+  ruby-align: var(--ruby-align);
+
+  --ruby-position: initial;
+  ruby-position: var(--ruby-position);
+
+  --text-align: initial;
+  text-align: var(--text-align);
+
+  --text-align-last: initial;
+  text-align-last: var(--text-align-last);
+
+  --text-anchor: initial;
+  text-anchor: var(--text-anchor);
+
+  --text-combine-upright: initial;
+  text-combine-upright: var(--text-combine-upright);
+
+  --text-decoration-color: initial;
+  text-decoration-color: var(--text-decoration-color);
+
+  --text-decoration-line: initial;
+  text-decoration-line: var(--text-decoration-line);
+
+  --text-decoration-skip-ink: initial;
+  text-decoration-skip-ink: var(--text-decoration-skip-ink);
+
+  --text-decoration-style: initial;
+  text-decoration-style: var(--text-decoration-style);
+
+  --text-decoration-thickness: initial;
+  text-decoration-thickness: var(--text-decoration-thickness);
+
+  --text-emphasis-color: initial;
+  text-emphasis-color: var(--text-emphasis-color);
+
+  --text-emphasis-position: initial;
+  text-emphasis-position: var(--text-emphasis-position);
+
+  --text-emphasis-style: initial;
+  text-emphasis-style: var(--text-emphasis-style);
+
+  --text-indent: initial;
+  text-indent: var(--text-indent);
+
+  --text-orientation: initial;
+  text-orientation: var(--text-orientation);
+
+  --text-overflow: initial;
+  text-overflow: var(--text-overflow);
+
+  --text-rendering: initial;
+  text-rendering: var(--text-rendering);
+
+  --text-shadow: initial;
+  text-shadow: var(--text-shadow);
+
+  --text-transform: initial;
+  text-transform: var(--text-transform);
+
+  --text-underline-offset: initial;
+  text-underline-offset: var(--text-underline-offset);
+
+  --text-underline-position: initial;
+  text-underline-position: var(--text-underline-position);
+
+  --text-wrap-mode: initial;
+  text-wrap-mode: var(--text-wrap-mode);
+
+  --text-wrap-style: initial;
+  text-wrap-style: var(--text-wrap-style);
+
+  --unicode-bidi: initial;
+  unicode-bidi: var(--unicode-bidi);
+
+  --vertical-align: initial;
+  vertical-align: var(--vertical-align);
+
+  --white-space-collapse: initial;
+  white-space-collapse: var(--white-space-collapse);
+
+  --writing-mode: initial;
+  writing-mode: var(--writing-mode);
+
+}

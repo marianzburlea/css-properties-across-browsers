@@ -1,4 +1,6 @@
+import fs from 'node:fs'
 import { cssPropertyMap } from './common-css-by-group'
+import { cssPropertyDefaultValueMap } from './css-property-default-value'
 
 // get unique group
 const cssPropertyByGroupMap = {}
@@ -22,13 +24,20 @@ const camelToKebabCase = (str = '') => {
 
 // generate CSS class names and body
 for (const groupName of cssPropertyByGroupList) {
-  console.log(`.wow-ui-${groupName} {
+  const cssString = `.wow-ui-${groupName} {
   ${cssPropertyByGroupMap[groupName].map((cssProperty) => {
     const kebabProperty = camelToKebabCase(cssProperty)
-    return `--${kebabProperty}: initial;
+    return `--${kebabProperty}: ${
+      cssPropertyDefaultValueMap[cssProperty] || 'initial'
+    };
   ${kebabProperty}: var(--${kebabProperty});
 `
   }).join(`
   `)}
-}`)
+}`
+
+  fs.writeFileSync(
+    `util/real-world-application/css/${groupName}.css`,
+    cssString
+  )
 }

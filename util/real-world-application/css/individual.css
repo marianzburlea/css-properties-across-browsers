@@ -1,0 +1,11 @@
+.wow-ui-individual {
+  --align-self: initial;
+  align-self: var(--align-self);
+
+  --justify-self: initial;
+  justify-self: var(--justify-self);
+
+  --place-self: initial;
+  place-self: var(--place-self);
+
+}

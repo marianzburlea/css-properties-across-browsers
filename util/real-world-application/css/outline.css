@@ -1,0 +1,17 @@
+.wow-ui-outline {
+  --outline: initial;
+  outline: var(--outline);
+
+  --outline-color: initial;
+  outline-color: var(--outline-color);
+
+  --outline-offset: initial;
+  outline-offset: var(--outline-offset);
+
+  --outline-style: initial;
+  outline-style: var(--outline-style);
+
+  --outline-width: initial;
+  outline-width: var(--outline-width);
+
+}

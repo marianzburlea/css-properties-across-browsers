@@ -1,0 +1,35 @@
+.wow-ui-background {
+  --background: initial;
+  background: var(--background);
+
+  --background-attachment: initial;
+  background-attachment: var(--background-attachment);
+
+  --background-blend-mode: initial;
+  background-blend-mode: var(--background-blend-mode);
+
+  --background-clip: initial;
+  background-clip: var(--background-clip);
+
+  --background-color: initial;
+  background-color: var(--background-color);
+
+  --background-image: initial;
+  background-image: var(--background-image);
+
+  --background-origin: initial;
+  background-origin: var(--background-origin);
+
+  --background-position-x: initial;
+  background-position-x: var(--background-position-x);
+
+  --background-position-y: initial;
+  background-position-y: var(--background-position-y);
+
+  --background-repeat: initial;
+  background-repeat: var(--background-repeat);
+
+  --background-size: initial;
+  background-size: var(--background-size);
+
+}

@@ -1,0 +1,32 @@
+.wow-ui-transform {
+  --backface-visibility: initial;
+  backface-visibility: var(--backface-visibility);
+
+  --perspective: initial;
+  perspective: var(--perspective);
+
+  --perspective-origin: initial;
+  perspective-origin: var(--perspective-origin);
+
+  --rotate: initial;
+  rotate: var(--rotate);
+
+  --scale: initial;
+  scale: var(--scale);
+
+  --transform: initial;
+  transform: var(--transform);
+
+  --transform-box: initial;
+  transform-box: var(--transform-box);
+
+  --transform-origin: initial;
+  transform-origin: var(--transform-origin);
+
+  --transform-style: initial;
+  transform-style: var(--transform-style);
+
+  --translate: initial;
+  translate: var(--translate);
+
+}

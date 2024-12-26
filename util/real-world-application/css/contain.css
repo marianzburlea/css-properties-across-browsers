@@ -1,0 +1,17 @@
+.wow-ui-contain {
+  --contain: initial;
+  contain: var(--contain);
+
+  --contain-intrinsic-block-size: initial;
+  contain-intrinsic-block-size: var(--contain-intrinsic-block-size);
+
+  --contain-intrinsic-height: initial;
+  contain-intrinsic-height: var(--contain-intrinsic-height);
+
+  --contain-intrinsic-inline-size: initial;
+  contain-intrinsic-inline-size: var(--contain-intrinsic-inline-size);
+
+  --contain-intrinsic-width: initial;
+  contain-intrinsic-width: var(--contain-intrinsic-width);
+
+}

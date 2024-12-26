@@ -1,0 +1,8 @@
+.wow-ui-container {
+  --container-name: initial;
+  container-name: var(--container-name);
+
+  --container-type: initial;
+  container-type: var(--container-type);
+
+}

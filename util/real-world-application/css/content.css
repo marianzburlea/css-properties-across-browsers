@@ -1,0 +1,8 @@
+.wow-ui-content {
+  --content: initial;
+  content: var(--content);
+
+  --content-visibility: initial;
+  content-visibility: var(--content-visibility);
+
+}

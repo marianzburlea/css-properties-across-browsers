@@ -1,0 +1,14 @@
+.wow-ui-image {
+  --image-orientation: initial;
+  image-orientation: var(--image-orientation);
+
+  --image-rendering: initial;
+  image-rendering: var(--image-rendering);
+
+  --object-fit: initial;
+  object-fit: var(--object-fit);
+
+  --object-position: initial;
+  object-position: var(--object-position);
+
+}

@@ -1,0 +1,17 @@
+.wow-ui-media {
+  --orientation: initial;
+  orientation: var(--orientation);
+
+  --page-break-after: initial;
+  page-break-after: var(--page-break-after);
+
+  --page-break-before: initial;
+  page-break-before: var(--page-break-before);
+
+  --page-break-inside: initial;
+  page-break-inside: var(--page-break-inside);
+
+  --size: initial;
+  size: var(--size);
+
+}

@@ -1,0 +1,17 @@
+.wow-ui-visual-effect {
+  --backdrop-filter: initial;
+  backdrop-filter: var(--backdrop-filter);
+
+  --filter: initial;
+  filter: var(--filter);
+
+  --isolation: initial;
+  isolation: var(--isolation);
+
+  --mix-blend-mode: initial;
+  mix-blend-mode: var(--mix-blend-mode);
+
+  --opacity: initial;
+  opacity: var(--opacity);
+
+}

@@ -1,0 +1,32 @@
+.wow-ui-content-flow {
+  --break-after: initial;
+  break-after: var(--break-after);
+
+  --break-before: initial;
+  break-before: var(--break-before);
+
+  --break-inside: initial;
+  break-inside: var(--break-inside);
+
+  --clear: initial;
+  clear: var(--clear);
+
+  --direction: initial;
+  direction: var(--direction);
+
+  --float: initial;
+  float: var(--float);
+
+  --overflow: initial;
+  overflow: var(--overflow);
+
+  --overflow-wrap: initial;
+  overflow-wrap: var(--overflow-wrap);
+
+  --overflow-x: initial;
+  overflow-x: var(--overflow-x);
+
+  --overflow-y: initial;
+  overflow-y: var(--overflow-y);
+
+}

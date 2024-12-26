@@ -1,0 +1,119 @@
+.wow-ui-border {
+  --border: initial;
+  border: var(--border);
+
+  --border-block-end-color: initial;
+  border-block-end-color: var(--border-block-end-color);
+
+  --border-block-end-style: initial;
+  border-block-end-style: var(--border-block-end-style);
+
+  --border-block-end-width: initial;
+  border-block-end-width: var(--border-block-end-width);
+
+  --border-block-start-color: initial;
+  border-block-start-color: var(--border-block-start-color);
+
+  --border-block-start-style: initial;
+  border-block-start-style: var(--border-block-start-style);
+
+  --border-block-start-width: initial;
+  border-block-start-width: var(--border-block-start-width);
+
+  --border-bottom-color: initial;
+  border-bottom-color: var(--border-bottom-color);
+
+  --border-bottom-left-radius: initial;
+  border-bottom-left-radius: var(--border-bottom-left-radius);
+
+  --border-bottom-right-radius: initial;
+  border-bottom-right-radius: var(--border-bottom-right-radius);
+
+  --border-bottom-style: initial;
+  border-bottom-style: var(--border-bottom-style);
+
+  --border-bottom-width: initial;
+  border-bottom-width: var(--border-bottom-width);
+
+  --border-collapse: initial;
+  border-collapse: var(--border-collapse);
+
+  --border-end-end-radius: initial;
+  border-end-end-radius: var(--border-end-end-radius);
+
+  --border-end-start-radius: initial;
+  border-end-start-radius: var(--border-end-start-radius);
+
+  --border-image-outset: initial;
+  border-image-outset: var(--border-image-outset);
+
+  --border-image-repeat: initial;
+  border-image-repeat: var(--border-image-repeat);
+
+  --border-image-slice: initial;
+  border-image-slice: var(--border-image-slice);
+
+  --border-image-source: initial;
+  border-image-source: var(--border-image-source);
+
+  --border-image-width: initial;
+  border-image-width: var(--border-image-width);
+
+  --border-inline-end-color: initial;
+  border-inline-end-color: var(--border-inline-end-color);
+
+  --border-inline-end-style: initial;
+  border-inline-end-style: var(--border-inline-end-style);
+
+  --border-inline-end-width: initial;
+  border-inline-end-width: var(--border-inline-end-width);
+
+  --border-inline-start-color: initial;
+  border-inline-start-color: var(--border-inline-start-color);
+
+  --border-inline-start-style: initial;
+  border-inline-start-style: var(--border-inline-start-style);
+
+  --border-inline-start-width: initial;
+  border-inline-start-width: var(--border-inline-start-width);
+
+  --border-left-color: initial;
+  border-left-color: var(--border-left-color);
+
+  --border-left-style: initial;
+  border-left-style: var(--border-left-style);
+
+  --border-left-width: initial;
+  border-left-width: var(--border-left-width);
+
+  --border-right-color: initial;
+  border-right-color: var(--border-right-color);
+
+  --border-right-style: initial;
+  border-right-style: var(--border-right-style);
+
+  --border-right-width: initial;
+  border-right-width: var(--border-right-width);
+
+  --border-start-end-radius: initial;
+  border-start-end-radius: var(--border-start-end-radius);
+
+  --border-start-start-radius: initial;
+  border-start-start-radius: var(--border-start-start-radius);
+
+  --border-top-color: initial;
+  border-top-color: var(--border-top-color);
+
+  --border-top-left-radius: initial;
+  border-top-left-radius: var(--border-top-left-radius);
+
+  --border-top-right-radius: initial;
+  border-top-right-radius: var(--border-top-right-radius);
+
+  --border-top-style: initial;
+  border-top-style: var(--border-top-style);
+
+  --border-top-width: initial;
+  border-top-width: var(--border-top-width);
+
+}

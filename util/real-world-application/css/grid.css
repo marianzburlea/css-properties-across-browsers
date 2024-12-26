@@ -1,0 +1,38 @@
+.wow-ui-grid {
+  --grid-auto-columns: initial;
+  grid-auto-columns: var(--grid-auto-columns);
+
+  --grid-auto-flow: initial;
+  grid-auto-flow: var(--grid-auto-flow);
+
+  --grid-auto-rows: initial;
+  grid-auto-rows: var(--grid-auto-rows);
+
+  --grid-column-end: initial;
+  grid-column-end: var(--grid-column-end);
+
+  --grid-column-start: initial;
+  grid-column-start: var(--grid-column-start);
+
+  --grid-row-end: initial;
+  grid-row-end: var(--grid-row-end);
+
+  --grid-row-start: initial;
+  grid-row-start: var(--grid-row-start);
+
+  --grid-template-areas: initial;
+  grid-template-areas: var(--grid-template-areas);
+
+  --grid-template-columns: initial;
+  grid-template-columns: var(--grid-template-columns);
+
+  --grid-template-rows: initial;
+  grid-template-rows: var(--grid-template-rows);
+
+  --place-items: initial;
+  place-items: var(--place-items);
+
+  --place-content: initial;
+  place-content: var(--place-content);
+
+}

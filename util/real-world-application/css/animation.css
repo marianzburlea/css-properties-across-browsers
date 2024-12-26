@@ -1,0 +1,50 @@
+.wow-ui-animation {
+  --animation: none;
+  animation: var(--animation);
+
+  --animation-composition: initial;
+  animation-composition: var(--animation-composition);
+
+  --animation-delay: initial;
+  animation-delay: var(--animation-delay);
+
+  --animation-direction: initial;
+  animation-direction: var(--animation-direction);
+
+  --animation-duration: initial;
+  animation-duration: var(--animation-duration);
+
+  --animation-fill-mode: initial;
+  animation-fill-mode: var(--animation-fill-mode);
+
+  --animation-iteration-count: initial;
+  animation-iteration-count: var(--animation-iteration-count);
+
+  --animation-name: initial;
+  animation-name: var(--animation-name);
+
+  --animation-play-state: initial;
+  animation-play-state: var(--animation-play-state);
+
+  --animation-timing-function: initial;
+  animation-timing-function: var(--animation-timing-function);
+
+  --transition: none;
+  transition: var(--transition);
+
+  --transition-behavior: initial;
+  transition-behavior: var(--transition-behavior);
+
+  --transition-delay: initial;
+  transition-delay: var(--transition-delay);
+
+  --transition-duration: initial;
+  transition-duration: var(--transition-duration);
+
+  --transition-property: initial;
+  transition-property: var(--transition-property);
+
+  --transition-timing-function: initial;
+  transition-timing-function: var(--transition-timing-function);
+
+}

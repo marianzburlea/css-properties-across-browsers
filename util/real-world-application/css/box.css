@@ -1,0 +1,47 @@
+.wow-ui-box {
+  --aspect-ratio: initial;
+  aspect-ratio: var(--aspect-ratio);
+
+  --block-size: initial;
+  block-size: var(--block-size);
+
+  --box-sizing: initial;
+  box-sizing: var(--box-sizing);
+
+  --height: initial;
+  height: var(--height);
+
+  --inline-size: initial;
+  inline-size: var(--inline-size);
+
+  --max-block-size: initial;
+  max-block-size: var(--max-block-size);
+
+  --max-height: initial;
+  max-height: var(--max-height);
+
+  --max-inline-size: initial;
+  max-inline-size: var(--max-inline-size);
+
+  --max-width: initial;
+  max-width: var(--max-width);
+
+  --min-block-size: initial;
+  min-block-size: var(--min-block-size);
+
+  --min-height: initial;
+  min-height: var(--min-height);
+
+  --min-inline-size: initial;
+  min-inline-size: var(--min-inline-size);
+
+  --min-width: initial;
+  min-width: var(--min-width);
+
+  --width: initial;
+  width: var(--width);
+
+  --zoom: initial;
+  zoom: var(--zoom);
+
+}

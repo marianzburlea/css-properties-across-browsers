@@ -1,0 +1,38 @@
+.wow-ui-masking {
+  --clip: initial;
+  clip: var(--clip);
+
+  --clip-path: initial;
+  clip-path: var(--clip-path);
+
+  --clip-rule: initial;
+  clip-rule: var(--clip-rule);
+
+  --mask: initial;
+  mask: var(--mask);
+
+  --mask-clip: initial;
+  mask-clip: var(--mask-clip);
+
+  --mask-composite: initial;
+  mask-composite: var(--mask-composite);
+
+  --mask-image: initial;
+  mask-image: var(--mask-image);
+
+  --mask-mode: initial;
+  mask-mode: var(--mask-mode);
+
+  --mask-origin: initial;
+  mask-origin: var(--mask-origin);
+
+  --mask-repeat: initial;
+  mask-repeat: var(--mask-repeat);
+
+  --mask-size: initial;
+  mask-size: var(--mask-size);
+
+  --mask-type: initial;
+  mask-type: var(--mask-type);
+
+}

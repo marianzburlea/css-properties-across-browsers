@@ -1,0 +1,35 @@
+.wow-ui-flex {
+  --align-content: initial;
+  align-content: var(--align-content);
+
+  --align-items: initial;
+  align-items: var(--align-items);
+
+  --flex: initial;
+  flex: var(--flex);
+
+  --flex-basis: initial;
+  flex-basis: var(--flex-basis);
+
+  --flex-direction: initial;
+  flex-direction: var(--flex-direction);
+
+  --flex-grow: initial;
+  flex-grow: var(--flex-grow);
+
+  --flex-shrink: initial;
+  flex-shrink: var(--flex-shrink);
+
+  --flex-wrap: initial;
+  flex-wrap: var(--flex-wrap);
+
+  --justify-content: initial;
+  justify-content: var(--justify-content);
+
+  --justify-items: initial;
+  justify-items: var(--justify-items);
+
+  --order: initial;
+  order: var(--order);
+
+}

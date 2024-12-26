@@ -1,0 +1,68 @@
+.wow-ui-svg {
+  --dominant-baseline: initial;
+  dominant-baseline: var(--dominant-baseline);
+
+  --fill: initial;
+  fill: var(--fill);
+
+  --fill-opacity: initial;
+  fill-opacity: var(--fill-opacity);
+
+  --fill-rule: initial;
+  fill-rule: var(--fill-rule);
+
+  --flood-color: initial;
+  flood-color: var(--flood-color);
+
+  --flood-opacity: initial;
+  flood-opacity: var(--flood-opacity);
+
+  --lighting-color: initial;
+  lighting-color: var(--lighting-color);
+
+  --marker-end: initial;
+  marker-end: var(--marker-end);
+
+  --marker-mid: initial;
+  marker-mid: var(--marker-mid);
+
+  --marker-start: initial;
+  marker-start: var(--marker-start);
+
+  --paint-order: initial;
+  paint-order: var(--paint-order);
+
+  --stop-color: initial;
+  stop-color: var(--stop-color);
+
+  --stop-opacity: initial;
+  stop-opacity: var(--stop-opacity);
+
+  --stroke: initial;
+  stroke: var(--stroke);
+
+  --stroke-dasharray: initial;
+  stroke-dasharray: var(--stroke-dasharray);
+
+  --stroke-dashoffset: initial;
+  stroke-dashoffset: var(--stroke-dashoffset);
+
+  --stroke-linecap: initial;
+  stroke-linecap: var(--stroke-linecap);
+
+  --stroke-linejoin: initial;
+  stroke-linejoin: var(--stroke-linejoin);
+
+  --stroke-miterlimit: initial;
+  stroke-miterlimit: var(--stroke-miterlimit);
+
+  --stroke-opacity: initial;
+  stroke-opacity: var(--stroke-opacity);
+
+  --stroke-width: initial;
+  stroke-width: var(--stroke-width);
+
+  --vector-effect: initial;
+  vector-effect: var(--vector-effect);
+
+}

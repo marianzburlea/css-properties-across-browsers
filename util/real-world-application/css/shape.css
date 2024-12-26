@@ -1,0 +1,14 @@
+.wow-ui-shape {
+  --shape-image-threshold: initial;
+  shape-image-threshold: var(--shape-image-threshold);
+
+  --shape-margin: initial;
+  shape-margin: var(--shape-margin);
+
+  --shape-outside: initial;
+  shape-outside: var(--shape-outside);
+
+  --shape-rendering: initial;
+  shape-rendering: var(--shape-rendering);
+
+}

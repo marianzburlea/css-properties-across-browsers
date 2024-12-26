@@ -1,0 +1,65 @@
+.wow-ui-spacing {
+  --column-gap: initial;
+  column-gap: var(--column-gap);
+
+  --gap: initial;
+  gap: var(--gap);
+
+  --margin: initial;
+  margin: var(--margin);
+
+  --margin-block-end: initial;
+  margin-block-end: var(--margin-block-end);
+
+  --margin-block-start: initial;
+  margin-block-start: var(--margin-block-start);
+
+  --margin-bottom: initial;
+  margin-bottom: var(--margin-bottom);
+
+  --margin-inline-end: initial;
+  margin-inline-end: var(--margin-inline-end);
+
+  --margin-inline-start: initial;
+  margin-inline-start: var(--margin-inline-start);
+
+  --margin-left: initial;
+  margin-left: var(--margin-left);
+
+  --margin-right: initial;
+  margin-right: var(--margin-right);
+
+  --margin-top: initial;
+  margin-top: var(--margin-top);
+
+  --padding: initial;
+  padding: var(--padding);
+
+  --padding-block-end: initial;
+  padding-block-end: var(--padding-block-end);
+
+  --padding-block-start: initial;
+  padding-block-start: var(--padding-block-start);
+
+  --padding-bottom: initial;
+  padding-bottom: var(--padding-bottom);
+
+  --padding-inline-end: initial;
+  padding-inline-end: var(--padding-inline-end);
+
+  --padding-inline-start: initial;
+  padding-inline-start: var(--padding-inline-start);
+
+  --padding-left: initial;
+  padding-left: var(--padding-left);
+
+  --padding-right: initial;
+  padding-right: var(--padding-right);
+
+  --padding-top: initial;
+  padding-top: var(--padding-top);
+
+  --row-gap: initial;
+  row-gap: var(--row-gap);
+
+}

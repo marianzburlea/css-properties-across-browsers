@@ -1,0 +1,5 @@
+.wow-ui-shadow {
+  --box-shadow: initial;
+  box-shadow: var(--box-shadow);
+
+}

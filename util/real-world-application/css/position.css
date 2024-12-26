@@ -1,0 +1,35 @@
+.wow-ui-position {
+  --bottom: initial;
+  bottom: var(--bottom);
+
+  --inset: initial;
+  inset: var(--inset);
+
+  --inset-block-end: initial;
+  inset-block-end: var(--inset-block-end);
+
+  --inset-block-start: initial;
+  inset-block-start: var(--inset-block-start);
+
+  --inset-inline-end: initial;
+  inset-inline-end: var(--inset-inline-end);
+
+  --inset-inline-start: initial;
+  inset-inline-start: var(--inset-inline-start);
+
+  --left: initial;
+  left: var(--left);
+
+  --position: initial;
+  position: var(--position);
+
+  --right: initial;
+  right: var(--right);
+
+  --top: initial;
+  top: var(--top);
+
+  --z-index: initial;
+  z-index: var(--z-index);
+
+}

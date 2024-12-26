@@ -1,0 +1,8 @@
+.wow-ui-scroll {
+  --scrollbar-gutter: initial;
+  scrollbar-gutter: var(--scrollbar-gutter);
+
+  --scrollbar-width: initial;
+  scrollbar-width: var(--scrollbar-width);
+
+}

@@ -1,0 +1,80 @@
+.wow-ui-typography {
+  --font: initial;
+  font: var(--font);
+
+  --font-family: initial;
+  font-family: var(--font-family);
+
+  --font-feature-settings: initial;
+  font-feature-settings: var(--font-feature-settings);
+
+  --font-kerning: initial;
+  font-kerning: var(--font-kerning);
+
+  --font-optical-sizing: initial;
+  font-optical-sizing: var(--font-optical-sizing);
+
+  --font-palette: initial;
+  font-palette: var(--font-palette);
+
+  --font-size: initial;
+  font-size: var(--font-size);
+
+  --font-size-adjust: initial;
+  font-size-adjust: var(--font-size-adjust);
+
+  --font-stretch: initial;
+  font-stretch: var(--font-stretch);
+
+  --font-style: initial;
+  font-style: var(--font-style);
+
+  --font-synthesis-small-caps: initial;
+  font-synthesis-small-caps: var(--font-synthesis-small-caps);
+
+  --font-synthesis-style: initial;
+  font-synthesis-style: var(--font-synthesis-style);
+
+  --font-synthesis-weight: initial;
+  font-synthesis-weight: var(--font-synthesis-weight);
+
+  --font-variant-alternates: initial;
+  font-variant-alternates: var(--font-variant-alternates);
+
+  --font-variant-caps: initial;
+  font-variant-caps: var(--font-variant-caps);
+
+  --font-variant-east-asian: initial;
+  font-variant-east-asian: var(--font-variant-east-asian);
+
+  --font-variant-ligatures: initial;
+  font-variant-ligatures: var(--font-variant-ligatures);
+
+  --font-variant-numeric: initial;
+  font-variant-numeric: var(--font-variant-numeric);
+
+  --font-variant-position: initial;
+  font-variant-position: var(--font-variant-position);
+
+  --font-variation-settings: initial;
+  font-variation-settings: var(--font-variation-settings);
+
+  --font-weight: initial;
+  font-weight: var(--font-weight);
+
+  --letter-spacing: initial;
+  letter-spacing: var(--letter-spacing);
+
+  --line-height: initial;
+  line-height: var(--line-height);
+
+  --tab-size: initial;
+  tab-size: var(--tab-size);
+
+  --word-break: initial;
+  word-break: var(--word-break);
+
+  --word-spacing: initial;
+  word-spacing: var(--word-spacing);
+
+}

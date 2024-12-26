@@ -1,0 +1,95 @@
+.wow-ui-interaction {
+  --caret-color: initial;
+  caret-color: var(--caret-color);
+
+  --overscroll-behavior-block: initial;
+  overscroll-behavior-block: var(--overscroll-behavior-block);
+
+  --overscroll-behavior-inline: initial;
+  overscroll-behavior-inline: var(--overscroll-behavior-inline);
+
+  --overscroll-behavior-x: initial;
+  overscroll-behavior-x: var(--overscroll-behavior-x);
+
+  --overscroll-behavior-y: initial;
+  overscroll-behavior-y: var(--overscroll-behavior-y);
+
+  --pointer-events: initial;
+  pointer-events: var(--pointer-events);
+
+  --resize: initial;
+  resize: var(--resize);
+
+  --scroll-behavior: initial;
+  scroll-behavior: var(--scroll-behavior);
+
+  --scroll-margin: initial;
+  scroll-margin: var(--scroll-margin);
+
+  --scroll-margin-block-end: initial;
+  scroll-margin-block-end: var(--scroll-margin-block-end);
+
+  --scroll-margin-block-start: initial;
+  scroll-margin-block-start: var(--scroll-margin-block-start);
+
+  --scroll-margin-bottom: initial;
+  scroll-margin-bottom: var(--scroll-margin-bottom);
+
+  --scroll-margin-inline-end: initial;
+  scroll-margin-inline-end: var(--scroll-margin-inline-end);
+
+  --scroll-margin-inline-start: initial;
+  scroll-margin-inline-start: var(--scroll-margin-inline-start);
+
+  --scroll-margin-left: initial;
+  scroll-margin-left: var(--scroll-margin-left);
+
+  --scroll-margin-right: initial;
+  scroll-margin-right: var(--scroll-margin-right);
+
+  --scroll-margin-top: initial;
+  scroll-margin-top: var(--scroll-margin-top);
+
+  --scroll-padding: initial;
+  scroll-padding: var(--scroll-padding);
+
+  --scroll-padding-block-end: initial;
+  scroll-padding-block-end: var(--scroll-padding-block-end);
+
+  --scroll-padding-block-start: initial;
+  scroll-padding-block-start: var(--scroll-padding-block-start);
+
+  --scroll-padding-bottom: initial;
+  scroll-padding-bottom: var(--scroll-padding-bottom);
+
+  --scroll-padding-inline-end: initial;
+  scroll-padding-inline-end: var(--scroll-padding-inline-end);
+
+  --scroll-padding-inline-start: initial;
+  scroll-padding-inline-start: var(--scroll-padding-inline-start);
+
+  --scroll-padding-left: initial;
+  scroll-padding-left: var(--scroll-padding-left);
+
+  --scroll-padding-right: initial;
+  scroll-padding-right: var(--scroll-padding-right);
+
+  --scroll-padding-top: initial;
+  scroll-padding-top: var(--scroll-padding-top);
+
+  --scroll-snap-align: initial;
+  scroll-snap-align: var(--scroll-snap-align);
+
+  --scroll-snap-stop: initial;
+  scroll-snap-stop: var(--scroll-snap-stop);
+
+  --scroll-snap-type: initial;
+  scroll-snap-type: var(--scroll-snap-type);
+
+  --touch-action: initial;
+  touch-action: var(--touch-action);
+
+  --user-select: initial;
+  user-select: var(--user-select);
+
+}

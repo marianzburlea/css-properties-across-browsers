@@ -1,0 +1,23 @@
+.wow-ui-column {
+  --column-count: initial;
+  column-count: var(--column-count);
+
+  --column-fill: initial;
+  column-fill: var(--column-fill);
+
+  --column-rule-color: initial;
+  column-rule-color: var(--column-rule-color);
+
+  --column-rule-style: initial;
+  column-rule-style: var(--column-rule-style);
+
+  --column-rule-width: initial;
+  column-rule-width: var(--column-rule-width);
+
+  --column-span: initial;
+  column-span: var(--column-span);
+
+  --column-width: initial;
+  column-width: var(--column-width);
+
+}
