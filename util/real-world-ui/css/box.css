@@ -1,0 +1,17 @@
+.wow-ui-box {
+  --aspect-ratio: auto;
+  aspect-ratio: var(--aspect-ratio);
+
+  --block-size: auto;
+  block-size: var(--block-size);
+
+  --box-sizing: content-box;
+  box-sizing: var(--box-sizing);
+
+  --inline-size: auto;
+  inline-size: var(--inline-size);
+
+  --zoom: normal;
+  zoom: var(--zoom);
+
+}

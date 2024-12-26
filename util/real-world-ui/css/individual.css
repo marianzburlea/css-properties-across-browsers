@@ -1,0 +1,8 @@
+.wow-ui-individual {
+  --align-self: auto;
+  align-self: var(--align-self);
+
+  --justify-self: auto;
+  justify-self: var(--justify-self);
+
+}

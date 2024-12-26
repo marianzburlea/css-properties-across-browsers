@@ -1,0 +1,5 @@
+.wow-ui-border-collapse {
+  --border-collapse: separate;
+  border-collapse: var(--border-collapse);
+
+}

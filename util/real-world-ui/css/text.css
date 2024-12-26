@@ -1,0 +1,35 @@
+.wow-ui-text {
+  --color: currentcolor;
+  color: var(--color);
+
+  --color-interpolation: srgb;
+  color-interpolation: var(--color-interpolation);
+
+  --color-interpolation-filters: linearrgb;
+  color-interpolation-filters: var(--color-interpolation-filters);
+
+  --hyphenate-character: auto;
+  hyphenate-character: var(--hyphenate-character);
+
+  --hyphens: manual;
+  hyphens: var(--hyphens);
+
+  --line-break: auto;
+  line-break: var(--line-break);
+
+  --quotes: auto;
+  quotes: var(--quotes);
+
+  --unicode-bidi: normal;
+  unicode-bidi: var(--unicode-bidi);
+
+  --vertical-align: baseline;
+  vertical-align: var(--vertical-align);
+
+  --white-space-collapse: preserve;
+  white-space-collapse: var(--white-space-collapse);
+
+  --writing-mode: horizontal-tb;
+  writing-mode: var(--writing-mode);
+
+}

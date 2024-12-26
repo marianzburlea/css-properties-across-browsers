@@ -630,7 +630,6 @@ export const cssPropertyMap = {
   float: 'content-flow',
   floodColor: 'svg',
   floodOpacity: 'svg',
-  font: 'typography',
   fontFeatureSettings: 'typography',
   fontKerning: 'typography',
   fontOpticalSizing: 'typography',

@@ -1,9 +1,13 @@
-import fs from 'node:fs'
-import { cssPropertyMap } from './reduced-common-css-by-group'
-import { cssPropertyDefaultValueMap } from './css-property-default-value'
+import fs from 'fs'
+import {
+  cssCondensedPropertyMap,
+  cssPropertyMap,
+} from './reduced-common-css-by-group'
+import { cssDefaultPropertyValueMap } from './default-value-map'
 
 // get unique group
 const cssPropertyByGroupMap = {}
+const cssCondensedropertyByGroupMap = {}
 const cssPropertyByGroupList: string[] = []
 
 for (const cssProperty in cssPropertyMap) {
@@ -18,6 +22,11 @@ for (const cssProperty in cssPropertyMap) {
   }
 }
 
+for (const cssProperty in cssCondensedPropertyMap) {
+  console.log(cssProperty, 'condensed')
+  //
+}
+
 const camelToKebabCase = (str = '') => {
   return str.replace(/[A-Z]/g, (letter) => `-${letter.toLowerCase()}`)
 }
@@ -28,7 +37,7 @@ for (const groupName of cssPropertyByGroupList) {
   ${cssPropertyByGroupMap[groupName].map((cssProperty) => {
     const kebabProperty = camelToKebabCase(cssProperty)
     return `--${kebabProperty}: ${
-      cssPropertyDefaultValueMap[cssProperty] || 'initial'
+      cssDefaultPropertyValueMap[cssProperty] || 'initial'
     };
   ${kebabProperty}: var(--${kebabProperty});
 `
@@ -36,8 +45,5 @@ for (const groupName of cssPropertyByGroupList) {
   `)}
 }`
 
-  fs.writeFileSync(
-    `util/real-world-application/css/${groupName}.css`,
-    cssString
-  )
+  fs.writeFileSync(`css/${groupName}.css`, cssString)
 }
