@@ -1,0 +1,14 @@
+@media screen and (min-width: 80rem) {
+  .desktop.border-bottom {
+    --border-bottom-left-radius: 0;
+    border-bottom-left-radius: var(--border-bottom-left-radius);
+    --border-bottom-right-radius: 0;
+    border-bottom-right-radius: var(--border-bottom-right-radius);
+    --border-bottom-color: currentcolor;
+    border-bottom-color: var(--border-bottom-color);
+    --border-bottom-style: none;
+    border-bottom-style: var(--border-bottom-style);
+    --border-bottom-width: medium;
+    border-bottom-width: var(--border-bottom-width)
+  }
+}

@@ -1,4 +1,0 @@
-.unicode {
-  --unicode-bidi: normal;
-  unicode-bidi: var(--unicode-bidi)
-}

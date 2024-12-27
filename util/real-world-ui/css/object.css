@@ -1,6 +1,0 @@
-.object {
-  --object-fit: fill;
-  object-fit: var(--object-fit);
-  --object-position: 50% 50%;
-  object-position: var(--object-position)
-}

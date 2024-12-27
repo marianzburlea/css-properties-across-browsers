@@ -1,0 +1,12 @@
+@media screen and (min-width: 80rem) {
+  .desktop.outline {
+    --outline-offset: initial;
+    outline-offset: var(--outline-offset);
+    --outline-color: invert;
+    outline-color: var(--outline-color);
+    --outline-style: none;
+    outline-style: var(--outline-style);
+    --outline-width: medium;
+    outline-width: var(--outline-width)
+  }
+}

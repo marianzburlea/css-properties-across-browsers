@@ -1,0 +1,6 @@
+.media {
+--orientation: auto;
+orientation: var(--orientation);
+--size: auto;
+size: var(--size)
+}

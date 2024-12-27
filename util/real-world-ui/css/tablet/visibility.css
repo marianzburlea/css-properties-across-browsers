@@ -1,0 +1,6 @@
+@media screen and (min-width: 48rem) {
+  .tablet.visibility {
+    --visibility: visible;
+    visibility: var(--visibility)
+  }
+}

@@ -1,0 +1,6 @@
+.theme {
+--accent-color: auto;
+accent-color: var(--accent-color);
+--color-scheme: normal;
+color-scheme: var(--color-scheme)
+}

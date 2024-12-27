@@ -1,0 +1,10 @@
+@media screen and (min-width: 48rem) {
+  .tablet.border-block-end {
+    --border-block-end-end-color: currentcolor;
+    border-block-end-end-color: var(--border-block-end-end-color);
+    --border-block-end-end-style: none;
+    border-block-end-end-style: var(--border-block-end-end-style);
+    --border-block-end-end-width: medium;
+    border-block-end-end-width: var(--border-block-end-end-width)
+  }
+}

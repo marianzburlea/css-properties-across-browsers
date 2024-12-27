@@ -1,0 +1,8 @@
+@media screen and (min-width: 48rem) {
+  .tablet.overflow {
+    --overflow-x: visible;
+    overflow-x: var(--overflow-x);
+    --overflow-y: visible;
+    overflow-y: var(--overflow-y)
+  }
+}

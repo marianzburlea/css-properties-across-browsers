@@ -1,0 +1,8 @@
+@media screen and (min-width: 48rem) {
+  .tablet.container {
+    --container-name: none;
+    container-name: var(--container-name);
+    --container-type: none;
+    container-type: var(--container-type)
+  }
+}

@@ -1,6 +1,0 @@
-.scrollbar {
-  --scrollbar-gutter: auto;
-  scrollbar-gutter: var(--scrollbar-gutter);
-  --scrollbar-width: auto;
-  scrollbar-width: var(--scrollbar-width)
-}

@@ -1,0 +1,10 @@
+@media screen and (min-width: 48rem) {
+  .tablet.border-right {
+    --border-right-color: currentcolor;
+    border-right-color: var(--border-right-color);
+    --border-right-style: none;
+    border-right-style: var(--border-right-style);
+    --border-right-width: medium;
+    border-right-width: var(--border-right-width)
+  }
+}

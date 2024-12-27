@@ -1,0 +1,8 @@
+@media screen and (min-width: 48rem) {
+  .tablet.height {
+    --height-min: initial;
+    height-min: var(--height-min);
+    --height-max: initial;
+    height-max: var(--height-max)
+  }
+}

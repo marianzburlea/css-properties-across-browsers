@@ -1,4 +1,0 @@
-.visibility {
-  --visibility: visible;
-  visibility: var(--visibility)
-}

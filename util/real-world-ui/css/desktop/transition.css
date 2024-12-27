@@ -1,0 +1,14 @@
+@media screen and (min-width: 80rem) {
+  .desktop.transition {
+    --transition-behavior: auto;
+    transition-behavior: var(--transition-behavior);
+    --transition-delay: 0s;
+    transition-delay: var(--transition-delay);
+    --transition-duration: 0s;
+    transition-duration: var(--transition-duration);
+    --transition-property: all;
+    transition-property: var(--transition-property);
+    --transition-timing-function: ease;
+    transition-timing-function: var(--transition-timing-function)
+  }
+}

@@ -1,0 +1,18 @@
+@media screen and (min-width: 80rem) {
+  .desktop.column {
+    --column-count: auto;
+    column-count: var(--column-count);
+    --column-fill: balance;
+    column-fill: var(--column-fill);
+    --column-rule-color: currentcolor;
+    column-rule-color: var(--column-rule-color);
+    --column-rule-style: none;
+    column-rule-style: var(--column-rule-style);
+    --column-rule-width: medium;
+    column-rule-width: var(--column-rule-width);
+    --column-span: none;
+    column-span: var(--column-span);
+    --column-width: auto;
+    column-width: var(--column-width)
+  }
+}

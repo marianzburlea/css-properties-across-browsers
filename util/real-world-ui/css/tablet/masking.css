@@ -1,0 +1,14 @@
+@media screen and (min-width: 48rem) {
+  .tablet.masking {
+    --clip: auto;
+    clip: var(--clip);
+    --clip-path: none;
+    clip-path: var(--clip-path);
+    --clip-rule: nonzero;
+    clip-rule: var(--clip-rule);
+    --mask-composite: add;
+    mask-composite: var(--mask-composite);
+    --mask-type: luminance;
+    mask-type: var(--mask-type)
+  }
+}

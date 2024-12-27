@@ -1,0 +1,6 @@
+.margin-block {
+--margin-block-start: 0;
+margin-block-start: var(--margin-block-start);
+--margin-block-end: 0;
+margin-block-end: var(--margin-block-end)
+}

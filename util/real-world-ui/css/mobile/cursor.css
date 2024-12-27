@@ -1,0 +1,4 @@
+.cursor {
+--cursor: auto;
+cursor: var(--cursor)
+}

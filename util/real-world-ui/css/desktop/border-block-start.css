@@ -1,0 +1,10 @@
+@media screen and (min-width: 80rem) {
+  .desktop.border-block-start {
+    --border-block-start-start-color: currentcolor;
+    border-block-start-start-color: var(--border-block-start-start-color);
+    --border-block-start-start-style: none;
+    border-block-start-start-style: var(--border-block-start-start-style);
+    --border-block-start-start-width: medium;
+    border-block-start-start-width: var(--border-block-start-start-width)
+  }
+}

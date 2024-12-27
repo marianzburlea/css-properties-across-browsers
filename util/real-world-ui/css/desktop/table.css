@@ -1,0 +1,8 @@
+@media screen and (min-width: 80rem) {
+  .desktop.table {
+    --empty-cells: show;
+    empty-cells: var(--empty-cells);
+    --table-layout: auto;
+    table-layout: var(--table-layout)
+  }
+}

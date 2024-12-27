@@ -1,0 +1,8 @@
+.place {
+--place-items: normal;
+place-items: var(--place-items);
+--place-content: normal;
+place-content: var(--place-content);
+--place-self: normal;
+place-self: var(--place-self)
+}

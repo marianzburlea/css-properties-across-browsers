@@ -1,6 +1,0 @@
-.padding-block {
-  --padding-block-start: spacing;
-  padding-block-start: var(--padding-block-start);
-  --padding-block-end: spacing;
-  padding-block-end: var(--padding-block-end)
-}

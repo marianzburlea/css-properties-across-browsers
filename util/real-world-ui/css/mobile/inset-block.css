@@ -1,0 +1,6 @@
+.inset-block {
+--inset-block-start: auto;
+inset-block-start: var(--inset-block-start);
+--inset-block-end: auto;
+inset-block-end: var(--inset-block-end)
+}

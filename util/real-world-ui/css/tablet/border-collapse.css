@@ -1,0 +1,6 @@
+@media screen and (min-width: 48rem) {
+  .tablet.border-collapse {
+    --border-collapse: separate;
+    border-collapse: var(--border-collapse)
+  }
+}

@@ -1,8 +1,0 @@
-.border-left {
-  --border-left-color: currentcolor;
-  border-left-color: var(--border-left-color);
-  --border-left-style: none;
-  border-left-style: var(--border-left-style);
-  --border-left-width: medium;
-  border-left-width: var(--border-left-width)
-}

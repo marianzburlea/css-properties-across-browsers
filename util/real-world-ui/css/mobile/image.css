@@ -1,0 +1,6 @@
+.image {
+--image-orientation: from-image;
+image-orientation: var(--image-orientation);
+--image-rendering: auto;
+image-rendering: var(--image-rendering)
+}

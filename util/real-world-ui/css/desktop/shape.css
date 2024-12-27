@@ -1,0 +1,12 @@
+@media screen and (min-width: 80rem) {
+  .desktop.shape {
+    --shape-image-threshold: 0;
+    shape-image-threshold: var(--shape-image-threshold);
+    --shape-margin: 0;
+    shape-margin: var(--shape-margin);
+    --shape-outside: none;
+    shape-outside: var(--shape-outside);
+    --shape-rendering: auto;
+    shape-rendering: var(--shape-rendering)
+  }
+}

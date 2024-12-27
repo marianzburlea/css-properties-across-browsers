@@ -1,0 +1,8 @@
+@media screen and (min-width: 80rem) {
+  .desktop.overflow {
+    --overflow-x: visible;
+    overflow-x: var(--overflow-x);
+    --overflow-y: visible;
+    overflow-y: var(--overflow-y)
+  }
+}

@@ -1,6 +1,0 @@
-.container {
-  --container-name: none;
-  container-name: var(--container-name);
-  --container-type: none;
-  container-type: var(--container-type)
-}

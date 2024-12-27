@@ -1,0 +1,8 @@
+@media screen and (min-width: 80rem) {
+  .desktop.text-wrap {
+    --text-wrap-mode: normal;
+    text-wrap-mode: var(--text-wrap-mode);
+    --text-wrap-style: normal;
+    text-wrap-style: var(--text-wrap-style)
+  }
+}

@@ -1,4 +1,0 @@
-.math {
-  --math-style: normal;
-  math-style: var(--math-style)
-}

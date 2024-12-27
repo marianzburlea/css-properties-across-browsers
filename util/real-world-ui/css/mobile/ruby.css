@@ -1,0 +1,6 @@
+.ruby {
+--ruby-align: space-around;
+ruby-align: var(--ruby-align);
+--ruby-position: over;
+ruby-position: var(--ruby-position)
+}

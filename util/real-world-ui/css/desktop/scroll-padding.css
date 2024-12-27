@@ -1,0 +1,12 @@
+@media screen and (min-width: 80rem) {
+  .desktop.scroll-padding {
+    --scroll-padding-top: 0;
+    scroll-padding-top: var(--scroll-padding-top);
+    --scroll-padding-right: 0;
+    scroll-padding-right: var(--scroll-padding-right);
+    --scroll-padding-bottom: 0;
+    scroll-padding-bottom: var(--scroll-padding-bottom);
+    --scroll-padding-left: 0;
+    scroll-padding-left: var(--scroll-padding-left)
+  }
+}

@@ -1,0 +1,12 @@
+@media screen and (min-width: 48rem) {
+  .tablet.scroll-margin {
+    --scroll-margin-top: 0;
+    scroll-margin-top: var(--scroll-margin-top);
+    --scroll-margin-right: 0;
+    scroll-margin-right: var(--scroll-margin-right);
+    --scroll-margin-bottom: 0;
+    scroll-margin-bottom: var(--scroll-margin-bottom);
+    --scroll-margin-left: 0;
+    scroll-margin-left: var(--scroll-margin-left)
+  }
+}

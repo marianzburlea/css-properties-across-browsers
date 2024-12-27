@@ -1,6 +1,0 @@
-.padding-inline {
-  --padding-inline-start: spacing;
-  padding-inline-start: var(--padding-inline-start);
-  --padding-inline-end: spacing;
-  padding-inline-end: var(--padding-inline-end)
-}

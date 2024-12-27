@@ -1,0 +1,18 @@
+@media screen and (min-width: 80rem) {
+  .desktop.position {
+    --bottom: auto;
+    bottom: var(--bottom);
+    --inset: auto;
+    inset: var(--inset);
+    --left: auto;
+    left: var(--left);
+    --position: static;
+    position: var(--position);
+    --right: auto;
+    right: var(--right);
+    --top: auto;
+    top: var(--top);
+    --z-index: auto;
+    z-index: var(--z-index)
+  }
+}

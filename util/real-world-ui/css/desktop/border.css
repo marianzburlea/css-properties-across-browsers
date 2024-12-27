@@ -1,0 +1,10 @@
+@media screen and (min-width: 80rem) {
+  .desktop.border {
+    --border-width: 0;
+    border-width: var(--border-width);
+    --border-style: solid;
+    border-style: var(--border-style);
+    --border-color: initial;
+    border-color: var(--border-color)
+  }
+}

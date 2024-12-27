@@ -1,0 +1,6 @@
+@media screen and (min-width: 80rem) {
+  .desktop.unicode {
+    --unicode-bidi: normal;
+    unicode-bidi: var(--unicode-bidi)
+  }
+}

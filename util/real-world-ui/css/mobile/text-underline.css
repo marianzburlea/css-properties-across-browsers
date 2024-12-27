@@ -1,0 +1,6 @@
+.text-underline {
+--text-underline-offset: auto;
+text-underline-offset: var(--text-underline-offset);
+--text-underline-position: auto;
+text-underline-position: var(--text-underline-position)
+}

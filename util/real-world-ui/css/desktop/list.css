@@ -1,0 +1,16 @@
+@media screen and (min-width: 80rem) {
+  .desktop.list {
+    --counter-increment: none;
+    counter-increment: var(--counter-increment);
+    --counter-reset: none;
+    counter-reset: var(--counter-reset);
+    --counter-set: none;
+    counter-set: var(--counter-set);
+    --list-style-image: none;
+    list-style-image: var(--list-style-image);
+    --list-style-position: outside;
+    list-style-position: var(--list-style-position);
+    --list-style-type: disc;
+    list-style-type: var(--list-style-type)
+  }
+}

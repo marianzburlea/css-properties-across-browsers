@@ -1,4 +1,0 @@
-.display {
-  --display: inline;
-  display: var(--display)
-}

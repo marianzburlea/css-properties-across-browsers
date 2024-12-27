@@ -1,0 +1,8 @@
+@media screen and (min-width: 80rem) {
+  .desktop.max {
+    --max-block-size: none;
+    max-block-size: var(--max-block-size);
+    --max-inline-size: none;
+    max-inline-size: var(--max-inline-size)
+  }
+}

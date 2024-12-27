@@ -83,16 +83,75 @@ for (const cssCamelCaseProperty in cssCondensedPropertyMap) {
   finalCssClassMap[className] = map
 }
 
-// console.log(finalCssClassMap.flex)
+// generate mobile, tablet, and desktop
+const mobile: string[] = []
+const tablet: string[] = []
+const desktop: string[] = []
+
+// tablet
+const getTabletWrap = (
+  css = '',
+  breakPoint = 768
+) => `@media screen and (min-width: ${breakPoint / 16}rem) {
+${css}
+}`
+
+// desktop
+const getDesktopWrap = (
+  css = '',
+  breakPoint = 1280
+) => `@media screen and (min-width: ${breakPoint / 16}rem) {
+${css}
+}`
 
 for (const map of Object.keys(finalCssClassMap)) {
   const className = finalCssClassMap[map].className
-  console.log(className)
-  fs.writeFileSync(
-    `css/${className}.css`,
-    `.${className} {
-  ${finalCssClassMap[map].row.join(`;
-  `)}
+
+  // mobile
+  const cssRawMobile = `.${className} {
+${finalCssClassMap[map].row.join(`;
+`)}
 }`
-  )
+  mobile.push(cssRawMobile)
+  fs.writeFileSync(`css/mobile/${className}.css`, cssRawMobile)
+
+  // tablet
+  const cssRawTablet = `  .tablet.${className} {
+    ${finalCssClassMap[map].row.join(`;
+    `)}
+  }`
+
+  tablet.push(cssRawTablet)
+  const cssTablet = getTabletWrap(cssRawTablet)
+
+  fs.writeFileSync(`css/tablet/${className}.css`, cssTablet)
+
+  // desktop
+  const cssRawDesktop = `  .desktop.${className} {
+    ${finalCssClassMap[map].row.join(`;
+    `)}
+  }`
+
+  desktop.push(cssRawDesktop)
+  const cssDesktop = getDesktopWrap(cssRawDesktop)
+  fs.writeFileSync(`css/desktop/${className}.css`, cssDesktop)
 }
+
+const allMobile = mobile.join('\n')
+// mobile
+fs.writeFileSync('css/mobile.css', allMobile)
+const allTablet = getTabletWrap(tablet.join('\n'))
+// tablet
+fs.writeFileSync('css/tablet.css', allTablet)
+const allDesktop = getDesktopWrap(desktop.join('\n'))
+// desktop
+fs.writeFileSync('css/desktop.css', allDesktop)
+// all
+fs.writeFileSync(
+  'css/all.css',
+  `
+${allMobile}
+${allTablet}
+${allDesktop}
+`
+)

@@ -1,0 +1,14 @@
+.interaction {
+--caret-color: auto;
+caret-color: var(--caret-color);
+--pointer-events: auto;
+pointer-events: var(--pointer-events);
+--resize: none;
+resize: var(--resize);
+--scroll-behavior: auto;
+scroll-behavior: var(--scroll-behavior);
+--touch-action: auto;
+touch-action: var(--touch-action);
+--user-select: auto;
+user-select: var(--user-select)
+}

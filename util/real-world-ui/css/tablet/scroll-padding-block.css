@@ -1,0 +1,8 @@
+@media screen and (min-width: 48rem) {
+  .tablet.scroll-padding-block {
+    --scroll-padding-block-start: 0;
+    scroll-padding-block-start: var(--scroll-padding-block-start);
+    --scroll-padding-block-end: 0;
+    scroll-padding-block-end: var(--scroll-padding-block-end)
+  }
+}

@@ -1,0 +1,8 @@
+@media screen and (min-width: 48rem) {
+  .tablet.width {
+    --width-min: initial;
+    width-min: var(--width-min);
+    --width-max: initial;
+    width-max: var(--width-max)
+  }
+}

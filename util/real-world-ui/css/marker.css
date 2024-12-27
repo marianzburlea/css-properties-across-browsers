@@ -1,8 +1,0 @@
-.marker {
-  --marker-end: svg;
-  marker-end: var(--marker-end);
-  --marker-mid: svg;
-  marker-mid: var(--marker-mid);
-  --marker-start: svg;
-  marker-start: var(--marker-start)
-}

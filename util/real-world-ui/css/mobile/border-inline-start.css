@@ -1,0 +1,8 @@
+.border-inline-start {
+--border-inline-start-start-color: currentcolor;
+border-inline-start-start-color: var(--border-inline-start-start-color);
+--border-inline-start-start-style: none;
+border-inline-start-start-style: var(--border-inline-start-start-style);
+--border-inline-start-start-width: medium;
+border-inline-start-start-width: var(--border-inline-start-start-width)
+}
