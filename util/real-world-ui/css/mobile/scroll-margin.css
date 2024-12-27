@@ -5,5 +5,5 @@
   --scroll-margin-left: auto;
   --scrollMargin: initial;
 
-  scroll-margin: var(--scroll-margin, var(--top var(--right) var(--bottom) var(--left)))
+  scroll-margin-scroll-margin: var(--scroll-margin-scroll-margin, var(--top var(--right) var(--bottom) var(--left)))
 }

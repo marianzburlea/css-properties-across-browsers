@@ -5,5 +5,5 @@
   --padding-left: auto;
   --padding: initial;
 
-  padding: var(--padding, var(--top var(--right) var(--bottom) var(--left)))
+  padding-padding: var(--padding-padding, var(--top var(--right) var(--bottom) var(--left)))
 }

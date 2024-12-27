@@ -3,5 +3,5 @@
   --padding-inline-end: initial;
   --paddingInline: initial;
 
-  padding-inline: var(--padding-inline, var(--start var(--end)))
+  padding-inline-padding-inline: var(--padding-inline-padding-inline, var(--start var(--end)))
 }

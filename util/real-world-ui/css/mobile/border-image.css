@@ -6,5 +6,5 @@
   --border-image-repeat: initial;
   --borderImage: initial;
 
-  border-image: var(--border-image, var(--source var(--slice) var(--width) var(--outset) var(--repeat)))
+  border-image-border-image: var(--border-image-border-image, var(--source var(--slice) var(--width) var(--outset) var(--repeat)))
 }

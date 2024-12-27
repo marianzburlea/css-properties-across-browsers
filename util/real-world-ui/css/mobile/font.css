@@ -8,5 +8,5 @@
   --font-family: initial;
   --font: normal 400 medium / normal serif;
 
-  font: var(--font, var(--style var(--variant) var(--weight) var(--stretch) var(--size) var(--line-height) var(--family)))
+  font-font: var(--font-font, var(--style var(--variant) var(--weight) var(--stretch) var(--size) var(--line-height) var(--family)))
 }

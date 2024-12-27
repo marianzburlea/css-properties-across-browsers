@@ -11,6 +11,6 @@
   --background: initial;
   --background-blend-mode: initial;
 
-  background: var(--background, var(--color var(--image) var(--position-x) var(--position-y) var(--size) var(--repeat) var(--attachment) var(--origin) var(--clip)));
+  background-background: var(--background-background, var(--color var(--image) var(--position-x) var(--position-y) var(--size) var(--repeat) var(--attachment) var(--origin) var(--clip)));
   background-blend-mode: var(--background-blend-mode)
 }

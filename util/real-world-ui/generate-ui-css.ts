@@ -114,7 +114,10 @@ for (const cssCamelCaseProperty in cssCondensedPropertyMap) {
   if (Array.isArray(condensedPropList) && condensedPropList.length > 0) {
     console.log('YES')
     condensedPropList.map((condensedProp) => {
-      const kebabProperty = `${className}-${camelToKebabCase(condensedProp)}`
+      const kebabProperty = cssCondensedPropertyMap[cssCamelCaseProperty]
+        ?.prefix
+        ? `${camelToKebabCase(condensedProp)}-${className}`
+        : `${className}-${camelToKebabCase(condensedProp)}`
       row.reset.push({
         left: kebabProperty,
         right: cssDefaultPropertyValueMap[condensedProp] || 'initial',
@@ -126,7 +129,12 @@ for (const cssCamelCaseProperty in cssCondensedPropertyMap) {
       right: cssDefaultPropertyValueMap[cssCamelCaseProperty] || 'initial',
     })
 
-    const kebabProperty = camelToKebabCase(cssCamelCaseProperty)
+    // const kebabProperty = camelToKebabCase(cssCamelCaseProperty)
+
+    const kebabProperty = cssCondensedPropertyMap[cssCamelCaseProperty]?.prefix
+      ? `${camelToKebabCase(cssCamelCaseProperty)}-${className}`
+      : `${className}-${camelToKebabCase(cssCamelCaseProperty)}`
+
     row.declaration.push({
       left: kebabProperty,
       right: [
@@ -139,7 +147,9 @@ for (const cssCamelCaseProperty in cssCondensedPropertyMap) {
   }
 
   notCondensedPropList.map((subProp) => {
-    const kebabProperty = `${className}-${camelToKebabCase(subProp)}`
+    const kebabProperty = cssCondensedPropertyMap[cssCamelCaseProperty]?.prefix
+      ? `${camelToKebabCase(subProp)}-${className}`
+      : `${className}-${camelToKebabCase(subProp)}`
 
     row.reset.push({
       left: kebabProperty,

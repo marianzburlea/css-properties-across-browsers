@@ -5,5 +5,5 @@
   --scroll-padding-left: auto;
   --scrollPadding: initial;
 
-  scroll-padding: var(--scroll-padding, var(--top var(--right) var(--bottom) var(--left)))
+  scroll-padding-scroll-padding: var(--scroll-padding-scroll-padding, var(--top var(--right) var(--bottom) var(--left)))
 }

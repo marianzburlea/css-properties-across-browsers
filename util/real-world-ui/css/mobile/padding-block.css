@@ -3,5 +3,5 @@
   --padding-block-end: initial;
   --paddingBlock: initial;
 
-  padding-block: var(--padding-block, var(--start var(--end)))
+  padding-block-padding-block: var(--padding-block-padding-block, var(--start var(--end)))
 }

@@ -1,7 +1,7 @@
 .desktop.width {
-  --width-min: initial;
-  --width-max: initial;
+  --min-width: initial;
+  --max-width: initial;
 
-  width-min: var(--width-min);
-  width-max: var(--width-max)
+  min-width: var(--min-width);
+  max-width: var(--max-width)
 }

@@ -6,5 +6,5 @@
   --outline: initial;
 
   outline-offset: var(--outline-offset);
-  outline: var(--outline, var(--width var(--style) var(--color)))
+  outline-outline: var(--outline-outline, var(--width var(--style) var(--color)))
 }

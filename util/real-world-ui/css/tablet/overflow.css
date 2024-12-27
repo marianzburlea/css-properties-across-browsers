@@ -3,5 +3,5 @@
   --overflow-y: initial;
   --overflow: initial;
 
-  overflow: var(--overflow, var(--x var(--y)))
+  overflow-overflow: var(--overflow-overflow, var(--x var(--y)))
 }

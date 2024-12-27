@@ -9,5 +9,5 @@
   --mask-mode: initial;
   --mask: initial;
 
-  mask: var(--mask, var(--image var(--position-x) var(--position-y) var(--size) var(--repeat) var(--origin) var(--clip) var(--mode)))
+  mask-mask: var(--mask-mask, var(--image var(--position-x) var(--position-y) var(--size) var(--repeat) var(--origin) var(--clip) var(--mode)))
 }

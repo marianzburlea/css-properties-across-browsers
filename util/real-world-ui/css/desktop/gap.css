@@ -1,7 +1,7 @@
 .desktop.gap {
-  --gap-row: initial;
-  --gap-column: initial;
+  --row-gap: initial;
+  --column-gap: initial;
   --gap: initial;
 
-  gap: var(--gap, var(--row var(--column)))
+  gap-gap: var(--gap-gap, var(--row var(--column)))
 }

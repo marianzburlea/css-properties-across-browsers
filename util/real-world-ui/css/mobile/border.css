@@ -4,5 +4,5 @@
   --border-color: currentcolor;
   --border: initial;
 
-  border: var(--border, var(--width var(--style) var(--color)))
+  border-border: var(--border-border, var(--width var(--style) var(--color)))
 }

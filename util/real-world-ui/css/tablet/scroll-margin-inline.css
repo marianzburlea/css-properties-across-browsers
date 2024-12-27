@@ -3,5 +3,5 @@
   --scroll-margin-inline-end: initial;
   --scrollMarginInline: initial;
 
-  scroll-margin-inline: var(--scroll-margin-inline, var(--start var(--end)))
+  scroll-margin-inline-scroll-margin-inline: var(--scroll-margin-inline-scroll-margin-inline, var(--start var(--end)))
 }
