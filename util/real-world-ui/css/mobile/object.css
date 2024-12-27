@@ -1,6 +1,6 @@
 .object {
-  --object-fit: initial;
-  --object-position: static;
+  --object-fit: fill;
+  --object-position: 50% 50%;
 
   object-fit: var(--object-fit);
   object-position: var(--object-position)

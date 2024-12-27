@@ -1,7 +1,7 @@
 .desktop.overflow {
-  --overflow-x: initial;
-  --overflow-y: initial;
-  --overflow: initial;
+  --overflow-x: visible;
+  --overflow-y: visible;
+  --overflow: visible;
 
-  overflow-overflow: var(--overflow-overflow, var(--x var(--y)))
+  overflow: var(--overflow, var(--x var(--y)))
 }

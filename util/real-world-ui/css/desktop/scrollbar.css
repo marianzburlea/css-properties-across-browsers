@@ -1,6 +1,6 @@
 .desktop.scrollbar {
-  --scrollbar-gutter: initial;
-  --scrollbar-width: initial;
+  --scrollbar-gutter: auto;
+  --scrollbar-width: auto;
 
   scrollbar-gutter: var(--scrollbar-gutter);
   scrollbar-width: var(--scrollbar-width)

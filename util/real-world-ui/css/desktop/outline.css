@@ -1,10 +1,10 @@
 .desktop.outline {
   --outline-offset: 0;
-  --outline-width: initial;
-  --outline-style: initial;
-  --outline-color: currentcolor;
-  --outline: initial;
+  --outline-width: medium;
+  --outline-style: none;
+  --outline-color: invert;
+  --outline: invert;
 
   outline-offset: var(--outline-offset);
-  outline-outline: var(--outline-outline, var(--width var(--style) var(--color)))
+  outline: var(--outline, var(--width var(--style) var(--color)))
 }

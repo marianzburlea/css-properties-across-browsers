@@ -1,6 +1,6 @@
 .tablet.ruby {
-  --ruby-align: initial;
-  --ruby-position: static;
+  --ruby-align: space-around;
+  --ruby-position: over;
 
   ruby-align: var(--ruby-align);
   ruby-position: var(--ruby-position)

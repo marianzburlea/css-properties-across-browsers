@@ -1,7 +1,7 @@
 .inset-inline {
-  --inset-inline-start: initial;
-  --inset-inline-end: initial;
+  --inset-inline-start: auto;
+  --inset-inline-end: auto;
   --insetInline: initial;
 
-  inset-inline-inset-inline: var(--inset-inline-inset-inline, var(--start var(--end)))
+  inset-inline: var(--inset-inline, var(--start var(--end)))
 }

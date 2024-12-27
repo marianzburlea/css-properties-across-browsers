@@ -3,7 +3,7 @@
   --block-size: auto;
   --box-sizing: content-box;
   --inline-size: auto;
-  --zoom: normal;
+  --zoom: auto;
 
   aspect-ratio: var(--aspect-ratio);
   block-size: var(--block-size);

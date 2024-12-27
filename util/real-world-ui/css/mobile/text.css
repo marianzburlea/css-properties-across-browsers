@@ -9,15 +9,15 @@
   --vertical-align: baseline;
   --white-space-collapse: preserve;
   --writing-mode: horizontal-tb;
-  --text-align: initial;
-  --text-align-last: initial;
-  --text-anchor: initial;
-  --text-combine-upright: initial;
-  --text-indent: initial;
-  --text-orientation: initial;
-  --text-overflow: initial;
-  --text-rendering: initial;
-  --text-shadow: initial;
+  --text-align: start;
+  --text-align-last: auto;
+  --text-anchor: start;
+  --text-combine-upright: none;
+  --text-indent: 0;
+  --text-orientation: mixed;
+  --text-overflow: clip;
+  --text-rendering: auto;
+  --text-shadow: none;
   --text-transform: none;
 
   color: var(--color);

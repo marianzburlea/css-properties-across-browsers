@@ -1,11 +1,11 @@
 .desktop.transition {
   --transition-behavior: auto;
-  --transition-property: initial;
-  --transition-duration: initial;
-  --transition-timing-function: initial;
-  --transition-delay: initial;
-  --transition: initial;
+  --transition-property: all;
+  --transition-duration: 0s;
+  --transition-timing-function: ease;
+  --transition-delay: 0s;
+  --transition: all 0s ease 0s;
 
   transition-behavior: var(--transition-behavior);
-  transition-transition: var(--transition-transition, var(--property var(--duration) var(--timing-function) var(--delay)))
+  transition: var(--transition, var(--property var(--duration) var(--timing-function) var(--delay)))
 }

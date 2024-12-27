@@ -1,7 +1,7 @@
 .desktop.padding-inline {
-  --padding-inline-start: initial;
-  --padding-inline-end: initial;
+  --padding-inline-start: 0;
+  --padding-inline-end: 0;
   --paddingInline: initial;
 
-  padding-inline-padding-inline: var(--padding-inline-padding-inline, var(--start var(--end)))
+  padding-inline: var(--padding-inline, var(--start var(--end)))
 }

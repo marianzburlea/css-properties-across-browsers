@@ -1,16 +1,16 @@
 .tablet.background {
-  --background-color: currentcolor;
-  --background-image: initial;
-  --background-position-x: initial;
-  --background-position-y: initial;
+  --background-color: transparent;
+  --background-image: none;
+  --background-position-x: 0;
+  --background-position-y: 0;
   --background-size: auto;
-  --background-repeat: initial;
-  --background-attachment: initial;
-  --background-origin: initial;
-  --background-clip: auto;
-  --background: initial;
-  --background-blend-mode: initial;
+  --background-repeat: repeat;
+  --background-attachment: scroll;
+  --background-origin: padding-box;
+  --background-clip: border-box;
+  --background: transparent;
+  --background-blend-mode: normal;
 
-  background-background: var(--background-background, var(--color var(--image) var(--position-x) var(--position-y) var(--size) var(--repeat) var(--attachment) var(--origin) var(--clip)));
+  background: var(--background, var(--color var(--image) var(--position-x) var(--position-y) var(--size) var(--repeat) var(--attachment) var(--origin) var(--clip)));
   background-blend-mode: var(--background-blend-mode)
 }

@@ -1,9 +1,9 @@
 .tablet.offset {
-  --offset-anchor: initial;
-  --offset-distance: initial;
-  --offset-path: initial;
-  --offset-position: static;
-  --offset-rotate: none;
+  --offset-anchor: auto;
+  --offset-distance: 0;
+  --offset-path: none;
+  --offset-position: auto;
+  --offset-rotate: auto;
 
   offset-anchor: var(--offset-anchor);
   offset-distance: var(--offset-distance);

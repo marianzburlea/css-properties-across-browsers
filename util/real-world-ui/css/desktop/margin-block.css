@@ -1,7 +1,7 @@
 .desktop.margin-block {
-  --margin-block-start: initial;
-  --margin-block-end: initial;
+  --margin-block-start: 0;
+  --margin-block-end: 0;
   --marginBlock: initial;
 
-  margin-block-margin-block: var(--margin-block-margin-block, var(--start var(--end)))
+  margin-block: var(--margin-block, var(--start var(--end)))
 }

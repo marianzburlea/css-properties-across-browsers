@@ -14,10 +14,10 @@
   --justify-content: normal;
   --justify-items: legacy;
   --order: 0;
-  --flex-basis: initial;
-  --flex-grow: initial;
-  --flex-shrink: initial;
-  --flex: initial;
+  --flex-basis: auto;
+  --flex-grow: 0;
+  --flex-shrink: 1;
+  --flex: 0 1 auto;
 
   align-content: var(--align-content);
   align-items: var(--align-items);
@@ -26,7 +26,7 @@
   justify-content: var(--justify-content);
   justify-items: var(--justify-items);
   order: var(--order);
-  flex-flex: var(--flex-flex, var(--basis var(--grow) var(--shrink)))
+  flex: var(--flex, var(--basis var(--grow) var(--shrink)))
 }
 .desktop.individual {
   --align-self: auto;
@@ -36,7 +36,7 @@
   justify-self: var(--justify-self)
 }
 .desktop.appearance {
-  --appearance: auto;
+  --appearance: none;
 
   appearance: var(--appearance)
 }
@@ -45,7 +45,7 @@
   --block-size: auto;
   --box-sizing: content-box;
   --inline-size: auto;
-  --zoom: normal;
+  --zoom: auto;
 
   aspect-ratio: var(--aspect-ratio);
   block-size: var(--block-size);
@@ -177,15 +177,15 @@
   --vertical-align: baseline;
   --white-space-collapse: preserve;
   --writing-mode: horizontal-tb;
-  --text-align: initial;
-  --text-align-last: initial;
-  --text-anchor: initial;
-  --text-combine-upright: initial;
-  --text-indent: initial;
-  --text-orientation: initial;
-  --text-overflow: initial;
-  --text-rendering: initial;
-  --text-shadow: initial;
+  --text-align: start;
+  --text-align-last: auto;
+  --text-anchor: start;
+  --text-combine-upright: none;
+  --text-indent: 0;
+  --text-orientation: mixed;
+  --text-overflow: clip;
+  --text-rendering: auto;
+  --text-shadow: none;
   --text-transform: none;
 
   color: var(--color);
@@ -332,6 +332,15 @@
   line-height: var(--line-height);
   tab-size: var(--tab-size)
 }
+.desktop.height {
+  --height: auto;
+  --min-height: auto;
+  --max-height: none;
+
+  height: var(--height);
+  min-height: var(--min-height);
+  max-height: var(--max-height)
+}
 .desktop.image {
   --image-orientation: from-image;
   --image-rendering: auto;
@@ -346,13 +355,13 @@
 }
 .desktop.outline {
   --outline-offset: 0;
-  --outline-width: initial;
-  --outline-style: initial;
-  --outline-color: currentcolor;
-  --outline: initial;
+  --outline-width: medium;
+  --outline-style: none;
+  --outline-color: invert;
+  --outline: invert;
 
   outline-offset: var(--outline-offset);
-  outline-outline: var(--outline-outline, var(--width var(--style) var(--color)))
+  outline: var(--outline, var(--width var(--style) var(--color)))
 }
 .desktop.media {
   --size: auto;
@@ -361,14 +370,14 @@
 }
 .desktop.transition {
   --transition-behavior: auto;
-  --transition-property: initial;
-  --transition-duration: initial;
-  --transition-timing-function: initial;
-  --transition-delay: initial;
-  --transition: initial;
+  --transition-property: all;
+  --transition-duration: 0s;
+  --transition-timing-function: ease;
+  --transition-delay: 0s;
+  --transition: all 0s ease 0s;
 
   transition-behavior: var(--transition-behavior);
-  transition-transition: var(--transition-transition, var(--property var(--duration) var(--timing-function) var(--delay)))
+  transition: var(--transition, var(--property var(--duration) var(--timing-function) var(--delay)))
 }
 .desktop.unicode {
   --unicode-bidi: normal;
@@ -380,51 +389,60 @@
 
   visibility: var(--visibility)
 }
+.desktop.width {
+  --width: auto;
+  --min-width: auto;
+  --max-width: none;
+
+  width: var(--width);
+  min-width: var(--min-width);
+  max-width: var(--max-width)
+}
 .desktop.optimization {
   --will-change: auto;
 
   will-change: var(--will-change)
 }
 .desktop.animation {
-  --animation-name: initial;
-  --animation-duration: initial;
-  --animation-timing-function: initial;
-  --animation-delay: initial;
-  --animation-iteration-count: initial;
-  --animation-direction: ltr;
-  --animation-fill-mode: initial;
-  --animation-play-state: initial;
-  --animation: initial;
-  --animation-composition: initial;
+  --animation-name: none;
+  --animation-duration: 0s;
+  --animation-timing-function: ease;
+  --animation-delay: 0s;
+  --animation-iteration-count: 1;
+  --animation-direction: normal;
+  --animation-fill-mode: none;
+  --animation-play-state: running;
+  --animation: none;
+  --animation-composition: replace;
 
-  animation-animation: var(--animation-animation, var(--name var(--duration) var(--timing-function) var(--delay) var(--iteration-count) var(--direction) var(--fill-mode) var(--play-state)));
+  animation: var(--animation, var(--name var(--duration) var(--timing-function) var(--delay) var(--iteration-count) var(--direction) var(--fill-mode) var(--play-state)));
   animation-composition: var(--animation-composition)
 }
 .desktop.background {
-  --background-color: currentcolor;
-  --background-image: initial;
-  --background-position-x: initial;
-  --background-position-y: initial;
+  --background-color: transparent;
+  --background-image: none;
+  --background-position-x: 0;
+  --background-position-y: 0;
   --background-size: auto;
-  --background-repeat: initial;
-  --background-attachment: initial;
-  --background-origin: initial;
-  --background-clip: auto;
-  --background: initial;
-  --background-blend-mode: initial;
+  --background-repeat: repeat;
+  --background-attachment: scroll;
+  --background-origin: padding-box;
+  --background-clip: border-box;
+  --background: transparent;
+  --background-blend-mode: normal;
 
-  background-background: var(--background-background, var(--color var(--image) var(--position-x) var(--position-y) var(--size) var(--repeat) var(--attachment) var(--origin) var(--clip)));
+  background: var(--background, var(--color var(--image) var(--position-x) var(--position-y) var(--size) var(--repeat) var(--attachment) var(--origin) var(--clip)));
   background-blend-mode: var(--background-blend-mode)
 }
 .desktop.border-image {
-  --border-image-source: initial;
-  --border-image-slice: initial;
-  --border-image-width: initial;
-  --border-image-outset: initial;
-  --border-image-repeat: initial;
+  --border-image-source: none;
+  --border-image-slice: 100%;
+  --border-image-width: 1;
+  --border-image-outset: 0;
+  --border-image-repeat: stretch;
   --borderImage: initial;
 
-  border-image-border-image: var(--border-image-border-image, var(--source var(--slice) var(--width) var(--outset) var(--repeat)))
+  border-image: var(--border-image, var(--source var(--slice) var(--width) var(--outset) var(--repeat)))
 }
 .desktop.border-block-start {
   --border-block-start-start-width: initial;
@@ -432,7 +450,7 @@
   --border-block-start-start-color: initial;
   --borderBlockStart: initial;
 
-  border-block-start-border-block-start: var(--border-block-start-border-block-start, var(--start-width var(--start-style) var(--start-color)))
+  border-block-start: var(--border-block-start, var(--start-width var(--start-style) var(--start-color)))
 }
 .desktop.border-block-end {
   --border-block-end-end-width: initial;
@@ -440,7 +458,7 @@
   --border-block-end-end-color: initial;
   --borderBlockEnd: initial;
 
-  border-block-end-border-block-end: var(--border-block-end-border-block-end, var(--end-width var(--end-style) var(--end-color)))
+  border-block-end: var(--border-block-end, var(--end-width var(--end-style) var(--end-color)))
 }
 .desktop.border-inline-start {
   --border-inline-start-start-width: initial;
@@ -448,7 +466,7 @@
   --border-inline-start-start-color: initial;
   --borderInlineStart: initial;
 
-  border-inline-start-border-inline-start: var(--border-inline-start-border-inline-start, var(--start-width var(--start-style) var(--start-color)))
+  border-inline-start: var(--border-inline-start, var(--start-width var(--start-style) var(--start-color)))
 }
 .desktop.border-inline-end {
   --border-inline-end-end-width: initial;
@@ -456,58 +474,58 @@
   --border-inline-end-end-color: initial;
   --borderInlineEnd: initial;
 
-  border-inline-end-border-inline-end: var(--border-inline-end-border-inline-end, var(--end-width var(--end-style) var(--end-color)))
+  border-inline-end: var(--border-inline-end, var(--end-width var(--end-style) var(--end-color)))
 }
 .desktop.border-top {
-  --border-top-width: initial;
-  --border-top-style: initial;
+  --border-top-width: medium;
+  --border-top-style: none;
   --border-top-color: currentcolor;
   --borderTop: initial;
-  --border-top-left-radius: initial;
-  --border-top-right-radius: initial;
+  --border-top-left-radius: 0;
+  --border-top-right-radius: 0;
 
-  border-top-border-top: var(--border-top-border-top, var(--width var(--style) var(--color)));
+  border-top: var(--border-top, var(--width var(--style) var(--color)));
   border-top-left-radius: var(--border-top-left-radius);
   border-top-right-radius: var(--border-top-right-radius)
 }
 .desktop.border-right {
-  --border-right-width: initial;
-  --border-right-style: initial;
+  --border-right-width: medium;
+  --border-right-style: none;
   --border-right-color: currentcolor;
   --borderRight: initial;
 
-  border-right-border-right: var(--border-right-border-right, var(--width var(--style) var(--color)))
+  border-right: var(--border-right, var(--width var(--style) var(--color)))
 }
 .desktop.border-bottom {
-  --border-bottom-width: initial;
-  --border-bottom-style: initial;
+  --border-bottom-width: medium;
+  --border-bottom-style: none;
   --border-bottom-color: currentcolor;
   --borderBottom: initial;
-  --border-bottom-left-radius: initial;
-  --border-bottom-right-radius: initial;
+  --border-bottom-left-radius: 0;
+  --border-bottom-right-radius: 0;
 
-  border-bottom-border-bottom: var(--border-bottom-border-bottom, var(--width var(--style) var(--color)));
+  border-bottom: var(--border-bottom, var(--width var(--style) var(--color)));
   border-bottom-left-radius: var(--border-bottom-left-radius);
   border-bottom-right-radius: var(--border-bottom-right-radius)
 }
 .desktop.border-left {
-  --border-left-width: initial;
-  --border-left-style: initial;
+  --border-left-width: medium;
+  --border-left-style: none;
   --border-left-color: currentcolor;
   --borderLeft: initial;
 
-  border-left-border-left: var(--border-left-border-left, var(--width var(--style) var(--color)))
+  border-left: var(--border-left, var(--width var(--style) var(--color)))
 }
 .desktop.border-start {
-  --border-start-end-radius: initial;
-  --border-start-start-radius: initial;
+  --border-start-end-radius: 0;
+  --border-start-start-radius: 0;
 
   border-start-end-radius: var(--border-start-end-radius);
   border-start-start-radius: var(--border-start-start-radius)
 }
 .desktop.border-end {
-  --border-end-end-radius: initial;
-  --border-end-start-radius: initial;
+  --border-end-end-radius: 0;
+  --border-end-start-radius: 0;
 
   border-end-end-radius: var(--border-end-end-radius);
   border-end-start-radius: var(--border-end-start-radius)
@@ -515,19 +533,19 @@
 .desktop.border {
   --border-width: initial;
   --border-style: initial;
-  --border-color: currentcolor;
-  --border: initial;
+  --border-color: initial;
+  --border: medium none currentcolor;
 
-  border-border: var(--border-border, var(--width var(--style) var(--color)))
+  border: var(--border, var(--width var(--style) var(--color)))
 }
 .desktop.column {
-  --column-count: initial;
-  --column-fill: black;
-  --column-rule-color: initial;
-  --column-rule-style: initial;
-  --column-rule-width: initial;
-  --column-span: initial;
-  --column-width: initial;
+  --column-count: auto;
+  --column-fill: balance;
+  --column-rule-color: currentcolor;
+  --column-rule-style: none;
+  --column-rule-width: medium;
+  --column-span: none;
+  --column-width: auto;
 
   column-count: var(--column-count);
   column-fill: var(--column-fill);
@@ -538,67 +556,67 @@
   column-width: var(--column-width)
 }
 .desktop.padding {
-  --padding-top: auto;
-  --padding-right: auto;
-  --padding-bottom: auto;
-  --padding-left: auto;
-  --padding: initial;
+  --padding-top: 0;
+  --padding-right: 0;
+  --padding-bottom: 0;
+  --padding-left: 0;
+  --padding: 0;
 
-  padding-padding: var(--padding-padding, var(--top var(--right) var(--bottom) var(--left)))
+  padding: var(--padding, var(--top var(--right) var(--bottom) var(--left)))
 }
 .desktop.padding-block {
-  --padding-block-start: initial;
-  --padding-block-end: initial;
+  --padding-block-start: 0;
+  --padding-block-end: 0;
   --paddingBlock: initial;
 
-  padding-block-padding-block: var(--padding-block-padding-block, var(--start var(--end)))
+  padding-block: var(--padding-block, var(--start var(--end)))
 }
 .desktop.padding-inline {
-  --padding-inline-start: initial;
-  --padding-inline-end: initial;
+  --padding-inline-start: 0;
+  --padding-inline-end: 0;
   --paddingInline: initial;
 
-  padding-inline-padding-inline: var(--padding-inline-padding-inline, var(--start var(--end)))
+  padding-inline: var(--padding-inline, var(--start var(--end)))
 }
 .desktop.font {
-  --font-style: initial;
+  --font-style: normal;
   --font-variant: initial;
-  --font-weight: initial;
-  --font-stretch: initial;
-  --font-size: auto;
-  --font-line-height: normal;
-  --font-family: initial;
-  --font: normal 400 medium / normal serif;
+  --font-weight: 400;
+  --font-stretch: normal;
+  --font-size: 16;
+  --font-line-height: initial;
+  --font-family: serif;
+  --font: 16px sans-serif;
 
-  font-font: var(--font-font, var(--style var(--variant) var(--weight) var(--stretch) var(--size) var(--line-height) var(--family)))
+  font: var(--font, var(--style var(--variant) var(--weight) var(--stretch) var(--size) var(--line-height) var(--family)))
 }
 .desktop.font-synthesis {
-  --font-synthesis-weight: initial;
-  --font-synthesis-style: initial;
-  --font-synthesis-small-caps: initial;
+  --font-synthesis-weight: auto;
+  --font-synthesis-style: auto;
+  --font-synthesis-small-caps: auto;
 
   font-synthesis-weight: var(--font-synthesis-weight);
   font-synthesis-style: var(--font-synthesis-style);
   font-synthesis-small-caps: var(--font-synthesis-small-caps)
 }
 .desktop.gap {
-  --row-gap: initial;
-  --column-gap: initial;
-  --gap: initial;
+  --row-gap: normal;
+  --column-gap: normal;
+  --gap: normal;
 
-  gap-gap: var(--gap-gap, var(--row var(--column)))
+  gap: var(--gap, var(--row var(--column)))
 }
 .desktop.grid {
-  --grid-auto-columns: initial;
-  --grid-auto-flow: initial;
-  --grid-auto-rows: initial;
-  --grid-column-start: initial;
-  --grid-column-end: initial;
-  --grid-row-start: initial;
-  --grid-row-end: initial;
-  --grid-template-areas: initial;
-  --grid-template-columns: initial;
-  --grid-template-rows: initial;
+  --grid-auto-columns: auto;
+  --grid-auto-flow: row;
+  --grid-auto-rows: auto;
+  --grid-column-start: auto;
+  --grid-column-end: auto;
+  --grid-row-start: auto;
+  --grid-row-end: auto;
+  --grid-template-areas: none;
+  --grid-template-columns: none;
+  --grid-template-rows: none;
 
   grid-auto-columns: var(--grid-auto-columns);
   grid-auto-flow: var(--grid-auto-flow);
@@ -612,81 +630,67 @@
   grid-template-rows: var(--grid-template-rows)
 }
 .desktop.inset-block {
-  --inset-block-start: initial;
-  --inset-block-end: initial;
+  --inset-block-start: auto;
+  --inset-block-end: auto;
   --insetBlock: initial;
 
-  inset-block-inset-block: var(--inset-block-inset-block, var(--start var(--end)))
+  inset-block: var(--inset-block, var(--start var(--end)))
 }
 .desktop.inset-inline {
-  --inset-inline-start: initial;
-  --inset-inline-end: initial;
+  --inset-inline-start: auto;
+  --inset-inline-end: auto;
   --insetInline: initial;
 
-  inset-inline-inset-inline: var(--inset-inline-inset-inline, var(--start var(--end)))
+  inset-inline: var(--inset-inline, var(--start var(--end)))
 }
 .desktop.margin {
-  --margin-top: auto;
-  --margin-right: auto;
-  --margin-bottom: auto;
-  --margin-left: auto;
-  --margin: initial;
+  --margin-top: 0;
+  --margin-right: 0;
+  --margin-bottom: 0;
+  --margin-left: 0;
+  --margin: 0;
 
-  margin-margin: var(--margin-margin, var(--top var(--right) var(--bottom) var(--left)))
+  margin: var(--margin, var(--top var(--right) var(--bottom) var(--left)))
 }
 .desktop.margin-block {
-  --margin-block-start: initial;
-  --margin-block-end: initial;
+  --margin-block-start: 0;
+  --margin-block-end: 0;
   --marginBlock: initial;
 
-  margin-block-margin-block: var(--margin-block-margin-block, var(--start var(--end)))
+  margin-block: var(--margin-block, var(--start var(--end)))
 }
 .desktop.margin-inline {
-  --margin-inline-start: initial;
-  --margin-inline-end: initial;
+  --margin-inline-start: 0;
+  --margin-inline-end: 0;
   --marginInline: initial;
 
-  margin-inline-margin-inline: var(--margin-inline-margin-inline, var(--start var(--end)))
-}
-.desktop.width {
-  --min-width: initial;
-  --max-width: initial;
-
-  min-width: var(--min-width);
-  max-width: var(--max-width)
-}
-.desktop.height {
-  --min-height: initial;
-  --max-height: initial;
-
-  min-height: var(--min-height);
-  max-height: var(--max-height)
+  margin-inline: var(--margin-inline, var(--start var(--end)))
 }
 .desktop.marker {
-  --marker-end: initial;
-  --marker-mid: initial;
-  --marker-start: initial;
+  --marker-end: none;
+  --marker-mid: none;
+  --marker-start: none;
 
   marker-end: var(--marker-end);
   marker-mid: var(--marker-mid);
   marker-start: var(--marker-start)
 }
 .desktop.mask {
-  --mask-image: initial;
+  --mask-image: none;
   --mask-position-x: initial;
   --mask-position-y: initial;
   --mask-size: auto;
-  --mask-repeat: initial;
-  --mask-origin: initial;
-  --mask-clip: auto;
-  --mask-mode: initial;
-  --mask: initial;
+  --mask-repeat: no-repeat;
+  --mask-origin: border-box;
+  --mask-clip: border-box;
+  --mask-mode: match-source;
+  --mask: none;
 
-  mask-mask: var(--mask-mask, var(--image var(--position-x) var(--position-y) var(--size) var(--repeat) var(--origin) var(--clip) var(--mode)))
+  mask: var(--mask, var(--image var(--position-x) var(--position-y) var(--size) var(--repeat) var(--origin) var(--clip) var(--mode)))
 }
 .desktop.max {
-  --max-block-size: auto;
-  --max-inline-size: auto;
+  --max-block-size: none;
+  --max-inline-size: none;
 
   max-block-size: var(--max-block-size);
   max-inline-size: var(--max-inline-size)
@@ -699,18 +703,18 @@
   min-inline-size: var(--min-inline-size)
 }
 .desktop.object {
-  --object-fit: initial;
-  --object-position: static;
+  --object-fit: fill;
+  --object-position: 50% 50%;
 
   object-fit: var(--object-fit);
   object-position: var(--object-position)
 }
 .desktop.offset {
-  --offset-anchor: initial;
-  --offset-distance: initial;
-  --offset-path: initial;
-  --offset-position: static;
-  --offset-rotate: none;
+  --offset-anchor: auto;
+  --offset-distance: 0;
+  --offset-path: none;
+  --offset-position: auto;
+  --offset-rotate: auto;
 
   offset-anchor: var(--offset-anchor);
   offset-distance: var(--offset-distance);
@@ -719,17 +723,17 @@
   offset-rotate: var(--offset-rotate)
 }
 .desktop.overflow {
-  --overflow-x: initial;
-  --overflow-y: initial;
-  --overflow: initial;
+  --overflow-x: visible;
+  --overflow-y: visible;
+  --overflow: visible;
 
-  overflow-overflow: var(--overflow-overflow, var(--x var(--y)))
+  overflow: var(--overflow, var(--x var(--y)))
 }
 .desktop.overscroll-behavior {
-  --overscroll-behavior-block: initial;
-  --overscroll-behavior-inline: initial;
-  --overscroll-behavior-x: initial;
-  --overscroll-behavior-y: initial;
+  --overscroll-behavior-block: auto;
+  --overscroll-behavior-inline: auto;
+  --overscroll-behavior-x: auto;
+  --overscroll-behavior-y: auto;
 
   overscroll-behavior-block: var(--overscroll-behavior-block);
   overscroll-behavior-inline: var(--overscroll-behavior-inline);
@@ -737,97 +741,97 @@
   overscroll-behavior-y: var(--overscroll-behavior-y)
 }
 .desktop.page-break {
-  --page-break-after: initial;
-  --page-break-before: initial;
-  --page-break-inside: initial;
+  --page-break-after: auto;
+  --page-break-before: auto;
+  --page-break-inside: auto;
 
   page-break-after: var(--page-break-after);
   page-break-before: var(--page-break-before);
   page-break-inside: var(--page-break-inside)
 }
 .desktop.place {
-  --place-items: initial;
+  --place-items: normal;
   --place-content: normal;
-  --place-self: initial;
+  --place-self: auto;
 
   place-items: var(--place-items);
   place-content: var(--place-content);
   place-self: var(--place-self)
 }
 .desktop.ruby {
-  --ruby-align: initial;
-  --ruby-position: static;
+  --ruby-align: space-around;
+  --ruby-position: over;
 
   ruby-align: var(--ruby-align);
   ruby-position: var(--ruby-position)
 }
 .desktop.scroll-margin {
-  --scroll-margin-top: auto;
-  --scroll-margin-right: auto;
-  --scroll-margin-bottom: auto;
-  --scroll-margin-left: auto;
-  --scrollMargin: initial;
+  --scroll-margin-top: 0;
+  --scroll-margin-right: 0;
+  --scroll-margin-bottom: 0;
+  --scroll-margin-left: 0;
+  --scrollMargin: 0;
 
-  scroll-margin-scroll-margin: var(--scroll-margin-scroll-margin, var(--top var(--right) var(--bottom) var(--left)))
+  scroll-margin: var(--scroll-margin, var(--top var(--right) var(--bottom) var(--left)))
 }
 .desktop.scroll-margin-block {
-  --scroll-margin-block-start: initial;
-  --scroll-margin-block-end: initial;
+  --scroll-margin-block-start: 0;
+  --scroll-margin-block-end: 0;
   --scrollMarginBlock: initial;
 
-  scroll-margin-block-scroll-margin-block: var(--scroll-margin-block-scroll-margin-block, var(--start var(--end)))
+  scroll-margin-block: var(--scroll-margin-block, var(--start var(--end)))
 }
 .desktop.scroll-margin-inline {
-  --scroll-margin-inline-start: initial;
-  --scroll-margin-inline-end: initial;
+  --scroll-margin-inline-start: 0;
+  --scroll-margin-inline-end: 0;
   --scrollMarginInline: initial;
 
-  scroll-margin-inline-scroll-margin-inline: var(--scroll-margin-inline-scroll-margin-inline, var(--start var(--end)))
+  scroll-margin-inline: var(--scroll-margin-inline, var(--start var(--end)))
 }
 .desktop.scroll-padding {
-  --scroll-padding-top: auto;
-  --scroll-padding-right: auto;
-  --scroll-padding-bottom: auto;
-  --scroll-padding-left: auto;
-  --scrollPadding: initial;
+  --scroll-padding-top: 0;
+  --scroll-padding-right: 0;
+  --scroll-padding-bottom: 0;
+  --scroll-padding-left: 0;
+  --scrollPadding: 0;
 
-  scroll-padding-scroll-padding: var(--scroll-padding-scroll-padding, var(--top var(--right) var(--bottom) var(--left)))
+  scroll-padding: var(--scroll-padding, var(--top var(--right) var(--bottom) var(--left)))
 }
 .desktop.scroll-padding-block {
-  --scroll-padding-block-start: initial;
-  --scroll-padding-block-end: initial;
+  --scroll-padding-block-start: 0;
+  --scroll-padding-block-end: 0;
 
   scroll-padding-block-start: var(--scroll-padding-block-start);
   scroll-padding-block-end: var(--scroll-padding-block-end)
 }
 .desktop.scroll-padding-inline {
-  --scroll-padding-inline-start: initial;
-  --scroll-padding-inline-end: initial;
+  --scroll-padding-inline-start: 0;
+  --scroll-padding-inline-end: 0;
 
   scroll-padding-inline-start: var(--scroll-padding-inline-start);
   scroll-padding-inline-end: var(--scroll-padding-inline-end)
 }
 .desktop.scroll-snap {
-  --scroll-snap-align: initial;
-  --scroll-snap-stop: initial;
-  --scroll-snap-type: initial;
+  --scroll-snap-align: none;
+  --scroll-snap-stop: normal;
+  --scroll-snap-type: none;
 
   scroll-snap-align: var(--scroll-snap-align);
   scroll-snap-stop: var(--scroll-snap-stop);
   scroll-snap-type: var(--scroll-snap-type)
 }
 .desktop.scrollbar {
-  --scrollbar-gutter: initial;
-  --scrollbar-width: initial;
+  --scrollbar-gutter: auto;
+  --scrollbar-width: auto;
 
   scrollbar-gutter: var(--scrollbar-gutter);
   scrollbar-width: var(--scrollbar-width)
 }
 .desktop.shape {
-  --shape-image-threshold: initial;
-  --shape-margin: initial;
-  --shape-outside: initial;
-  --shape-rendering: initial;
+  --shape-image-threshold: 0;
+  --shape-margin: 0;
+  --shape-outside: none;
+  --shape-rendering: auto;
 
   shape-image-threshold: var(--shape-image-threshold);
   shape-margin: var(--shape-margin);
@@ -836,10 +840,10 @@
 }
 .desktop.text-decoration {
   --text-decoration-color: currentcolor;
-  --text-decoration-line: initial;
-  --text-decoration-skip-ink: initial;
-  --text-decoration-style: initial;
-  --text-decoration-thickness: initial;
+  --text-decoration-line: none;
+  --text-decoration-skip-ink: auto;
+  --text-decoration-style: solid;
+  --text-decoration-thickness: auto;
 
   text-decoration-color: var(--text-decoration-color);
   text-decoration-line: var(--text-decoration-line);
@@ -849,30 +853,30 @@
 }
 .desktop.text-emphasis {
   --text-emphasis-color: currentcolor;
-  --text-emphasis-position: static;
-  --text-emphasis-style: initial;
+  --text-emphasis-position: over right;
+  --text-emphasis-style: none;
 
   text-emphasis-color: var(--text-emphasis-color);
   text-emphasis-position: var(--text-emphasis-position);
   text-emphasis-style: var(--text-emphasis-style)
 }
 .desktop.text-underline {
-  --text-underline-offset: initial;
-  --text-underline-position: static;
+  --text-underline-offset: auto;
+  --text-underline-position: auto;
 
   text-underline-offset: var(--text-underline-offset);
   text-underline-position: var(--text-underline-position)
 }
 .desktop.text-wrap {
-  --text-wrap-mode: initial;
-  --text-wrap-style: initial;
+  --text-wrap-mode: normal;
+  --text-wrap-style: normal;
 
   text-wrap-mode: var(--text-wrap-mode);
   text-wrap-style: var(--text-wrap-style)
 }
 .desktop.word {
-  --word-break: initial;
-  --word-spacing: initial;
+  --word-break: normal;
+  --word-spacing: 0;
 
   word-break: var(--word-break);
   word-spacing: var(--word-spacing)

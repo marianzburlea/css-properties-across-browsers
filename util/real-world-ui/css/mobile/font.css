@@ -1,12 +1,12 @@
 .font {
-  --font-style: initial;
+  --font-style: normal;
   --font-variant: initial;
-  --font-weight: initial;
-  --font-stretch: initial;
-  --font-size: auto;
-  --font-line-height: normal;
-  --font-family: initial;
-  --font: normal 400 medium / normal serif;
+  --font-weight: 400;
+  --font-stretch: normal;
+  --font-size: 16;
+  --font-line-height: initial;
+  --font-family: serif;
+  --font: 16px sans-serif;
 
-  font-font: var(--font-font, var(--style var(--variant) var(--weight) var(--stretch) var(--size) var(--line-height) var(--family)))
+  font: var(--font, var(--style var(--variant) var(--weight) var(--stretch) var(--size) var(--line-height) var(--family)))
 }

@@ -52,11 +52,6 @@ for (const className of cssPropertyByGroupList) {
   cssPropertyByGroupMap[className].map((cssProperty) => {
     const kebabProperty = camelToKebabCase(cssProperty)
 
-    // row.push(
-    //   `--${kebabProperty}: ${
-    //     cssDefaultPropertyValueMap[cssProperty] || 'initial'
-    //   }`
-    // )
     row.reset.push({
       left: kebabProperty,
       right: cssDefaultPropertyValueMap[cssProperty] ?? 'initial',
@@ -72,11 +67,7 @@ for (const className of cssPropertyByGroupList) {
     className,
     row,
   }
-
-  // fs.writeFileSync(`css/${groupName}.css`, cssString)
 }
-
-console.log(finalCssClassMap.flex)
 
 for (const cssCamelCaseProperty in cssCondensedPropertyMap) {
   const className = camelToKebabCase(
@@ -103,37 +94,35 @@ for (const cssCamelCaseProperty in cssCondensedPropertyMap) {
       (subProp) => !condensedPropList.includes(subProp)
     )
   }
-  // if (cssCamelCaseProperty === 'animation') {
-  //   console.log('')
-  //   console.log(cssCamelCaseProperty)
-  //   console.log(condensedPropList)
-  //   console.log(notCondensedPropList)
-  //   console.log('')
-  // }
 
   if (Array.isArray(condensedPropList) && condensedPropList.length > 0) {
-    console.log('YES')
     condensedPropList.map((condensedProp) => {
       const kebabProperty = cssCondensedPropertyMap[cssCamelCaseProperty]
         ?.prefix
         ? `${camelToKebabCase(condensedProp)}-${className}`
         : `${className}-${camelToKebabCase(condensedProp)}`
+
+      const defaultValueKey = cssCondensedPropertyMap[cssCamelCaseProperty]
+        ?.prefix
+        ? condensedProp +
+          cssCamelCaseProperty.slice(0, 1).toUpperCase() +
+          cssCamelCaseProperty.slice(1)
+        : cssCamelCaseProperty +
+          condensedProp.slice(0, 1).toUpperCase() +
+          condensedProp.slice(1)
+
       row.reset.push({
         left: kebabProperty,
-        right: cssDefaultPropertyValueMap[condensedProp] || 'initial',
+        right: cssDefaultPropertyValueMap[defaultValueKey] ?? 'initial',
       })
     })
 
     row.reset.push({
       left: cssCamelCaseProperty,
-      right: cssDefaultPropertyValueMap[cssCamelCaseProperty] || 'initial',
+      right: cssDefaultPropertyValueMap[cssCamelCaseProperty] ?? 'initial',
     })
 
-    // const kebabProperty = camelToKebabCase(cssCamelCaseProperty)
-
-    const kebabProperty = cssCondensedPropertyMap[cssCamelCaseProperty]?.prefix
-      ? `${camelToKebabCase(cssCamelCaseProperty)}-${className}`
-      : `${className}-${camelToKebabCase(cssCamelCaseProperty)}`
+    const kebabProperty = camelToKebabCase(cssCamelCaseProperty)
 
     row.declaration.push({
       left: kebabProperty,
@@ -151,9 +140,17 @@ for (const cssCamelCaseProperty in cssCondensedPropertyMap) {
       ? `${camelToKebabCase(subProp)}-${className}`
       : `${className}-${camelToKebabCase(subProp)}`
 
+    const defaultValueKey = cssCondensedPropertyMap[cssCamelCaseProperty]
+      ?.prefix
+      ? subProp +
+        cssCamelCaseProperty.slice(0, 1).toUpperCase() +
+        cssCamelCaseProperty.slice(1)
+      : cssCamelCaseProperty +
+        subProp.slice(0, 1).toUpperCase() +
+        subProp.slice(1)
     row.reset.push({
       left: kebabProperty,
-      right: cssDefaultPropertyValueMap[subProp] || 'initial',
+      right: cssDefaultPropertyValueMap[defaultValueKey] ?? 'initial',
     })
 
     row.declaration.push({
@@ -174,10 +171,6 @@ for (const cssCamelCaseProperty in cssCondensedPropertyMap) {
     }
   }
 }
-
-console.log(JSON.stringify(finalCssClassMap.animation, null, 2))
-console.log(Object.keys(finalCssClassMap))
-// console.log(JSON.stringify(finalCssClassMap.borderTop, null, 2))
 
 // Generate mobile, tablet, and desktop CSS
 const allCss: {

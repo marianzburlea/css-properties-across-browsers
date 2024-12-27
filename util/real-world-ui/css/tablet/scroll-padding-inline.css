@@ -1,6 +1,6 @@
 .tablet.scroll-padding-inline {
-  --scroll-padding-inline-start: initial;
-  --scroll-padding-inline-end: initial;
+  --scroll-padding-inline-start: 0;
+  --scroll-padding-inline-end: 0;
 
   scroll-padding-inline-start: var(--scroll-padding-inline-start);
   scroll-padding-inline-end: var(--scroll-padding-inline-end)

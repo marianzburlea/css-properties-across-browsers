@@ -1,7 +1,7 @@
 .place {
-  --place-items: initial;
+  --place-items: normal;
   --place-content: normal;
-  --place-self: initial;
+  --place-self: auto;
 
   place-items: var(--place-items);
   place-content: var(--place-content);

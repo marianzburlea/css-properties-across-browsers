@@ -1,7 +1,7 @@
 .tablet.text-emphasis {
   --text-emphasis-color: currentcolor;
-  --text-emphasis-position: static;
-  --text-emphasis-style: initial;
+  --text-emphasis-position: over right;
+  --text-emphasis-style: none;
 
   text-emphasis-color: var(--text-emphasis-color);
   text-emphasis-position: var(--text-emphasis-position);

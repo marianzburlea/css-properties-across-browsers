@@ -1,6 +1,6 @@
 .tablet.word {
-  --word-break: initial;
-  --word-spacing: initial;
+  --word-break: normal;
+  --word-spacing: 0;
 
   word-break: var(--word-break);
   word-spacing: var(--word-spacing)

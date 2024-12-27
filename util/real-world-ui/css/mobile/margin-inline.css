@@ -1,7 +1,7 @@
 .margin-inline {
-  --margin-inline-start: initial;
-  --margin-inline-end: initial;
+  --margin-inline-start: 0;
+  --margin-inline-end: 0;
   --marginInline: initial;
 
-  margin-inline-margin-inline: var(--margin-inline-margin-inline, var(--start var(--end)))
+  margin-inline: var(--margin-inline, var(--start var(--end)))
 }

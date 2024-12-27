@@ -6,10 +6,10 @@
   --justify-content: normal;
   --justify-items: legacy;
   --order: 0;
-  --flex-basis: initial;
-  --flex-grow: initial;
-  --flex-shrink: initial;
-  --flex: initial;
+  --flex-basis: auto;
+  --flex-grow: 0;
+  --flex-shrink: 1;
+  --flex: 0 1 auto;
 
   align-content: var(--align-content);
   align-items: var(--align-items);
@@ -18,5 +18,5 @@
   justify-content: var(--justify-content);
   justify-items: var(--justify-items);
   order: var(--order);
-  flex-flex: var(--flex-flex, var(--basis var(--grow) var(--shrink)))
+  flex: var(--flex, var(--basis var(--grow) var(--shrink)))
 }

@@ -1,13 +1,13 @@
 .desktop.mask {
-  --mask-image: initial;
+  --mask-image: none;
   --mask-position-x: initial;
   --mask-position-y: initial;
   --mask-size: auto;
-  --mask-repeat: initial;
-  --mask-origin: initial;
-  --mask-clip: auto;
-  --mask-mode: initial;
-  --mask: initial;
+  --mask-repeat: no-repeat;
+  --mask-origin: border-box;
+  --mask-clip: border-box;
+  --mask-mode: match-source;
+  --mask: none;
 
-  mask-mask: var(--mask-mask, var(--image var(--position-x) var(--position-y) var(--size) var(--repeat) var(--origin) var(--clip) var(--mode)))
+  mask: var(--mask, var(--image var(--position-x) var(--position-y) var(--size) var(--repeat) var(--origin) var(--clip) var(--mode)))
 }

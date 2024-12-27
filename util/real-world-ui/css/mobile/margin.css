@@ -1,9 +1,9 @@
 .margin {
-  --margin-top: auto;
-  --margin-right: auto;
-  --margin-bottom: auto;
-  --margin-left: auto;
-  --margin: initial;
+  --margin-top: 0;
+  --margin-right: 0;
+  --margin-bottom: 0;
+  --margin-left: 0;
+  --margin: 0;
 
-  margin-margin: var(--margin-margin, var(--top var(--right) var(--bottom) var(--left)))
+  margin: var(--margin, var(--top var(--right) var(--bottom) var(--left)))
 }

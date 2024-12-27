@@ -1,7 +1,7 @@
 .scroll-margin-block {
-  --scroll-margin-block-start: initial;
-  --scroll-margin-block-end: initial;
+  --scroll-margin-block-start: 0;
+  --scroll-margin-block-end: 0;
   --scrollMarginBlock: initial;
 
-  scroll-margin-block-scroll-margin-block: var(--scroll-margin-block-scroll-margin-block, var(--start var(--end)))
+  scroll-margin-block: var(--scroll-margin-block, var(--start var(--end)))
 }

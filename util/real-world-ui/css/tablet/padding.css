@@ -1,9 +1,9 @@
 .tablet.padding {
-  --padding-top: auto;
-  --padding-right: auto;
-  --padding-bottom: auto;
-  --padding-left: auto;
-  --padding: initial;
+  --padding-top: 0;
+  --padding-right: 0;
+  --padding-bottom: 0;
+  --padding-left: 0;
+  --padding: 0;
 
-  padding-padding: var(--padding-padding, var(--top var(--right) var(--bottom) var(--left)))
+  padding: var(--padding, var(--top var(--right) var(--bottom) var(--left)))
 }

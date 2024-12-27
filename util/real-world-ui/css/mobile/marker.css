@@ -1,7 +1,7 @@
 .marker {
-  --marker-end: initial;
-  --marker-mid: initial;
-  --marker-start: initial;
+  --marker-end: none;
+  --marker-mid: none;
+  --marker-start: none;
 
   marker-end: var(--marker-end);
   marker-mid: var(--marker-mid);

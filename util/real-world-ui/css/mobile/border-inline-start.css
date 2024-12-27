@@ -4,5 +4,5 @@
   --border-inline-start-start-color: initial;
   --borderInlineStart: initial;
 
-  border-inline-start-border-inline-start: var(--border-inline-start-border-inline-start, var(--start-width var(--start-style) var(--start-color)))
+  border-inline-start: var(--border-inline-start, var(--start-width var(--start-style) var(--start-color)))
 }

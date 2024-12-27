@@ -1,5 +1,5 @@
 .desktop.appearance {
-  --appearance: auto;
+  --appearance: none;
 
   appearance: var(--appearance)
 }

@@ -1,8 +1,8 @@
 .border-right {
-  --border-right-width: initial;
-  --border-right-style: initial;
+  --border-right-width: medium;
+  --border-right-style: none;
   --border-right-color: currentcolor;
   --borderRight: initial;
 
-  border-right-border-right: var(--border-right-border-right, var(--width var(--style) var(--color)))
+  border-right: var(--border-right, var(--width var(--style) var(--color)))
 }

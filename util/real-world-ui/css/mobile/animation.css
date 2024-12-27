@@ -1,15 +1,15 @@
 .animation {
-  --animation-name: initial;
-  --animation-duration: initial;
-  --animation-timing-function: initial;
-  --animation-delay: initial;
-  --animation-iteration-count: initial;
-  --animation-direction: ltr;
-  --animation-fill-mode: initial;
-  --animation-play-state: initial;
-  --animation: initial;
-  --animation-composition: initial;
+  --animation-name: none;
+  --animation-duration: 0s;
+  --animation-timing-function: ease;
+  --animation-delay: 0s;
+  --animation-iteration-count: 1;
+  --animation-direction: normal;
+  --animation-fill-mode: none;
+  --animation-play-state: running;
+  --animation: none;
+  --animation-composition: replace;
 
-  animation-animation: var(--animation-animation, var(--name var(--duration) var(--timing-function) var(--delay) var(--iteration-count) var(--direction) var(--fill-mode) var(--play-state)));
+  animation: var(--animation, var(--name var(--duration) var(--timing-function) var(--delay) var(--iteration-count) var(--direction) var(--fill-mode) var(--play-state)));
   animation-composition: var(--animation-composition)
 }

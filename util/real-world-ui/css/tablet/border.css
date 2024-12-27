@@ -1,8 +1,8 @@
 .tablet.border {
   --border-width: initial;
   --border-style: initial;
-  --border-color: currentcolor;
-  --border: initial;
+  --border-color: initial;
+  --border: medium none currentcolor;
 
-  border-border: var(--border-border, var(--width var(--style) var(--color)))
+  border: var(--border, var(--width var(--style) var(--color)))
 }

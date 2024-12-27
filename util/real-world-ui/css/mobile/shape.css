@@ -1,8 +1,8 @@
 .shape {
-  --shape-image-threshold: initial;
-  --shape-margin: initial;
-  --shape-outside: initial;
-  --shape-rendering: initial;
+  --shape-image-threshold: 0;
+  --shape-margin: 0;
+  --shape-outside: none;
+  --shape-rendering: auto;
 
   shape-image-threshold: var(--shape-image-threshold);
   shape-margin: var(--shape-margin);

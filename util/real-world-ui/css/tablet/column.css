@@ -1,11 +1,11 @@
 .tablet.column {
-  --column-count: initial;
-  --column-fill: black;
-  --column-rule-color: initial;
-  --column-rule-style: initial;
-  --column-rule-width: initial;
-  --column-span: initial;
-  --column-width: initial;
+  --column-count: auto;
+  --column-fill: balance;
+  --column-rule-color: currentcolor;
+  --column-rule-style: none;
+  --column-rule-width: medium;
+  --column-span: none;
+  --column-width: auto;
 
   column-count: var(--column-count);
   column-fill: var(--column-fill);
