@@ -1,4 +1,13 @@
 .mask {
---mask-value: none;
-mask-value: var(--mask-value)
+  --mask-image: initial;
+  --mask-position-x: initial;
+  --mask-position-y: initial;
+  --mask-size: auto;
+  --mask-repeat: initial;
+  --mask-origin: initial;
+  --mask-clip: auto;
+  --mask-mode: initial;
+  --mask: initial;
+
+  mask: var(--mask, var(--image var(--position-x) var(--position-y) var(--size) var(--repeat) var(--origin) var(--clip) var(--mode)))
 }

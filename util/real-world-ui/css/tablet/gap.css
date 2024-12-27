@@ -1,5 +1,7 @@
-@media screen and (min-width: 48rem) {
-  .tablet.gap {
-    
-  }
+.tablet.gap {
+  --gap-row: initial;
+  --gap-column: initial;
+  --gap: initial;
+
+  gap: var(--gap, var(--row var(--column)))
 }

@@ -1,6 +1,5 @@
-@media screen and (min-width: 80rem) {
-  .desktop.caption {
-    --caption-side: top;
-    caption-side: var(--caption-side)
-  }
+.desktop.caption {
+  --caption-side: top;
+
+  caption-side: var(--caption-side)
 }

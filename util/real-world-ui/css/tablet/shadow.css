@@ -1,6 +1,5 @@
-@media screen and (min-width: 48rem) {
-  .tablet.shadow {
-    --box-shadow: none;
-    box-shadow: var(--box-shadow)
-  }
+.tablet.shadow {
+  --box-shadow: none;
+
+  box-shadow: var(--box-shadow)
 }

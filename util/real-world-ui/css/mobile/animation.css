@@ -1,4 +1,15 @@
 .animation {
---animation-composition: replace;
-animation-composition: var(--animation-composition)
+  --animation-name: initial;
+  --animation-duration: initial;
+  --animation-timing-function: initial;
+  --animation-delay: initial;
+  --animation-iteration-count: initial;
+  --animation-direction: ltr;
+  --animation-fill-mode: initial;
+  --animation-play-state: initial;
+  --animation: initial;
+  --animation-composition: initial;
+
+  animation: var(--animation, var(--name var(--duration) var(--timing-function) var(--delay) var(--iteration-count) var(--direction) var(--fill-mode) var(--play-state)));
+  animation-composition: var(--animation-composition)
 }

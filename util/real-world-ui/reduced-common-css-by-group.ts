@@ -23,6 +23,16 @@ export const cssCondensedPropertyMap = {
       timingFunction: 'ease',
     },
   },
+  flex: {
+    className: 'flex',
+    condensed: ['basis', 'grow', 'shrink'],
+    children: {
+      basis: 'auto',
+      grow: '0',
+      shrink: '1',
+    },
+  },
+
   background: {
     className: 'background',
     condensed: [
@@ -202,15 +212,6 @@ export const cssCondensedPropertyMap = {
       end: 'spacing',
     },
   },
-  flex: {
-    className: 'flex',
-    condensed: ['basis', 'grow', 'shrink'],
-    children: {
-      basis: 'auto',
-      grow: '0',
-      shrink: '1',
-    },
-  },
   font: {
     className: 'font',
     condensed: [
@@ -351,7 +352,6 @@ export const cssCondensedPropertyMap = {
       'mode',
     ],
     children: {
-      value: 'none',
       clip: 'border-box',
       image: 'none',
       mode: 'match-source',
@@ -711,7 +711,6 @@ export const cssPropertyMap = {
 
   opacity: 'visual-effect',
   order: 'flex',
-  orientation: 'media',
 
   outlineOffset: 'outline',
   overflowWrap: 'content-flow',

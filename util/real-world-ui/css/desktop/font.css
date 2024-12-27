@@ -1,5 +1,12 @@
-@media screen and (min-width: 80rem) {
-  .desktop.font {
-    
-  }
+.desktop.font {
+  --font-style: initial;
+  --font-variant: initial;
+  --font-weight: initial;
+  --font-stretch: initial;
+  --font-size: auto;
+  --font-line-height: normal;
+  --font-family: initial;
+  --font: normal 400 medium / normal serif;
+
+  font: var(--font, var(--style var(--variant) var(--weight) var(--stretch) var(--size) var(--line-height) var(--family)))
 }

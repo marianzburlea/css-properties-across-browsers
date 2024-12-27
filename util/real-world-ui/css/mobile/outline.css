@@ -1,4 +1,10 @@
 .outline {
---outline-offset: initial;
-outline-offset: var(--outline-offset)
+  --outline-offset: 0;
+  --outline-width: initial;
+  --outline-style: initial;
+  --outline-color: currentcolor;
+  --outline: initial;
+
+  outline-offset: var(--outline-offset);
+  outline: var(--outline, var(--width var(--style) var(--color)))
 }

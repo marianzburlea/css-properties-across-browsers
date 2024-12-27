@@ -1,5 +1,7 @@
-@media screen and (min-width: 80rem) {
-  .desktop.padding-inline {
-    
-  }
+.desktop.padding-inline {
+  --padding-inline-start: initial;
+  --padding-inline-end: initial;
+  --paddingInline: initial;
+
+  padding-inline: var(--padding-inline, var(--start var(--end)))
 }

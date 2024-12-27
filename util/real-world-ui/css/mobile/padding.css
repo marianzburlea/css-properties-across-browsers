@@ -1,3 +1,9 @@
 .padding {
+  --padding-top: auto;
+  --padding-right: auto;
+  --padding-bottom: auto;
+  --padding-left: auto;
+  --padding: initial;
 
+  padding: var(--padding, var(--top var(--right) var(--bottom) var(--left)))
 }

@@ -1,14 +1,13 @@
-@media screen and (min-width: 80rem) {
-  .desktop.box {
-    --aspect-ratio: auto;
-    aspect-ratio: var(--aspect-ratio);
-    --block-size: auto;
-    block-size: var(--block-size);
-    --box-sizing: content-box;
-    box-sizing: var(--box-sizing);
-    --inline-size: auto;
-    inline-size: var(--inline-size);
-    --zoom: normal;
-    zoom: var(--zoom)
-  }
+.desktop.box {
+  --aspect-ratio: auto;
+  --block-size: auto;
+  --box-sizing: content-box;
+  --inline-size: auto;
+  --zoom: normal;
+
+  aspect-ratio: var(--aspect-ratio);
+  block-size: var(--block-size);
+  box-sizing: var(--box-sizing);
+  inline-size: var(--inline-size);
+  zoom: var(--zoom)
 }

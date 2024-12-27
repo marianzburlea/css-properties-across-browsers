@@ -1,6 +1,5 @@
-@media screen and (min-width: 80rem) {
-  .desktop.shadow {
-    --box-shadow: none;
-    box-shadow: var(--box-shadow)
-  }
+.desktop.shadow {
+  --box-shadow: none;
+
+  box-shadow: var(--box-shadow)
 }

@@ -1,6 +1,5 @@
-@media screen and (min-width: 80rem) {
-  .desktop.appearance {
-    --appearance: auto;
-    appearance: var(--appearance)
-  }
+.desktop.appearance {
+  --appearance: auto;
+
+  appearance: var(--appearance)
 }

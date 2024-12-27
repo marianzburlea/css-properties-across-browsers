@@ -1,10 +1,9 @@
-@media screen and (min-width: 48rem) {
-  .tablet.place {
-    --place-items: normal;
-    place-items: var(--place-items);
-    --place-content: normal;
-    place-content: var(--place-content);
-    --place-self: normal;
-    place-self: var(--place-self)
-  }
+.tablet.place {
+  --place-items: initial;
+  --place-content: normal;
+  --place-self: initial;
+
+  place-items: var(--place-items);
+  place-content: var(--place-content);
+  place-self: var(--place-self)
 }

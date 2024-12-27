@@ -1,3 +1,8 @@
 .border-block-end {
+  --border-block-end-end-width: initial;
+  --border-block-end-end-style: initial;
+  --border-block-end-end-color: initial;
+  --borderBlockEnd: initial;
 
+  border-block-end: var(--border-block-end, var(--end-width var(--end-style) var(--end-color)))
 }

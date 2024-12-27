@@ -1,18 +1,17 @@
-@media screen and (min-width: 80rem) {
-  .desktop.content-flow {
-    --break-after: auto;
-    break-after: var(--break-after);
-    --break-before: auto;
-    break-before: var(--break-before);
-    --break-inside: auto;
-    break-inside: var(--break-inside);
-    --clear: none;
-    clear: var(--clear);
-    --direction: ltr;
-    direction: var(--direction);
-    --float: none;
-    float: var(--float);
-    --overflow-wrap: normal;
-    overflow-wrap: var(--overflow-wrap)
-  }
+.desktop.content-flow {
+  --break-after: auto;
+  --break-before: auto;
+  --break-inside: auto;
+  --clear: none;
+  --direction: ltr;
+  --float: none;
+  --overflow-wrap: normal;
+
+  break-after: var(--break-after);
+  break-before: var(--break-before);
+  break-inside: var(--break-inside);
+  clear: var(--clear);
+  direction: var(--direction);
+  float: var(--float);
+  overflow-wrap: var(--overflow-wrap)
 }

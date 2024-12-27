@@ -1,6 +1,7 @@
 .height {
---height-min: initial;
-height-min: var(--height-min);
---height-max: initial;
-height-max: var(--height-max)
+  --height-min: initial;
+  --height-max: initial;
+
+  height-min: var(--height-min);
+  height-max: var(--height-max)
 }

@@ -1,8 +1,7 @@
-@media screen and (min-width: 80rem) {
-  .desktop.object {
-    --object-fit: fill;
-    object-fit: var(--object-fit);
-    --object-position: 50% 50%;
-    object-position: var(--object-position)
-  }
+.desktop.object {
+  --object-fit: initial;
+  --object-position: static;
+
+  object-fit: var(--object-fit);
+  object-position: var(--object-position)
 }

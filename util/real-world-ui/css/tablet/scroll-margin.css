@@ -1,5 +1,9 @@
-@media screen and (min-width: 48rem) {
-  .tablet.scroll-margin {
-    
-  }
+.tablet.scroll-margin {
+  --scroll-margin-top: auto;
+  --scroll-margin-right: auto;
+  --scroll-margin-bottom: auto;
+  --scroll-margin-left: auto;
+  --scrollMargin: initial;
+
+  scroll-margin: var(--scroll-margin, var(--top var(--right) var(--bottom) var(--left)))
 }

@@ -1,8 +1,7 @@
-@media screen and (min-width: 48rem) {
-  .tablet.border-start {
-    --border-start-end-radius: 0;
-    border-start-end-radius: var(--border-start-end-radius);
-    --border-start-start-radius: 0;
-    border-start-start-radius: var(--border-start-start-radius)
-  }
+.tablet.border-start {
+  --border-start-end-radius: initial;
+  --border-start-start-radius: initial;
+
+  border-start-end-radius: var(--border-start-end-radius);
+  border-start-start-radius: var(--border-start-start-radius)
 }

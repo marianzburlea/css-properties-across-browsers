@@ -1,3 +1,8 @@
 .border {
+  --border-width: initial;
+  --border-style: initial;
+  --border-color: currentcolor;
+  --border: initial;
 
+  border: var(--border, var(--width var(--style) var(--color)))
 }

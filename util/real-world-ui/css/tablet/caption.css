@@ -1,6 +1,5 @@
-@media screen and (min-width: 48rem) {
-  .tablet.caption {
-    --caption-side: top;
-    caption-side: var(--caption-side)
-  }
+.tablet.caption {
+  --caption-side: top;
+
+  caption-side: var(--caption-side)
 }

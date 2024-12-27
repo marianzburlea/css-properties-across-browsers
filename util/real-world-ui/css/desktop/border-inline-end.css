@@ -1,5 +1,8 @@
-@media screen and (min-width: 80rem) {
-  .desktop.border-inline-end {
-    
-  }
+.desktop.border-inline-end {
+  --border-inline-end-end-width: initial;
+  --border-inline-end-end-style: initial;
+  --border-inline-end-end-color: initial;
+  --borderInlineEnd: initial;
+
+  border-inline-end: var(--border-inline-end, var(--end-width var(--end-style) var(--end-color)))
 }

@@ -1,8 +1,9 @@
 .text-emphasis {
---text-emphasis-color: currentcolor;
-text-emphasis-color: var(--text-emphasis-color);
---text-emphasis-position: over right;
-text-emphasis-position: var(--text-emphasis-position);
---text-emphasis-style: none;
-text-emphasis-style: var(--text-emphasis-style)
+  --text-emphasis-color: currentcolor;
+  --text-emphasis-position: static;
+  --text-emphasis-style: initial;
+
+  text-emphasis-color: var(--text-emphasis-color);
+  text-emphasis-position: var(--text-emphasis-position);
+  text-emphasis-style: var(--text-emphasis-style)
 }

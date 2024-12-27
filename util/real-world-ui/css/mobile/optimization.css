@@ -1,4 +1,5 @@
 .optimization {
---will-change: auto;
-will-change: var(--will-change)
+  --will-change: auto;
+
+  will-change: var(--will-change)
 }

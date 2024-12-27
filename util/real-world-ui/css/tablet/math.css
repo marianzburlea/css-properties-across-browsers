@@ -1,6 +1,5 @@
-@media screen and (min-width: 48rem) {
-  .tablet.math {
-    --math-style: normal;
-    math-style: var(--math-style)
-  }
+.tablet.math {
+  --math-style: normal;
+
+  math-style: var(--math-style)
 }

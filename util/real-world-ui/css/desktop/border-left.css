@@ -1,5 +1,8 @@
-@media screen and (min-width: 80rem) {
-  .desktop.border-left {
-    
-  }
+.desktop.border-left {
+  --border-left-width: initial;
+  --border-left-style: initial;
+  --border-left-color: currentcolor;
+  --borderLeft: initial;
+
+  border-left: var(--border-left, var(--width var(--style) var(--color)))
 }

@@ -1,8 +1,7 @@
-@media screen and (min-width: 48rem) {
-  .tablet.text-wrap {
-    --text-wrap-mode: normal;
-    text-wrap-mode: var(--text-wrap-mode);
-    --text-wrap-style: normal;
-    text-wrap-style: var(--text-wrap-style)
-  }
+.tablet.text-wrap {
+  --text-wrap-mode: initial;
+  --text-wrap-style: initial;
+
+  text-wrap-mode: var(--text-wrap-mode);
+  text-wrap-style: var(--text-wrap-style)
 }

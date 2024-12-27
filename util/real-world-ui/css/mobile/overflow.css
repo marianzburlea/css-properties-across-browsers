@@ -1,3 +1,7 @@
 .overflow {
+  --overflow-x: initial;
+  --overflow-y: initial;
+  --overflow: initial;
 
+  overflow: var(--overflow, var(--x var(--y)))
 }

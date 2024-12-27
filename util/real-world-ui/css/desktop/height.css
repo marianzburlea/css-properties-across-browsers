@@ -1,8 +1,7 @@
-@media screen and (min-width: 80rem) {
-  .desktop.height {
-    --height-min: initial;
-    height-min: var(--height-min);
-    --height-max: initial;
-    height-max: var(--height-max)
-  }
+.desktop.height {
+  --height-min: initial;
+  --height-max: initial;
+
+  height-min: var(--height-min);
+  height-max: var(--height-max)
 }

@@ -1,5 +1,7 @@
-@media screen and (min-width: 80rem) {
-  .desktop.overflow {
-    
-  }
+.desktop.overflow {
+  --overflow-x: initial;
+  --overflow-y: initial;
+  --overflow: initial;
+
+  overflow: var(--overflow, var(--x var(--y)))
 }

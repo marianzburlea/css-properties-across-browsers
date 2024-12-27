@@ -1,5 +1,7 @@
-@media screen and (min-width: 48rem) {
-  .tablet.inset-block {
-    
-  }
+.tablet.inset-block {
+  --inset-block-start: initial;
+  --inset-block-end: initial;
+  --insetBlock: initial;
+
+  inset-block: var(--inset-block, var(--start var(--end)))
 }

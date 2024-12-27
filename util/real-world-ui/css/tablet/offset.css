@@ -1,14 +1,13 @@
-@media screen and (min-width: 48rem) {
-  .tablet.offset {
-    --offset-anchor: auto;
-    offset-anchor: var(--offset-anchor);
-    --offset-distance: 0;
-    offset-distance: var(--offset-distance);
-    --offset-path: none;
-    offset-path: var(--offset-path);
-    --offset-position: auto;
-    offset-position: var(--offset-position);
-    --offset-rotate: auto;
-    offset-rotate: var(--offset-rotate)
-  }
+.tablet.offset {
+  --offset-anchor: initial;
+  --offset-distance: initial;
+  --offset-path: initial;
+  --offset-position: static;
+  --offset-rotate: none;
+
+  offset-anchor: var(--offset-anchor);
+  offset-distance: var(--offset-distance);
+  offset-path: var(--offset-path);
+  offset-position: var(--offset-position);
+  offset-rotate: var(--offset-rotate)
 }

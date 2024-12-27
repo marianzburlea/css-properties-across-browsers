@@ -1,6 +1,5 @@
-@media screen and (min-width: 48rem) {
-  .tablet.appearance {
-    --appearance: auto;
-    appearance: var(--appearance)
-  }
+.tablet.appearance {
+  --appearance: auto;
+
+  appearance: var(--appearance)
 }

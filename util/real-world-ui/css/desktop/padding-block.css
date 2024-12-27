@@ -1,5 +1,7 @@
-@media screen and (min-width: 80rem) {
-  .desktop.padding-block {
-    
-  }
+.desktop.padding-block {
+  --padding-block-start: initial;
+  --padding-block-end: initial;
+  --paddingBlock: initial;
+
+  padding-block: var(--padding-block, var(--start var(--end)))
 }

@@ -1,6 +1,7 @@
 .word {
---word-break: normal;
-word-break: var(--word-break);
---word-spacing: normal;
-word-spacing: var(--word-spacing)
+  --word-break: initial;
+  --word-spacing: initial;
+
+  word-break: var(--word-break);
+  word-spacing: var(--word-spacing)
 }

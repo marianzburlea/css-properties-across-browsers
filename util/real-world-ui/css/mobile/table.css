@@ -1,6 +1,7 @@
 .table {
---empty-cells: show;
-empty-cells: var(--empty-cells);
---table-layout: auto;
-table-layout: var(--table-layout)
+  --empty-cells: show;
+  --table-layout: auto;
+
+  empty-cells: var(--empty-cells);
+  table-layout: var(--table-layout)
 }

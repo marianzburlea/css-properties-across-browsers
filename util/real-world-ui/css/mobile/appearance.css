@@ -1,4 +1,5 @@
 .appearance {
---appearance: auto;
-appearance: var(--appearance)
+  --appearance: auto;
+
+  appearance: var(--appearance)
 }

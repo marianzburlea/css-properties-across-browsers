@@ -5,6 +5,17 @@ import {
 } from './reduced-common-css-by-group'
 import { cssDefaultPropertyValueMap } from './default-value-map'
 
+type TRow = {
+  reset: {
+    left: string
+    right: string
+  }[]
+  declaration: {
+    left: string
+    right: string | string[]
+  }[]
+}
+
 // get unique group
 const cssPropertyByGroupMap = {}
 const cssPropertyByGroupList: string[] = []
@@ -12,7 +23,7 @@ const finalCssClassMap: Record<
   string,
   {
     className: string
-    row: string[]
+    row: TRow
   }
 > = {}
 
@@ -34,17 +45,27 @@ const camelToKebabCase = (str = '') => {
 
 // generate CSS class names and body
 for (const className of cssPropertyByGroupList) {
-  const row: string[] = []
+  const row: TRow = {
+    reset: [],
+    declaration: [],
+  }
   cssPropertyByGroupMap[className].map((cssProperty) => {
     const kebabProperty = camelToKebabCase(cssProperty)
 
-    row.push(
-      `--${kebabProperty}: ${
-        cssDefaultPropertyValueMap[cssProperty] || 'initial'
-      }`
-    )
+    // row.push(
+    //   `--${kebabProperty}: ${
+    //     cssDefaultPropertyValueMap[cssProperty] || 'initial'
+    //   }`
+    // )
+    row.reset.push({
+      left: kebabProperty,
+      right: cssDefaultPropertyValueMap[cssProperty] ?? 'initial',
+    })
 
-    row.push(`${kebabProperty}: var(--${kebabProperty})`)
+    row.declaration.push({
+      left: kebabProperty,
+      right: kebabProperty,
+    })
   })
 
   finalCssClassMap[className] = {
@@ -55,14 +76,18 @@ for (const className of cssPropertyByGroupList) {
   // fs.writeFileSync(`css/${groupName}.css`, cssString)
 }
 
-// console.log(finalCssClassMap.flex)
+console.log(finalCssClassMap.flex)
 
 for (const cssCamelCaseProperty in cssCondensedPropertyMap) {
   const className = camelToKebabCase(
     cssCondensedPropertyMap[cssCamelCaseProperty].className
   )
 
-  const row: string[] = []
+  const row: TRow = {
+    reset: finalCssClassMap[className]?.row.reset || [],
+    declaration: finalCssClassMap[className]?.row.declaration || [],
+  }
+
   const subPropList = Object.keys(
     cssCondensedPropertyMap[cssCamelCaseProperty].children
   )
@@ -72,98 +97,145 @@ for (const cssCamelCaseProperty in cssCondensedPropertyMap) {
     ? cssCondensedPropertyMap[cssCamelCaseProperty].condensed
     : []
 
-  console.log('')
-  console.log(cssCamelCaseProperty)
-  console.log(condensedPropList)
   let notCondensedPropList: string[] = []
   if (Array.isArray(condensedPropList)) {
     notCondensedPropList = subPropList.filter(
       (subProp) => !condensedPropList.includes(subProp)
     )
   }
-  console.log(notCondensedPropList)
-  console.log('')
+  // if (cssCamelCaseProperty === 'animation') {
+  //   console.log('')
+  //   console.log(cssCamelCaseProperty)
+  //   console.log(condensedPropList)
+  //   console.log(notCondensedPropList)
+  //   console.log('')
+  // }
+
+  if (Array.isArray(condensedPropList) && condensedPropList.length > 0) {
+    console.log('YES')
+    condensedPropList.map((condensedProp) => {
+      const kebabProperty = `${className}-${camelToKebabCase(condensedProp)}`
+      row.reset.push({
+        left: kebabProperty,
+        right: cssDefaultPropertyValueMap[condensedProp] || 'initial',
+      })
+    })
+
+    row.reset.push({
+      left: cssCamelCaseProperty,
+      right: cssDefaultPropertyValueMap[cssCamelCaseProperty] || 'initial',
+    })
+
+    const kebabProperty = camelToKebabCase(cssCamelCaseProperty)
+    row.declaration.push({
+      left: kebabProperty,
+      right: [
+        kebabProperty,
+        ...condensedPropList.map((condensedProp) =>
+          camelToKebabCase(condensedProp)
+        ),
+      ],
+    })
+  }
 
   notCondensedPropList.map((subProp) => {
     const kebabProperty = `${className}-${camelToKebabCase(subProp)}`
-    const resetVar = `--${kebabProperty}: ${cssCondensedPropertyMap[cssCamelCaseProperty].children[subProp]}`
 
-    row.push(resetVar)
-    row.push(`${kebabProperty}: var(--${kebabProperty})`)
+    row.reset.push({
+      left: kebabProperty,
+      right: cssDefaultPropertyValueMap[subProp] || 'initial',
+    })
+
+    row.declaration.push({
+      left: kebabProperty,
+      right: kebabProperty,
+    })
   })
 
-  const map = {
-    className,
-    row: (finalCssClassMap[className]?.row || []).concat(row),
+  if (
+    !Object.prototype.hasOwnProperty.call(
+      finalCssClassMap,
+      cssCamelCaseProperty
+    )
+  ) {
+    finalCssClassMap[className] = {
+      className: camelToKebabCase(cssCamelCaseProperty),
+      row,
+    }
+  }
+}
+
+console.log(JSON.stringify(finalCssClassMap.animation, null, 2))
+console.log(Object.keys(finalCssClassMap))
+// console.log(JSON.stringify(finalCssClassMap.borderTop, null, 2))
+
+// Generate mobile, tablet, and desktop CSS
+const allCss: {
+  [key: string]: string[]
+} = {
+  mobile: [],
+  tablet: [],
+  desktop: [],
+}
+
+// Utility function to wrap CSS with a media query
+const getMediaWrap = (css: string, breakPoint: number): string =>
+  `@media screen and (min-width: ${breakPoint / 16}rem) {
+${css}
+}`
+
+// Utility function to generate CSS for a specific device
+const generateCss = (prefix: string, mapKey: string): string => {
+  const className = finalCssClassMap[mapKey].className
+
+  return `.${prefix ? `${prefix}.` : ''}${className} {
+${finalCssClassMap[mapKey].row.reset
+  .map(({ left, right }) => `  --${left}: ${right}`)
+  .join(';\n')};
+
+${finalCssClassMap[mapKey].row.declaration
+  .map(({ left, right }) =>
+    Array.isArray(right)
+      ? `  ${left}: var(--${right[0]}, var(--${right[1]} ${right
+          .slice(2)
+          .map((prop) => `var(--${prop})`)
+          .join(' ')}))`
+      : `  ${left}: var(--${right})`
+  )
+  .join(';\n')}
+}`
+}
+
+// Generate and save CSS for each device
+const generateAndSaveCss = (
+  device: string,
+  prefix: string,
+  breakPoint?: number
+) => {
+  for (const mapKey of Object.keys(finalCssClassMap)) {
+    const cssRaw = generateCss(prefix, mapKey)
+    allCss[device].push(cssRaw)
+    fs.writeFileSync(
+      `css/${device}/${finalCssClassMap[mapKey].className}.css`,
+      cssRaw
+    )
   }
 
-  finalCssClassMap[className] = map
+  const joinedCss = allCss[device].join('\n')
+  const wrappedCss = breakPoint
+    ? getMediaWrap(joinedCss, breakPoint)
+    : joinedCss
+
+  fs.writeFileSync(`css/${device}.css`, wrappedCss)
+  return wrappedCss
 }
 
-// generate mobile, tablet, and desktop
-const mobile: string[] = []
-const tablet: string[] = []
-const desktop: string[] = []
+// Generate CSS for mobile, tablet, and desktop
+const allMobile = generateAndSaveCss('mobile', '', undefined)
+const allTablet = generateAndSaveCss('tablet', 'tablet', 768)
+const allDesktop = generateAndSaveCss('desktop', 'desktop', 1280)
 
-// tablet
-const getTabletWrap = (
-  css = '',
-  breakPoint = 768
-) => `@media screen and (min-width: ${breakPoint / 16}rem) {
-${css}
-}`
-
-// desktop
-const getDesktopWrap = (
-  css = '',
-  breakPoint = 1280
-) => `@media screen and (min-width: ${breakPoint / 16}rem) {
-${css}
-}`
-
-for (const map of Object.keys(finalCssClassMap)) {
-  const className = finalCssClassMap[map].className
-
-  // mobile
-  const cssRawMobile = `.${className} {
-${finalCssClassMap[map].row.join(`;
-`)}
-}`
-  mobile.push(cssRawMobile)
-  fs.writeFileSync(`css/mobile/${className}.css`, cssRawMobile)
-
-  // tablet
-  const cssRawTablet = `  .tablet.${className} {
-    ${finalCssClassMap[map].row.join(`;
-    `)}
-  }`
-
-  tablet.push(cssRawTablet)
-  const cssTablet = getTabletWrap(cssRawTablet)
-
-  fs.writeFileSync(`css/tablet/${className}.css`, cssTablet)
-
-  // desktop
-  const cssRawDesktop = `  .desktop.${className} {
-    ${finalCssClassMap[map].row.join(`;
-    `)}
-  }`
-
-  desktop.push(cssRawDesktop)
-  const cssDesktop = getDesktopWrap(cssRawDesktop)
-  fs.writeFileSync(`css/desktop/${className}.css`, cssDesktop)
-}
-
-const allMobile = mobile.join('\n')
-// mobile
-fs.writeFileSync('css/mobile.css', allMobile)
-const allTablet = getTabletWrap(tablet.join('\n'))
-// tablet
-fs.writeFileSync('css/tablet.css', allTablet)
-const allDesktop = getDesktopWrap(desktop.join('\n'))
-// desktop
-fs.writeFileSync('css/desktop.css', allDesktop)
-// all
+// Generate and save combined CSS
 fs.writeFileSync(
   'css/all.css',
   `

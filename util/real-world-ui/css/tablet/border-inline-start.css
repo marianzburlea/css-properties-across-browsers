@@ -1,5 +1,8 @@
-@media screen and (min-width: 48rem) {
-  .tablet.border-inline-start {
-    
-  }
+.tablet.border-inline-start {
+  --border-inline-start-start-width: initial;
+  --border-inline-start-start-style: initial;
+  --border-inline-start-start-color: initial;
+  --borderInlineStart: initial;
+
+  border-inline-start: var(--border-inline-start, var(--start-width var(--start-style) var(--start-color)))
 }

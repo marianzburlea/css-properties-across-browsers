@@ -1,5 +1,8 @@
-@media screen and (min-width: 48rem) {
-  .tablet.border-right {
-    
-  }
+.tablet.border-right {
+  --border-right-width: initial;
+  --border-right-style: initial;
+  --border-right-color: currentcolor;
+  --borderRight: initial;
+
+  border-right: var(--border-right, var(--width var(--style) var(--color)))
 }

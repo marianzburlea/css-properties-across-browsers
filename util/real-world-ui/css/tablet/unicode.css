@@ -1,6 +1,5 @@
-@media screen and (min-width: 48rem) {
-  .tablet.unicode {
-    --unicode-bidi: normal;
-    unicode-bidi: var(--unicode-bidi)
-  }
+.tablet.unicode {
+  --unicode-bidi: normal;
+
+  unicode-bidi: var(--unicode-bidi)
 }

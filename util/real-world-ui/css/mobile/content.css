@@ -1,6 +1,7 @@
 .content {
---content: normal;
-content: var(--content);
---content-visibility: visible;
-content-visibility: var(--content-visibility)
+  --content: normal;
+  --content-visibility: visible;
+
+  content: var(--content);
+  content-visibility: var(--content-visibility)
 }

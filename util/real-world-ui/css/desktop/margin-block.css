@@ -1,5 +1,7 @@
-@media screen and (min-width: 80rem) {
-  .desktop.margin-block {
-    
-  }
+.desktop.margin-block {
+  --margin-block-start: initial;
+  --margin-block-end: initial;
+  --marginBlock: initial;
+
+  margin-block: var(--margin-block, var(--start var(--end)))
 }

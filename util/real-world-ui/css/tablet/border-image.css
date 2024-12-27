@@ -1,5 +1,10 @@
-@media screen and (min-width: 48rem) {
-  .tablet.border-image {
-    
-  }
+.tablet.border-image {
+  --border-image-source: initial;
+  --border-image-slice: initial;
+  --border-image-width: initial;
+  --border-image-outset: initial;
+  --border-image-repeat: initial;
+  --borderImage: initial;
+
+  border-image: var(--border-image, var(--source var(--slice) var(--width) var(--outset) var(--repeat)))
 }

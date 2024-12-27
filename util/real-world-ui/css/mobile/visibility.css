@@ -1,4 +1,5 @@
 .visibility {
---visibility: visible;
-visibility: var(--visibility)
+  --visibility: visible;
+
+  visibility: var(--visibility)
 }

@@ -1,18 +1,17 @@
-@media screen and (min-width: 48rem) {
-  .tablet.position {
-    --bottom: auto;
-    bottom: var(--bottom);
-    --inset: auto;
-    inset: var(--inset);
-    --left: auto;
-    left: var(--left);
-    --position: static;
-    position: var(--position);
-    --right: auto;
-    right: var(--right);
-    --top: auto;
-    top: var(--top);
-    --z-index: auto;
-    z-index: var(--z-index)
-  }
+.tablet.position {
+  --bottom: auto;
+  --inset: auto;
+  --left: auto;
+  --position: static;
+  --right: auto;
+  --top: auto;
+  --z-index: auto;
+
+  bottom: var(--bottom);
+  inset: var(--inset);
+  left: var(--left);
+  position: var(--position);
+  right: var(--right);
+  top: var(--top);
+  z-index: var(--z-index)
 }

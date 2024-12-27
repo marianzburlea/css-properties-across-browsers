@@ -1,4 +1,5 @@
 .unicode {
---unicode-bidi: normal;
-unicode-bidi: var(--unicode-bidi)
+  --unicode-bidi: normal;
+
+  unicode-bidi: var(--unicode-bidi)
 }

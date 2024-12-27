@@ -1,5 +1,7 @@
-@media screen and (min-width: 48rem) {
-  .tablet.overflow {
-    
-  }
+.tablet.overflow {
+  --overflow-x: initial;
+  --overflow-y: initial;
+  --overflow: initial;
+
+  overflow: var(--overflow, var(--x var(--y)))
 }

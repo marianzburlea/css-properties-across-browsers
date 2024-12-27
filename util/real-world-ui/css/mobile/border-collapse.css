@@ -1,4 +1,5 @@
 .border-collapse {
---border-collapse: separate;
-border-collapse: var(--border-collapse)
+  --border-collapse: separate;
+
+  border-collapse: var(--border-collapse)
 }

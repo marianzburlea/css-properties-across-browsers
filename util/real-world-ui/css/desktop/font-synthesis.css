@@ -1,10 +1,9 @@
-@media screen and (min-width: 80rem) {
-  .desktop.font-synthesis {
-    --font-synthesis-weight: auto;
-    font-synthesis-weight: var(--font-synthesis-weight);
-    --font-synthesis-style: auto;
-    font-synthesis-style: var(--font-synthesis-style);
-    --font-synthesis-small-caps: auto;
-    font-synthesis-small-caps: var(--font-synthesis-small-caps)
-  }
+.desktop.font-synthesis {
+  --font-synthesis-weight: initial;
+  --font-synthesis-style: initial;
+  --font-synthesis-small-caps: initial;
+
+  font-synthesis-weight: var(--font-synthesis-weight);
+  font-synthesis-style: var(--font-synthesis-style);
+  font-synthesis-small-caps: var(--font-synthesis-small-caps)
 }

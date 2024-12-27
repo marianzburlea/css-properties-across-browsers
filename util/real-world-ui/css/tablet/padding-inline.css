@@ -1,5 +1,7 @@
-@media screen and (min-width: 48rem) {
-  .tablet.padding-inline {
-    
-  }
+.tablet.padding-inline {
+  --padding-inline-start: initial;
+  --padding-inline-end: initial;
+  --paddingInline: initial;
+
+  padding-inline: var(--padding-inline, var(--start var(--end)))
 }

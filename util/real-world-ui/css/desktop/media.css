@@ -1,8 +1,5 @@
-@media screen and (min-width: 80rem) {
-  .desktop.media {
-    --orientation: auto;
-    orientation: var(--orientation);
-    --size: auto;
-    size: var(--size)
-  }
+.desktop.media {
+  --size: auto;
+
+  size: var(--size)
 }

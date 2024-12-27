@@ -1,8 +1,7 @@
-@media screen and (min-width: 48rem) {
-  .tablet.object {
-    --object-fit: fill;
-    object-fit: var(--object-fit);
-    --object-position: 50% 50%;
-    object-position: var(--object-position)
-  }
+.tablet.object {
+  --object-fit: initial;
+  --object-position: static;
+
+  object-fit: var(--object-fit);
+  object-position: var(--object-position)
 }

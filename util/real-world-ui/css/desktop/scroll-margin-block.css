@@ -1,5 +1,7 @@
-@media screen and (min-width: 80rem) {
-  .desktop.scroll-margin-block {
-    
-  }
+.desktop.scroll-margin-block {
+  --scroll-margin-block-start: initial;
+  --scroll-margin-block-end: initial;
+  --scrollMarginBlock: initial;
+
+  scroll-margin-block: var(--scroll-margin-block, var(--start var(--end)))
 }

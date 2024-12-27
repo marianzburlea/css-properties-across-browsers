@@ -1,10 +1,9 @@
-@media screen and (min-width: 48rem) {
-  .tablet.marker {
-    --marker-end: svg;
-    marker-end: var(--marker-end);
-    --marker-mid: svg;
-    marker-mid: var(--marker-mid);
-    --marker-start: svg;
-    marker-start: var(--marker-start)
-  }
+.tablet.marker {
+  --marker-end: initial;
+  --marker-mid: initial;
+  --marker-start: initial;
+
+  marker-end: var(--marker-end);
+  marker-mid: var(--marker-mid);
+  marker-start: var(--marker-start)
 }

@@ -1,8 +1,7 @@
-@media screen and (min-width: 48rem) {
-  .tablet.word {
-    --word-break: normal;
-    word-break: var(--word-break);
-    --word-spacing: normal;
-    word-spacing: var(--word-spacing)
-  }
+.tablet.word {
+  --word-break: initial;
+  --word-spacing: initial;
+
+  word-break: var(--word-break);
+  word-spacing: var(--word-spacing)
 }

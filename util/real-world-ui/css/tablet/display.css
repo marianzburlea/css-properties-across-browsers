@@ -1,6 +1,5 @@
-@media screen and (min-width: 48rem) {
-  .tablet.display {
-    --display: inline;
-    display: var(--display)
-  }
+.tablet.display {
+  --display: inline;
+
+  display: var(--display)
 }

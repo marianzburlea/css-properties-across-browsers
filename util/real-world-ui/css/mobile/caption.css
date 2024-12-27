@@ -1,4 +1,5 @@
 .caption {
---caption-side: top;
-caption-side: var(--caption-side)
+  --caption-side: top;
+
+  caption-side: var(--caption-side)
 }

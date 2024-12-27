@@ -1,12 +1,11 @@
-@media screen and (min-width: 48rem) {
-  .tablet.shape {
-    --shape-image-threshold: 0;
-    shape-image-threshold: var(--shape-image-threshold);
-    --shape-margin: 0;
-    shape-margin: var(--shape-margin);
-    --shape-outside: none;
-    shape-outside: var(--shape-outside);
-    --shape-rendering: auto;
-    shape-rendering: var(--shape-rendering)
-  }
+.tablet.shape {
+  --shape-image-threshold: initial;
+  --shape-margin: initial;
+  --shape-outside: initial;
+  --shape-rendering: initial;
+
+  shape-image-threshold: var(--shape-image-threshold);
+  shape-margin: var(--shape-margin);
+  shape-outside: var(--shape-outside);
+  shape-rendering: var(--shape-rendering)
 }

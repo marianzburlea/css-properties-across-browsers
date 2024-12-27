@@ -1,8 +1,7 @@
-@media screen and (min-width: 48rem) {
-  .tablet.theme {
-    --accent-color: auto;
-    accent-color: var(--accent-color);
-    --color-scheme: normal;
-    color-scheme: var(--color-scheme)
-  }
+.tablet.theme {
+  --accent-color: auto;
+  --color-scheme: normal;
+
+  accent-color: var(--accent-color);
+  color-scheme: var(--color-scheme)
 }

@@ -1,8 +1,7 @@
-@media screen and (min-width: 48rem) {
-  .tablet.max {
-    --max-block-size: none;
-    max-block-size: var(--max-block-size);
-    --max-inline-size: none;
-    max-inline-size: var(--max-inline-size)
-  }
+.tablet.max {
+  --max-block-size: auto;
+  --max-inline-size: auto;
+
+  max-block-size: var(--max-block-size);
+  max-inline-size: var(--max-inline-size)
 }

@@ -1,24 +1,23 @@
-@media screen and (min-width: 48rem) {
-  .tablet.grid {
-    --grid-auto-columns: auto;
-    grid-auto-columns: var(--grid-auto-columns);
-    --grid-auto-flow: row;
-    grid-auto-flow: var(--grid-auto-flow);
-    --grid-auto-rows: auto;
-    grid-auto-rows: var(--grid-auto-rows);
-    --grid-column-start: auto;
-    grid-column-start: var(--grid-column-start);
-    --grid-column-end: auto;
-    grid-column-end: var(--grid-column-end);
-    --grid-row-start: auto;
-    grid-row-start: var(--grid-row-start);
-    --grid-row-end: auto;
-    grid-row-end: var(--grid-row-end);
-    --grid-template-areas: none;
-    grid-template-areas: var(--grid-template-areas);
-    --grid-template-columns: none;
-    grid-template-columns: var(--grid-template-columns);
-    --grid-template-rows: none;
-    grid-template-rows: var(--grid-template-rows)
-  }
+.tablet.grid {
+  --grid-auto-columns: initial;
+  --grid-auto-flow: initial;
+  --grid-auto-rows: initial;
+  --grid-column-start: initial;
+  --grid-column-end: initial;
+  --grid-row-start: initial;
+  --grid-row-end: initial;
+  --grid-template-areas: initial;
+  --grid-template-columns: initial;
+  --grid-template-rows: initial;
+
+  grid-auto-columns: var(--grid-auto-columns);
+  grid-auto-flow: var(--grid-auto-flow);
+  grid-auto-rows: var(--grid-auto-rows);
+  grid-column-start: var(--grid-column-start);
+  grid-column-end: var(--grid-column-end);
+  grid-row-start: var(--grid-row-start);
+  grid-row-end: var(--grid-row-end);
+  grid-template-areas: var(--grid-template-areas);
+  grid-template-columns: var(--grid-template-columns);
+  grid-template-rows: var(--grid-template-rows)
 }

@@ -1,5 +1,9 @@
-@media screen and (min-width: 48rem) {
-  .tablet.margin {
-    
-  }
+.tablet.margin {
+  --margin-top: auto;
+  --margin-right: auto;
+  --margin-bottom: auto;
+  --margin-left: auto;
+  --margin: initial;
+
+  margin: var(--margin, var(--top var(--right) var(--bottom) var(--left)))
 }

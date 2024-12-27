@@ -1,14 +1,13 @@
-@media screen and (min-width: 48rem) {
-  .tablet.visual-effect {
-    --backdrop-filter: none;
-    backdrop-filter: var(--backdrop-filter);
-    --filter: none;
-    filter: var(--filter);
-    --isolation: auto;
-    isolation: var(--isolation);
-    --mix-blend-mode: normal;
-    mix-blend-mode: var(--mix-blend-mode);
-    --opacity: 1;
-    opacity: var(--opacity)
-  }
+.tablet.visual-effect {
+  --backdrop-filter: none;
+  --filter: none;
+  --isolation: auto;
+  --mix-blend-mode: normal;
+  --opacity: 1;
+
+  backdrop-filter: var(--backdrop-filter);
+  filter: var(--filter);
+  isolation: var(--isolation);
+  mix-blend-mode: var(--mix-blend-mode);
+  opacity: var(--opacity)
 }

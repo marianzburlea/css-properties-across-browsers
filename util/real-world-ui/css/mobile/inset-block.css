@@ -1,3 +1,7 @@
 .inset-block {
+  --inset-block-start: initial;
+  --inset-block-end: initial;
+  --insetBlock: initial;
 
+  inset-block: var(--inset-block, var(--start var(--end)))
 }

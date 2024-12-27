@@ -1,3 +1,7 @@
 .gap {
+  --gap-row: initial;
+  --gap-column: initial;
+  --gap: initial;
 
+  gap: var(--gap, var(--row var(--column)))
 }

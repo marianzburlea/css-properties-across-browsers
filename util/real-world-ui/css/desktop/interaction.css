@@ -1,16 +1,15 @@
-@media screen and (min-width: 80rem) {
-  .desktop.interaction {
-    --caret-color: auto;
-    caret-color: var(--caret-color);
-    --pointer-events: auto;
-    pointer-events: var(--pointer-events);
-    --resize: none;
-    resize: var(--resize);
-    --scroll-behavior: auto;
-    scroll-behavior: var(--scroll-behavior);
-    --touch-action: auto;
-    touch-action: var(--touch-action);
-    --user-select: auto;
-    user-select: var(--user-select)
-  }
+.desktop.interaction {
+  --caret-color: auto;
+  --pointer-events: auto;
+  --resize: none;
+  --scroll-behavior: auto;
+  --touch-action: auto;
+  --user-select: auto;
+
+  caret-color: var(--caret-color);
+  pointer-events: var(--pointer-events);
+  resize: var(--resize);
+  scroll-behavior: var(--scroll-behavior);
+  touch-action: var(--touch-action);
+  user-select: var(--user-select)
 }

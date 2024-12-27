@@ -1,6 +1,5 @@
-@media screen and (min-width: 80rem) {
-  .desktop.display {
-    --display: inline;
-    display: var(--display)
-  }
+.desktop.display {
+  --display: inline;
+
+  display: var(--display)
 }

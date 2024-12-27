@@ -1,6 +1,5 @@
-@media screen and (min-width: 48rem) {
-  .tablet.cursor {
-    --cursor: auto;
-    cursor: var(--cursor)
-  }
+.tablet.cursor {
+  --cursor: auto;
+
+  cursor: var(--cursor)
 }

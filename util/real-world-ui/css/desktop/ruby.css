@@ -1,8 +1,7 @@
-@media screen and (min-width: 80rem) {
-  .desktop.ruby {
-    --ruby-align: space-around;
-    ruby-align: var(--ruby-align);
-    --ruby-position: over;
-    ruby-position: var(--ruby-position)
-  }
+.desktop.ruby {
+  --ruby-align: initial;
+  --ruby-position: static;
+
+  ruby-align: var(--ruby-align);
+  ruby-position: var(--ruby-position)
 }

@@ -1,4 +1,16 @@
 .background {
---background-blend-mode: normal;
-background-blend-mode: var(--background-blend-mode)
+  --background-color: currentcolor;
+  --background-image: initial;
+  --background-position-x: initial;
+  --background-position-y: initial;
+  --background-size: auto;
+  --background-repeat: initial;
+  --background-attachment: initial;
+  --background-origin: initial;
+  --background-clip: auto;
+  --background: initial;
+  --background-blend-mode: initial;
+
+  background: var(--background, var(--color var(--image) var(--position-x) var(--position-y) var(--size) var(--repeat) var(--attachment) var(--origin) var(--clip)));
+  background-blend-mode: var(--background-blend-mode)
 }

@@ -1,8 +1,7 @@
-@media screen and (min-width: 80rem) {
-  .desktop.image {
-    --image-orientation: from-image;
-    image-orientation: var(--image-orientation);
-    --image-rendering: auto;
-    image-rendering: var(--image-rendering)
-  }
+.desktop.image {
+  --image-orientation: from-image;
+  --image-rendering: auto;
+
+  image-orientation: var(--image-orientation);
+  image-rendering: var(--image-rendering)
 }

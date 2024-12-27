@@ -1,6 +1,5 @@
-@media screen and (min-width: 80rem) {
-  .desktop.math {
-    --math-style: normal;
-    math-style: var(--math-style)
-  }
+.desktop.math {
+  --math-style: normal;
+
+  math-style: var(--math-style)
 }

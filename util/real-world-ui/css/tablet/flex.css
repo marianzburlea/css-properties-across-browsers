@@ -1,18 +1,22 @@
-@media screen and (min-width: 48rem) {
-  .tablet.flex {
-    --align-content: normal;
-    align-content: var(--align-content);
-    --align-items: normal;
-    align-items: var(--align-items);
-    --flex-direction: row;
-    flex-direction: var(--flex-direction);
-    --flex-wrap: nowrap;
-    flex-wrap: var(--flex-wrap);
-    --justify-content: normal;
-    justify-content: var(--justify-content);
-    --justify-items: legacy;
-    justify-items: var(--justify-items);
-    --order: initial;
-    order: var(--order)
-  }
+.tablet.flex {
+  --align-content: normal;
+  --align-items: normal;
+  --flex-direction: row;
+  --flex-wrap: nowrap;
+  --justify-content: normal;
+  --justify-items: legacy;
+  --order: 0;
+  --flex-basis: initial;
+  --flex-grow: initial;
+  --flex-shrink: initial;
+  --flex: initial;
+
+  align-content: var(--align-content);
+  align-items: var(--align-items);
+  flex-direction: var(--flex-direction);
+  flex-wrap: var(--flex-wrap);
+  justify-content: var(--justify-content);
+  justify-items: var(--justify-items);
+  order: var(--order);
+  flex: var(--flex, var(--basis var(--grow) var(--shrink)))
 }

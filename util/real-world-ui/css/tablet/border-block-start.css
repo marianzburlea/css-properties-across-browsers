@@ -1,5 +1,8 @@
-@media screen and (min-width: 48rem) {
-  .tablet.border-block-start {
-    
-  }
+.tablet.border-block-start {
+  --border-block-start-start-width: initial;
+  --border-block-start-start-style: initial;
+  --border-block-start-start-color: initial;
+  --borderBlockStart: initial;
+
+  border-block-start: var(--border-block-start, var(--start-width var(--start-style) var(--start-color)))
 }

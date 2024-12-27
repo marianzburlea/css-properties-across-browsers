@@ -85,7 +85,6 @@ export const cssDefaultPropertyValueMap = {
 
   opacity: 1,
   order: 0,
-  orientation: 'auto',
 
   outlineOffset: 0,
   overflowWrap: 'normal',

@@ -1,24 +1,23 @@
-@media screen and (min-width: 48rem) {
-  .tablet.typography {
-    --font-feature-settings: normal;
-    font-feature-settings: var(--font-feature-settings);
-    --font-kerning: auto;
-    font-kerning: var(--font-kerning);
-    --font-optical-sizing: auto;
-    font-optical-sizing: var(--font-optical-sizing);
-    --font-palette: normal;
-    font-palette: var(--font-palette);
-    --font-size-adjust: none;
-    font-size-adjust: var(--font-size-adjust);
-    --font-variant-alternates: normal;
-    font-variant-alternates: var(--font-variant-alternates);
-    --font-variation-settings: normal;
-    font-variation-settings: var(--font-variation-settings);
-    --letter-spacing: normal;
-    letter-spacing: var(--letter-spacing);
-    --line-height: normal;
-    line-height: var(--line-height);
-    --tab-size: 8;
-    tab-size: var(--tab-size)
-  }
+.tablet.typography {
+  --font-feature-settings: normal;
+  --font-kerning: auto;
+  --font-optical-sizing: auto;
+  --font-palette: normal;
+  --font-size-adjust: none;
+  --font-variant-alternates: normal;
+  --font-variation-settings: normal;
+  --letter-spacing: normal;
+  --line-height: normal;
+  --tab-size: 8;
+
+  font-feature-settings: var(--font-feature-settings);
+  font-kerning: var(--font-kerning);
+  font-optical-sizing: var(--font-optical-sizing);
+  font-palette: var(--font-palette);
+  font-size-adjust: var(--font-size-adjust);
+  font-variant-alternates: var(--font-variant-alternates);
+  font-variation-settings: var(--font-variation-settings);
+  letter-spacing: var(--letter-spacing);
+  line-height: var(--line-height);
+  tab-size: var(--tab-size)
 }
