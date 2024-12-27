@@ -19,13 +19,7 @@ justify-content: var(--justify-content);
 --justify-items: legacy;
 justify-items: var(--justify-items);
 --order: initial;
-order: var(--order);
---flex-basis: auto;
-flex-basis: var(--flex-basis);
---flex-grow: 0;
-flex-grow: var(--flex-grow);
---flex-shrink: 1;
-flex-shrink: var(--flex-shrink)
+order: var(--order)
 }
 .individual {
 --align-self: auto;
@@ -327,25 +321,11 @@ size: var(--size)
 }
 .outline {
 --outline-offset: initial;
-outline-offset: var(--outline-offset);
---outline-color: invert;
-outline-color: var(--outline-color);
---outline-style: none;
-outline-style: var(--outline-style);
---outline-width: medium;
-outline-width: var(--outline-width)
+outline-offset: var(--outline-offset)
 }
 .transition {
 --transition-behavior: auto;
-transition-behavior: var(--transition-behavior);
---transition-delay: 0s;
-transition-delay: var(--transition-delay);
---transition-duration: 0s;
-transition-duration: var(--transition-duration);
---transition-property: all;
-transition-property: var(--transition-property);
---transition-timing-function: ease;
-transition-timing-function: var(--transition-timing-function)
+transition-behavior: var(--transition-behavior)
 }
 .unicode {
 --unicode-bidi: normal;
@@ -361,129 +341,44 @@ will-change: var(--will-change)
 }
 .animation {
 --animation-composition: replace;
-animation-composition: var(--animation-composition);
---animation-delay: 0;
-animation-delay: var(--animation-delay);
---animation-direction: normal;
-animation-direction: var(--animation-direction);
---animation-duration: 0;
-animation-duration: var(--animation-duration);
---animation-fill-mode: none;
-animation-fill-mode: var(--animation-fill-mode);
---animation-iteration-count: 1;
-animation-iteration-count: var(--animation-iteration-count);
---animation-name: none;
-animation-name: var(--animation-name);
---animation-play-state: running;
-animation-play-state: var(--animation-play-state);
---animation-timing-function: ease;
-animation-timing-function: var(--animation-timing-function)
+animation-composition: var(--animation-composition)
 }
 .background {
---background-attachment: scroll;
-background-attachment: var(--background-attachment);
 --background-blend-mode: normal;
-background-blend-mode: var(--background-blend-mode);
---background-clip: border-box;
-background-clip: var(--background-clip);
---background-color: transparent;
-background-color: var(--background-color);
---background-image: none;
-background-image: var(--background-image);
---background-origin: padding-box;
-background-origin: var(--background-origin);
---background-position-x: 0;
-background-position-x: var(--background-position-x);
---background-position-y: 0;
-background-position-y: var(--background-position-y);
---background-repeat: repeat;
-background-repeat: var(--background-repeat);
---background-size: auto;
-background-size: var(--background-size)
+background-blend-mode: var(--background-blend-mode)
 }
 .border-image {
---border-image-outset: 0;
-border-image-outset: var(--border-image-outset);
---border-image-repeat: stretch;
-border-image-repeat: var(--border-image-repeat);
---border-image-slice: 100%;
-border-image-slice: var(--border-image-slice);
---border-image-source: none;
-border-image-source: var(--border-image-source);
---border-image-width: 1;
-border-image-width: var(--border-image-width)
+
 }
 .border-block-start {
---border-block-start-start-color: currentcolor;
-border-block-start-start-color: var(--border-block-start-start-color);
---border-block-start-start-style: none;
-border-block-start-start-style: var(--border-block-start-start-style);
---border-block-start-start-width: medium;
-border-block-start-start-width: var(--border-block-start-start-width)
+
 }
 .border-block-end {
---border-block-end-end-color: currentcolor;
-border-block-end-end-color: var(--border-block-end-end-color);
---border-block-end-end-style: none;
-border-block-end-end-style: var(--border-block-end-end-style);
---border-block-end-end-width: medium;
-border-block-end-end-width: var(--border-block-end-end-width)
+
 }
 .border-inline-start {
---border-inline-start-start-color: currentcolor;
-border-inline-start-start-color: var(--border-inline-start-start-color);
---border-inline-start-start-style: none;
-border-inline-start-start-style: var(--border-inline-start-start-style);
---border-inline-start-start-width: medium;
-border-inline-start-start-width: var(--border-inline-start-start-width)
+
 }
 .border-inline-end {
---border-inline-end-end-color: currentcolor;
-border-inline-end-end-color: var(--border-inline-end-end-color);
---border-inline-end-end-style: none;
-border-inline-end-end-style: var(--border-inline-end-end-style);
---border-inline-end-end-width: medium;
-border-inline-end-end-width: var(--border-inline-end-end-width)
+
 }
 .border-top {
 --border-top-left-radius: 0;
 border-top-left-radius: var(--border-top-left-radius);
 --border-top-right-radius: 0;
-border-top-right-radius: var(--border-top-right-radius);
---border-top-color: currentcolor;
-border-top-color: var(--border-top-color);
---border-top-style: none;
-border-top-style: var(--border-top-style);
---border-top-width: medium;
-border-top-width: var(--border-top-width)
+border-top-right-radius: var(--border-top-right-radius)
 }
 .border-right {
---border-right-color: currentcolor;
-border-right-color: var(--border-right-color);
---border-right-style: none;
-border-right-style: var(--border-right-style);
---border-right-width: medium;
-border-right-width: var(--border-right-width)
+
 }
 .border-bottom {
 --border-bottom-left-radius: 0;
 border-bottom-left-radius: var(--border-bottom-left-radius);
 --border-bottom-right-radius: 0;
-border-bottom-right-radius: var(--border-bottom-right-radius);
---border-bottom-color: currentcolor;
-border-bottom-color: var(--border-bottom-color);
---border-bottom-style: none;
-border-bottom-style: var(--border-bottom-style);
---border-bottom-width: medium;
-border-bottom-width: var(--border-bottom-width)
+border-bottom-right-radius: var(--border-bottom-right-radius)
 }
 .border-left {
---border-left-color: currentcolor;
-border-left-color: var(--border-left-color);
---border-left-style: none;
-border-left-style: var(--border-left-style);
---border-left-width: medium;
-border-left-width: var(--border-left-width)
+
 }
 .border-start {
 --border-start-end-radius: 0;
@@ -498,12 +393,7 @@ border-end-end-radius: var(--border-end-end-radius);
 border-end-start-radius: var(--border-end-start-radius)
 }
 .border {
---border-width: 0;
-border-width: var(--border-width);
---border-style: solid;
-border-style: var(--border-style);
---border-color: initial;
-border-color: var(--border-color)
+
 }
 .column {
 --column-count: auto;
@@ -522,42 +412,16 @@ column-span: var(--column-span);
 column-width: var(--column-width)
 }
 .padding {
---padding-top: spacing;
-padding-top: var(--padding-top);
---padding-bottom: spacing;
-padding-bottom: var(--padding-bottom);
---padding-left: spacing;
-padding-left: var(--padding-left);
---padding-right: spacing;
-padding-right: var(--padding-right)
+
 }
 .padding-block {
---padding-block-start: spacing;
-padding-block-start: var(--padding-block-start);
---padding-block-end: spacing;
-padding-block-end: var(--padding-block-end)
+
 }
 .padding-inline {
---padding-inline-start: spacing;
-padding-inline-start: var(--padding-inline-start);
---padding-inline-end: spacing;
-padding-inline-end: var(--padding-inline-end)
+
 }
 .font {
---font-style: normal;
-font-style: var(--font-style);
---font-variant: normal;
-font-variant: var(--font-variant);
---font-weight: 400;
-font-weight: var(--font-weight);
---font-stretch: normal;
-font-stretch: var(--font-stretch);
---font-size: medium;
-font-size: var(--font-size);
---font-line-height: normal;
-font-line-height: var(--font-line-height);
---font-family: serif;
-font-family: var(--font-family)
+
 }
 .font-synthesis {
 --font-synthesis-weight: auto;
@@ -568,10 +432,7 @@ font-synthesis-style: var(--font-synthesis-style);
 font-synthesis-small-caps: var(--font-synthesis-small-caps)
 }
 .gap {
---gap-row: normal;
-gap-row: var(--gap-row);
---gap-column: normal;
-gap-column: var(--gap-column)
+
 }
 .grid {
 --grid-auto-columns: auto;
@@ -596,38 +457,19 @@ grid-template-columns: var(--grid-template-columns);
 grid-template-rows: var(--grid-template-rows)
 }
 .inset-block {
---inset-block-start: auto;
-inset-block-start: var(--inset-block-start);
---inset-block-end: auto;
-inset-block-end: var(--inset-block-end)
+
 }
 .inset-inline {
---inset-inline-start: auto;
-inset-inline-start: var(--inset-inline-start);
---inset-inline-end: auto;
-inset-inline-end: var(--inset-inline-end)
+
 }
 .margin {
---margin-top: 0;
-margin-top: var(--margin-top);
---margin-bottom: 0;
-margin-bottom: var(--margin-bottom);
---margin-left: 0;
-margin-left: var(--margin-left);
---margin-right: 0;
-margin-right: var(--margin-right)
+
 }
 .margin-block {
---margin-block-start: 0;
-margin-block-start: var(--margin-block-start);
---margin-block-end: 0;
-margin-block-end: var(--margin-block-end)
+
 }
 .margin-inline {
---margin-inline-start: 0;
-margin-inline-start: var(--margin-inline-start);
---margin-inline-end: 0;
-margin-inline-end: var(--margin-inline-end)
+
 }
 .width {
 --width-min: initial;
@@ -651,19 +493,7 @@ marker-start: var(--marker-start)
 }
 .mask {
 --mask-value: none;
-mask-value: var(--mask-value);
---mask-clip: border-box;
-mask-clip: var(--mask-clip);
---mask-image: none;
-mask-image: var(--mask-image);
---mask-mode: match-source;
-mask-mode: var(--mask-mode);
---mask-origin: border-box;
-mask-origin: var(--mask-origin);
---mask-repeat: no-repeat;
-mask-repeat: var(--mask-repeat);
---mask-size: auto;
-mask-size: var(--mask-size)
+mask-value: var(--mask-value)
 }
 .max {
 --max-block-size: none;
@@ -696,10 +526,7 @@ offset-position: var(--offset-position);
 offset-rotate: var(--offset-rotate)
 }
 .overflow {
---overflow-x: visible;
-overflow-x: var(--overflow-x);
---overflow-y: visible;
-overflow-y: var(--overflow-y)
+
 }
 .overscroll-behavior {
 --overscroll-behavior-block: auto;
@@ -734,36 +561,16 @@ ruby-align: var(--ruby-align);
 ruby-position: var(--ruby-position)
 }
 .scroll-margin {
---scroll-margin-top: 0;
-scroll-margin-top: var(--scroll-margin-top);
---scroll-margin-right: 0;
-scroll-margin-right: var(--scroll-margin-right);
---scroll-margin-bottom: 0;
-scroll-margin-bottom: var(--scroll-margin-bottom);
---scroll-margin-left: 0;
-scroll-margin-left: var(--scroll-margin-left)
+
 }
 .scroll-margin-block {
---scroll-margin-block-start: 0;
-scroll-margin-block-start: var(--scroll-margin-block-start);
---scroll-margin-block-end: 0;
-scroll-margin-block-end: var(--scroll-margin-block-end)
+
 }
 .scroll-margin-inline {
---scroll-margin-inline-start: 0;
-scroll-margin-inline-start: var(--scroll-margin-inline-start);
---scroll-margin-inline-end: 0;
-scroll-margin-inline-end: var(--scroll-margin-inline-end)
+
 }
 .scroll-padding {
---scroll-padding-top: 0;
-scroll-padding-top: var(--scroll-padding-top);
---scroll-padding-right: 0;
-scroll-padding-right: var(--scroll-padding-right);
---scroll-padding-bottom: 0;
-scroll-padding-bottom: var(--scroll-padding-bottom);
---scroll-padding-left: 0;
-scroll-padding-left: var(--scroll-padding-left)
+
 }
 .scroll-padding-block {
 --scroll-padding-block-start: 0;
@@ -860,13 +667,7 @@ word-spacing: var(--word-spacing)
     --justify-items: legacy;
     justify-items: var(--justify-items);
     --order: initial;
-    order: var(--order);
-    --flex-basis: auto;
-    flex-basis: var(--flex-basis);
-    --flex-grow: 0;
-    flex-grow: var(--flex-grow);
-    --flex-shrink: 1;
-    flex-shrink: var(--flex-shrink)
+    order: var(--order)
   }
   .tablet.individual {
     --align-self: auto;
@@ -1168,25 +969,11 @@ word-spacing: var(--word-spacing)
   }
   .tablet.outline {
     --outline-offset: initial;
-    outline-offset: var(--outline-offset);
-    --outline-color: invert;
-    outline-color: var(--outline-color);
-    --outline-style: none;
-    outline-style: var(--outline-style);
-    --outline-width: medium;
-    outline-width: var(--outline-width)
+    outline-offset: var(--outline-offset)
   }
   .tablet.transition {
     --transition-behavior: auto;
-    transition-behavior: var(--transition-behavior);
-    --transition-delay: 0s;
-    transition-delay: var(--transition-delay);
-    --transition-duration: 0s;
-    transition-duration: var(--transition-duration);
-    --transition-property: all;
-    transition-property: var(--transition-property);
-    --transition-timing-function: ease;
-    transition-timing-function: var(--transition-timing-function)
+    transition-behavior: var(--transition-behavior)
   }
   .tablet.unicode {
     --unicode-bidi: normal;
@@ -1202,129 +989,44 @@ word-spacing: var(--word-spacing)
   }
   .tablet.animation {
     --animation-composition: replace;
-    animation-composition: var(--animation-composition);
-    --animation-delay: 0;
-    animation-delay: var(--animation-delay);
-    --animation-direction: normal;
-    animation-direction: var(--animation-direction);
-    --animation-duration: 0;
-    animation-duration: var(--animation-duration);
-    --animation-fill-mode: none;
-    animation-fill-mode: var(--animation-fill-mode);
-    --animation-iteration-count: 1;
-    animation-iteration-count: var(--animation-iteration-count);
-    --animation-name: none;
-    animation-name: var(--animation-name);
-    --animation-play-state: running;
-    animation-play-state: var(--animation-play-state);
-    --animation-timing-function: ease;
-    animation-timing-function: var(--animation-timing-function)
+    animation-composition: var(--animation-composition)
   }
   .tablet.background {
-    --background-attachment: scroll;
-    background-attachment: var(--background-attachment);
     --background-blend-mode: normal;
-    background-blend-mode: var(--background-blend-mode);
-    --background-clip: border-box;
-    background-clip: var(--background-clip);
-    --background-color: transparent;
-    background-color: var(--background-color);
-    --background-image: none;
-    background-image: var(--background-image);
-    --background-origin: padding-box;
-    background-origin: var(--background-origin);
-    --background-position-x: 0;
-    background-position-x: var(--background-position-x);
-    --background-position-y: 0;
-    background-position-y: var(--background-position-y);
-    --background-repeat: repeat;
-    background-repeat: var(--background-repeat);
-    --background-size: auto;
-    background-size: var(--background-size)
+    background-blend-mode: var(--background-blend-mode)
   }
   .tablet.border-image {
-    --border-image-outset: 0;
-    border-image-outset: var(--border-image-outset);
-    --border-image-repeat: stretch;
-    border-image-repeat: var(--border-image-repeat);
-    --border-image-slice: 100%;
-    border-image-slice: var(--border-image-slice);
-    --border-image-source: none;
-    border-image-source: var(--border-image-source);
-    --border-image-width: 1;
-    border-image-width: var(--border-image-width)
+    
   }
   .tablet.border-block-start {
-    --border-block-start-start-color: currentcolor;
-    border-block-start-start-color: var(--border-block-start-start-color);
-    --border-block-start-start-style: none;
-    border-block-start-start-style: var(--border-block-start-start-style);
-    --border-block-start-start-width: medium;
-    border-block-start-start-width: var(--border-block-start-start-width)
+    
   }
   .tablet.border-block-end {
-    --border-block-end-end-color: currentcolor;
-    border-block-end-end-color: var(--border-block-end-end-color);
-    --border-block-end-end-style: none;
-    border-block-end-end-style: var(--border-block-end-end-style);
-    --border-block-end-end-width: medium;
-    border-block-end-end-width: var(--border-block-end-end-width)
+    
   }
   .tablet.border-inline-start {
-    --border-inline-start-start-color: currentcolor;
-    border-inline-start-start-color: var(--border-inline-start-start-color);
-    --border-inline-start-start-style: none;
-    border-inline-start-start-style: var(--border-inline-start-start-style);
-    --border-inline-start-start-width: medium;
-    border-inline-start-start-width: var(--border-inline-start-start-width)
+    
   }
   .tablet.border-inline-end {
-    --border-inline-end-end-color: currentcolor;
-    border-inline-end-end-color: var(--border-inline-end-end-color);
-    --border-inline-end-end-style: none;
-    border-inline-end-end-style: var(--border-inline-end-end-style);
-    --border-inline-end-end-width: medium;
-    border-inline-end-end-width: var(--border-inline-end-end-width)
+    
   }
   .tablet.border-top {
     --border-top-left-radius: 0;
     border-top-left-radius: var(--border-top-left-radius);
     --border-top-right-radius: 0;
-    border-top-right-radius: var(--border-top-right-radius);
-    --border-top-color: currentcolor;
-    border-top-color: var(--border-top-color);
-    --border-top-style: none;
-    border-top-style: var(--border-top-style);
-    --border-top-width: medium;
-    border-top-width: var(--border-top-width)
+    border-top-right-radius: var(--border-top-right-radius)
   }
   .tablet.border-right {
-    --border-right-color: currentcolor;
-    border-right-color: var(--border-right-color);
-    --border-right-style: none;
-    border-right-style: var(--border-right-style);
-    --border-right-width: medium;
-    border-right-width: var(--border-right-width)
+    
   }
   .tablet.border-bottom {
     --border-bottom-left-radius: 0;
     border-bottom-left-radius: var(--border-bottom-left-radius);
     --border-bottom-right-radius: 0;
-    border-bottom-right-radius: var(--border-bottom-right-radius);
-    --border-bottom-color: currentcolor;
-    border-bottom-color: var(--border-bottom-color);
-    --border-bottom-style: none;
-    border-bottom-style: var(--border-bottom-style);
-    --border-bottom-width: medium;
-    border-bottom-width: var(--border-bottom-width)
+    border-bottom-right-radius: var(--border-bottom-right-radius)
   }
   .tablet.border-left {
-    --border-left-color: currentcolor;
-    border-left-color: var(--border-left-color);
-    --border-left-style: none;
-    border-left-style: var(--border-left-style);
-    --border-left-width: medium;
-    border-left-width: var(--border-left-width)
+    
   }
   .tablet.border-start {
     --border-start-end-radius: 0;
@@ -1339,12 +1041,7 @@ word-spacing: var(--word-spacing)
     border-end-start-radius: var(--border-end-start-radius)
   }
   .tablet.border {
-    --border-width: 0;
-    border-width: var(--border-width);
-    --border-style: solid;
-    border-style: var(--border-style);
-    --border-color: initial;
-    border-color: var(--border-color)
+    
   }
   .tablet.column {
     --column-count: auto;
@@ -1363,42 +1060,16 @@ word-spacing: var(--word-spacing)
     column-width: var(--column-width)
   }
   .tablet.padding {
-    --padding-top: spacing;
-    padding-top: var(--padding-top);
-    --padding-bottom: spacing;
-    padding-bottom: var(--padding-bottom);
-    --padding-left: spacing;
-    padding-left: var(--padding-left);
-    --padding-right: spacing;
-    padding-right: var(--padding-right)
+    
   }
   .tablet.padding-block {
-    --padding-block-start: spacing;
-    padding-block-start: var(--padding-block-start);
-    --padding-block-end: spacing;
-    padding-block-end: var(--padding-block-end)
+    
   }
   .tablet.padding-inline {
-    --padding-inline-start: spacing;
-    padding-inline-start: var(--padding-inline-start);
-    --padding-inline-end: spacing;
-    padding-inline-end: var(--padding-inline-end)
+    
   }
   .tablet.font {
-    --font-style: normal;
-    font-style: var(--font-style);
-    --font-variant: normal;
-    font-variant: var(--font-variant);
-    --font-weight: 400;
-    font-weight: var(--font-weight);
-    --font-stretch: normal;
-    font-stretch: var(--font-stretch);
-    --font-size: medium;
-    font-size: var(--font-size);
-    --font-line-height: normal;
-    font-line-height: var(--font-line-height);
-    --font-family: serif;
-    font-family: var(--font-family)
+    
   }
   .tablet.font-synthesis {
     --font-synthesis-weight: auto;
@@ -1409,10 +1080,7 @@ word-spacing: var(--word-spacing)
     font-synthesis-small-caps: var(--font-synthesis-small-caps)
   }
   .tablet.gap {
-    --gap-row: normal;
-    gap-row: var(--gap-row);
-    --gap-column: normal;
-    gap-column: var(--gap-column)
+    
   }
   .tablet.grid {
     --grid-auto-columns: auto;
@@ -1437,38 +1105,19 @@ word-spacing: var(--word-spacing)
     grid-template-rows: var(--grid-template-rows)
   }
   .tablet.inset-block {
-    --inset-block-start: auto;
-    inset-block-start: var(--inset-block-start);
-    --inset-block-end: auto;
-    inset-block-end: var(--inset-block-end)
+    
   }
   .tablet.inset-inline {
-    --inset-inline-start: auto;
-    inset-inline-start: var(--inset-inline-start);
-    --inset-inline-end: auto;
-    inset-inline-end: var(--inset-inline-end)
+    
   }
   .tablet.margin {
-    --margin-top: 0;
-    margin-top: var(--margin-top);
-    --margin-bottom: 0;
-    margin-bottom: var(--margin-bottom);
-    --margin-left: 0;
-    margin-left: var(--margin-left);
-    --margin-right: 0;
-    margin-right: var(--margin-right)
+    
   }
   .tablet.margin-block {
-    --margin-block-start: 0;
-    margin-block-start: var(--margin-block-start);
-    --margin-block-end: 0;
-    margin-block-end: var(--margin-block-end)
+    
   }
   .tablet.margin-inline {
-    --margin-inline-start: 0;
-    margin-inline-start: var(--margin-inline-start);
-    --margin-inline-end: 0;
-    margin-inline-end: var(--margin-inline-end)
+    
   }
   .tablet.width {
     --width-min: initial;
@@ -1492,19 +1141,7 @@ word-spacing: var(--word-spacing)
   }
   .tablet.mask {
     --mask-value: none;
-    mask-value: var(--mask-value);
-    --mask-clip: border-box;
-    mask-clip: var(--mask-clip);
-    --mask-image: none;
-    mask-image: var(--mask-image);
-    --mask-mode: match-source;
-    mask-mode: var(--mask-mode);
-    --mask-origin: border-box;
-    mask-origin: var(--mask-origin);
-    --mask-repeat: no-repeat;
-    mask-repeat: var(--mask-repeat);
-    --mask-size: auto;
-    mask-size: var(--mask-size)
+    mask-value: var(--mask-value)
   }
   .tablet.max {
     --max-block-size: none;
@@ -1537,10 +1174,7 @@ word-spacing: var(--word-spacing)
     offset-rotate: var(--offset-rotate)
   }
   .tablet.overflow {
-    --overflow-x: visible;
-    overflow-x: var(--overflow-x);
-    --overflow-y: visible;
-    overflow-y: var(--overflow-y)
+    
   }
   .tablet.overscroll-behavior {
     --overscroll-behavior-block: auto;
@@ -1575,36 +1209,16 @@ word-spacing: var(--word-spacing)
     ruby-position: var(--ruby-position)
   }
   .tablet.scroll-margin {
-    --scroll-margin-top: 0;
-    scroll-margin-top: var(--scroll-margin-top);
-    --scroll-margin-right: 0;
-    scroll-margin-right: var(--scroll-margin-right);
-    --scroll-margin-bottom: 0;
-    scroll-margin-bottom: var(--scroll-margin-bottom);
-    --scroll-margin-left: 0;
-    scroll-margin-left: var(--scroll-margin-left)
+    
   }
   .tablet.scroll-margin-block {
-    --scroll-margin-block-start: 0;
-    scroll-margin-block-start: var(--scroll-margin-block-start);
-    --scroll-margin-block-end: 0;
-    scroll-margin-block-end: var(--scroll-margin-block-end)
+    
   }
   .tablet.scroll-margin-inline {
-    --scroll-margin-inline-start: 0;
-    scroll-margin-inline-start: var(--scroll-margin-inline-start);
-    --scroll-margin-inline-end: 0;
-    scroll-margin-inline-end: var(--scroll-margin-inline-end)
+    
   }
   .tablet.scroll-padding {
-    --scroll-padding-top: 0;
-    scroll-padding-top: var(--scroll-padding-top);
-    --scroll-padding-right: 0;
-    scroll-padding-right: var(--scroll-padding-right);
-    --scroll-padding-bottom: 0;
-    scroll-padding-bottom: var(--scroll-padding-bottom);
-    --scroll-padding-left: 0;
-    scroll-padding-left: var(--scroll-padding-left)
+    
   }
   .tablet.scroll-padding-block {
     --scroll-padding-block-start: 0;
@@ -1702,13 +1316,7 @@ word-spacing: var(--word-spacing)
     --justify-items: legacy;
     justify-items: var(--justify-items);
     --order: initial;
-    order: var(--order);
-    --flex-basis: auto;
-    flex-basis: var(--flex-basis);
-    --flex-grow: 0;
-    flex-grow: var(--flex-grow);
-    --flex-shrink: 1;
-    flex-shrink: var(--flex-shrink)
+    order: var(--order)
   }
   .desktop.individual {
     --align-self: auto;
@@ -2010,25 +1618,11 @@ word-spacing: var(--word-spacing)
   }
   .desktop.outline {
     --outline-offset: initial;
-    outline-offset: var(--outline-offset);
-    --outline-color: invert;
-    outline-color: var(--outline-color);
-    --outline-style: none;
-    outline-style: var(--outline-style);
-    --outline-width: medium;
-    outline-width: var(--outline-width)
+    outline-offset: var(--outline-offset)
   }
   .desktop.transition {
     --transition-behavior: auto;
-    transition-behavior: var(--transition-behavior);
-    --transition-delay: 0s;
-    transition-delay: var(--transition-delay);
-    --transition-duration: 0s;
-    transition-duration: var(--transition-duration);
-    --transition-property: all;
-    transition-property: var(--transition-property);
-    --transition-timing-function: ease;
-    transition-timing-function: var(--transition-timing-function)
+    transition-behavior: var(--transition-behavior)
   }
   .desktop.unicode {
     --unicode-bidi: normal;
@@ -2044,129 +1638,44 @@ word-spacing: var(--word-spacing)
   }
   .desktop.animation {
     --animation-composition: replace;
-    animation-composition: var(--animation-composition);
-    --animation-delay: 0;
-    animation-delay: var(--animation-delay);
-    --animation-direction: normal;
-    animation-direction: var(--animation-direction);
-    --animation-duration: 0;
-    animation-duration: var(--animation-duration);
-    --animation-fill-mode: none;
-    animation-fill-mode: var(--animation-fill-mode);
-    --animation-iteration-count: 1;
-    animation-iteration-count: var(--animation-iteration-count);
-    --animation-name: none;
-    animation-name: var(--animation-name);
-    --animation-play-state: running;
-    animation-play-state: var(--animation-play-state);
-    --animation-timing-function: ease;
-    animation-timing-function: var(--animation-timing-function)
+    animation-composition: var(--animation-composition)
   }
   .desktop.background {
-    --background-attachment: scroll;
-    background-attachment: var(--background-attachment);
     --background-blend-mode: normal;
-    background-blend-mode: var(--background-blend-mode);
-    --background-clip: border-box;
-    background-clip: var(--background-clip);
-    --background-color: transparent;
-    background-color: var(--background-color);
-    --background-image: none;
-    background-image: var(--background-image);
-    --background-origin: padding-box;
-    background-origin: var(--background-origin);
-    --background-position-x: 0;
-    background-position-x: var(--background-position-x);
-    --background-position-y: 0;
-    background-position-y: var(--background-position-y);
-    --background-repeat: repeat;
-    background-repeat: var(--background-repeat);
-    --background-size: auto;
-    background-size: var(--background-size)
+    background-blend-mode: var(--background-blend-mode)
   }
   .desktop.border-image {
-    --border-image-outset: 0;
-    border-image-outset: var(--border-image-outset);
-    --border-image-repeat: stretch;
-    border-image-repeat: var(--border-image-repeat);
-    --border-image-slice: 100%;
-    border-image-slice: var(--border-image-slice);
-    --border-image-source: none;
-    border-image-source: var(--border-image-source);
-    --border-image-width: 1;
-    border-image-width: var(--border-image-width)
+    
   }
   .desktop.border-block-start {
-    --border-block-start-start-color: currentcolor;
-    border-block-start-start-color: var(--border-block-start-start-color);
-    --border-block-start-start-style: none;
-    border-block-start-start-style: var(--border-block-start-start-style);
-    --border-block-start-start-width: medium;
-    border-block-start-start-width: var(--border-block-start-start-width)
+    
   }
   .desktop.border-block-end {
-    --border-block-end-end-color: currentcolor;
-    border-block-end-end-color: var(--border-block-end-end-color);
-    --border-block-end-end-style: none;
-    border-block-end-end-style: var(--border-block-end-end-style);
-    --border-block-end-end-width: medium;
-    border-block-end-end-width: var(--border-block-end-end-width)
+    
   }
   .desktop.border-inline-start {
-    --border-inline-start-start-color: currentcolor;
-    border-inline-start-start-color: var(--border-inline-start-start-color);
-    --border-inline-start-start-style: none;
-    border-inline-start-start-style: var(--border-inline-start-start-style);
-    --border-inline-start-start-width: medium;
-    border-inline-start-start-width: var(--border-inline-start-start-width)
+    
   }
   .desktop.border-inline-end {
-    --border-inline-end-end-color: currentcolor;
-    border-inline-end-end-color: var(--border-inline-end-end-color);
-    --border-inline-end-end-style: none;
-    border-inline-end-end-style: var(--border-inline-end-end-style);
-    --border-inline-end-end-width: medium;
-    border-inline-end-end-width: var(--border-inline-end-end-width)
+    
   }
   .desktop.border-top {
     --border-top-left-radius: 0;
     border-top-left-radius: var(--border-top-left-radius);
     --border-top-right-radius: 0;
-    border-top-right-radius: var(--border-top-right-radius);
-    --border-top-color: currentcolor;
-    border-top-color: var(--border-top-color);
-    --border-top-style: none;
-    border-top-style: var(--border-top-style);
-    --border-top-width: medium;
-    border-top-width: var(--border-top-width)
+    border-top-right-radius: var(--border-top-right-radius)
   }
   .desktop.border-right {
-    --border-right-color: currentcolor;
-    border-right-color: var(--border-right-color);
-    --border-right-style: none;
-    border-right-style: var(--border-right-style);
-    --border-right-width: medium;
-    border-right-width: var(--border-right-width)
+    
   }
   .desktop.border-bottom {
     --border-bottom-left-radius: 0;
     border-bottom-left-radius: var(--border-bottom-left-radius);
     --border-bottom-right-radius: 0;
-    border-bottom-right-radius: var(--border-bottom-right-radius);
-    --border-bottom-color: currentcolor;
-    border-bottom-color: var(--border-bottom-color);
-    --border-bottom-style: none;
-    border-bottom-style: var(--border-bottom-style);
-    --border-bottom-width: medium;
-    border-bottom-width: var(--border-bottom-width)
+    border-bottom-right-radius: var(--border-bottom-right-radius)
   }
   .desktop.border-left {
-    --border-left-color: currentcolor;
-    border-left-color: var(--border-left-color);
-    --border-left-style: none;
-    border-left-style: var(--border-left-style);
-    --border-left-width: medium;
-    border-left-width: var(--border-left-width)
+    
   }
   .desktop.border-start {
     --border-start-end-radius: 0;
@@ -2181,12 +1690,7 @@ word-spacing: var(--word-spacing)
     border-end-start-radius: var(--border-end-start-radius)
   }
   .desktop.border {
-    --border-width: 0;
-    border-width: var(--border-width);
-    --border-style: solid;
-    border-style: var(--border-style);
-    --border-color: initial;
-    border-color: var(--border-color)
+    
   }
   .desktop.column {
     --column-count: auto;
@@ -2205,42 +1709,16 @@ word-spacing: var(--word-spacing)
     column-width: var(--column-width)
   }
   .desktop.padding {
-    --padding-top: spacing;
-    padding-top: var(--padding-top);
-    --padding-bottom: spacing;
-    padding-bottom: var(--padding-bottom);
-    --padding-left: spacing;
-    padding-left: var(--padding-left);
-    --padding-right: spacing;
-    padding-right: var(--padding-right)
+    
   }
   .desktop.padding-block {
-    --padding-block-start: spacing;
-    padding-block-start: var(--padding-block-start);
-    --padding-block-end: spacing;
-    padding-block-end: var(--padding-block-end)
+    
   }
   .desktop.padding-inline {
-    --padding-inline-start: spacing;
-    padding-inline-start: var(--padding-inline-start);
-    --padding-inline-end: spacing;
-    padding-inline-end: var(--padding-inline-end)
+    
   }
   .desktop.font {
-    --font-style: normal;
-    font-style: var(--font-style);
-    --font-variant: normal;
-    font-variant: var(--font-variant);
-    --font-weight: 400;
-    font-weight: var(--font-weight);
-    --font-stretch: normal;
-    font-stretch: var(--font-stretch);
-    --font-size: medium;
-    font-size: var(--font-size);
-    --font-line-height: normal;
-    font-line-height: var(--font-line-height);
-    --font-family: serif;
-    font-family: var(--font-family)
+    
   }
   .desktop.font-synthesis {
     --font-synthesis-weight: auto;
@@ -2251,10 +1729,7 @@ word-spacing: var(--word-spacing)
     font-synthesis-small-caps: var(--font-synthesis-small-caps)
   }
   .desktop.gap {
-    --gap-row: normal;
-    gap-row: var(--gap-row);
-    --gap-column: normal;
-    gap-column: var(--gap-column)
+    
   }
   .desktop.grid {
     --grid-auto-columns: auto;
@@ -2279,38 +1754,19 @@ word-spacing: var(--word-spacing)
     grid-template-rows: var(--grid-template-rows)
   }
   .desktop.inset-block {
-    --inset-block-start: auto;
-    inset-block-start: var(--inset-block-start);
-    --inset-block-end: auto;
-    inset-block-end: var(--inset-block-end)
+    
   }
   .desktop.inset-inline {
-    --inset-inline-start: auto;
-    inset-inline-start: var(--inset-inline-start);
-    --inset-inline-end: auto;
-    inset-inline-end: var(--inset-inline-end)
+    
   }
   .desktop.margin {
-    --margin-top: 0;
-    margin-top: var(--margin-top);
-    --margin-bottom: 0;
-    margin-bottom: var(--margin-bottom);
-    --margin-left: 0;
-    margin-left: var(--margin-left);
-    --margin-right: 0;
-    margin-right: var(--margin-right)
+    
   }
   .desktop.margin-block {
-    --margin-block-start: 0;
-    margin-block-start: var(--margin-block-start);
-    --margin-block-end: 0;
-    margin-block-end: var(--margin-block-end)
+    
   }
   .desktop.margin-inline {
-    --margin-inline-start: 0;
-    margin-inline-start: var(--margin-inline-start);
-    --margin-inline-end: 0;
-    margin-inline-end: var(--margin-inline-end)
+    
   }
   .desktop.width {
     --width-min: initial;
@@ -2334,19 +1790,7 @@ word-spacing: var(--word-spacing)
   }
   .desktop.mask {
     --mask-value: none;
-    mask-value: var(--mask-value);
-    --mask-clip: border-box;
-    mask-clip: var(--mask-clip);
-    --mask-image: none;
-    mask-image: var(--mask-image);
-    --mask-mode: match-source;
-    mask-mode: var(--mask-mode);
-    --mask-origin: border-box;
-    mask-origin: var(--mask-origin);
-    --mask-repeat: no-repeat;
-    mask-repeat: var(--mask-repeat);
-    --mask-size: auto;
-    mask-size: var(--mask-size)
+    mask-value: var(--mask-value)
   }
   .desktop.max {
     --max-block-size: none;
@@ -2379,10 +1823,7 @@ word-spacing: var(--word-spacing)
     offset-rotate: var(--offset-rotate)
   }
   .desktop.overflow {
-    --overflow-x: visible;
-    overflow-x: var(--overflow-x);
-    --overflow-y: visible;
-    overflow-y: var(--overflow-y)
+    
   }
   .desktop.overscroll-behavior {
     --overscroll-behavior-block: auto;
@@ -2417,36 +1858,16 @@ word-spacing: var(--word-spacing)
     ruby-position: var(--ruby-position)
   }
   .desktop.scroll-margin {
-    --scroll-margin-top: 0;
-    scroll-margin-top: var(--scroll-margin-top);
-    --scroll-margin-right: 0;
-    scroll-margin-right: var(--scroll-margin-right);
-    --scroll-margin-bottom: 0;
-    scroll-margin-bottom: var(--scroll-margin-bottom);
-    --scroll-margin-left: 0;
-    scroll-margin-left: var(--scroll-margin-left)
+    
   }
   .desktop.scroll-margin-block {
-    --scroll-margin-block-start: 0;
-    scroll-margin-block-start: var(--scroll-margin-block-start);
-    --scroll-margin-block-end: 0;
-    scroll-margin-block-end: var(--scroll-margin-block-end)
+    
   }
   .desktop.scroll-margin-inline {
-    --scroll-margin-inline-start: 0;
-    scroll-margin-inline-start: var(--scroll-margin-inline-start);
-    --scroll-margin-inline-end: 0;
-    scroll-margin-inline-end: var(--scroll-margin-inline-end)
+    
   }
   .desktop.scroll-padding {
-    --scroll-padding-top: 0;
-    scroll-padding-top: var(--scroll-padding-top);
-    --scroll-padding-right: 0;
-    scroll-padding-right: var(--scroll-padding-right);
-    --scroll-padding-bottom: 0;
-    scroll-padding-bottom: var(--scroll-padding-bottom);
-    --scroll-padding-left: 0;
-    scroll-padding-left: var(--scroll-padding-left)
+    
   }
   .desktop.scroll-padding-block {
     --scroll-padding-block-start: 0;

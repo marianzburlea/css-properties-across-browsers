@@ -1,8 +1,5 @@
 @media screen and (min-width: 80rem) {
   .desktop.margin-inline {
-    --margin-inline-start: 0;
-    margin-inline-start: var(--margin-inline-start);
-    --margin-inline-end: 0;
-    margin-inline-end: var(--margin-inline-end)
+    
   }
 }

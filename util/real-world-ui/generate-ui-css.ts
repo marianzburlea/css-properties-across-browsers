@@ -66,8 +66,25 @@ for (const cssCamelCaseProperty in cssCondensedPropertyMap) {
   const subPropList = Object.keys(
     cssCondensedPropertyMap[cssCamelCaseProperty].children
   )
+  const condensedPropList = Array.isArray(
+    cssCondensedPropertyMap[cssCamelCaseProperty].condensed
+  )
+    ? cssCondensedPropertyMap[cssCamelCaseProperty].condensed
+    : []
 
-  subPropList.map((subProp) => {
+  console.log('')
+  console.log(cssCamelCaseProperty)
+  console.log(condensedPropList)
+  let notCondensedPropList: string[] = []
+  if (Array.isArray(condensedPropList)) {
+    notCondensedPropList = subPropList.filter(
+      (subProp) => !condensedPropList.includes(subProp)
+    )
+  }
+  console.log(notCondensedPropList)
+  console.log('')
+
+  notCondensedPropList.map((subProp) => {
     const kebabProperty = `${className}-${camelToKebabCase(subProp)}`
     const resetVar = `--${kebabProperty}: ${cssCondensedPropertyMap[cssCamelCaseProperty].children[subProp]}`
 

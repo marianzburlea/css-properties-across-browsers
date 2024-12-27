@@ -1,6 +1,3 @@
 .gap {
---gap-row: normal;
-gap-row: var(--gap-row);
---gap-column: normal;
-gap-column: var(--gap-column)
+
 }

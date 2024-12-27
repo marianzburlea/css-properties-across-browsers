@@ -1,14 +1,5 @@
 @media screen and (min-width: 80rem) {
   .desktop.border-image {
-    --border-image-outset: 0;
-    border-image-outset: var(--border-image-outset);
-    --border-image-repeat: stretch;
-    border-image-repeat: var(--border-image-repeat);
-    --border-image-slice: 100%;
-    border-image-slice: var(--border-image-slice);
-    --border-image-source: none;
-    border-image-source: var(--border-image-source);
-    --border-image-width: 1;
-    border-image-width: var(--border-image-width)
+    
   }
 }

@@ -1,10 +1,5 @@
 @media screen and (min-width: 48rem) {
   .tablet.border-inline-end {
-    --border-inline-end-end-color: currentcolor;
-    border-inline-end-end-color: var(--border-inline-end-end-color);
-    --border-inline-end-end-style: none;
-    border-inline-end-end-style: var(--border-inline-end-end-style);
-    --border-inline-end-end-width: medium;
-    border-inline-end-end-width: var(--border-inline-end-end-width)
+    
   }
 }

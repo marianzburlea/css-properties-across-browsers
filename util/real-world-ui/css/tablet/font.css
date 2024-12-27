@@ -1,18 +1,5 @@
 @media screen and (min-width: 48rem) {
   .tablet.font {
-    --font-style: normal;
-    font-style: var(--font-style);
-    --font-variant: normal;
-    font-variant: var(--font-variant);
-    --font-weight: 400;
-    font-weight: var(--font-weight);
-    --font-stretch: normal;
-    font-stretch: var(--font-stretch);
-    --font-size: medium;
-    font-size: var(--font-size);
-    --font-line-height: normal;
-    font-line-height: var(--font-line-height);
-    --font-family: serif;
-    font-family: var(--font-family)
+    
   }
 }

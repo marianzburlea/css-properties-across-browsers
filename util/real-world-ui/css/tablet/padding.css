@@ -1,12 +1,5 @@
 @media screen and (min-width: 48rem) {
   .tablet.padding {
-    --padding-top: spacing;
-    padding-top: var(--padding-top);
-    --padding-bottom: spacing;
-    padding-bottom: var(--padding-bottom);
-    --padding-left: spacing;
-    padding-left: var(--padding-left);
-    --padding-right: spacing;
-    padding-right: var(--padding-right)
+    
   }
 }

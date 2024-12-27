@@ -1,8 +1,5 @@
 @media screen and (min-width: 80rem) {
   .desktop.inset-inline {
-    --inset-inline-start: auto;
-    inset-inline-start: var(--inset-inline-start);
-    --inset-inline-end: auto;
-    inset-inline-end: var(--inset-inline-end)
+    
   }
 }

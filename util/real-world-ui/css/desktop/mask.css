@@ -1,18 +1,6 @@
 @media screen and (min-width: 80rem) {
   .desktop.mask {
     --mask-value: none;
-    mask-value: var(--mask-value);
-    --mask-clip: border-box;
-    mask-clip: var(--mask-clip);
-    --mask-image: none;
-    mask-image: var(--mask-image);
-    --mask-mode: match-source;
-    mask-mode: var(--mask-mode);
-    --mask-origin: border-box;
-    mask-origin: var(--mask-origin);
-    --mask-repeat: no-repeat;
-    mask-repeat: var(--mask-repeat);
-    --mask-size: auto;
-    mask-size: var(--mask-size)
+    mask-value: var(--mask-value)
   }
 }

@@ -1,22 +1,6 @@
 @media screen and (min-width: 48rem) {
   .tablet.animation {
     --animation-composition: replace;
-    animation-composition: var(--animation-composition);
-    --animation-delay: 0;
-    animation-delay: var(--animation-delay);
-    --animation-direction: normal;
-    animation-direction: var(--animation-direction);
-    --animation-duration: 0;
-    animation-duration: var(--animation-duration);
-    --animation-fill-mode: none;
-    animation-fill-mode: var(--animation-fill-mode);
-    --animation-iteration-count: 1;
-    animation-iteration-count: var(--animation-iteration-count);
-    --animation-name: none;
-    animation-name: var(--animation-name);
-    --animation-play-state: running;
-    animation-play-state: var(--animation-play-state);
-    --animation-timing-function: ease;
-    animation-timing-function: var(--animation-timing-function)
+    animation-composition: var(--animation-composition)
   }
 }

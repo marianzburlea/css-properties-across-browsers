@@ -12,11 +12,5 @@ justify-content: var(--justify-content);
 --justify-items: legacy;
 justify-items: var(--justify-items);
 --order: initial;
-order: var(--order);
---flex-basis: auto;
-flex-basis: var(--flex-basis);
---flex-grow: 0;
-flex-grow: var(--flex-grow);
---flex-shrink: 1;
-flex-shrink: var(--flex-shrink)
+order: var(--order)
 }
