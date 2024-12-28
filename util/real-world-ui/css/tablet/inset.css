@@ -1,0 +1,5 @@
+.tablet.inset {
+  --inset: auto;
+
+  inset: var(--inset)
+}

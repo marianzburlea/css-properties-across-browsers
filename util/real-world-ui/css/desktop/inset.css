@@ -1,0 +1,5 @@
+.desktop.inset {
+  --inset: auto;
+
+  inset: var(--inset)
+}
