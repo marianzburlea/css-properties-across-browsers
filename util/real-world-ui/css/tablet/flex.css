@@ -18,5 +18,5 @@
   justify-content: var(--justify-content);
   justify-items: var(--justify-items);
   order: var(--order);
-  flex: var(--flex, var(--flex-shrink) var(--flex-basis));
+  flex: var(--flex, var(--flex-shrink) var(--flex-basis))
 }

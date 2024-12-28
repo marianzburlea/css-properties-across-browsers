@@ -8,5 +8,5 @@
   --font-family: serif;
   --font: 1rem sans-serif;
 
-  font: var(--font, var(--font-variant) var(--font-weight) var(--font-stretch) var(--font-size) var(--font-line-height) var(--font-family));
+  font: var(--font, var(--font-variant) var(--font-weight) var(--font-stretch) var(--font-size) var(--font-line-height) var(--font-family))
 }

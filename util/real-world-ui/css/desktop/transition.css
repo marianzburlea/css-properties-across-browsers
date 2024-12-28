@@ -7,5 +7,5 @@
   --transition: all 0s ease 0s;
 
   transition-behavior: var(--transition-behavior);
-  transition: var(--transition, var(--transition-duration) var(--transition-timing-function) var(--transition-delay));
+  transition: var(--transition, var(--transition-duration) var(--transition-timing-function) var(--transition-delay))
 }

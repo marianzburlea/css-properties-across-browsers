@@ -10,5 +10,5 @@
   --animation-composition: replace;
   --animation: none;
 
-  animation: var(--animation, var(--animation-duration) var(--animation-timing-function) var(--animation-delay) var(--animation-iteration-count) var(--animation-direction) var(--animation-fill-mode) var(--animation-play-state) var(--animation-composition));
+  animation: var(--animation, var(--animation-duration) var(--animation-timing-function) var(--animation-delay) var(--animation-iteration-count) var(--animation-direction) var(--animation-fill-mode) var(--animation-play-state) var(--animation-composition))
 }

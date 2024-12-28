@@ -4,5 +4,5 @@
   --border-right-color: currentcolor;
   --borderRight: initial;
 
-  border-right: var(--border-right, var(--border-right-style) var(--border-right-color));
+  border-right: var(--border-right, var(--border-right-style) var(--border-right-color))
 }

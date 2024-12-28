@@ -11,5 +11,5 @@
   --background-blend-mode: normal;
   --background: transparent;
 
-  background: var(--background, var(--background-image) var(--background-position-x) var(--background-position-y) var(--background-size) var(--background-repeat) var(--background-attachment) var(--background-origin) var(--background-clip) var(--background-blend-mode));
+  background: var(--background, var(--background-image) var(--background-position-x) var(--background-position-y) var(--background-size) var(--background-repeat) var(--background-attachment) var(--background-origin) var(--background-clip) var(--background-blend-mode))
 }

@@ -6,5 +6,5 @@
   --border-image-repeat: stretch;
   --borderImage: initial;
 
-  border-image: var(--border-image, var(--border-image-slice) var(--border-image-width) var(--border-image-outset) var(--border-image-repeat));
+  border-image: var(--border-image, var(--border-image-slice) var(--border-image-width) var(--border-image-outset) var(--border-image-repeat))
 }

@@ -3,5 +3,5 @@
   --column-gap: normal;
   --gap: normal;
 
-  gap: var(--gap, var(--column-gap));
+  gap: var(--gap, var(--column-gap))
 }

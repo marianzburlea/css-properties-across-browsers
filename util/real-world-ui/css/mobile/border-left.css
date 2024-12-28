@@ -4,5 +4,5 @@
   --border-left-color: currentcolor;
   --borderLeft: initial;
 
-  border-left: var(--border-left, var(--border-left-style) var(--border-left-color));
+  border-left: var(--border-left, var(--border-left-style) var(--border-left-color))
 }

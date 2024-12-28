@@ -3,5 +3,5 @@
   --inset-block-end: auto;
   --insetBlock: initial;
 
-  inset-block: var(--inset-block, var(--inset-block-end));
+  inset-block: var(--inset-block, var(--inset-block-end))
 }

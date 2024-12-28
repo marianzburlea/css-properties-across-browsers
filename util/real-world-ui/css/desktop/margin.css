@@ -5,5 +5,5 @@
   --margin-left: 0;
   --margin: 0;
 
-  margin: var(--margin, var(--margin-right) var(--margin-bottom) var(--margin-left));
+  margin: var(--margin, var(--margin-right) var(--margin-bottom) var(--margin-left))
 }

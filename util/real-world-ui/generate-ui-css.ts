@@ -1,4 +1,4 @@
-import fs from 'fs'
+import fs from 'node:fs'
 import {
   cssCondensedPropertyMap,
   cssPropertyMap,
@@ -74,7 +74,7 @@ for (const className of cssPropertyByGroupList) {
 
 for (const cssCamelCaseProperty in cssCondensedPropertyMap) {
   const className = camelToKebabCase(
-    cssCondensedPropertyMap[cssCamelCaseProperty].className
+    cssCondensedPropertyMap[cssCamelCaseProperty].className,
   )
 
   const row: TRow = {
@@ -83,10 +83,10 @@ for (const cssCamelCaseProperty in cssCondensedPropertyMap) {
   }
 
   const subPropList = Object.keys(
-    cssCondensedPropertyMap[cssCamelCaseProperty].children
+    cssCondensedPropertyMap[cssCamelCaseProperty].children,
   )
   const condensedPropList = Array.isArray(
-    cssCondensedPropertyMap[cssCamelCaseProperty].condensed
+    cssCondensedPropertyMap[cssCamelCaseProperty].condensed,
   )
     ? cssCondensedPropertyMap[cssCamelCaseProperty].condensed
     : []
@@ -94,7 +94,7 @@ for (const cssCamelCaseProperty in cssCondensedPropertyMap) {
   let notCondensedPropList: string[] = []
   if (Array.isArray(condensedPropList)) {
     notCondensedPropList = subPropList.filter(
-      (subProp) => !condensedPropList.includes(subProp)
+      (subProp) => !condensedPropList.includes(subProp),
     )
   }
 
@@ -132,7 +132,7 @@ for (const cssCamelCaseProperty in cssCondensedPropertyMap) {
       right: [
         kebabProperty,
         ...condensedPropList.map((condensedProp) =>
-          camelToKebabCase(condensedProp)
+          camelToKebabCase(condensedProp),
         ),
       ],
     })
@@ -165,7 +165,7 @@ for (const cssCamelCaseProperty in cssCondensedPropertyMap) {
   if (
     !Object.prototype.hasOwnProperty.call(
       finalCssClassMap,
-      cssCamelCaseProperty
+      cssCamelCaseProperty,
     )
   ) {
     finalCssClassMap[className] = {
@@ -207,10 +207,10 @@ ${finalCssClassMap[mapKey].row.declaration
           .map((prop) =>
             cssCondensedPropertyMap[mapKey]?.prefix
               ? `var(--${prop}-${right[0]})`
-              : `var(--${right[0]}-${prop})`
+              : `var(--${right[0]}-${prop})`,
           )
-          .join(' ')});`
-      : `  ${left}: var(--${right})`
+          .join(' ')})`
+      : `  ${left}: var(--${right})`,
   )
   .join(';\n')}
 }`
@@ -220,14 +220,14 @@ ${finalCssClassMap[mapKey].row.declaration
 const generateAndSaveCss = (
   device: string,
   prefix: string,
-  breakPoint?: number
+  breakPoint?: number,
 ) => {
   for (const mapKey of Object.keys(finalCssClassMap)) {
     const cssRaw = generateCss(prefix, mapKey)
     allCss[device].push(cssRaw)
     fs.writeFileSync(
       `css/${device}/${finalCssClassMap[mapKey].className}.css`,
-      cssRaw
+      cssRaw,
     )
   }
 
@@ -252,7 +252,7 @@ fs.writeFileSync(
 ${allMobile}
 ${allTablet}
 ${allDesktop}
-`
+`,
 )
 
 const transformStrings = (input: string[]): string[] => {

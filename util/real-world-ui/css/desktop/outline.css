@@ -6,5 +6,5 @@
   --outline: invert;
 
   outline-offset: var(--outline-offset);
-  outline: var(--outline, var(--outline-style) var(--outline-color));
+  outline: var(--outline, var(--outline-style) var(--outline-color))
 }

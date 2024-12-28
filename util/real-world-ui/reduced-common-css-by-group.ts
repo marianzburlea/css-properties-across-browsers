@@ -693,7 +693,7 @@ export const cssPropertyMap = {
   imageOrientation: 'image',
   imageRendering: 'image',
   inlineSize: 'box',
-  inset: 'position',
+  inset: 'inset',
   isolation: 'visual-effect',
   justifyContent: 'flex',
   justifyItems: 'flex',

@@ -4,5 +4,5 @@
   --border-inline-end-end-color: initial;
   --borderInlineEnd: initial;
 
-  border-inline-end: var(--border-inline-end, var(--border-inline-end-end-style) var(--border-inline-end-end-color));
+  border-inline-end: var(--border-inline-end, var(--border-inline-end-end-style) var(--border-inline-end-end-color))
 }

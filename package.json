@@ -4,6 +4,7 @@
     "dev": "bunx chokidar \"count.ts\" -c \"bun run count.ts\""
   },
   "devDependencies": {
+    "@types/node": "^22.10.2",
     "chokidar-cli": "^3.0.0"
   }
 }

@@ -1,6 +1,5 @@
 .position {
   --bottom: auto;
-  --inset: auto;
   --left: auto;
   --position: static;
   --right: auto;
@@ -8,7 +7,6 @@
   --z-index: auto;
 
   bottom: var(--bottom);
-  inset: var(--inset);
   left: var(--left);
   position: var(--position);
   right: var(--right);
