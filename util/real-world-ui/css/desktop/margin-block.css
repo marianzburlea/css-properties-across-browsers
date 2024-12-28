@@ -3,5 +3,5 @@
   --margin-block-end: 0;
   --marginBlock: initial;
 
-  margin-block: var(--margin-block, var(--start var(--end)))
+  margin-block: var(--margin-block, var(--margin-block-end));
 }

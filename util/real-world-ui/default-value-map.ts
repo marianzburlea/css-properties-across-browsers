@@ -122,7 +122,7 @@ export const cssDefaultPropertyValueMap = {
   float: 'none',
   floodColor: 'black',
   floodOpacity: 1,
-  font: '16px sans-serif',
+  font: '1rem sans-serif',
   fontFamily: 'serif',
   fontFeatureSettings: 'normal',
   fontKerning: 'auto',

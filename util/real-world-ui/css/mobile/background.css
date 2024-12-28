@@ -8,9 +8,8 @@
   --background-attachment: scroll;
   --background-origin: padding-box;
   --background-clip: border-box;
-  --background: transparent;
   --background-blend-mode: normal;
+  --background: transparent;
 
-  background: var(--background, var(--color var(--image) var(--position-x) var(--position-y) var(--size) var(--repeat) var(--attachment) var(--origin) var(--clip)));
-  background-blend-mode: var(--background-blend-mode)
+  background: var(--background, var(--background-image) var(--background-position-x) var(--background-position-y) var(--background-size) var(--background-repeat) var(--background-attachment) var(--background-origin) var(--background-clip) var(--background-blend-mode));
 }

@@ -4,5 +4,5 @@
   --border-block-start-start-color: initial;
   --borderBlockStart: initial;
 
-  border-block-start: var(--border-block-start, var(--start-width var(--start-style) var(--start-color)))
+  border-block-start: var(--border-block-start, var(--border-block-start-start-style) var(--border-block-start-start-color));
 }

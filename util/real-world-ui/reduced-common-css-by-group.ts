@@ -10,6 +10,7 @@ export const cssCondensedPropertyMap = {
       'direction',
       'fillMode',
       'playState',
+      'composition',
     ],
     children: {
       composition: 'replace',
@@ -25,7 +26,7 @@ export const cssCondensedPropertyMap = {
   },
   flex: {
     className: 'flex',
-    condensed: ['basis', 'grow', 'shrink'],
+    condensed: ['grow', 'shrink', 'basis'],
     children: {
       basis: 'auto',
       grow: '0',
@@ -45,6 +46,7 @@ export const cssCondensedPropertyMap = {
       'attachment',
       'origin',
       'clip',
+      'blendMode',
     ],
     children: {
       attachment: 'scroll',

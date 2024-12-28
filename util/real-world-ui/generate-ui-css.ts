@@ -4,6 +4,9 @@ import {
   cssPropertyMap,
 } from './reduced-common-css-by-group'
 import { cssDefaultPropertyValueMap } from './default-value-map'
+import { generateShortKeys } from './generate-short-key'
+
+const shortCSSPropMap = generateShortKeys(cssDefaultPropertyValueMap)
 
 type TRow = {
   reset: {
@@ -199,10 +202,14 @@ ${finalCssClassMap[mapKey].row.reset
 ${finalCssClassMap[mapKey].row.declaration
   .map(({ left, right }) =>
     Array.isArray(right)
-      ? `  ${left}: var(--${right[0]}, var(--${right[1]} ${right
+      ? `  ${left}: var(--${right[0]}, ${right
           .slice(2)
-          .map((prop) => `var(--${prop})`)
-          .join(' ')}))`
+          .map((prop) =>
+            cssCondensedPropertyMap[mapKey]?.prefix
+              ? `var(--${prop}-${right[0]})`
+              : `var(--${right[0]}-${prop})`
+          )
+          .join(' ')});`
       : `  ${left}: var(--${right})`
   )
   .join(';\n')}
@@ -247,3 +254,19 @@ ${allTablet}
 ${allDesktop}
 `
 )
+
+const transformStrings = (input: string[]): string[] => {
+  return input.map((value) => {
+    if (value === value.toLowerCase()) {
+      // Return the first two letters if the value is all lowercase
+      return value.slice(0, 2)
+    }
+    // Return the first letter + all uppercase letters converted to lowercase
+    return (
+      value
+        .match(/^[a-z]|[A-Z]/g) // Match the first letter and all uppercase letters
+        ?.join('')
+        .toLowerCase() || ''
+    )
+  })
+}

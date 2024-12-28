@@ -3,5 +3,5 @@
   --margin-inline-end: 0;
   --marginInline: initial;
 
-  margin-inline: var(--margin-inline, var(--start var(--end)))
+  margin-inline: var(--margin-inline, var(--margin-inline-end));
 }

@@ -3,5 +3,5 @@
   --overflow-y: visible;
   --overflow: visible;
 
-  overflow: var(--overflow, var(--x var(--y)))
+  overflow: var(--overflow, var(--overflow-y));
 }

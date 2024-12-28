@@ -9,5 +9,5 @@
   --mask-mode: match-source;
   --mask: none;
 
-  mask: var(--mask, var(--image var(--position-x) var(--position-y) var(--size) var(--repeat) var(--origin) var(--clip) var(--mode)))
+  mask: var(--mask, var(--mask-position-x) var(--mask-position-y) var(--mask-size) var(--mask-repeat) var(--mask-origin) var(--mask-clip) var(--mask-mode));
 }

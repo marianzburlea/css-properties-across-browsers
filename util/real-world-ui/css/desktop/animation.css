@@ -7,9 +7,8 @@
   --animation-direction: normal;
   --animation-fill-mode: none;
   --animation-play-state: running;
-  --animation: none;
   --animation-composition: replace;
+  --animation: none;
 
-  animation: var(--animation, var(--name var(--duration) var(--timing-function) var(--delay) var(--iteration-count) var(--direction) var(--fill-mode) var(--play-state)));
-  animation-composition: var(--animation-composition)
+  animation: var(--animation, var(--animation-duration) var(--animation-timing-function) var(--animation-delay) var(--animation-iteration-count) var(--animation-direction) var(--animation-fill-mode) var(--animation-play-state) var(--animation-composition));
 }

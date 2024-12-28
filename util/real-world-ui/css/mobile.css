@@ -13,9 +13,9 @@
   --justify-content: normal;
   --justify-items: legacy;
   --order: 0;
-  --flex-basis: auto;
   --flex-grow: 0;
   --flex-shrink: 1;
+  --flex-basis: auto;
   --flex: 0 1 auto;
 
   align-content: var(--align-content);
@@ -25,7 +25,7 @@
   justify-content: var(--justify-content);
   justify-items: var(--justify-items);
   order: var(--order);
-  flex: var(--flex, var(--basis var(--grow) var(--shrink)))
+  flex: var(--flex, var(--flex-shrink) var(--flex-basis));
 }
 .individual {
   --align-self: auto;
@@ -360,7 +360,7 @@
   --outline: invert;
 
   outline-offset: var(--outline-offset);
-  outline: var(--outline, var(--width var(--style) var(--color)))
+  outline: var(--outline, var(--outline-style) var(--outline-color));
 }
 .media {
   --size: auto;
@@ -376,7 +376,7 @@
   --transition: all 0s ease 0s;
 
   transition-behavior: var(--transition-behavior);
-  transition: var(--transition, var(--property var(--duration) var(--timing-function) var(--delay)))
+  transition: var(--transition, var(--transition-duration) var(--transition-timing-function) var(--transition-delay));
 }
 .unicode {
   --unicode-bidi: normal;
@@ -411,11 +411,10 @@
   --animation-direction: normal;
   --animation-fill-mode: none;
   --animation-play-state: running;
-  --animation: none;
   --animation-composition: replace;
+  --animation: none;
 
-  animation: var(--animation, var(--name var(--duration) var(--timing-function) var(--delay) var(--iteration-count) var(--direction) var(--fill-mode) var(--play-state)));
-  animation-composition: var(--animation-composition)
+  animation: var(--animation, var(--animation-duration) var(--animation-timing-function) var(--animation-delay) var(--animation-iteration-count) var(--animation-direction) var(--animation-fill-mode) var(--animation-play-state) var(--animation-composition));
 }
 .background {
   --background-color: transparent;
@@ -427,11 +426,10 @@
   --background-attachment: scroll;
   --background-origin: padding-box;
   --background-clip: border-box;
-  --background: transparent;
   --background-blend-mode: normal;
+  --background: transparent;
 
-  background: var(--background, var(--color var(--image) var(--position-x) var(--position-y) var(--size) var(--repeat) var(--attachment) var(--origin) var(--clip)));
-  background-blend-mode: var(--background-blend-mode)
+  background: var(--background, var(--background-image) var(--background-position-x) var(--background-position-y) var(--background-size) var(--background-repeat) var(--background-attachment) var(--background-origin) var(--background-clip) var(--background-blend-mode));
 }
 .border-image {
   --border-image-source: none;
@@ -441,7 +439,7 @@
   --border-image-repeat: stretch;
   --borderImage: initial;
 
-  border-image: var(--border-image, var(--source var(--slice) var(--width) var(--outset) var(--repeat)))
+  border-image: var(--border-image, var(--border-image-slice) var(--border-image-width) var(--border-image-outset) var(--border-image-repeat));
 }
 .border-block-start {
   --border-block-start-start-width: initial;
@@ -449,7 +447,7 @@
   --border-block-start-start-color: initial;
   --borderBlockStart: initial;
 
-  border-block-start: var(--border-block-start, var(--start-width var(--start-style) var(--start-color)))
+  border-block-start: var(--border-block-start, var(--border-block-start-start-style) var(--border-block-start-start-color));
 }
 .border-block-end {
   --border-block-end-end-width: initial;
@@ -457,7 +455,7 @@
   --border-block-end-end-color: initial;
   --borderBlockEnd: initial;
 
-  border-block-end: var(--border-block-end, var(--end-width var(--end-style) var(--end-color)))
+  border-block-end: var(--border-block-end, var(--border-block-end-end-style) var(--border-block-end-end-color));
 }
 .border-inline-start {
   --border-inline-start-start-width: initial;
@@ -465,7 +463,7 @@
   --border-inline-start-start-color: initial;
   --borderInlineStart: initial;
 
-  border-inline-start: var(--border-inline-start, var(--start-width var(--start-style) var(--start-color)))
+  border-inline-start: var(--border-inline-start, var(--border-inline-start-start-style) var(--border-inline-start-start-color));
 }
 .border-inline-end {
   --border-inline-end-end-width: initial;
@@ -473,7 +471,7 @@
   --border-inline-end-end-color: initial;
   --borderInlineEnd: initial;
 
-  border-inline-end: var(--border-inline-end, var(--end-width var(--end-style) var(--end-color)))
+  border-inline-end: var(--border-inline-end, var(--border-inline-end-end-style) var(--border-inline-end-end-color));
 }
 .border-top {
   --border-top-width: medium;
@@ -483,7 +481,7 @@
   --border-top-left-radius: 0;
   --border-top-right-radius: 0;
 
-  border-top: var(--border-top, var(--width var(--style) var(--color)));
+  border-top: var(--border-top, var(--border-top-style) var(--border-top-color));;
   border-top-left-radius: var(--border-top-left-radius);
   border-top-right-radius: var(--border-top-right-radius)
 }
@@ -493,7 +491,7 @@
   --border-right-color: currentcolor;
   --borderRight: initial;
 
-  border-right: var(--border-right, var(--width var(--style) var(--color)))
+  border-right: var(--border-right, var(--border-right-style) var(--border-right-color));
 }
 .border-bottom {
   --border-bottom-width: medium;
@@ -503,7 +501,7 @@
   --border-bottom-left-radius: 0;
   --border-bottom-right-radius: 0;
 
-  border-bottom: var(--border-bottom, var(--width var(--style) var(--color)));
+  border-bottom: var(--border-bottom, var(--border-bottom-style) var(--border-bottom-color));;
   border-bottom-left-radius: var(--border-bottom-left-radius);
   border-bottom-right-radius: var(--border-bottom-right-radius)
 }
@@ -513,7 +511,7 @@
   --border-left-color: currentcolor;
   --borderLeft: initial;
 
-  border-left: var(--border-left, var(--width var(--style) var(--color)))
+  border-left: var(--border-left, var(--border-left-style) var(--border-left-color));
 }
 .border-start {
   --border-start-end-radius: 0;
@@ -535,7 +533,7 @@
   --border-color: initial;
   --border: medium none currentcolor;
 
-  border: var(--border, var(--width var(--style) var(--color)))
+  border: var(--border, var(--border-style) var(--border-color));
 }
 .column {
   --column-count: auto;
@@ -561,21 +559,21 @@
   --padding-left: 0;
   --padding: 0;
 
-  padding: var(--padding, var(--top var(--right) var(--bottom) var(--left)))
+  padding: var(--padding, var(--padding-right) var(--padding-bottom) var(--padding-left));
 }
 .padding-block {
   --padding-block-start: 0;
   --padding-block-end: 0;
   --paddingBlock: initial;
 
-  padding-block: var(--padding-block, var(--start var(--end)))
+  padding-block: var(--padding-block, var(--padding-block-end));
 }
 .padding-inline {
   --padding-inline-start: 0;
   --padding-inline-end: 0;
   --paddingInline: initial;
 
-  padding-inline: var(--padding-inline, var(--start var(--end)))
+  padding-inline: var(--padding-inline, var(--padding-inline-end));
 }
 .font {
   --font-style: normal;
@@ -585,9 +583,9 @@
   --font-size: 16;
   --font-line-height: initial;
   --font-family: serif;
-  --font: 16px sans-serif;
+  --font: 1rem sans-serif;
 
-  font: var(--font, var(--style var(--variant) var(--weight) var(--stretch) var(--size) var(--line-height) var(--family)))
+  font: var(--font, var(--font-variant) var(--font-weight) var(--font-stretch) var(--font-size) var(--font-line-height) var(--font-family));
 }
 .font-synthesis {
   --font-synthesis-weight: auto;
@@ -603,7 +601,7 @@
   --column-gap: normal;
   --gap: normal;
 
-  gap: var(--gap, var(--row var(--column)))
+  gap: var(--gap, var(--column-gap));
 }
 .grid {
   --grid-auto-columns: auto;
@@ -633,14 +631,14 @@
   --inset-block-end: auto;
   --insetBlock: initial;
 
-  inset-block: var(--inset-block, var(--start var(--end)))
+  inset-block: var(--inset-block, var(--inset-block-end));
 }
 .inset-inline {
   --inset-inline-start: auto;
   --inset-inline-end: auto;
   --insetInline: initial;
 
-  inset-inline: var(--inset-inline, var(--start var(--end)))
+  inset-inline: var(--inset-inline, var(--inset-inline-end));
 }
 .margin {
   --margin-top: 0;
@@ -649,21 +647,21 @@
   --margin-left: 0;
   --margin: 0;
 
-  margin: var(--margin, var(--top var(--right) var(--bottom) var(--left)))
+  margin: var(--margin, var(--margin-right) var(--margin-bottom) var(--margin-left));
 }
 .margin-block {
   --margin-block-start: 0;
   --margin-block-end: 0;
   --marginBlock: initial;
 
-  margin-block: var(--margin-block, var(--start var(--end)))
+  margin-block: var(--margin-block, var(--margin-block-end));
 }
 .margin-inline {
   --margin-inline-start: 0;
   --margin-inline-end: 0;
   --marginInline: initial;
 
-  margin-inline: var(--margin-inline, var(--start var(--end)))
+  margin-inline: var(--margin-inline, var(--margin-inline-end));
 }
 .marker {
   --marker-end: none;
@@ -685,7 +683,7 @@
   --mask-mode: match-source;
   --mask: none;
 
-  mask: var(--mask, var(--image var(--position-x) var(--position-y) var(--size) var(--repeat) var(--origin) var(--clip) var(--mode)))
+  mask: var(--mask, var(--mask-position-x) var(--mask-position-y) var(--mask-size) var(--mask-repeat) var(--mask-origin) var(--mask-clip) var(--mask-mode));
 }
 .max {
   --max-block-size: none;
@@ -726,7 +724,7 @@
   --overflow-y: visible;
   --overflow: visible;
 
-  overflow: var(--overflow, var(--x var(--y)))
+  overflow: var(--overflow, var(--overflow-y));
 }
 .overscroll-behavior {
   --overscroll-behavior-block: auto;
@@ -771,21 +769,21 @@
   --scroll-margin-left: 0;
   --scrollMargin: 0;
 
-  scroll-margin: var(--scroll-margin, var(--top var(--right) var(--bottom) var(--left)))
+  scroll-margin: var(--scroll-margin, var(--scroll-margin-right) var(--scroll-margin-bottom) var(--scroll-margin-left));
 }
 .scroll-margin-block {
   --scroll-margin-block-start: 0;
   --scroll-margin-block-end: 0;
   --scrollMarginBlock: initial;
 
-  scroll-margin-block: var(--scroll-margin-block, var(--start var(--end)))
+  scroll-margin-block: var(--scroll-margin-block, var(--scroll-margin-block-end));
 }
 .scroll-margin-inline {
   --scroll-margin-inline-start: 0;
   --scroll-margin-inline-end: 0;
   --scrollMarginInline: initial;
 
-  scroll-margin-inline: var(--scroll-margin-inline, var(--start var(--end)))
+  scroll-margin-inline: var(--scroll-margin-inline, var(--scroll-margin-inline-end));
 }
 .scroll-padding {
   --scroll-padding-top: 0;
@@ -794,7 +792,7 @@
   --scroll-padding-left: 0;
   --scrollPadding: 0;
 
-  scroll-padding: var(--scroll-padding, var(--top var(--right) var(--bottom) var(--left)))
+  scroll-padding: var(--scroll-padding, var(--scroll-padding-right) var(--scroll-padding-bottom) var(--scroll-padding-left));
 }
 .scroll-padding-block {
   --scroll-padding-block-start: 0;

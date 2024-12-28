@@ -3,5 +3,5 @@
   --inset-inline-end: auto;
   --insetInline: initial;
 
-  inset-inline: var(--inset-inline, var(--start var(--end)))
+  inset-inline: var(--inset-inline, var(--inset-inline-end));
 }
