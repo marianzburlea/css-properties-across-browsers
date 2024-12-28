@@ -1,9 +1,9 @@
 .tablet.scroll-snap {
-  --scroll-snap-align: none;
-  --scroll-snap-stop: normal;
-  --scroll-snap-type: none;
+  --t-scroll-snap-align: none;
+  --t-scroll-snap-stop: normal;
+  --t-scroll-snap-type: none;
 
-  scroll-snap-align: var(--scroll-snap-align);
-  scroll-snap-stop: var(--scroll-snap-stop);
-  scroll-snap-type: var(--scroll-snap-type)
+  scroll-snap-align: var(--t-scroll-snap-align);
+  scroll-snap-stop: var(--t-scroll-snap-stop);
+  scroll-snap-type: var(--t-scroll-snap-type)
 }

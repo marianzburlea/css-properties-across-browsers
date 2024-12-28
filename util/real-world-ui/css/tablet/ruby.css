@@ -1,7 +1,7 @@
 .tablet.ruby {
-  --ruby-align: space-around;
-  --ruby-position: over;
+  --t-ruby-align: space-around;
+  --t-ruby-position: over;
 
-  ruby-align: var(--ruby-align);
-  ruby-position: var(--ruby-position)
+  ruby-align: var(--t-ruby-align);
+  ruby-position: var(--t-ruby-position)
 }

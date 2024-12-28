@@ -1,11 +1,11 @@
 .tablet.shape {
-  --shape-image-threshold: 0;
-  --shape-margin: 0;
-  --shape-outside: none;
-  --shape-rendering: auto;
+  --t-shape-image-threshold: 0;
+  --t-shape-margin: 0;
+  --t-shape-outside: none;
+  --t-shape-rendering: auto;
 
-  shape-image-threshold: var(--shape-image-threshold);
-  shape-margin: var(--shape-margin);
-  shape-outside: var(--shape-outside);
-  shape-rendering: var(--shape-rendering)
+  shape-image-threshold: var(--t-shape-image-threshold);
+  shape-margin: var(--t-shape-margin);
+  shape-outside: var(--t-shape-outside);
+  shape-rendering: var(--t-shape-rendering)
 }

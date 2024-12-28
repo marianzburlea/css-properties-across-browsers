@@ -1,7 +1,7 @@
 .desktop.object {
-  --object-fit: fill;
-  --object-position: 50% 50%;
+  --d-object-fit: fill;
+  --d-object-position: 50% 50%;
 
-  object-fit: var(--object-fit);
-  object-position: var(--object-position)
+  object-fit: var(--d-object-fit);
+  object-position: var(--d-object-position)
 }

@@ -1,7 +1,7 @@
 .tablet.theme {
-  --accent-color: auto;
-  --color-scheme: normal;
+  --t-accent-color: auto;
+  --t-color-scheme: normal;
 
-  accent-color: var(--accent-color);
-  color-scheme: var(--color-scheme)
+  accent-color: var(--t-accent-color);
+  color-scheme: var(--t-color-scheme)
 }

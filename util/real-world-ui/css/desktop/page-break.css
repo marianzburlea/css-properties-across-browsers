@@ -1,9 +1,9 @@
 .desktop.page-break {
-  --page-break-after: auto;
-  --page-break-before: auto;
-  --page-break-inside: auto;
+  --d-page-break-after: auto;
+  --d-page-break-before: auto;
+  --d-page-break-inside: auto;
 
-  page-break-after: var(--page-break-after);
-  page-break-before: var(--page-break-before);
-  page-break-inside: var(--page-break-inside)
+  page-break-after: var(--d-page-break-after);
+  page-break-before: var(--d-page-break-before);
+  page-break-inside: var(--d-page-break-inside)
 }

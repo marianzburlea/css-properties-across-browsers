@@ -1,7 +1,7 @@
 .desktop.text-wrap {
-  --text-wrap-mode: normal;
-  --text-wrap-style: normal;
+  --d-text-wrap-mode: normal;
+  --d-text-wrap-style: normal;
 
-  text-wrap-mode: var(--text-wrap-mode);
-  text-wrap-style: var(--text-wrap-style)
+  text-wrap-mode: var(--d-text-wrap-mode);
+  text-wrap-style: var(--d-text-wrap-style)
 }

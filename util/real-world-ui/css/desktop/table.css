@@ -1,7 +1,7 @@
 .desktop.table {
-  --empty-cells: show;
-  --table-layout: auto;
+  --d-empty-cells: show;
+  --d-table-layout: auto;
 
-  empty-cells: var(--empty-cells);
-  table-layout: var(--table-layout)
+  empty-cells: var(--d-empty-cells);
+  table-layout: var(--d-table-layout)
 }

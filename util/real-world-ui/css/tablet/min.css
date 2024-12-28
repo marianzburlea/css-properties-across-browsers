@@ -1,7 +1,7 @@
 .tablet.min {
-  --min-block-size: auto;
-  --min-inline-size: auto;
+  --t-min-block-size: auto;
+  --t-min-inline-size: auto;
 
-  min-block-size: var(--min-block-size);
-  min-inline-size: var(--min-inline-size)
+  min-block-size: var(--t-min-block-size);
+  min-inline-size: var(--t-min-inline-size)
 }

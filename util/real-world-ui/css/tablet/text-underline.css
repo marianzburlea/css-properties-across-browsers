@@ -1,7 +1,7 @@
 .tablet.text-underline {
-  --text-underline-offset: auto;
-  --text-underline-position: auto;
+  --t-text-underline-offset: auto;
+  --t-text-underline-position: auto;
 
-  text-underline-offset: var(--text-underline-offset);
-  text-underline-position: var(--text-underline-position)
+  text-underline-offset: var(--t-text-underline-offset);
+  text-underline-position: var(--t-text-underline-position)
 }

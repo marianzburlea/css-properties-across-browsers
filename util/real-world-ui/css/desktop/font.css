@@ -1,12 +1,12 @@
 .desktop.font {
-  --font-style: normal;
-  --font-variant: initial;
-  --font-weight: 400;
-  --font-stretch: normal;
-  --font-size: 16;
-  --font-line-height: initial;
-  --font-family: serif;
-  --font: 1rem sans-serif;
+  --d-font-style: normal;
+  --d-font-variant: initial;
+  --d-font-weight: 400;
+  --d-font-stretch: normal;
+  --d-font-size: 16;
+  --d-font-line-height: initial;
+  --d-font-family: serif;
+  --d-font: 1rem sans-serif;
 
-  font: var(--font, var(--font-variant) var(--font-weight) var(--font-stretch) var(--font-size) var(--font-line-height) var(--font-family))
+  font: var(--d-font, var(--d-font-variant) var(--d-font-weight) var(--d-font-stretch) var(--d-font-size) var(--d-font-line-height) var(--d-font-family))
 }

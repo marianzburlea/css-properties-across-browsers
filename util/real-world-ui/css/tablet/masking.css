@@ -1,13 +1,13 @@
 .tablet.masking {
-  --clip: auto;
-  --clip-path: none;
-  --clip-rule: nonzero;
-  --mask-composite: add;
-  --mask-type: luminance;
+  --t-clip: auto;
+  --t-clip-path: none;
+  --t-clip-rule: nonzero;
+  --t-mask-composite: add;
+  --t-mask-type: luminance;
 
-  clip: var(--clip);
-  clip-path: var(--clip-path);
-  clip-rule: var(--clip-rule);
-  mask-composite: var(--mask-composite);
-  mask-type: var(--mask-type)
+  clip: var(--t-clip);
+  clip-path: var(--t-clip-path);
+  clip-rule: var(--t-clip-rule);
+  mask-composite: var(--t-mask-composite);
+  mask-type: var(--t-mask-type)
 }

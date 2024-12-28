@@ -1,13 +1,13 @@
 .tablet.contain {
-  --contain: none;
-  --contain-intrinsic-block-size: auto;
-  --contain-intrinsic-height: auto;
-  --contain-intrinsic-inline-size: auto;
-  --contain-intrinsic-width: auto;
+  --t-contain: none;
+  --t-contain-intrinsic-block-size: auto;
+  --t-contain-intrinsic-height: auto;
+  --t-contain-intrinsic-inline-size: auto;
+  --t-contain-intrinsic-width: auto;
 
-  contain: var(--contain);
-  contain-intrinsic-block-size: var(--contain-intrinsic-block-size);
-  contain-intrinsic-height: var(--contain-intrinsic-height);
-  contain-intrinsic-inline-size: var(--contain-intrinsic-inline-size);
-  contain-intrinsic-width: var(--contain-intrinsic-width)
+  contain: var(--t-contain);
+  contain-intrinsic-block-size: var(--t-contain-intrinsic-block-size);
+  contain-intrinsic-height: var(--t-contain-intrinsic-height);
+  contain-intrinsic-inline-size: var(--t-contain-intrinsic-inline-size);
+  contain-intrinsic-width: var(--t-contain-intrinsic-width)
 }

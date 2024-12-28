@@ -1,15 +1,15 @@
 .tablet.list {
-  --counter-increment: none;
-  --counter-reset: none;
-  --counter-set: none;
-  --list-style-image: none;
-  --list-style-position: outside;
-  --list-style-type: disc;
+  --t-counter-increment: none;
+  --t-counter-reset: none;
+  --t-counter-set: none;
+  --t-list-style-image: none;
+  --t-list-style-position: outside;
+  --t-list-style-type: disc;
 
-  counter-increment: var(--counter-increment);
-  counter-reset: var(--counter-reset);
-  counter-set: var(--counter-set);
-  list-style-image: var(--list-style-image);
-  list-style-position: var(--list-style-position);
-  list-style-type: var(--list-style-type)
+  counter-increment: var(--t-counter-increment);
+  counter-reset: var(--t-counter-reset);
+  counter-set: var(--t-counter-set);
+  list-style-image: var(--t-list-style-image);
+  list-style-position: var(--t-list-style-position);
+  list-style-type: var(--t-list-style-type)
 }

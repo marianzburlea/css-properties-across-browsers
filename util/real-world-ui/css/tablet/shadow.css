@@ -1,5 +1,5 @@
 .tablet.shadow {
-  --box-shadow: none;
+  --t-box-shadow: none;
 
-  box-shadow: var(--box-shadow)
+  box-shadow: var(--t-box-shadow)
 }

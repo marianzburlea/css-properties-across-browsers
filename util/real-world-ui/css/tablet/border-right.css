@@ -1,8 +1,8 @@
 .tablet.border-right {
-  --border-right-width: medium;
-  --border-right-style: none;
-  --border-right-color: currentcolor;
-  --borderRight: initial;
+  --t-border-right-width: medium;
+  --t-border-right-style: none;
+  --t-border-right-color: currentcolor;
+  --t-borderRight: initial;
 
-  border-right: var(--border-right, var(--border-right-style) var(--border-right-color))
+  border-right: var(--t-border-right, var(--t-border-right-style) var(--t-border-right-color))
 }

@@ -1,23 +1,23 @@
 .desktop.grid {
-  --grid-auto-columns: auto;
-  --grid-auto-flow: row;
-  --grid-auto-rows: auto;
-  --grid-column-start: auto;
-  --grid-column-end: auto;
-  --grid-row-start: auto;
-  --grid-row-end: auto;
-  --grid-template-areas: none;
-  --grid-template-columns: none;
-  --grid-template-rows: none;
+  --d-grid-auto-columns: auto;
+  --d-grid-auto-flow: row;
+  --d-grid-auto-rows: auto;
+  --d-grid-column-start: auto;
+  --d-grid-column-end: auto;
+  --d-grid-row-start: auto;
+  --d-grid-row-end: auto;
+  --d-grid-template-areas: none;
+  --d-grid-template-columns: none;
+  --d-grid-template-rows: none;
 
-  grid-auto-columns: var(--grid-auto-columns);
-  grid-auto-flow: var(--grid-auto-flow);
-  grid-auto-rows: var(--grid-auto-rows);
-  grid-column-start: var(--grid-column-start);
-  grid-column-end: var(--grid-column-end);
-  grid-row-start: var(--grid-row-start);
-  grid-row-end: var(--grid-row-end);
-  grid-template-areas: var(--grid-template-areas);
-  grid-template-columns: var(--grid-template-columns);
-  grid-template-rows: var(--grid-template-rows)
+  grid-auto-columns: var(--d-grid-auto-columns);
+  grid-auto-flow: var(--d-grid-auto-flow);
+  grid-auto-rows: var(--d-grid-auto-rows);
+  grid-column-start: var(--d-grid-column-start);
+  grid-column-end: var(--d-grid-column-end);
+  grid-row-start: var(--d-grid-row-start);
+  grid-row-end: var(--d-grid-row-end);
+  grid-template-areas: var(--d-grid-template-areas);
+  grid-template-columns: var(--d-grid-template-columns);
+  grid-template-rows: var(--d-grid-template-rows)
 }

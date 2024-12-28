@@ -1,5 +1,5 @@
 .desktop.shadow {
-  --box-shadow: none;
+  --d-box-shadow: none;
 
-  box-shadow: var(--box-shadow)
+  box-shadow: var(--d-box-shadow)
 }

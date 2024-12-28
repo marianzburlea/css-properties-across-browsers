@@ -1,5 +1,5 @@
 .tablet.media {
-  --size: auto;
+  --t-size: auto;
 
-  size: var(--size)
+  size: var(--t-size)
 }

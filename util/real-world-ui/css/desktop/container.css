@@ -1,7 +1,7 @@
 .desktop.container {
-  --container-name: none;
-  --container-type: none;
+  --d-container-name: none;
+  --d-container-type: none;
 
-  container-name: var(--container-name);
-  container-type: var(--container-type)
+  container-name: var(--d-container-name);
+  container-type: var(--d-container-type)
 }

@@ -1,7 +1,7 @@
 .desktop.inset-inline {
-  --inset-inline-start: auto;
-  --inset-inline-end: auto;
-  --insetInline: initial;
+  --d-inset-inline-start: auto;
+  --d-inset-inline-end: auto;
+  --d-insetInline: initial;
 
-  inset-inline: var(--inset-inline, var(--inset-inline-end))
+  inset-inline: var(--d-inset-inline, var(--d-inset-inline-end))
 }

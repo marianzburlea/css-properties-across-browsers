@@ -1,15 +1,15 @@
 .tablet.interaction {
-  --caret-color: auto;
-  --pointer-events: auto;
-  --resize: none;
-  --scroll-behavior: auto;
-  --touch-action: auto;
-  --user-select: auto;
+  --t-caret-color: auto;
+  --t-pointer-events: auto;
+  --t-resize: none;
+  --t-scroll-behavior: auto;
+  --t-touch-action: auto;
+  --t-user-select: auto;
 
-  caret-color: var(--caret-color);
-  pointer-events: var(--pointer-events);
-  resize: var(--resize);
-  scroll-behavior: var(--scroll-behavior);
-  touch-action: var(--touch-action);
-  user-select: var(--user-select)
+  caret-color: var(--t-caret-color);
+  pointer-events: var(--t-pointer-events);
+  resize: var(--t-resize);
+  scroll-behavior: var(--t-scroll-behavior);
+  touch-action: var(--t-touch-action);
+  user-select: var(--t-user-select)
 }

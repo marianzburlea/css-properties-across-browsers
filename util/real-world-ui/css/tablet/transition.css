@@ -1,11 +1,11 @@
 .tablet.transition {
-  --transition-behavior: auto;
-  --transition-property: all;
-  --transition-duration: 0s;
-  --transition-timing-function: ease;
-  --transition-delay: 0s;
-  --transition: all 0s ease 0s;
+  --t-transition-behavior: auto;
+  --t-transition-property: all;
+  --t-transition-duration: 0s;
+  --t-transition-timing-function: ease;
+  --t-transition-delay: 0s;
+  --t-transition: all 0s ease 0s;
 
-  transition-behavior: var(--transition-behavior);
-  transition: var(--transition, var(--transition-duration) var(--transition-timing-function) var(--transition-delay))
+  transition-behavior: var(--t-transition-behavior);
+  transition: var(--t-transition, var(--t-transition-duration) var(--t-transition-timing-function) var(--t-transition-delay))
 }

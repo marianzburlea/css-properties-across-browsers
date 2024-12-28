@@ -1,13 +1,13 @@
 .desktop.visual-effect {
-  --backdrop-filter: none;
-  --filter: none;
-  --isolation: auto;
-  --mix-blend-mode: normal;
-  --opacity: 1;
+  --d-backdrop-filter: none;
+  --d-filter: none;
+  --d-isolation: auto;
+  --d-mix-blend-mode: normal;
+  --d-opacity: 1;
 
-  backdrop-filter: var(--backdrop-filter);
-  filter: var(--filter);
-  isolation: var(--isolation);
-  mix-blend-mode: var(--mix-blend-mode);
-  opacity: var(--opacity)
+  backdrop-filter: var(--d-backdrop-filter);
+  filter: var(--d-filter);
+  isolation: var(--d-isolation);
+  mix-blend-mode: var(--d-mix-blend-mode);
+  opacity: var(--d-opacity)
 }

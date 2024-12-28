@@ -1,17 +1,17 @@
 .tablet.column {
-  --column-count: auto;
-  --column-fill: balance;
-  --column-rule-color: currentcolor;
-  --column-rule-style: none;
-  --column-rule-width: medium;
-  --column-span: none;
-  --column-width: auto;
+  --t-column-count: auto;
+  --t-column-fill: balance;
+  --t-column-rule-color: currentcolor;
+  --t-column-rule-style: none;
+  --t-column-rule-width: medium;
+  --t-column-span: none;
+  --t-column-width: auto;
 
-  column-count: var(--column-count);
-  column-fill: var(--column-fill);
-  column-rule-color: var(--column-rule-color);
-  column-rule-style: var(--column-rule-style);
-  column-rule-width: var(--column-rule-width);
-  column-span: var(--column-span);
-  column-width: var(--column-width)
+  column-count: var(--t-column-count);
+  column-fill: var(--t-column-fill);
+  column-rule-color: var(--t-column-rule-color);
+  column-rule-style: var(--t-column-rule-style);
+  column-rule-width: var(--t-column-rule-width);
+  column-span: var(--t-column-span);
+  column-width: var(--t-column-width)
 }

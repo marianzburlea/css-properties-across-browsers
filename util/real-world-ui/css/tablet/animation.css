@@ -1,14 +1,14 @@
 .tablet.animation {
-  --animation-name: none;
-  --animation-duration: 0s;
-  --animation-timing-function: ease;
-  --animation-delay: 0s;
-  --animation-iteration-count: 1;
-  --animation-direction: normal;
-  --animation-fill-mode: none;
-  --animation-play-state: running;
-  --animation-composition: replace;
-  --animation: none;
+  --t-animation-name: none;
+  --t-animation-duration: 0s;
+  --t-animation-timing-function: ease;
+  --t-animation-delay: 0s;
+  --t-animation-iteration-count: 1;
+  --t-animation-direction: normal;
+  --t-animation-fill-mode: none;
+  --t-animation-play-state: running;
+  --t-animation-composition: replace;
+  --t-animation: none;
 
-  animation: var(--animation, var(--animation-duration) var(--animation-timing-function) var(--animation-delay) var(--animation-iteration-count) var(--animation-direction) var(--animation-fill-mode) var(--animation-play-state) var(--animation-composition))
+  animation: var(--t-animation, var(--t-animation-duration) var(--t-animation-timing-function) var(--t-animation-delay) var(--t-animation-iteration-count) var(--t-animation-direction) var(--t-animation-fill-mode) var(--t-animation-play-state) var(--t-animation-composition))
 }

@@ -1,12 +1,12 @@
 .tablet.border-bottom {
-  --border-bottom-width: medium;
-  --border-bottom-style: none;
-  --border-bottom-color: currentcolor;
-  --borderBottom: initial;
-  --border-bottom-left-radius: 0;
-  --border-bottom-right-radius: 0;
+  --t-border-bottom-width: medium;
+  --t-border-bottom-style: none;
+  --t-border-bottom-color: currentcolor;
+  --t-borderBottom: initial;
+  --t-border-bottom-left-radius: 0;
+  --t-border-bottom-right-radius: 0;
 
-  border-bottom: var(--border-bottom, var(--border-bottom-style) var(--border-bottom-color));
-  border-bottom-left-radius: var(--border-bottom-left-radius);
-  border-bottom-right-radius: var(--border-bottom-right-radius)
+  border-bottom: var(--t-border-bottom, var(--t-border-bottom-style) var(--t-border-bottom-color));
+  border-bottom-left-radius: var(--t-border-bottom-left-radius);
+  border-bottom-right-radius: var(--t-border-bottom-right-radius)
 }

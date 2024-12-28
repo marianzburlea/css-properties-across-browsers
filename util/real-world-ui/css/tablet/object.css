@@ -1,7 +1,7 @@
 .tablet.object {
-  --object-fit: fill;
-  --object-position: 50% 50%;
+  --t-object-fit: fill;
+  --t-object-position: 50% 50%;
 
-  object-fit: var(--object-fit);
-  object-position: var(--object-position)
+  object-fit: var(--t-object-fit);
+  object-position: var(--t-object-position)
 }

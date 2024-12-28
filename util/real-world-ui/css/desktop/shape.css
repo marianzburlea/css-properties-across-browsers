@@ -1,11 +1,11 @@
 .desktop.shape {
-  --shape-image-threshold: 0;
-  --shape-margin: 0;
-  --shape-outside: none;
-  --shape-rendering: auto;
+  --d-shape-image-threshold: 0;
+  --d-shape-margin: 0;
+  --d-shape-outside: none;
+  --d-shape-rendering: auto;
 
-  shape-image-threshold: var(--shape-image-threshold);
-  shape-margin: var(--shape-margin);
-  shape-outside: var(--shape-outside);
-  shape-rendering: var(--shape-rendering)
+  shape-image-threshold: var(--d-shape-image-threshold);
+  shape-margin: var(--d-shape-margin);
+  shape-outside: var(--d-shape-outside);
+  shape-rendering: var(--d-shape-rendering)
 }

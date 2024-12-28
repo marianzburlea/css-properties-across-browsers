@@ -1,7 +1,7 @@
 .desktop.gap {
-  --row-gap: normal;
-  --column-gap: normal;
-  --gap: normal;
+  --d-row-gap: normal;
+  --d-column-gap: normal;
+  --d-gap: normal;
 
-  gap: var(--gap, var(--column-gap))
+  gap: var(--d-gap, var(--d-column-gap))
 }

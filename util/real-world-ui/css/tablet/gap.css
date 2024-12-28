@@ -1,7 +1,7 @@
 .tablet.gap {
-  --row-gap: normal;
-  --column-gap: normal;
-  --gap: normal;
+  --t-row-gap: normal;
+  --t-column-gap: normal;
+  --t-gap: normal;
 
-  gap: var(--gap, var(--column-gap))
+  gap: var(--t-gap, var(--t-column-gap))
 }

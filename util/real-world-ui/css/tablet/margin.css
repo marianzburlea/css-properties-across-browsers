@@ -1,9 +1,9 @@
 .tablet.margin {
-  --margin-top: 0;
-  --margin-right: 0;
-  --margin-bottom: 0;
-  --margin-left: 0;
-  --margin: 0;
+  --t-margin-top: 0;
+  --t-margin-right: 0;
+  --t-margin-bottom: 0;
+  --t-margin-left: 0;
+  --t-margin: 0;
 
-  margin: var(--margin, var(--margin-right) var(--margin-bottom) var(--margin-left))
+  margin: var(--t-margin, var(--t-margin-right) var(--t-margin-bottom) var(--t-margin-left))
 }

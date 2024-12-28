@@ -1,8 +1,8 @@
 .desktop.border-inline-end {
-  --border-inline-end-end-width: initial;
-  --border-inline-end-end-style: initial;
-  --border-inline-end-end-color: initial;
-  --borderInlineEnd: initial;
+  --d-border-inline-end-end-width: initial;
+  --d-border-inline-end-end-style: initial;
+  --d-border-inline-end-end-color: initial;
+  --d-borderInlineEnd: initial;
 
-  border-inline-end: var(--border-inline-end, var(--border-inline-end-end-style) var(--border-inline-end-end-color))
+  border-inline-end: var(--d-border-inline-end, var(--d-border-inline-end-end-style) var(--d-border-inline-end-end-color))
 }

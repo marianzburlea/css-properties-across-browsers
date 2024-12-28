@@ -1,8 +1,8 @@
 .desktop.border {
-  --border-width: initial;
-  --border-style: initial;
-  --border-color: initial;
-  --border: medium none currentcolor;
+  --d-border-width: initial;
+  --d-border-style: initial;
+  --d-border-color: initial;
+  --d-border: medium none currentcolor;
 
-  border: var(--border, var(--border-style) var(--border-color))
+  border: var(--d-border, var(--d-border-style) var(--d-border-color))
 }

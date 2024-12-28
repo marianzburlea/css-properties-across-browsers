@@ -1,12 +1,12 @@
 .desktop.border-bottom {
-  --border-bottom-width: medium;
-  --border-bottom-style: none;
-  --border-bottom-color: currentcolor;
-  --borderBottom: initial;
-  --border-bottom-left-radius: 0;
-  --border-bottom-right-radius: 0;
+  --d-border-bottom-width: medium;
+  --d-border-bottom-style: none;
+  --d-border-bottom-color: currentcolor;
+  --d-borderBottom: initial;
+  --d-border-bottom-left-radius: 0;
+  --d-border-bottom-right-radius: 0;
 
-  border-bottom: var(--border-bottom, var(--border-bottom-style) var(--border-bottom-color));
-  border-bottom-left-radius: var(--border-bottom-left-radius);
-  border-bottom-right-radius: var(--border-bottom-right-radius)
+  border-bottom: var(--d-border-bottom, var(--d-border-bottom-style) var(--d-border-bottom-color));
+  border-bottom-left-radius: var(--d-border-bottom-left-radius);
+  border-bottom-right-radius: var(--d-border-bottom-right-radius)
 }

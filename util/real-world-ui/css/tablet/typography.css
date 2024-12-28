@@ -1,23 +1,23 @@
 .tablet.typography {
-  --font-feature-settings: normal;
-  --font-kerning: auto;
-  --font-optical-sizing: auto;
-  --font-palette: normal;
-  --font-size-adjust: none;
-  --font-variant-alternates: normal;
-  --font-variation-settings: normal;
-  --letter-spacing: normal;
-  --line-height: normal;
-  --tab-size: 8;
+  --t-font-feature-settings: normal;
+  --t-font-kerning: auto;
+  --t-font-optical-sizing: auto;
+  --t-font-palette: normal;
+  --t-font-size-adjust: none;
+  --t-font-variant-alternates: normal;
+  --t-font-variation-settings: normal;
+  --t-letter-spacing: normal;
+  --t-line-height: normal;
+  --t-tab-size: 8;
 
-  font-feature-settings: var(--font-feature-settings);
-  font-kerning: var(--font-kerning);
-  font-optical-sizing: var(--font-optical-sizing);
-  font-palette: var(--font-palette);
-  font-size-adjust: var(--font-size-adjust);
-  font-variant-alternates: var(--font-variant-alternates);
-  font-variation-settings: var(--font-variation-settings);
-  letter-spacing: var(--letter-spacing);
-  line-height: var(--line-height);
-  tab-size: var(--tab-size)
+  font-feature-settings: var(--t-font-feature-settings);
+  font-kerning: var(--t-font-kerning);
+  font-optical-sizing: var(--t-font-optical-sizing);
+  font-palette: var(--t-font-palette);
+  font-size-adjust: var(--t-font-size-adjust);
+  font-variant-alternates: var(--t-font-variant-alternates);
+  font-variation-settings: var(--t-font-variation-settings);
+  letter-spacing: var(--t-letter-spacing);
+  line-height: var(--t-line-height);
+  tab-size: var(--t-tab-size)
 }

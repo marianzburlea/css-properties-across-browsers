@@ -1,13 +1,13 @@
 .desktop.contain {
-  --contain: none;
-  --contain-intrinsic-block-size: auto;
-  --contain-intrinsic-height: auto;
-  --contain-intrinsic-inline-size: auto;
-  --contain-intrinsic-width: auto;
+  --d-contain: none;
+  --d-contain-intrinsic-block-size: auto;
+  --d-contain-intrinsic-height: auto;
+  --d-contain-intrinsic-inline-size: auto;
+  --d-contain-intrinsic-width: auto;
 
-  contain: var(--contain);
-  contain-intrinsic-block-size: var(--contain-intrinsic-block-size);
-  contain-intrinsic-height: var(--contain-intrinsic-height);
-  contain-intrinsic-inline-size: var(--contain-intrinsic-inline-size);
-  contain-intrinsic-width: var(--contain-intrinsic-width)
+  contain: var(--d-contain);
+  contain-intrinsic-block-size: var(--d-contain-intrinsic-block-size);
+  contain-intrinsic-height: var(--d-contain-intrinsic-height);
+  contain-intrinsic-inline-size: var(--d-contain-intrinsic-inline-size);
+  contain-intrinsic-width: var(--d-contain-intrinsic-width)
 }

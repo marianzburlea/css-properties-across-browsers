@@ -1,10 +1,10 @@
 .desktop.border-image {
-  --border-image-source: none;
-  --border-image-slice: 100%;
-  --border-image-width: 1;
-  --border-image-outset: 0;
-  --border-image-repeat: stretch;
-  --borderImage: initial;
+  --d-border-image-source: none;
+  --d-border-image-slice: 100%;
+  --d-border-image-width: 1;
+  --d-border-image-outset: 0;
+  --d-border-image-repeat: stretch;
+  --d-borderImage: initial;
 
-  border-image: var(--border-image, var(--border-image-slice) var(--border-image-width) var(--border-image-outset) var(--border-image-repeat))
+  border-image: var(--d-border-image, var(--d-border-image-slice) var(--d-border-image-width) var(--d-border-image-outset) var(--d-border-image-repeat))
 }

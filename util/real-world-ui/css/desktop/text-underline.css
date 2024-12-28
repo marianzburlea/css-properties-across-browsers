@@ -1,7 +1,7 @@
 .desktop.text-underline {
-  --text-underline-offset: auto;
-  --text-underline-position: auto;
+  --d-text-underline-offset: auto;
+  --d-text-underline-position: auto;
 
-  text-underline-offset: var(--text-underline-offset);
-  text-underline-position: var(--text-underline-position)
+  text-underline-offset: var(--d-text-underline-offset);
+  text-underline-position: var(--d-text-underline-position)
 }

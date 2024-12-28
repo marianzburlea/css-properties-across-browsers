@@ -1,7 +1,7 @@
 .tablet.max {
-  --max-block-size: none;
-  --max-inline-size: none;
+  --t-max-block-size: none;
+  --t-max-inline-size: none;
 
-  max-block-size: var(--max-block-size);
-  max-inline-size: var(--max-inline-size)
+  max-block-size: var(--t-max-block-size);
+  max-inline-size: var(--t-max-inline-size)
 }

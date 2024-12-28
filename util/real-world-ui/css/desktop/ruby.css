@@ -1,7 +1,7 @@
 .desktop.ruby {
-  --ruby-align: space-around;
-  --ruby-position: over;
+  --d-ruby-align: space-around;
+  --d-ruby-position: over;
 
-  ruby-align: var(--ruby-align);
-  ruby-position: var(--ruby-position)
+  ruby-align: var(--d-ruby-align);
+  ruby-position: var(--d-ruby-position)
 }

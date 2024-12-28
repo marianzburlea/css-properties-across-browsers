@@ -1,5 +1,5 @@
 .desktop.display {
-  --display: inline;
+  --d-display: inline;
 
-  display: var(--display)
+  display: var(--d-display)
 }

@@ -1,7 +1,7 @@
 .tablet.overflow {
-  --overflow-x: visible;
-  --overflow-y: visible;
-  --overflow: visible;
+  --t-overflow-x: visible;
+  --t-overflow-y: visible;
+  --t-overflow: visible;
 
-  overflow: var(--overflow, var(--overflow-y))
+  overflow: var(--t-overflow, var(--t-overflow-y))
 }

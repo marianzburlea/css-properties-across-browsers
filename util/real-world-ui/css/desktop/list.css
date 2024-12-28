@@ -1,15 +1,15 @@
 .desktop.list {
-  --counter-increment: none;
-  --counter-reset: none;
-  --counter-set: none;
-  --list-style-image: none;
-  --list-style-position: outside;
-  --list-style-type: disc;
+  --d-counter-increment: none;
+  --d-counter-reset: none;
+  --d-counter-set: none;
+  --d-list-style-image: none;
+  --d-list-style-position: outside;
+  --d-list-style-type: disc;
 
-  counter-increment: var(--counter-increment);
-  counter-reset: var(--counter-reset);
-  counter-set: var(--counter-set);
-  list-style-image: var(--list-style-image);
-  list-style-position: var(--list-style-position);
-  list-style-type: var(--list-style-type)
+  counter-increment: var(--d-counter-increment);
+  counter-reset: var(--d-counter-reset);
+  counter-set: var(--d-counter-set);
+  list-style-image: var(--d-list-style-image);
+  list-style-position: var(--d-list-style-position);
+  list-style-type: var(--d-list-style-type)
 }

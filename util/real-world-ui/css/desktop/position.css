@@ -1,15 +1,15 @@
 .desktop.position {
-  --bottom: auto;
-  --left: auto;
-  --position: static;
-  --right: auto;
-  --top: auto;
-  --z-index: auto;
+  --d-bottom: auto;
+  --d-left: auto;
+  --d-position: static;
+  --d-right: auto;
+  --d-top: auto;
+  --d-z-index: auto;
 
-  bottom: var(--bottom);
-  left: var(--left);
-  position: var(--position);
-  right: var(--right);
-  top: var(--top);
-  z-index: var(--z-index)
+  bottom: var(--d-bottom);
+  left: var(--d-left);
+  position: var(--d-position);
+  right: var(--d-right);
+  top: var(--d-top);
+  z-index: var(--d-z-index)
 }

@@ -1,17 +1,17 @@
 .desktop.content-flow {
-  --break-after: auto;
-  --break-before: auto;
-  --break-inside: auto;
-  --clear: none;
-  --direction: ltr;
-  --float: none;
-  --overflow-wrap: normal;
+  --d-break-after: auto;
+  --d-break-before: auto;
+  --d-break-inside: auto;
+  --d-clear: none;
+  --d-direction: ltr;
+  --d-float: none;
+  --d-overflow-wrap: normal;
 
-  break-after: var(--break-after);
-  break-before: var(--break-before);
-  break-inside: var(--break-inside);
-  clear: var(--clear);
-  direction: var(--direction);
-  float: var(--float);
-  overflow-wrap: var(--overflow-wrap)
+  break-after: var(--d-break-after);
+  break-before: var(--d-break-before);
+  break-inside: var(--d-break-inside);
+  clear: var(--d-clear);
+  direction: var(--d-direction);
+  float: var(--d-float);
+  overflow-wrap: var(--d-overflow-wrap)
 }

@@ -1,5 +1,5 @@
 .tablet.display {
-  --display: inline;
+  --t-display: inline;
 
-  display: var(--display)
+  display: var(--t-display)
 }

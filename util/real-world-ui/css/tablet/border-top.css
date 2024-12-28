@@ -1,12 +1,12 @@
 .tablet.border-top {
-  --border-top-width: medium;
-  --border-top-style: none;
-  --border-top-color: currentcolor;
-  --borderTop: initial;
-  --border-top-left-radius: 0;
-  --border-top-right-radius: 0;
+  --t-border-top-width: medium;
+  --t-border-top-style: none;
+  --t-border-top-color: currentcolor;
+  --t-borderTop: initial;
+  --t-border-top-left-radius: 0;
+  --t-border-top-right-radius: 0;
 
-  border-top: var(--border-top, var(--border-top-style) var(--border-top-color));
-  border-top-left-radius: var(--border-top-left-radius);
-  border-top-right-radius: var(--border-top-right-radius)
+  border-top: var(--t-border-top, var(--t-border-top-style) var(--t-border-top-color));
+  border-top-left-radius: var(--t-border-top-left-radius);
+  border-top-right-radius: var(--t-border-top-right-radius)
 }

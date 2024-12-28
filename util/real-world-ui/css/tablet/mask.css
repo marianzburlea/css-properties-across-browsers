@@ -1,13 +1,13 @@
 .tablet.mask {
-  --mask-image: none;
-  --mask-position-x: initial;
-  --mask-position-y: initial;
-  --mask-size: auto;
-  --mask-repeat: no-repeat;
-  --mask-origin: border-box;
-  --mask-clip: border-box;
-  --mask-mode: match-source;
-  --mask: none;
+  --t-mask-image: none;
+  --t-mask-position-x: initial;
+  --t-mask-position-y: initial;
+  --t-mask-size: auto;
+  --t-mask-repeat: no-repeat;
+  --t-mask-origin: border-box;
+  --t-mask-clip: border-box;
+  --t-mask-mode: match-source;
+  --t-mask: none;
 
-  mask: var(--mask, var(--mask-position-x) var(--mask-position-y) var(--mask-size) var(--mask-repeat) var(--mask-origin) var(--mask-clip) var(--mask-mode))
+  mask: var(--t-mask, var(--t-mask-position-x) var(--t-mask-position-y) var(--t-mask-size) var(--t-mask-repeat) var(--t-mask-origin) var(--t-mask-clip) var(--t-mask-mode))
 }

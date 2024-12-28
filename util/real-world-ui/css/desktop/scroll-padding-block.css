@@ -1,7 +1,7 @@
 .desktop.scroll-padding-block {
-  --scroll-padding-block-start: 0;
-  --scroll-padding-block-end: 0;
+  --d-scroll-padding-block-start: 0;
+  --d-scroll-padding-block-end: 0;
 
-  scroll-padding-block-start: var(--scroll-padding-block-start);
-  scroll-padding-block-end: var(--scroll-padding-block-end)
+  scroll-padding-block-start: var(--d-scroll-padding-block-start);
+  scroll-padding-block-end: var(--d-scroll-padding-block-end)
 }

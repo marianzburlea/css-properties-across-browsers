@@ -1,8 +1,8 @@
 .tablet.border-inline-end {
-  --border-inline-end-end-width: initial;
-  --border-inline-end-end-style: initial;
-  --border-inline-end-end-color: initial;
-  --borderInlineEnd: initial;
+  --t-border-inline-end-end-width: initial;
+  --t-border-inline-end-end-style: initial;
+  --t-border-inline-end-end-color: initial;
+  --t-borderInlineEnd: initial;
 
-  border-inline-end: var(--border-inline-end, var(--border-inline-end-end-style) var(--border-inline-end-end-color))
+  border-inline-end: var(--t-border-inline-end, var(--t-border-inline-end-end-style) var(--t-border-inline-end-end-color))
 }

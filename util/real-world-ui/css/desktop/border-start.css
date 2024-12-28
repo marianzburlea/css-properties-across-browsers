@@ -1,7 +1,7 @@
 .desktop.border-start {
-  --border-start-end-radius: 0;
-  --border-start-start-radius: 0;
+  --d-border-start-end-radius: 0;
+  --d-border-start-start-radius: 0;
 
-  border-start-end-radius: var(--border-start-end-radius);
-  border-start-start-radius: var(--border-start-start-radius)
+  border-start-end-radius: var(--d-border-start-end-radius);
+  border-start-start-radius: var(--d-border-start-start-radius)
 }

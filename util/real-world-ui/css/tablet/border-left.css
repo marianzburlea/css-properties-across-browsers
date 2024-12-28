@@ -1,8 +1,8 @@
 .tablet.border-left {
-  --border-left-width: medium;
-  --border-left-style: none;
-  --border-left-color: currentcolor;
-  --borderLeft: initial;
+  --t-border-left-width: medium;
+  --t-border-left-style: none;
+  --t-border-left-color: currentcolor;
+  --t-borderLeft: initial;
 
-  border-left: var(--border-left, var(--border-left-style) var(--border-left-color))
+  border-left: var(--t-border-left, var(--t-border-left-style) var(--t-border-left-color))
 }

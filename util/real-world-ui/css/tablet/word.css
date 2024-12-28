@@ -1,7 +1,7 @@
 .tablet.word {
-  --word-break: normal;
-  --word-spacing: 0;
+  --t-word-break: normal;
+  --t-word-spacing: 0;
 
-  word-break: var(--word-break);
-  word-spacing: var(--word-spacing)
+  word-break: var(--t-word-break);
+  word-spacing: var(--t-word-spacing)
 }

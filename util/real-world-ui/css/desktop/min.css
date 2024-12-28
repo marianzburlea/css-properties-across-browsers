@@ -1,7 +1,7 @@
 .desktop.min {
-  --min-block-size: auto;
-  --min-inline-size: auto;
+  --d-min-block-size: auto;
+  --d-min-inline-size: auto;
 
-  min-block-size: var(--min-block-size);
-  min-inline-size: var(--min-inline-size)
+  min-block-size: var(--d-min-block-size);
+  min-inline-size: var(--d-min-inline-size)
 }

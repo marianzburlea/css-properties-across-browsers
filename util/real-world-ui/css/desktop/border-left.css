@@ -1,8 +1,8 @@
 .desktop.border-left {
-  --border-left-width: medium;
-  --border-left-style: none;
-  --border-left-color: currentcolor;
-  --borderLeft: initial;
+  --d-border-left-width: medium;
+  --d-border-left-style: none;
+  --d-border-left-color: currentcolor;
+  --d-borderLeft: initial;
 
-  border-left: var(--border-left, var(--border-left-style) var(--border-left-color))
+  border-left: var(--d-border-left, var(--d-border-left-style) var(--d-border-left-color))
 }

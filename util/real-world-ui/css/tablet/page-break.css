@@ -1,9 +1,9 @@
 .tablet.page-break {
-  --page-break-after: auto;
-  --page-break-before: auto;
-  --page-break-inside: auto;
+  --t-page-break-after: auto;
+  --t-page-break-before: auto;
+  --t-page-break-inside: auto;
 
-  page-break-after: var(--page-break-after);
-  page-break-before: var(--page-break-before);
-  page-break-inside: var(--page-break-inside)
+  page-break-after: var(--t-page-break-after);
+  page-break-before: var(--t-page-break-before);
+  page-break-inside: var(--t-page-break-inside)
 }

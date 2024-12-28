@@ -1,7 +1,7 @@
 .desktop.padding-block {
-  --padding-block-start: 0;
-  --padding-block-end: 0;
-  --paddingBlock: initial;
+  --d-padding-block-start: 0;
+  --d-padding-block-end: 0;
+  --d-paddingBlock: initial;
 
-  padding-block: var(--padding-block, var(--padding-block-end))
+  padding-block: var(--d-padding-block, var(--d-padding-block-end))
 }

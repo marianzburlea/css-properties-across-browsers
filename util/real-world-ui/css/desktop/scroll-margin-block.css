@@ -1,7 +1,7 @@
 .desktop.scroll-margin-block {
-  --scroll-margin-block-start: 0;
-  --scroll-margin-block-end: 0;
-  --scrollMarginBlock: initial;
+  --d-scroll-margin-block-start: 0;
+  --d-scroll-margin-block-end: 0;
+  --d-scrollMarginBlock: initial;
 
-  scroll-margin-block: var(--scroll-margin-block, var(--scroll-margin-block-end))
+  scroll-margin-block: var(--d-scroll-margin-block, var(--d-scroll-margin-block-end))
 }

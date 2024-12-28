@@ -1,5 +1,5 @@
 .tablet.optimization {
-  --will-change: auto;
+  --t-will-change: auto;
 
-  will-change: var(--will-change)
+  will-change: var(--t-will-change)
 }

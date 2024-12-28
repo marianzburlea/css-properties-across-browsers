@@ -1,9 +1,9 @@
 .desktop.text-emphasis {
-  --text-emphasis-color: currentcolor;
-  --text-emphasis-position: over right;
-  --text-emphasis-style: none;
+  --d-text-emphasis-color: currentcolor;
+  --d-text-emphasis-position: over right;
+  --d-text-emphasis-style: none;
 
-  text-emphasis-color: var(--text-emphasis-color);
-  text-emphasis-position: var(--text-emphasis-position);
-  text-emphasis-style: var(--text-emphasis-style)
+  text-emphasis-color: var(--d-text-emphasis-color);
+  text-emphasis-position: var(--d-text-emphasis-position);
+  text-emphasis-style: var(--d-text-emphasis-style)
 }

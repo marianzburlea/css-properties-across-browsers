@@ -1,7 +1,7 @@
 .tablet.margin-inline {
-  --margin-inline-start: 0;
-  --margin-inline-end: 0;
-  --marginInline: initial;
+  --t-margin-inline-start: 0;
+  --t-margin-inline-end: 0;
+  --t-marginInline: initial;
 
-  margin-inline: var(--margin-inline, var(--margin-inline-end))
+  margin-inline: var(--t-margin-inline, var(--t-margin-inline-end))
 }

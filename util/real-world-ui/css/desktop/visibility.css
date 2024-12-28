@@ -1,5 +1,5 @@
 .desktop.visibility {
-  --visibility: visible;
+  --d-visibility: visible;
 
-  visibility: var(--visibility)
+  visibility: var(--d-visibility)
 }

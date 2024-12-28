@@ -1,5 +1,5 @@
 .desktop.math {
-  --math-style: normal;
+  --d-math-style: normal;
 
-  math-style: var(--math-style)
+  math-style: var(--d-math-style)
 }

@@ -1,7 +1,7 @@
 .tablet.table {
-  --empty-cells: show;
-  --table-layout: auto;
+  --t-empty-cells: show;
+  --t-table-layout: auto;
 
-  empty-cells: var(--empty-cells);
-  table-layout: var(--table-layout)
+  empty-cells: var(--t-empty-cells);
+  table-layout: var(--t-table-layout)
 }

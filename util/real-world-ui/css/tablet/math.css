@@ -1,5 +1,5 @@
 .tablet.math {
-  --math-style: normal;
+  --t-math-style: normal;
 
-  math-style: var(--math-style)
+  math-style: var(--t-math-style)
 }

@@ -1,13 +1,13 @@
 .tablet.box {
-  --aspect-ratio: auto;
-  --block-size: auto;
-  --box-sizing: content-box;
-  --inline-size: auto;
-  --zoom: auto;
+  --t-aspect-ratio: auto;
+  --t-block-size: auto;
+  --t-box-sizing: content-box;
+  --t-inline-size: auto;
+  --t-zoom: auto;
 
-  aspect-ratio: var(--aspect-ratio);
-  block-size: var(--block-size);
-  box-sizing: var(--box-sizing);
-  inline-size: var(--inline-size);
-  zoom: var(--zoom)
+  aspect-ratio: var(--t-aspect-ratio);
+  block-size: var(--t-block-size);
+  box-sizing: var(--t-box-sizing);
+  inline-size: var(--t-inline-size);
+  zoom: var(--t-zoom)
 }

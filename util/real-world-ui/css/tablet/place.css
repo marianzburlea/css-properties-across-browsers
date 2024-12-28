@@ -1,9 +1,9 @@
 .tablet.place {
-  --place-items: normal;
-  --place-content: normal;
-  --place-self: auto;
+  --t-place-items: normal;
+  --t-place-content: normal;
+  --t-place-self: auto;
 
-  place-items: var(--place-items);
-  place-content: var(--place-content);
-  place-self: var(--place-self)
+  place-items: var(--t-place-items);
+  place-content: var(--t-place-content);
+  place-self: var(--t-place-self)
 }

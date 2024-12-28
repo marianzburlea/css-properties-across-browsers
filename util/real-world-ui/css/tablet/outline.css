@@ -1,10 +1,10 @@
 .tablet.outline {
-  --outline-offset: 0;
-  --outline-width: medium;
-  --outline-style: none;
-  --outline-color: invert;
-  --outline: invert;
+  --t-outline-offset: 0;
+  --t-outline-width: medium;
+  --t-outline-style: none;
+  --t-outline-color: invert;
+  --t-outline: invert;
 
-  outline-offset: var(--outline-offset);
-  outline: var(--outline, var(--outline-style) var(--outline-color))
+  outline-offset: var(--t-outline-offset);
+  outline: var(--t-outline, var(--t-outline-style) var(--t-outline-color))
 }

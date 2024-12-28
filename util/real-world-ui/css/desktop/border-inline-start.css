@@ -1,8 +1,8 @@
 .desktop.border-inline-start {
-  --border-inline-start-start-width: initial;
-  --border-inline-start-start-style: initial;
-  --border-inline-start-start-color: initial;
-  --borderInlineStart: initial;
+  --d-border-inline-start-start-width: initial;
+  --d-border-inline-start-start-style: initial;
+  --d-border-inline-start-start-color: initial;
+  --d-borderInlineStart: initial;
 
-  border-inline-start: var(--border-inline-start, var(--border-inline-start-start-style) var(--border-inline-start-start-color))
+  border-inline-start: var(--d-border-inline-start, var(--d-border-inline-start-start-style) var(--d-border-inline-start-start-color))
 }

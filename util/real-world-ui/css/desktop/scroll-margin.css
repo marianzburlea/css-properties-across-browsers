@@ -1,9 +1,9 @@
 .desktop.scroll-margin {
-  --scroll-margin-top: 0;
-  --scroll-margin-right: 0;
-  --scroll-margin-bottom: 0;
-  --scroll-margin-left: 0;
-  --scrollMargin: 0;
+  --d-scroll-margin-top: 0;
+  --d-scroll-margin-right: 0;
+  --d-scroll-margin-bottom: 0;
+  --d-scroll-margin-left: 0;
+  --d-scrollMargin: 0;
 
-  scroll-margin: var(--scroll-margin, var(--scroll-margin-right) var(--scroll-margin-bottom) var(--scroll-margin-left))
+  scroll-margin: var(--d-scroll-margin, var(--d-scroll-margin-right) var(--d-scroll-margin-bottom) var(--d-scroll-margin-left))
 }

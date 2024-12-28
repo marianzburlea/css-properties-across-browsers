@@ -1,8 +1,8 @@
 .desktop.border-right {
-  --border-right-width: medium;
-  --border-right-style: none;
-  --border-right-color: currentcolor;
-  --borderRight: initial;
+  --d-border-right-width: medium;
+  --d-border-right-style: none;
+  --d-border-right-color: currentcolor;
+  --d-borderRight: initial;
 
-  border-right: var(--border-right, var(--border-right-style) var(--border-right-color))
+  border-right: var(--d-border-right, var(--d-border-right-style) var(--d-border-right-color))
 }

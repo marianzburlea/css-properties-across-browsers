@@ -1,7 +1,7 @@
 .desktop.max {
-  --max-block-size: none;
-  --max-inline-size: none;
+  --d-max-block-size: none;
+  --d-max-inline-size: none;
 
-  max-block-size: var(--max-block-size);
-  max-inline-size: var(--max-inline-size)
+  max-block-size: var(--d-max-block-size);
+  max-inline-size: var(--d-max-inline-size)
 }

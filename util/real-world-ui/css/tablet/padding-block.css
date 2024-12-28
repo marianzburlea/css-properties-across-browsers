@@ -1,7 +1,7 @@
 .tablet.padding-block {
-  --padding-block-start: 0;
-  --padding-block-end: 0;
-  --paddingBlock: initial;
+  --t-padding-block-start: 0;
+  --t-padding-block-end: 0;
+  --t-paddingBlock: initial;
 
-  padding-block: var(--padding-block, var(--padding-block-end))
+  padding-block: var(--t-padding-block, var(--t-padding-block-end))
 }

@@ -1,15 +1,15 @@
 .desktop.interaction {
-  --caret-color: auto;
-  --pointer-events: auto;
-  --resize: none;
-  --scroll-behavior: auto;
-  --touch-action: auto;
-  --user-select: auto;
+  --d-caret-color: auto;
+  --d-pointer-events: auto;
+  --d-resize: none;
+  --d-scroll-behavior: auto;
+  --d-touch-action: auto;
+  --d-user-select: auto;
 
-  caret-color: var(--caret-color);
-  pointer-events: var(--pointer-events);
-  resize: var(--resize);
-  scroll-behavior: var(--scroll-behavior);
-  touch-action: var(--touch-action);
-  user-select: var(--user-select)
+  caret-color: var(--d-caret-color);
+  pointer-events: var(--d-pointer-events);
+  resize: var(--d-resize);
+  scroll-behavior: var(--d-scroll-behavior);
+  touch-action: var(--d-touch-action);
+  user-select: var(--d-user-select)
 }

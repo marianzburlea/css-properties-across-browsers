@@ -1,7 +1,7 @@
 .desktop.inset-block {
-  --inset-block-start: auto;
-  --inset-block-end: auto;
-  --insetBlock: initial;
+  --d-inset-block-start: auto;
+  --d-inset-block-end: auto;
+  --d-insetBlock: initial;
 
-  inset-block: var(--inset-block, var(--inset-block-end))
+  inset-block: var(--d-inset-block, var(--d-inset-block-end))
 }

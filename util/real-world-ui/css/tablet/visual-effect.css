@@ -1,13 +1,13 @@
 .tablet.visual-effect {
-  --backdrop-filter: none;
-  --filter: none;
-  --isolation: auto;
-  --mix-blend-mode: normal;
-  --opacity: 1;
+  --t-backdrop-filter: none;
+  --t-filter: none;
+  --t-isolation: auto;
+  --t-mix-blend-mode: normal;
+  --t-opacity: 1;
 
-  backdrop-filter: var(--backdrop-filter);
-  filter: var(--filter);
-  isolation: var(--isolation);
-  mix-blend-mode: var(--mix-blend-mode);
-  opacity: var(--opacity)
+  backdrop-filter: var(--t-backdrop-filter);
+  filter: var(--t-filter);
+  isolation: var(--t-isolation);
+  mix-blend-mode: var(--t-mix-blend-mode);
+  opacity: var(--t-opacity)
 }

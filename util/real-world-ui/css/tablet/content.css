@@ -1,7 +1,7 @@
 .tablet.content {
-  --content: normal;
-  --content-visibility: visible;
+  --t-content: normal;
+  --t-content-visibility: visible;
 
-  content: var(--content);
-  content-visibility: var(--content-visibility)
+  content: var(--t-content);
+  content-visibility: var(--t-content-visibility)
 }

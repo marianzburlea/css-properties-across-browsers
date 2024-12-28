@@ -1,7 +1,7 @@
 .desktop.margin-inline {
-  --margin-inline-start: 0;
-  --margin-inline-end: 0;
-  --marginInline: initial;
+  --d-margin-inline-start: 0;
+  --d-margin-inline-end: 0;
+  --d-marginInline: initial;
 
-  margin-inline: var(--margin-inline, var(--margin-inline-end))
+  margin-inline: var(--d-margin-inline, var(--d-margin-inline-end))
 }

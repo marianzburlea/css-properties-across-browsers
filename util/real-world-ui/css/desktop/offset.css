@@ -1,13 +1,13 @@
 .desktop.offset {
-  --offset-anchor: auto;
-  --offset-distance: 0;
-  --offset-path: none;
-  --offset-position: auto;
-  --offset-rotate: auto;
+  --d-offset-anchor: auto;
+  --d-offset-distance: 0;
+  --d-offset-path: none;
+  --d-offset-position: auto;
+  --d-offset-rotate: auto;
 
-  offset-anchor: var(--offset-anchor);
-  offset-distance: var(--offset-distance);
-  offset-path: var(--offset-path);
-  offset-position: var(--offset-position);
-  offset-rotate: var(--offset-rotate)
+  offset-anchor: var(--d-offset-anchor);
+  offset-distance: var(--d-offset-distance);
+  offset-path: var(--d-offset-path);
+  offset-position: var(--d-offset-position);
+  offset-rotate: var(--d-offset-rotate)
 }

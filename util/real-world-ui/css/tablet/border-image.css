@@ -1,10 +1,10 @@
 .tablet.border-image {
-  --border-image-source: none;
-  --border-image-slice: 100%;
-  --border-image-width: 1;
-  --border-image-outset: 0;
-  --border-image-repeat: stretch;
-  --borderImage: initial;
+  --t-border-image-source: none;
+  --t-border-image-slice: 100%;
+  --t-border-image-width: 1;
+  --t-border-image-outset: 0;
+  --t-border-image-repeat: stretch;
+  --t-borderImage: initial;
 
-  border-image: var(--border-image, var(--border-image-slice) var(--border-image-width) var(--border-image-outset) var(--border-image-repeat))
+  border-image: var(--t-border-image, var(--t-border-image-slice) var(--t-border-image-width) var(--t-border-image-outset) var(--t-border-image-repeat))
 }

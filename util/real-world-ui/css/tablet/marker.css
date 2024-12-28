@@ -1,9 +1,9 @@
 .tablet.marker {
-  --marker-end: none;
-  --marker-mid: none;
-  --marker-start: none;
+  --t-marker-end: none;
+  --t-marker-mid: none;
+  --t-marker-start: none;
 
-  marker-end: var(--marker-end);
-  marker-mid: var(--marker-mid);
-  marker-start: var(--marker-start)
+  marker-end: var(--t-marker-end);
+  marker-mid: var(--t-marker-mid);
+  marker-start: var(--t-marker-start)
 }

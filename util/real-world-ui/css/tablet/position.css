@@ -1,15 +1,15 @@
 .tablet.position {
-  --bottom: auto;
-  --left: auto;
-  --position: static;
-  --right: auto;
-  --top: auto;
-  --z-index: auto;
+  --t-bottom: auto;
+  --t-left: auto;
+  --t-position: static;
+  --t-right: auto;
+  --t-top: auto;
+  --t-z-index: auto;
 
-  bottom: var(--bottom);
-  left: var(--left);
-  position: var(--position);
-  right: var(--right);
-  top: var(--top);
-  z-index: var(--z-index)
+  bottom: var(--t-bottom);
+  left: var(--t-left);
+  position: var(--t-position);
+  right: var(--t-right);
+  top: var(--t-top);
+  z-index: var(--t-z-index)
 }

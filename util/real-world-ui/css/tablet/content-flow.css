@@ -1,17 +1,17 @@
 .tablet.content-flow {
-  --break-after: auto;
-  --break-before: auto;
-  --break-inside: auto;
-  --clear: none;
-  --direction: ltr;
-  --float: none;
-  --overflow-wrap: normal;
+  --t-break-after: auto;
+  --t-break-before: auto;
+  --t-break-inside: auto;
+  --t-clear: none;
+  --t-direction: ltr;
+  --t-float: none;
+  --t-overflow-wrap: normal;
 
-  break-after: var(--break-after);
-  break-before: var(--break-before);
-  break-inside: var(--break-inside);
-  clear: var(--clear);
-  direction: var(--direction);
-  float: var(--float);
-  overflow-wrap: var(--overflow-wrap)
+  break-after: var(--t-break-after);
+  break-before: var(--t-break-before);
+  break-inside: var(--t-break-inside);
+  clear: var(--t-clear);
+  direction: var(--t-direction);
+  float: var(--t-float);
+  overflow-wrap: var(--t-overflow-wrap)
 }

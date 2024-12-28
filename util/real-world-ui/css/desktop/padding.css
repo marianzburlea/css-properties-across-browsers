@@ -1,9 +1,9 @@
 .desktop.padding {
-  --padding-top: 0;
-  --padding-right: 0;
-  --padding-bottom: 0;
-  --padding-left: 0;
-  --padding: 0;
+  --d-padding-top: 0;
+  --d-padding-right: 0;
+  --d-padding-bottom: 0;
+  --d-padding-left: 0;
+  --d-padding: 0;
 
-  padding: var(--padding, var(--padding-right) var(--padding-bottom) var(--padding-left))
+  padding: var(--d-padding, var(--d-padding-right) var(--d-padding-bottom) var(--d-padding-left))
 }

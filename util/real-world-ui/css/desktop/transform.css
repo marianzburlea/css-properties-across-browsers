@@ -1,23 +1,23 @@
 .desktop.transform {
-  --backface-visibility: visible;
-  --perspective: none;
-  --perspective-origin: 50% 50%;
-  --rotate: none;
-  --scale: 1;
-  --transform: none;
-  --transform-box: border-box;
-  --transform-origin: 50% 50% 0;
-  --transform-style: flat;
-  --translate: none;
+  --d-backface-visibility: visible;
+  --d-perspective: none;
+  --d-perspective-origin: 50% 50%;
+  --d-rotate: none;
+  --d-scale: 1;
+  --d-transform: none;
+  --d-transform-box: border-box;
+  --d-transform-origin: 50% 50% 0;
+  --d-transform-style: flat;
+  --d-translate: none;
 
-  backface-visibility: var(--backface-visibility);
-  perspective: var(--perspective);
-  perspective-origin: var(--perspective-origin);
-  rotate: var(--rotate);
-  scale: var(--scale);
-  transform: var(--transform);
-  transform-box: var(--transform-box);
-  transform-origin: var(--transform-origin);
-  transform-style: var(--transform-style);
-  translate: var(--translate)
+  backface-visibility: var(--d-backface-visibility);
+  perspective: var(--d-perspective);
+  perspective-origin: var(--d-perspective-origin);
+  rotate: var(--d-rotate);
+  scale: var(--d-scale);
+  transform: var(--d-transform);
+  transform-box: var(--d-transform-box);
+  transform-origin: var(--d-transform-origin);
+  transform-style: var(--d-transform-style);
+  translate: var(--d-translate)
 }

@@ -1,885 +1,885 @@
 @media screen and (min-width: 80rem) {
 .desktop.theme {
-  --accent-color: auto;
-  --color-scheme: normal;
+  --d-accent-color: auto;
+  --d-color-scheme: normal;
 
-  accent-color: var(--accent-color);
-  color-scheme: var(--color-scheme)
+  accent-color: var(--d-accent-color);
+  color-scheme: var(--d-color-scheme)
 }
 .desktop.flex {
-  --align-content: normal;
-  --align-items: normal;
-  --flex-direction: row;
-  --flex-wrap: nowrap;
-  --justify-content: normal;
-  --justify-items: legacy;
-  --order: 0;
-  --flex-grow: 0;
-  --flex-shrink: 1;
-  --flex-basis: auto;
-  --flex: 0 1 auto;
+  --d-align-content: normal;
+  --d-align-items: normal;
+  --d-flex-direction: row;
+  --d-flex-wrap: nowrap;
+  --d-justify-content: normal;
+  --d-justify-items: legacy;
+  --d-order: 0;
+  --d-flex-grow: 0;
+  --d-flex-shrink: 1;
+  --d-flex-basis: auto;
+  --d-flex: 0 1 auto;
 
-  align-content: var(--align-content);
-  align-items: var(--align-items);
-  flex-direction: var(--flex-direction);
-  flex-wrap: var(--flex-wrap);
-  justify-content: var(--justify-content);
-  justify-items: var(--justify-items);
-  order: var(--order);
-  flex: var(--flex, var(--flex-shrink) var(--flex-basis))
+  align-content: var(--d-align-content);
+  align-items: var(--d-align-items);
+  flex-direction: var(--d-flex-direction);
+  flex-wrap: var(--d-flex-wrap);
+  justify-content: var(--d-justify-content);
+  justify-items: var(--d-justify-items);
+  order: var(--d-order);
+  flex: var(--d-flex, var(--d-flex-shrink) var(--d-flex-basis))
 }
 .desktop.individual {
-  --align-self: auto;
-  --justify-self: auto;
+  --d-align-self: auto;
+  --d-justify-self: auto;
 
-  align-self: var(--align-self);
-  justify-self: var(--justify-self)
+  align-self: var(--d-align-self);
+  justify-self: var(--d-justify-self)
 }
 .desktop.appearance {
-  --appearance: none;
+  --d-appearance: none;
 
-  appearance: var(--appearance)
+  appearance: var(--d-appearance)
 }
 .desktop.box {
-  --aspect-ratio: auto;
-  --block-size: auto;
-  --box-sizing: content-box;
-  --inline-size: auto;
-  --zoom: auto;
+  --d-aspect-ratio: auto;
+  --d-block-size: auto;
+  --d-box-sizing: content-box;
+  --d-inline-size: auto;
+  --d-zoom: auto;
 
-  aspect-ratio: var(--aspect-ratio);
-  block-size: var(--block-size);
-  box-sizing: var(--box-sizing);
-  inline-size: var(--inline-size);
-  zoom: var(--zoom)
+  aspect-ratio: var(--d-aspect-ratio);
+  block-size: var(--d-block-size);
+  box-sizing: var(--d-box-sizing);
+  inline-size: var(--d-inline-size);
+  zoom: var(--d-zoom)
 }
 .desktop.visual-effect {
-  --backdrop-filter: none;
-  --filter: none;
-  --isolation: auto;
-  --mix-blend-mode: normal;
-  --opacity: 1;
+  --d-backdrop-filter: none;
+  --d-filter: none;
+  --d-isolation: auto;
+  --d-mix-blend-mode: normal;
+  --d-opacity: 1;
 
-  backdrop-filter: var(--backdrop-filter);
-  filter: var(--filter);
-  isolation: var(--isolation);
-  mix-blend-mode: var(--mix-blend-mode);
-  opacity: var(--opacity)
+  backdrop-filter: var(--d-backdrop-filter);
+  filter: var(--d-filter);
+  isolation: var(--d-isolation);
+  mix-blend-mode: var(--d-mix-blend-mode);
+  opacity: var(--d-opacity)
 }
 .desktop.transform {
-  --backface-visibility: visible;
-  --perspective: none;
-  --perspective-origin: 50% 50%;
-  --rotate: none;
-  --scale: 1;
-  --transform: none;
-  --transform-box: border-box;
-  --transform-origin: 50% 50% 0;
-  --transform-style: flat;
-  --translate: none;
+  --d-backface-visibility: visible;
+  --d-perspective: none;
+  --d-perspective-origin: 50% 50%;
+  --d-rotate: none;
+  --d-scale: 1;
+  --d-transform: none;
+  --d-transform-box: border-box;
+  --d-transform-origin: 50% 50% 0;
+  --d-transform-style: flat;
+  --d-translate: none;
 
-  backface-visibility: var(--backface-visibility);
-  perspective: var(--perspective);
-  perspective-origin: var(--perspective-origin);
-  rotate: var(--rotate);
-  scale: var(--scale);
-  transform: var(--transform);
-  transform-box: var(--transform-box);
-  transform-origin: var(--transform-origin);
-  transform-style: var(--transform-style);
-  translate: var(--translate)
+  backface-visibility: var(--d-backface-visibility);
+  perspective: var(--d-perspective);
+  perspective-origin: var(--d-perspective-origin);
+  rotate: var(--d-rotate);
+  scale: var(--d-scale);
+  transform: var(--d-transform);
+  transform-box: var(--d-transform-box);
+  transform-origin: var(--d-transform-origin);
+  transform-style: var(--d-transform-style);
+  translate: var(--d-translate)
 }
 .desktop.border-collapse {
-  --border-collapse: separate;
+  --d-border-collapse: separate;
 
-  border-collapse: var(--border-collapse)
+  border-collapse: var(--d-border-collapse)
 }
 .desktop.position {
-  --bottom: auto;
-  --left: auto;
-  --position: static;
-  --right: auto;
-  --top: auto;
-  --z-index: auto;
+  --d-bottom: auto;
+  --d-left: auto;
+  --d-position: static;
+  --d-right: auto;
+  --d-top: auto;
+  --d-z-index: auto;
 
-  bottom: var(--bottom);
-  left: var(--left);
-  position: var(--position);
-  right: var(--right);
-  top: var(--top);
-  z-index: var(--z-index)
+  bottom: var(--d-bottom);
+  left: var(--d-left);
+  position: var(--d-position);
+  right: var(--d-right);
+  top: var(--d-top);
+  z-index: var(--d-z-index)
 }
 .desktop.shadow {
-  --box-shadow: none;
+  --d-box-shadow: none;
 
-  box-shadow: var(--box-shadow)
+  box-shadow: var(--d-box-shadow)
 }
 .desktop.content-flow {
-  --break-after: auto;
-  --break-before: auto;
-  --break-inside: auto;
-  --clear: none;
-  --direction: ltr;
-  --float: none;
-  --overflow-wrap: normal;
+  --d-break-after: auto;
+  --d-break-before: auto;
+  --d-break-inside: auto;
+  --d-clear: none;
+  --d-direction: ltr;
+  --d-float: none;
+  --d-overflow-wrap: normal;
 
-  break-after: var(--break-after);
-  break-before: var(--break-before);
-  break-inside: var(--break-inside);
-  clear: var(--clear);
-  direction: var(--direction);
-  float: var(--float);
-  overflow-wrap: var(--overflow-wrap)
+  break-after: var(--d-break-after);
+  break-before: var(--d-break-before);
+  break-inside: var(--d-break-inside);
+  clear: var(--d-clear);
+  direction: var(--d-direction);
+  float: var(--d-float);
+  overflow-wrap: var(--d-overflow-wrap)
 }
 .desktop.caption {
-  --caption-side: top;
+  --d-caption-side: top;
 
-  caption-side: var(--caption-side)
+  caption-side: var(--d-caption-side)
 }
 .desktop.interaction {
-  --caret-color: auto;
-  --pointer-events: auto;
-  --resize: none;
-  --scroll-behavior: auto;
-  --touch-action: auto;
-  --user-select: auto;
+  --d-caret-color: auto;
+  --d-pointer-events: auto;
+  --d-resize: none;
+  --d-scroll-behavior: auto;
+  --d-touch-action: auto;
+  --d-user-select: auto;
 
-  caret-color: var(--caret-color);
-  pointer-events: var(--pointer-events);
-  resize: var(--resize);
-  scroll-behavior: var(--scroll-behavior);
-  touch-action: var(--touch-action);
-  user-select: var(--user-select)
+  caret-color: var(--d-caret-color);
+  pointer-events: var(--d-pointer-events);
+  resize: var(--d-resize);
+  scroll-behavior: var(--d-scroll-behavior);
+  touch-action: var(--d-touch-action);
+  user-select: var(--d-user-select)
 }
 .desktop.masking {
-  --clip: auto;
-  --clip-path: none;
-  --clip-rule: nonzero;
-  --mask-composite: add;
-  --mask-type: luminance;
+  --d-clip: auto;
+  --d-clip-path: none;
+  --d-clip-rule: nonzero;
+  --d-mask-composite: add;
+  --d-mask-type: luminance;
 
-  clip: var(--clip);
-  clip-path: var(--clip-path);
-  clip-rule: var(--clip-rule);
-  mask-composite: var(--mask-composite);
-  mask-type: var(--mask-type)
+  clip: var(--d-clip);
+  clip-path: var(--d-clip-path);
+  clip-rule: var(--d-clip-rule);
+  mask-composite: var(--d-mask-composite);
+  mask-type: var(--d-mask-type)
 }
 .desktop.text {
-  --color: currentcolor;
-  --color-interpolation: srgb;
-  --color-interpolation-filters: linearrgb;
-  --hyphenate-character: auto;
-  --hyphens: manual;
-  --line-break: auto;
-  --quotes: auto;
-  --vertical-align: baseline;
-  --white-space-collapse: preserve;
-  --writing-mode: horizontal-tb;
-  --text-align: start;
-  --text-align-last: auto;
-  --text-anchor: start;
-  --text-combine-upright: none;
-  --text-indent: 0;
-  --text-orientation: mixed;
-  --text-overflow: clip;
-  --text-rendering: auto;
-  --text-shadow: none;
-  --text-transform: none;
+  --d-color: currentcolor;
+  --d-color-interpolation: srgb;
+  --d-color-interpolation-filters: linearrgb;
+  --d-hyphenate-character: auto;
+  --d-hyphens: manual;
+  --d-line-break: auto;
+  --d-quotes: auto;
+  --d-vertical-align: baseline;
+  --d-white-space-collapse: preserve;
+  --d-writing-mode: horizontal-tb;
+  --d-text-align: start;
+  --d-text-align-last: auto;
+  --d-text-anchor: start;
+  --d-text-combine-upright: none;
+  --d-text-indent: 0;
+  --d-text-orientation: mixed;
+  --d-text-overflow: clip;
+  --d-text-rendering: auto;
+  --d-text-shadow: none;
+  --d-text-transform: none;
 
-  color: var(--color);
-  color-interpolation: var(--color-interpolation);
-  color-interpolation-filters: var(--color-interpolation-filters);
-  hyphenate-character: var(--hyphenate-character);
-  hyphens: var(--hyphens);
-  line-break: var(--line-break);
-  quotes: var(--quotes);
-  vertical-align: var(--vertical-align);
-  white-space-collapse: var(--white-space-collapse);
-  writing-mode: var(--writing-mode);
-  text-align: var(--text-align);
-  text-align-last: var(--text-align-last);
-  text-anchor: var(--text-anchor);
-  text-combine-upright: var(--text-combine-upright);
-  text-indent: var(--text-indent);
-  text-orientation: var(--text-orientation);
-  text-overflow: var(--text-overflow);
-  text-rendering: var(--text-rendering);
-  text-shadow: var(--text-shadow);
-  text-transform: var(--text-transform)
+  color: var(--d-color);
+  color-interpolation: var(--d-color-interpolation);
+  color-interpolation-filters: var(--d-color-interpolation-filters);
+  hyphenate-character: var(--d-hyphenate-character);
+  hyphens: var(--d-hyphens);
+  line-break: var(--d-line-break);
+  quotes: var(--d-quotes);
+  vertical-align: var(--d-vertical-align);
+  white-space-collapse: var(--d-white-space-collapse);
+  writing-mode: var(--d-writing-mode);
+  text-align: var(--d-text-align);
+  text-align-last: var(--d-text-align-last);
+  text-anchor: var(--d-text-anchor);
+  text-combine-upright: var(--d-text-combine-upright);
+  text-indent: var(--d-text-indent);
+  text-orientation: var(--d-text-orientation);
+  text-overflow: var(--d-text-overflow);
+  text-rendering: var(--d-text-rendering);
+  text-shadow: var(--d-text-shadow);
+  text-transform: var(--d-text-transform)
 }
 .desktop.contain {
-  --contain: none;
-  --contain-intrinsic-block-size: auto;
-  --contain-intrinsic-height: auto;
-  --contain-intrinsic-inline-size: auto;
-  --contain-intrinsic-width: auto;
+  --d-contain: none;
+  --d-contain-intrinsic-block-size: auto;
+  --d-contain-intrinsic-height: auto;
+  --d-contain-intrinsic-inline-size: auto;
+  --d-contain-intrinsic-width: auto;
 
-  contain: var(--contain);
-  contain-intrinsic-block-size: var(--contain-intrinsic-block-size);
-  contain-intrinsic-height: var(--contain-intrinsic-height);
-  contain-intrinsic-inline-size: var(--contain-intrinsic-inline-size);
-  contain-intrinsic-width: var(--contain-intrinsic-width)
+  contain: var(--d-contain);
+  contain-intrinsic-block-size: var(--d-contain-intrinsic-block-size);
+  contain-intrinsic-height: var(--d-contain-intrinsic-height);
+  contain-intrinsic-inline-size: var(--d-contain-intrinsic-inline-size);
+  contain-intrinsic-width: var(--d-contain-intrinsic-width)
 }
 .desktop.container {
-  --container-name: none;
-  --container-type: none;
+  --d-container-name: none;
+  --d-container-type: none;
 
-  container-name: var(--container-name);
-  container-type: var(--container-type)
+  container-name: var(--d-container-name);
+  container-type: var(--d-container-type)
 }
 .desktop.content {
-  --content: normal;
-  --content-visibility: visible;
+  --d-content: normal;
+  --d-content-visibility: visible;
 
-  content: var(--content);
-  content-visibility: var(--content-visibility)
+  content: var(--d-content);
+  content-visibility: var(--d-content-visibility)
 }
 .desktop.list {
-  --counter-increment: none;
-  --counter-reset: none;
-  --counter-set: none;
-  --list-style-image: none;
-  --list-style-position: outside;
-  --list-style-type: disc;
+  --d-counter-increment: none;
+  --d-counter-reset: none;
+  --d-counter-set: none;
+  --d-list-style-image: none;
+  --d-list-style-position: outside;
+  --d-list-style-type: disc;
 
-  counter-increment: var(--counter-increment);
-  counter-reset: var(--counter-reset);
-  counter-set: var(--counter-set);
-  list-style-image: var(--list-style-image);
-  list-style-position: var(--list-style-position);
-  list-style-type: var(--list-style-type)
+  counter-increment: var(--d-counter-increment);
+  counter-reset: var(--d-counter-reset);
+  counter-set: var(--d-counter-set);
+  list-style-image: var(--d-list-style-image);
+  list-style-position: var(--d-list-style-position);
+  list-style-type: var(--d-list-style-type)
 }
 .desktop.cursor {
-  --cursor: auto;
+  --d-cursor: auto;
 
-  cursor: var(--cursor)
+  cursor: var(--d-cursor)
 }
 .desktop.display {
-  --display: inline;
+  --d-display: inline;
 
-  display: var(--display)
+  display: var(--d-display)
 }
 .desktop.svg {
-  --dominant-baseline: auto;
-  --fill: black;
-  --fill-opacity: 1;
-  --fill-rule: nonzero;
-  --flood-color: black;
-  --flood-opacity: 1;
-  --lighting-color: white;
-  --paint-order: normal;
-  --stop-color: black;
-  --stop-opacity: 1;
-  --stroke: none;
-  --stroke-dasharray: none;
-  --stroke-dashoffset: 0;
-  --stroke-linecap: butt;
-  --stroke-linejoin: miter;
-  --stroke-miterlimit: 4;
-  --stroke-opacity: 1;
-  --stroke-width: 1;
-  --vector-effect: none;
+  --d-dominant-baseline: auto;
+  --d-fill: black;
+  --d-fill-opacity: 1;
+  --d-fill-rule: nonzero;
+  --d-flood-color: black;
+  --d-flood-opacity: 1;
+  --d-lighting-color: white;
+  --d-paint-order: normal;
+  --d-stop-color: black;
+  --d-stop-opacity: 1;
+  --d-stroke: none;
+  --d-stroke-dasharray: none;
+  --d-stroke-dashoffset: 0;
+  --d-stroke-linecap: butt;
+  --d-stroke-linejoin: miter;
+  --d-stroke-miterlimit: 4;
+  --d-stroke-opacity: 1;
+  --d-stroke-width: 1;
+  --d-vector-effect: none;
 
-  dominant-baseline: var(--dominant-baseline);
-  fill: var(--fill);
-  fill-opacity: var(--fill-opacity);
-  fill-rule: var(--fill-rule);
-  flood-color: var(--flood-color);
-  flood-opacity: var(--flood-opacity);
-  lighting-color: var(--lighting-color);
-  paint-order: var(--paint-order);
-  stop-color: var(--stop-color);
-  stop-opacity: var(--stop-opacity);
-  stroke: var(--stroke);
-  stroke-dasharray: var(--stroke-dasharray);
-  stroke-dashoffset: var(--stroke-dashoffset);
-  stroke-linecap: var(--stroke-linecap);
-  stroke-linejoin: var(--stroke-linejoin);
-  stroke-miterlimit: var(--stroke-miterlimit);
-  stroke-opacity: var(--stroke-opacity);
-  stroke-width: var(--stroke-width);
-  vector-effect: var(--vector-effect)
+  dominant-baseline: var(--d-dominant-baseline);
+  fill: var(--d-fill);
+  fill-opacity: var(--d-fill-opacity);
+  fill-rule: var(--d-fill-rule);
+  flood-color: var(--d-flood-color);
+  flood-opacity: var(--d-flood-opacity);
+  lighting-color: var(--d-lighting-color);
+  paint-order: var(--d-paint-order);
+  stop-color: var(--d-stop-color);
+  stop-opacity: var(--d-stop-opacity);
+  stroke: var(--d-stroke);
+  stroke-dasharray: var(--d-stroke-dasharray);
+  stroke-dashoffset: var(--d-stroke-dashoffset);
+  stroke-linecap: var(--d-stroke-linecap);
+  stroke-linejoin: var(--d-stroke-linejoin);
+  stroke-miterlimit: var(--d-stroke-miterlimit);
+  stroke-opacity: var(--d-stroke-opacity);
+  stroke-width: var(--d-stroke-width);
+  vector-effect: var(--d-vector-effect)
 }
 .desktop.table {
-  --empty-cells: show;
-  --table-layout: auto;
+  --d-empty-cells: show;
+  --d-table-layout: auto;
 
-  empty-cells: var(--empty-cells);
-  table-layout: var(--table-layout)
+  empty-cells: var(--d-empty-cells);
+  table-layout: var(--d-table-layout)
 }
 .desktop.typography {
-  --font-feature-settings: normal;
-  --font-kerning: auto;
-  --font-optical-sizing: auto;
-  --font-palette: normal;
-  --font-size-adjust: none;
-  --font-variant-alternates: normal;
-  --font-variation-settings: normal;
-  --letter-spacing: normal;
-  --line-height: normal;
-  --tab-size: 8;
+  --d-font-feature-settings: normal;
+  --d-font-kerning: auto;
+  --d-font-optical-sizing: auto;
+  --d-font-palette: normal;
+  --d-font-size-adjust: none;
+  --d-font-variant-alternates: normal;
+  --d-font-variation-settings: normal;
+  --d-letter-spacing: normal;
+  --d-line-height: normal;
+  --d-tab-size: 8;
 
-  font-feature-settings: var(--font-feature-settings);
-  font-kerning: var(--font-kerning);
-  font-optical-sizing: var(--font-optical-sizing);
-  font-palette: var(--font-palette);
-  font-size-adjust: var(--font-size-adjust);
-  font-variant-alternates: var(--font-variant-alternates);
-  font-variation-settings: var(--font-variation-settings);
-  letter-spacing: var(--letter-spacing);
-  line-height: var(--line-height);
-  tab-size: var(--tab-size)
+  font-feature-settings: var(--d-font-feature-settings);
+  font-kerning: var(--d-font-kerning);
+  font-optical-sizing: var(--d-font-optical-sizing);
+  font-palette: var(--d-font-palette);
+  font-size-adjust: var(--d-font-size-adjust);
+  font-variant-alternates: var(--d-font-variant-alternates);
+  font-variation-settings: var(--d-font-variation-settings);
+  letter-spacing: var(--d-letter-spacing);
+  line-height: var(--d-line-height);
+  tab-size: var(--d-tab-size)
 }
 .desktop.height {
-  --height: auto;
-  --min-height: auto;
-  --max-height: none;
+  --d-height: auto;
+  --d-min-height: auto;
+  --d-max-height: none;
 
-  height: var(--height);
-  min-height: var(--min-height);
-  max-height: var(--max-height)
+  height: var(--d-height);
+  min-height: var(--d-min-height);
+  max-height: var(--d-max-height)
 }
 .desktop.image {
-  --image-orientation: from-image;
-  --image-rendering: auto;
+  --d-image-orientation: from-image;
+  --d-image-rendering: auto;
 
-  image-orientation: var(--image-orientation);
-  image-rendering: var(--image-rendering)
+  image-orientation: var(--d-image-orientation);
+  image-rendering: var(--d-image-rendering)
 }
 .desktop.inset {
-  --inset: auto;
+  --d-inset: auto;
 
-  inset: var(--inset)
+  inset: var(--d-inset)
 }
 .desktop.math {
-  --math-style: normal;
+  --d-math-style: normal;
 
-  math-style: var(--math-style)
+  math-style: var(--d-math-style)
 }
 .desktop.outline {
-  --outline-offset: 0;
-  --outline-width: medium;
-  --outline-style: none;
-  --outline-color: invert;
-  --outline: invert;
+  --d-outline-offset: 0;
+  --d-outline-width: medium;
+  --d-outline-style: none;
+  --d-outline-color: invert;
+  --d-outline: invert;
 
-  outline-offset: var(--outline-offset);
-  outline: var(--outline, var(--outline-style) var(--outline-color))
+  outline-offset: var(--d-outline-offset);
+  outline: var(--d-outline, var(--d-outline-style) var(--d-outline-color))
 }
 .desktop.media {
-  --size: auto;
+  --d-size: auto;
 
-  size: var(--size)
+  size: var(--d-size)
 }
 .desktop.transition {
-  --transition-behavior: auto;
-  --transition-property: all;
-  --transition-duration: 0s;
-  --transition-timing-function: ease;
-  --transition-delay: 0s;
-  --transition: all 0s ease 0s;
+  --d-transition-behavior: auto;
+  --d-transition-property: all;
+  --d-transition-duration: 0s;
+  --d-transition-timing-function: ease;
+  --d-transition-delay: 0s;
+  --d-transition: all 0s ease 0s;
 
-  transition-behavior: var(--transition-behavior);
-  transition: var(--transition, var(--transition-duration) var(--transition-timing-function) var(--transition-delay))
+  transition-behavior: var(--d-transition-behavior);
+  transition: var(--d-transition, var(--d-transition-duration) var(--d-transition-timing-function) var(--d-transition-delay))
 }
 .desktop.unicode {
-  --unicode-bidi: normal;
+  --d-unicode-bidi: normal;
 
-  unicode-bidi: var(--unicode-bidi)
+  unicode-bidi: var(--d-unicode-bidi)
 }
 .desktop.visibility {
-  --visibility: visible;
+  --d-visibility: visible;
 
-  visibility: var(--visibility)
+  visibility: var(--d-visibility)
 }
 .desktop.width {
-  --width: auto;
-  --min-width: auto;
-  --max-width: none;
+  --d-width: auto;
+  --d-min-width: auto;
+  --d-max-width: none;
 
-  width: var(--width);
-  min-width: var(--min-width);
-  max-width: var(--max-width)
+  width: var(--d-width);
+  min-width: var(--d-min-width);
+  max-width: var(--d-max-width)
 }
 .desktop.optimization {
-  --will-change: auto;
+  --d-will-change: auto;
 
-  will-change: var(--will-change)
+  will-change: var(--d-will-change)
 }
 .desktop.animation {
-  --animation-name: none;
-  --animation-duration: 0s;
-  --animation-timing-function: ease;
-  --animation-delay: 0s;
-  --animation-iteration-count: 1;
-  --animation-direction: normal;
-  --animation-fill-mode: none;
-  --animation-play-state: running;
-  --animation-composition: replace;
-  --animation: none;
+  --d-animation-name: none;
+  --d-animation-duration: 0s;
+  --d-animation-timing-function: ease;
+  --d-animation-delay: 0s;
+  --d-animation-iteration-count: 1;
+  --d-animation-direction: normal;
+  --d-animation-fill-mode: none;
+  --d-animation-play-state: running;
+  --d-animation-composition: replace;
+  --d-animation: none;
 
-  animation: var(--animation, var(--animation-duration) var(--animation-timing-function) var(--animation-delay) var(--animation-iteration-count) var(--animation-direction) var(--animation-fill-mode) var(--animation-play-state) var(--animation-composition))
+  animation: var(--d-animation, var(--d-animation-duration) var(--d-animation-timing-function) var(--d-animation-delay) var(--d-animation-iteration-count) var(--d-animation-direction) var(--d-animation-fill-mode) var(--d-animation-play-state) var(--d-animation-composition))
 }
 .desktop.background {
-  --background-color: transparent;
-  --background-image: none;
-  --background-position-x: 0;
-  --background-position-y: 0;
-  --background-size: auto;
-  --background-repeat: repeat;
-  --background-attachment: scroll;
-  --background-origin: padding-box;
-  --background-clip: border-box;
-  --background-blend-mode: normal;
-  --background: transparent;
+  --d-background-color: transparent;
+  --d-background-image: none;
+  --d-background-position-x: 0;
+  --d-background-position-y: 0;
+  --d-background-size: auto;
+  --d-background-repeat: repeat;
+  --d-background-attachment: scroll;
+  --d-background-origin: padding-box;
+  --d-background-clip: border-box;
+  --d-background-blend-mode: normal;
+  --d-background: transparent;
 
-  background: var(--background, var(--background-image) var(--background-position-x) var(--background-position-y) var(--background-size) var(--background-repeat) var(--background-attachment) var(--background-origin) var(--background-clip) var(--background-blend-mode))
+  background: var(--d-background, var(--d-background-image) var(--d-background-position-x) var(--d-background-position-y) var(--d-background-size) var(--d-background-repeat) var(--d-background-attachment) var(--d-background-origin) var(--d-background-clip) var(--d-background-blend-mode))
 }
 .desktop.border-image {
-  --border-image-source: none;
-  --border-image-slice: 100%;
-  --border-image-width: 1;
-  --border-image-outset: 0;
-  --border-image-repeat: stretch;
-  --borderImage: initial;
+  --d-border-image-source: none;
+  --d-border-image-slice: 100%;
+  --d-border-image-width: 1;
+  --d-border-image-outset: 0;
+  --d-border-image-repeat: stretch;
+  --d-borderImage: initial;
 
-  border-image: var(--border-image, var(--border-image-slice) var(--border-image-width) var(--border-image-outset) var(--border-image-repeat))
+  border-image: var(--d-border-image, var(--d-border-image-slice) var(--d-border-image-width) var(--d-border-image-outset) var(--d-border-image-repeat))
 }
 .desktop.border-block-start {
-  --border-block-start-start-width: initial;
-  --border-block-start-start-style: initial;
-  --border-block-start-start-color: initial;
-  --borderBlockStart: initial;
+  --d-border-block-start-start-width: initial;
+  --d-border-block-start-start-style: initial;
+  --d-border-block-start-start-color: initial;
+  --d-borderBlockStart: initial;
 
-  border-block-start: var(--border-block-start, var(--border-block-start-start-style) var(--border-block-start-start-color))
+  border-block-start: var(--d-border-block-start, var(--d-border-block-start-start-style) var(--d-border-block-start-start-color))
 }
 .desktop.border-block-end {
-  --border-block-end-end-width: initial;
-  --border-block-end-end-style: initial;
-  --border-block-end-end-color: initial;
-  --borderBlockEnd: initial;
+  --d-border-block-end-end-width: initial;
+  --d-border-block-end-end-style: initial;
+  --d-border-block-end-end-color: initial;
+  --d-borderBlockEnd: initial;
 
-  border-block-end: var(--border-block-end, var(--border-block-end-end-style) var(--border-block-end-end-color))
+  border-block-end: var(--d-border-block-end, var(--d-border-block-end-end-style) var(--d-border-block-end-end-color))
 }
 .desktop.border-inline-start {
-  --border-inline-start-start-width: initial;
-  --border-inline-start-start-style: initial;
-  --border-inline-start-start-color: initial;
-  --borderInlineStart: initial;
+  --d-border-inline-start-start-width: initial;
+  --d-border-inline-start-start-style: initial;
+  --d-border-inline-start-start-color: initial;
+  --d-borderInlineStart: initial;
 
-  border-inline-start: var(--border-inline-start, var(--border-inline-start-start-style) var(--border-inline-start-start-color))
+  border-inline-start: var(--d-border-inline-start, var(--d-border-inline-start-start-style) var(--d-border-inline-start-start-color))
 }
 .desktop.border-inline-end {
-  --border-inline-end-end-width: initial;
-  --border-inline-end-end-style: initial;
-  --border-inline-end-end-color: initial;
-  --borderInlineEnd: initial;
+  --d-border-inline-end-end-width: initial;
+  --d-border-inline-end-end-style: initial;
+  --d-border-inline-end-end-color: initial;
+  --d-borderInlineEnd: initial;
 
-  border-inline-end: var(--border-inline-end, var(--border-inline-end-end-style) var(--border-inline-end-end-color))
+  border-inline-end: var(--d-border-inline-end, var(--d-border-inline-end-end-style) var(--d-border-inline-end-end-color))
 }
 .desktop.border-top {
-  --border-top-width: medium;
-  --border-top-style: none;
-  --border-top-color: currentcolor;
-  --borderTop: initial;
-  --border-top-left-radius: 0;
-  --border-top-right-radius: 0;
+  --d-border-top-width: medium;
+  --d-border-top-style: none;
+  --d-border-top-color: currentcolor;
+  --d-borderTop: initial;
+  --d-border-top-left-radius: 0;
+  --d-border-top-right-radius: 0;
 
-  border-top: var(--border-top, var(--border-top-style) var(--border-top-color));
-  border-top-left-radius: var(--border-top-left-radius);
-  border-top-right-radius: var(--border-top-right-radius)
+  border-top: var(--d-border-top, var(--d-border-top-style) var(--d-border-top-color));
+  border-top-left-radius: var(--d-border-top-left-radius);
+  border-top-right-radius: var(--d-border-top-right-radius)
 }
 .desktop.border-right {
-  --border-right-width: medium;
-  --border-right-style: none;
-  --border-right-color: currentcolor;
-  --borderRight: initial;
+  --d-border-right-width: medium;
+  --d-border-right-style: none;
+  --d-border-right-color: currentcolor;
+  --d-borderRight: initial;
 
-  border-right: var(--border-right, var(--border-right-style) var(--border-right-color))
+  border-right: var(--d-border-right, var(--d-border-right-style) var(--d-border-right-color))
 }
 .desktop.border-bottom {
-  --border-bottom-width: medium;
-  --border-bottom-style: none;
-  --border-bottom-color: currentcolor;
-  --borderBottom: initial;
-  --border-bottom-left-radius: 0;
-  --border-bottom-right-radius: 0;
+  --d-border-bottom-width: medium;
+  --d-border-bottom-style: none;
+  --d-border-bottom-color: currentcolor;
+  --d-borderBottom: initial;
+  --d-border-bottom-left-radius: 0;
+  --d-border-bottom-right-radius: 0;
 
-  border-bottom: var(--border-bottom, var(--border-bottom-style) var(--border-bottom-color));
-  border-bottom-left-radius: var(--border-bottom-left-radius);
-  border-bottom-right-radius: var(--border-bottom-right-radius)
+  border-bottom: var(--d-border-bottom, var(--d-border-bottom-style) var(--d-border-bottom-color));
+  border-bottom-left-radius: var(--d-border-bottom-left-radius);
+  border-bottom-right-radius: var(--d-border-bottom-right-radius)
 }
 .desktop.border-left {
-  --border-left-width: medium;
-  --border-left-style: none;
-  --border-left-color: currentcolor;
-  --borderLeft: initial;
+  --d-border-left-width: medium;
+  --d-border-left-style: none;
+  --d-border-left-color: currentcolor;
+  --d-borderLeft: initial;
 
-  border-left: var(--border-left, var(--border-left-style) var(--border-left-color))
+  border-left: var(--d-border-left, var(--d-border-left-style) var(--d-border-left-color))
 }
 .desktop.border-start {
-  --border-start-end-radius: 0;
-  --border-start-start-radius: 0;
+  --d-border-start-end-radius: 0;
+  --d-border-start-start-radius: 0;
 
-  border-start-end-radius: var(--border-start-end-radius);
-  border-start-start-radius: var(--border-start-start-radius)
+  border-start-end-radius: var(--d-border-start-end-radius);
+  border-start-start-radius: var(--d-border-start-start-radius)
 }
 .desktop.border-end {
-  --border-end-end-radius: 0;
-  --border-end-start-radius: 0;
+  --d-border-end-end-radius: 0;
+  --d-border-end-start-radius: 0;
 
-  border-end-end-radius: var(--border-end-end-radius);
-  border-end-start-radius: var(--border-end-start-radius)
+  border-end-end-radius: var(--d-border-end-end-radius);
+  border-end-start-radius: var(--d-border-end-start-radius)
 }
 .desktop.border {
-  --border-width: initial;
-  --border-style: initial;
-  --border-color: initial;
-  --border: medium none currentcolor;
+  --d-border-width: initial;
+  --d-border-style: initial;
+  --d-border-color: initial;
+  --d-border: medium none currentcolor;
 
-  border: var(--border, var(--border-style) var(--border-color))
+  border: var(--d-border, var(--d-border-style) var(--d-border-color))
 }
 .desktop.column {
-  --column-count: auto;
-  --column-fill: balance;
-  --column-rule-color: currentcolor;
-  --column-rule-style: none;
-  --column-rule-width: medium;
-  --column-span: none;
-  --column-width: auto;
+  --d-column-count: auto;
+  --d-column-fill: balance;
+  --d-column-rule-color: currentcolor;
+  --d-column-rule-style: none;
+  --d-column-rule-width: medium;
+  --d-column-span: none;
+  --d-column-width: auto;
 
-  column-count: var(--column-count);
-  column-fill: var(--column-fill);
-  column-rule-color: var(--column-rule-color);
-  column-rule-style: var(--column-rule-style);
-  column-rule-width: var(--column-rule-width);
-  column-span: var(--column-span);
-  column-width: var(--column-width)
+  column-count: var(--d-column-count);
+  column-fill: var(--d-column-fill);
+  column-rule-color: var(--d-column-rule-color);
+  column-rule-style: var(--d-column-rule-style);
+  column-rule-width: var(--d-column-rule-width);
+  column-span: var(--d-column-span);
+  column-width: var(--d-column-width)
 }
 .desktop.padding {
-  --padding-top: 0;
-  --padding-right: 0;
-  --padding-bottom: 0;
-  --padding-left: 0;
-  --padding: 0;
+  --d-padding-top: 0;
+  --d-padding-right: 0;
+  --d-padding-bottom: 0;
+  --d-padding-left: 0;
+  --d-padding: 0;
 
-  padding: var(--padding, var(--padding-right) var(--padding-bottom) var(--padding-left))
+  padding: var(--d-padding, var(--d-padding-right) var(--d-padding-bottom) var(--d-padding-left))
 }
 .desktop.padding-block {
-  --padding-block-start: 0;
-  --padding-block-end: 0;
-  --paddingBlock: initial;
+  --d-padding-block-start: 0;
+  --d-padding-block-end: 0;
+  --d-paddingBlock: initial;
 
-  padding-block: var(--padding-block, var(--padding-block-end))
+  padding-block: var(--d-padding-block, var(--d-padding-block-end))
 }
 .desktop.padding-inline {
-  --padding-inline-start: 0;
-  --padding-inline-end: 0;
-  --paddingInline: initial;
+  --d-padding-inline-start: 0;
+  --d-padding-inline-end: 0;
+  --d-paddingInline: initial;
 
-  padding-inline: var(--padding-inline, var(--padding-inline-end))
+  padding-inline: var(--d-padding-inline, var(--d-padding-inline-end))
 }
 .desktop.font {
-  --font-style: normal;
-  --font-variant: initial;
-  --font-weight: 400;
-  --font-stretch: normal;
-  --font-size: 16;
-  --font-line-height: initial;
-  --font-family: serif;
-  --font: 1rem sans-serif;
+  --d-font-style: normal;
+  --d-font-variant: initial;
+  --d-font-weight: 400;
+  --d-font-stretch: normal;
+  --d-font-size: 16;
+  --d-font-line-height: initial;
+  --d-font-family: serif;
+  --d-font: 1rem sans-serif;
 
-  font: var(--font, var(--font-variant) var(--font-weight) var(--font-stretch) var(--font-size) var(--font-line-height) var(--font-family))
+  font: var(--d-font, var(--d-font-variant) var(--d-font-weight) var(--d-font-stretch) var(--d-font-size) var(--d-font-line-height) var(--d-font-family))
 }
 .desktop.font-synthesis {
-  --font-synthesis-weight: auto;
-  --font-synthesis-style: auto;
-  --font-synthesis-small-caps: auto;
+  --d-font-synthesis-weight: auto;
+  --d-font-synthesis-style: auto;
+  --d-font-synthesis-small-caps: auto;
 
-  font-synthesis-weight: var(--font-synthesis-weight);
-  font-synthesis-style: var(--font-synthesis-style);
-  font-synthesis-small-caps: var(--font-synthesis-small-caps)
+  font-synthesis-weight: var(--d-font-synthesis-weight);
+  font-synthesis-style: var(--d-font-synthesis-style);
+  font-synthesis-small-caps: var(--d-font-synthesis-small-caps)
 }
 .desktop.gap {
-  --row-gap: normal;
-  --column-gap: normal;
-  --gap: normal;
+  --d-row-gap: normal;
+  --d-column-gap: normal;
+  --d-gap: normal;
 
-  gap: var(--gap, var(--column-gap))
+  gap: var(--d-gap, var(--d-column-gap))
 }
 .desktop.grid {
-  --grid-auto-columns: auto;
-  --grid-auto-flow: row;
-  --grid-auto-rows: auto;
-  --grid-column-start: auto;
-  --grid-column-end: auto;
-  --grid-row-start: auto;
-  --grid-row-end: auto;
-  --grid-template-areas: none;
-  --grid-template-columns: none;
-  --grid-template-rows: none;
+  --d-grid-auto-columns: auto;
+  --d-grid-auto-flow: row;
+  --d-grid-auto-rows: auto;
+  --d-grid-column-start: auto;
+  --d-grid-column-end: auto;
+  --d-grid-row-start: auto;
+  --d-grid-row-end: auto;
+  --d-grid-template-areas: none;
+  --d-grid-template-columns: none;
+  --d-grid-template-rows: none;
 
-  grid-auto-columns: var(--grid-auto-columns);
-  grid-auto-flow: var(--grid-auto-flow);
-  grid-auto-rows: var(--grid-auto-rows);
-  grid-column-start: var(--grid-column-start);
-  grid-column-end: var(--grid-column-end);
-  grid-row-start: var(--grid-row-start);
-  grid-row-end: var(--grid-row-end);
-  grid-template-areas: var(--grid-template-areas);
-  grid-template-columns: var(--grid-template-columns);
-  grid-template-rows: var(--grid-template-rows)
+  grid-auto-columns: var(--d-grid-auto-columns);
+  grid-auto-flow: var(--d-grid-auto-flow);
+  grid-auto-rows: var(--d-grid-auto-rows);
+  grid-column-start: var(--d-grid-column-start);
+  grid-column-end: var(--d-grid-column-end);
+  grid-row-start: var(--d-grid-row-start);
+  grid-row-end: var(--d-grid-row-end);
+  grid-template-areas: var(--d-grid-template-areas);
+  grid-template-columns: var(--d-grid-template-columns);
+  grid-template-rows: var(--d-grid-template-rows)
 }
 .desktop.inset-block {
-  --inset-block-start: auto;
-  --inset-block-end: auto;
-  --insetBlock: initial;
+  --d-inset-block-start: auto;
+  --d-inset-block-end: auto;
+  --d-insetBlock: initial;
 
-  inset-block: var(--inset-block, var(--inset-block-end))
+  inset-block: var(--d-inset-block, var(--d-inset-block-end))
 }
 .desktop.inset-inline {
-  --inset-inline-start: auto;
-  --inset-inline-end: auto;
-  --insetInline: initial;
+  --d-inset-inline-start: auto;
+  --d-inset-inline-end: auto;
+  --d-insetInline: initial;
 
-  inset-inline: var(--inset-inline, var(--inset-inline-end))
+  inset-inline: var(--d-inset-inline, var(--d-inset-inline-end))
 }
 .desktop.margin {
-  --margin-top: 0;
-  --margin-right: 0;
-  --margin-bottom: 0;
-  --margin-left: 0;
-  --margin: 0;
+  --d-margin-top: 0;
+  --d-margin-right: 0;
+  --d-margin-bottom: 0;
+  --d-margin-left: 0;
+  --d-margin: 0;
 
-  margin: var(--margin, var(--margin-right) var(--margin-bottom) var(--margin-left))
+  margin: var(--d-margin, var(--d-margin-right) var(--d-margin-bottom) var(--d-margin-left))
 }
 .desktop.margin-block {
-  --margin-block-start: 0;
-  --margin-block-end: 0;
-  --marginBlock: initial;
+  --d-margin-block-start: 0;
+  --d-margin-block-end: 0;
+  --d-marginBlock: initial;
 
-  margin-block: var(--margin-block, var(--margin-block-end))
+  margin-block: var(--d-margin-block, var(--d-margin-block-end))
 }
 .desktop.margin-inline {
-  --margin-inline-start: 0;
-  --margin-inline-end: 0;
-  --marginInline: initial;
+  --d-margin-inline-start: 0;
+  --d-margin-inline-end: 0;
+  --d-marginInline: initial;
 
-  margin-inline: var(--margin-inline, var(--margin-inline-end))
+  margin-inline: var(--d-margin-inline, var(--d-margin-inline-end))
 }
 .desktop.marker {
-  --marker-end: none;
-  --marker-mid: none;
-  --marker-start: none;
+  --d-marker-end: none;
+  --d-marker-mid: none;
+  --d-marker-start: none;
 
-  marker-end: var(--marker-end);
-  marker-mid: var(--marker-mid);
-  marker-start: var(--marker-start)
+  marker-end: var(--d-marker-end);
+  marker-mid: var(--d-marker-mid);
+  marker-start: var(--d-marker-start)
 }
 .desktop.mask {
-  --mask-image: none;
-  --mask-position-x: initial;
-  --mask-position-y: initial;
-  --mask-size: auto;
-  --mask-repeat: no-repeat;
-  --mask-origin: border-box;
-  --mask-clip: border-box;
-  --mask-mode: match-source;
-  --mask: none;
+  --d-mask-image: none;
+  --d-mask-position-x: initial;
+  --d-mask-position-y: initial;
+  --d-mask-size: auto;
+  --d-mask-repeat: no-repeat;
+  --d-mask-origin: border-box;
+  --d-mask-clip: border-box;
+  --d-mask-mode: match-source;
+  --d-mask: none;
 
-  mask: var(--mask, var(--mask-position-x) var(--mask-position-y) var(--mask-size) var(--mask-repeat) var(--mask-origin) var(--mask-clip) var(--mask-mode))
+  mask: var(--d-mask, var(--d-mask-position-x) var(--d-mask-position-y) var(--d-mask-size) var(--d-mask-repeat) var(--d-mask-origin) var(--d-mask-clip) var(--d-mask-mode))
 }
 .desktop.max {
-  --max-block-size: none;
-  --max-inline-size: none;
+  --d-max-block-size: none;
+  --d-max-inline-size: none;
 
-  max-block-size: var(--max-block-size);
-  max-inline-size: var(--max-inline-size)
+  max-block-size: var(--d-max-block-size);
+  max-inline-size: var(--d-max-inline-size)
 }
 .desktop.min {
-  --min-block-size: auto;
-  --min-inline-size: auto;
+  --d-min-block-size: auto;
+  --d-min-inline-size: auto;
 
-  min-block-size: var(--min-block-size);
-  min-inline-size: var(--min-inline-size)
+  min-block-size: var(--d-min-block-size);
+  min-inline-size: var(--d-min-inline-size)
 }
 .desktop.object {
-  --object-fit: fill;
-  --object-position: 50% 50%;
+  --d-object-fit: fill;
+  --d-object-position: 50% 50%;
 
-  object-fit: var(--object-fit);
-  object-position: var(--object-position)
+  object-fit: var(--d-object-fit);
+  object-position: var(--d-object-position)
 }
 .desktop.offset {
-  --offset-anchor: auto;
-  --offset-distance: 0;
-  --offset-path: none;
-  --offset-position: auto;
-  --offset-rotate: auto;
+  --d-offset-anchor: auto;
+  --d-offset-distance: 0;
+  --d-offset-path: none;
+  --d-offset-position: auto;
+  --d-offset-rotate: auto;
 
-  offset-anchor: var(--offset-anchor);
-  offset-distance: var(--offset-distance);
-  offset-path: var(--offset-path);
-  offset-position: var(--offset-position);
-  offset-rotate: var(--offset-rotate)
+  offset-anchor: var(--d-offset-anchor);
+  offset-distance: var(--d-offset-distance);
+  offset-path: var(--d-offset-path);
+  offset-position: var(--d-offset-position);
+  offset-rotate: var(--d-offset-rotate)
 }
 .desktop.overflow {
-  --overflow-x: visible;
-  --overflow-y: visible;
-  --overflow: visible;
+  --d-overflow-x: visible;
+  --d-overflow-y: visible;
+  --d-overflow: visible;
 
-  overflow: var(--overflow, var(--overflow-y))
+  overflow: var(--d-overflow, var(--d-overflow-y))
 }
 .desktop.overscroll-behavior {
-  --overscroll-behavior-block: auto;
-  --overscroll-behavior-inline: auto;
-  --overscroll-behavior-x: auto;
-  --overscroll-behavior-y: auto;
+  --d-overscroll-behavior-block: auto;
+  --d-overscroll-behavior-inline: auto;
+  --d-overscroll-behavior-x: auto;
+  --d-overscroll-behavior-y: auto;
 
-  overscroll-behavior-block: var(--overscroll-behavior-block);
-  overscroll-behavior-inline: var(--overscroll-behavior-inline);
-  overscroll-behavior-x: var(--overscroll-behavior-x);
-  overscroll-behavior-y: var(--overscroll-behavior-y)
+  overscroll-behavior-block: var(--d-overscroll-behavior-block);
+  overscroll-behavior-inline: var(--d-overscroll-behavior-inline);
+  overscroll-behavior-x: var(--d-overscroll-behavior-x);
+  overscroll-behavior-y: var(--d-overscroll-behavior-y)
 }
 .desktop.page-break {
-  --page-break-after: auto;
-  --page-break-before: auto;
-  --page-break-inside: auto;
+  --d-page-break-after: auto;
+  --d-page-break-before: auto;
+  --d-page-break-inside: auto;
 
-  page-break-after: var(--page-break-after);
-  page-break-before: var(--page-break-before);
-  page-break-inside: var(--page-break-inside)
+  page-break-after: var(--d-page-break-after);
+  page-break-before: var(--d-page-break-before);
+  page-break-inside: var(--d-page-break-inside)
 }
 .desktop.place {
-  --place-items: normal;
-  --place-content: normal;
-  --place-self: auto;
+  --d-place-items: normal;
+  --d-place-content: normal;
+  --d-place-self: auto;
 
-  place-items: var(--place-items);
-  place-content: var(--place-content);
-  place-self: var(--place-self)
+  place-items: var(--d-place-items);
+  place-content: var(--d-place-content);
+  place-self: var(--d-place-self)
 }
 .desktop.ruby {
-  --ruby-align: space-around;
-  --ruby-position: over;
+  --d-ruby-align: space-around;
+  --d-ruby-position: over;
 
-  ruby-align: var(--ruby-align);
-  ruby-position: var(--ruby-position)
+  ruby-align: var(--d-ruby-align);
+  ruby-position: var(--d-ruby-position)
 }
 .desktop.scroll-margin {
-  --scroll-margin-top: 0;
-  --scroll-margin-right: 0;
-  --scroll-margin-bottom: 0;
-  --scroll-margin-left: 0;
-  --scrollMargin: 0;
+  --d-scroll-margin-top: 0;
+  --d-scroll-margin-right: 0;
+  --d-scroll-margin-bottom: 0;
+  --d-scroll-margin-left: 0;
+  --d-scrollMargin: 0;
 
-  scroll-margin: var(--scroll-margin, var(--scroll-margin-right) var(--scroll-margin-bottom) var(--scroll-margin-left))
+  scroll-margin: var(--d-scroll-margin, var(--d-scroll-margin-right) var(--d-scroll-margin-bottom) var(--d-scroll-margin-left))
 }
 .desktop.scroll-margin-block {
-  --scroll-margin-block-start: 0;
-  --scroll-margin-block-end: 0;
-  --scrollMarginBlock: initial;
+  --d-scroll-margin-block-start: 0;
+  --d-scroll-margin-block-end: 0;
+  --d-scrollMarginBlock: initial;
 
-  scroll-margin-block: var(--scroll-margin-block, var(--scroll-margin-block-end))
+  scroll-margin-block: var(--d-scroll-margin-block, var(--d-scroll-margin-block-end))
 }
 .desktop.scroll-margin-inline {
-  --scroll-margin-inline-start: 0;
-  --scroll-margin-inline-end: 0;
-  --scrollMarginInline: initial;
+  --d-scroll-margin-inline-start: 0;
+  --d-scroll-margin-inline-end: 0;
+  --d-scrollMarginInline: initial;
 
-  scroll-margin-inline: var(--scroll-margin-inline, var(--scroll-margin-inline-end))
+  scroll-margin-inline: var(--d-scroll-margin-inline, var(--d-scroll-margin-inline-end))
 }
 .desktop.scroll-padding {
-  --scroll-padding-top: 0;
-  --scroll-padding-right: 0;
-  --scroll-padding-bottom: 0;
-  --scroll-padding-left: 0;
-  --scrollPadding: 0;
+  --d-scroll-padding-top: 0;
+  --d-scroll-padding-right: 0;
+  --d-scroll-padding-bottom: 0;
+  --d-scroll-padding-left: 0;
+  --d-scrollPadding: 0;
 
-  scroll-padding: var(--scroll-padding, var(--scroll-padding-right) var(--scroll-padding-bottom) var(--scroll-padding-left))
+  scroll-padding: var(--d-scroll-padding, var(--d-scroll-padding-right) var(--d-scroll-padding-bottom) var(--d-scroll-padding-left))
 }
 .desktop.scroll-padding-block {
-  --scroll-padding-block-start: 0;
-  --scroll-padding-block-end: 0;
+  --d-scroll-padding-block-start: 0;
+  --d-scroll-padding-block-end: 0;
 
-  scroll-padding-block-start: var(--scroll-padding-block-start);
-  scroll-padding-block-end: var(--scroll-padding-block-end)
+  scroll-padding-block-start: var(--d-scroll-padding-block-start);
+  scroll-padding-block-end: var(--d-scroll-padding-block-end)
 }
 .desktop.scroll-padding-inline {
-  --scroll-padding-inline-start: 0;
-  --scroll-padding-inline-end: 0;
+  --d-scroll-padding-inline-start: 0;
+  --d-scroll-padding-inline-end: 0;
 
-  scroll-padding-inline-start: var(--scroll-padding-inline-start);
-  scroll-padding-inline-end: var(--scroll-padding-inline-end)
+  scroll-padding-inline-start: var(--d-scroll-padding-inline-start);
+  scroll-padding-inline-end: var(--d-scroll-padding-inline-end)
 }
 .desktop.scroll-snap {
-  --scroll-snap-align: none;
-  --scroll-snap-stop: normal;
-  --scroll-snap-type: none;
+  --d-scroll-snap-align: none;
+  --d-scroll-snap-stop: normal;
+  --d-scroll-snap-type: none;
 
-  scroll-snap-align: var(--scroll-snap-align);
-  scroll-snap-stop: var(--scroll-snap-stop);
-  scroll-snap-type: var(--scroll-snap-type)
+  scroll-snap-align: var(--d-scroll-snap-align);
+  scroll-snap-stop: var(--d-scroll-snap-stop);
+  scroll-snap-type: var(--d-scroll-snap-type)
 }
 .desktop.scrollbar {
-  --scrollbar-gutter: auto;
-  --scrollbar-width: auto;
+  --d-scrollbar-gutter: auto;
+  --d-scrollbar-width: auto;
 
-  scrollbar-gutter: var(--scrollbar-gutter);
-  scrollbar-width: var(--scrollbar-width)
+  scrollbar-gutter: var(--d-scrollbar-gutter);
+  scrollbar-width: var(--d-scrollbar-width)
 }
 .desktop.shape {
-  --shape-image-threshold: 0;
-  --shape-margin: 0;
-  --shape-outside: none;
-  --shape-rendering: auto;
+  --d-shape-image-threshold: 0;
+  --d-shape-margin: 0;
+  --d-shape-outside: none;
+  --d-shape-rendering: auto;
 
-  shape-image-threshold: var(--shape-image-threshold);
-  shape-margin: var(--shape-margin);
-  shape-outside: var(--shape-outside);
-  shape-rendering: var(--shape-rendering)
+  shape-image-threshold: var(--d-shape-image-threshold);
+  shape-margin: var(--d-shape-margin);
+  shape-outside: var(--d-shape-outside);
+  shape-rendering: var(--d-shape-rendering)
 }
 .desktop.text-decoration {
-  --text-decoration-color: currentcolor;
-  --text-decoration-line: none;
-  --text-decoration-skip-ink: auto;
-  --text-decoration-style: solid;
-  --text-decoration-thickness: auto;
+  --d-text-decoration-color: currentcolor;
+  --d-text-decoration-line: none;
+  --d-text-decoration-skip-ink: auto;
+  --d-text-decoration-style: solid;
+  --d-text-decoration-thickness: auto;
 
-  text-decoration-color: var(--text-decoration-color);
-  text-decoration-line: var(--text-decoration-line);
-  text-decoration-skip-ink: var(--text-decoration-skip-ink);
-  text-decoration-style: var(--text-decoration-style);
-  text-decoration-thickness: var(--text-decoration-thickness)
+  text-decoration-color: var(--d-text-decoration-color);
+  text-decoration-line: var(--d-text-decoration-line);
+  text-decoration-skip-ink: var(--d-text-decoration-skip-ink);
+  text-decoration-style: var(--d-text-decoration-style);
+  text-decoration-thickness: var(--d-text-decoration-thickness)
 }
 .desktop.text-emphasis {
-  --text-emphasis-color: currentcolor;
-  --text-emphasis-position: over right;
-  --text-emphasis-style: none;
+  --d-text-emphasis-color: currentcolor;
+  --d-text-emphasis-position: over right;
+  --d-text-emphasis-style: none;
 
-  text-emphasis-color: var(--text-emphasis-color);
-  text-emphasis-position: var(--text-emphasis-position);
-  text-emphasis-style: var(--text-emphasis-style)
+  text-emphasis-color: var(--d-text-emphasis-color);
+  text-emphasis-position: var(--d-text-emphasis-position);
+  text-emphasis-style: var(--d-text-emphasis-style)
 }
 .desktop.text-underline {
-  --text-underline-offset: auto;
-  --text-underline-position: auto;
+  --d-text-underline-offset: auto;
+  --d-text-underline-position: auto;
 
-  text-underline-offset: var(--text-underline-offset);
-  text-underline-position: var(--text-underline-position)
+  text-underline-offset: var(--d-text-underline-offset);
+  text-underline-position: var(--d-text-underline-position)
 }
 .desktop.text-wrap {
-  --text-wrap-mode: normal;
-  --text-wrap-style: normal;
+  --d-text-wrap-mode: normal;
+  --d-text-wrap-style: normal;
 
-  text-wrap-mode: var(--text-wrap-mode);
-  text-wrap-style: var(--text-wrap-style)
+  text-wrap-mode: var(--d-text-wrap-mode);
+  text-wrap-style: var(--d-text-wrap-style)
 }
 .desktop.word {
-  --word-break: normal;
-  --word-spacing: 0;
+  --d-word-break: normal;
+  --d-word-spacing: 0;
 
-  word-break: var(--word-break);
-  word-spacing: var(--word-spacing)
+  word-break: var(--d-word-break);
+  word-spacing: var(--d-word-spacing)
 }
 }

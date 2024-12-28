@@ -1,7 +1,7 @@
 .tablet.inset-block {
-  --inset-block-start: auto;
-  --inset-block-end: auto;
-  --insetBlock: initial;
+  --t-inset-block-start: auto;
+  --t-inset-block-end: auto;
+  --t-insetBlock: initial;
 
-  inset-block: var(--inset-block, var(--inset-block-end))
+  inset-block: var(--t-inset-block, var(--t-inset-block-end))
 }

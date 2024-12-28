@@ -1,13 +1,13 @@
 .desktop.text-decoration {
-  --text-decoration-color: currentcolor;
-  --text-decoration-line: none;
-  --text-decoration-skip-ink: auto;
-  --text-decoration-style: solid;
-  --text-decoration-thickness: auto;
+  --d-text-decoration-color: currentcolor;
+  --d-text-decoration-line: none;
+  --d-text-decoration-skip-ink: auto;
+  --d-text-decoration-style: solid;
+  --d-text-decoration-thickness: auto;
 
-  text-decoration-color: var(--text-decoration-color);
-  text-decoration-line: var(--text-decoration-line);
-  text-decoration-skip-ink: var(--text-decoration-skip-ink);
-  text-decoration-style: var(--text-decoration-style);
-  text-decoration-thickness: var(--text-decoration-thickness)
+  text-decoration-color: var(--d-text-decoration-color);
+  text-decoration-line: var(--d-text-decoration-line);
+  text-decoration-skip-ink: var(--d-text-decoration-skip-ink);
+  text-decoration-style: var(--d-text-decoration-style);
+  text-decoration-thickness: var(--d-text-decoration-thickness)
 }

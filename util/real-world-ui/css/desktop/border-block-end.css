@@ -1,8 +1,8 @@
 .desktop.border-block-end {
-  --border-block-end-end-width: initial;
-  --border-block-end-end-style: initial;
-  --border-block-end-end-color: initial;
-  --borderBlockEnd: initial;
+  --d-border-block-end-end-width: initial;
+  --d-border-block-end-end-style: initial;
+  --d-border-block-end-end-color: initial;
+  --d-borderBlockEnd: initial;
 
-  border-block-end: var(--border-block-end, var(--border-block-end-end-style) var(--border-block-end-end-color))
+  border-block-end: var(--d-border-block-end, var(--d-border-block-end-end-style) var(--d-border-block-end-end-color))
 }

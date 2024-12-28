@@ -1,9 +1,9 @@
 .tablet.height {
-  --height: auto;
-  --min-height: auto;
-  --max-height: none;
+  --t-height: auto;
+  --t-min-height: auto;
+  --t-max-height: none;
 
-  height: var(--height);
-  min-height: var(--min-height);
-  max-height: var(--max-height)
+  height: var(--t-height);
+  min-height: var(--t-min-height);
+  max-height: var(--t-max-height)
 }

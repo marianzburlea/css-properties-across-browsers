@@ -1,9 +1,9 @@
 .desktop.height {
-  --height: auto;
-  --min-height: auto;
-  --max-height: none;
+  --d-height: auto;
+  --d-min-height: auto;
+  --d-max-height: none;
 
-  height: var(--height);
-  min-height: var(--min-height);
-  max-height: var(--max-height)
+  height: var(--d-height);
+  min-height: var(--d-min-height);
+  max-height: var(--d-max-height)
 }

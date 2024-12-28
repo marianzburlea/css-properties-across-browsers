@@ -1,12 +1,12 @@
 .desktop.border-top {
-  --border-top-width: medium;
-  --border-top-style: none;
-  --border-top-color: currentcolor;
-  --borderTop: initial;
-  --border-top-left-radius: 0;
-  --border-top-right-radius: 0;
+  --d-border-top-width: medium;
+  --d-border-top-style: none;
+  --d-border-top-color: currentcolor;
+  --d-borderTop: initial;
+  --d-border-top-left-radius: 0;
+  --d-border-top-right-radius: 0;
 
-  border-top: var(--border-top, var(--border-top-style) var(--border-top-color));
-  border-top-left-radius: var(--border-top-left-radius);
-  border-top-right-radius: var(--border-top-right-radius)
+  border-top: var(--d-border-top, var(--d-border-top-style) var(--d-border-top-color));
+  border-top-left-radius: var(--d-border-top-left-radius);
+  border-top-right-radius: var(--d-border-top-right-radius)
 }

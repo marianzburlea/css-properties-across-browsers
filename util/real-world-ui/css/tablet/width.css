@@ -1,9 +1,9 @@
 .tablet.width {
-  --width: auto;
-  --min-width: auto;
-  --max-width: none;
+  --t-width: auto;
+  --t-min-width: auto;
+  --t-max-width: none;
 
-  width: var(--width);
-  min-width: var(--min-width);
-  max-width: var(--max-width)
+  width: var(--t-width);
+  min-width: var(--t-min-width);
+  max-width: var(--t-max-width)
 }

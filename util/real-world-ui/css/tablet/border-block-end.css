@@ -1,8 +1,8 @@
 .tablet.border-block-end {
-  --border-block-end-end-width: initial;
-  --border-block-end-end-style: initial;
-  --border-block-end-end-color: initial;
-  --borderBlockEnd: initial;
+  --t-border-block-end-end-width: initial;
+  --t-border-block-end-end-style: initial;
+  --t-border-block-end-end-color: initial;
+  --t-borderBlockEnd: initial;
 
-  border-block-end: var(--border-block-end, var(--border-block-end-end-style) var(--border-block-end-end-color))
+  border-block-end: var(--t-border-block-end, var(--t-border-block-end-end-style) var(--t-border-block-end-end-color))
 }

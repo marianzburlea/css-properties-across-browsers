@@ -1,13 +1,13 @@
 .tablet.offset {
-  --offset-anchor: auto;
-  --offset-distance: 0;
-  --offset-path: none;
-  --offset-position: auto;
-  --offset-rotate: auto;
+  --t-offset-anchor: auto;
+  --t-offset-distance: 0;
+  --t-offset-path: none;
+  --t-offset-position: auto;
+  --t-offset-rotate: auto;
 
-  offset-anchor: var(--offset-anchor);
-  offset-distance: var(--offset-distance);
-  offset-path: var(--offset-path);
-  offset-position: var(--offset-position);
-  offset-rotate: var(--offset-rotate)
+  offset-anchor: var(--t-offset-anchor);
+  offset-distance: var(--t-offset-distance);
+  offset-path: var(--t-offset-path);
+  offset-position: var(--t-offset-position);
+  offset-rotate: var(--t-offset-rotate)
 }

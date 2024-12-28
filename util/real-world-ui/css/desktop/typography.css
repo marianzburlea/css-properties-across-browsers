@@ -1,23 +1,23 @@
 .desktop.typography {
-  --font-feature-settings: normal;
-  --font-kerning: auto;
-  --font-optical-sizing: auto;
-  --font-palette: normal;
-  --font-size-adjust: none;
-  --font-variant-alternates: normal;
-  --font-variation-settings: normal;
-  --letter-spacing: normal;
-  --line-height: normal;
-  --tab-size: 8;
+  --d-font-feature-settings: normal;
+  --d-font-kerning: auto;
+  --d-font-optical-sizing: auto;
+  --d-font-palette: normal;
+  --d-font-size-adjust: none;
+  --d-font-variant-alternates: normal;
+  --d-font-variation-settings: normal;
+  --d-letter-spacing: normal;
+  --d-line-height: normal;
+  --d-tab-size: 8;
 
-  font-feature-settings: var(--font-feature-settings);
-  font-kerning: var(--font-kerning);
-  font-optical-sizing: var(--font-optical-sizing);
-  font-palette: var(--font-palette);
-  font-size-adjust: var(--font-size-adjust);
-  font-variant-alternates: var(--font-variant-alternates);
-  font-variation-settings: var(--font-variation-settings);
-  letter-spacing: var(--letter-spacing);
-  line-height: var(--line-height);
-  tab-size: var(--tab-size)
+  font-feature-settings: var(--d-font-feature-settings);
+  font-kerning: var(--d-font-kerning);
+  font-optical-sizing: var(--d-font-optical-sizing);
+  font-palette: var(--d-font-palette);
+  font-size-adjust: var(--d-font-size-adjust);
+  font-variant-alternates: var(--d-font-variant-alternates);
+  font-variation-settings: var(--d-font-variation-settings);
+  letter-spacing: var(--d-letter-spacing);
+  line-height: var(--d-line-height);
+  tab-size: var(--d-tab-size)
 }

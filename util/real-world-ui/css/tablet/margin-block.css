@@ -1,7 +1,7 @@
 .tablet.margin-block {
-  --margin-block-start: 0;
-  --margin-block-end: 0;
-  --marginBlock: initial;
+  --t-margin-block-start: 0;
+  --t-margin-block-end: 0;
+  --t-marginBlock: initial;
 
-  margin-block: var(--margin-block, var(--margin-block-end))
+  margin-block: var(--t-margin-block, var(--t-margin-block-end))
 }

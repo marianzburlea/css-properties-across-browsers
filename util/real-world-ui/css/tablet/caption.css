@@ -1,5 +1,5 @@
 .tablet.caption {
-  --caption-side: top;
+  --t-caption-side: top;
 
-  caption-side: var(--caption-side)
+  caption-side: var(--t-caption-side)
 }

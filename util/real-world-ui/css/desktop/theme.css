@@ -1,7 +1,7 @@
 .desktop.theme {
-  --accent-color: auto;
-  --color-scheme: normal;
+  --d-accent-color: auto;
+  --d-color-scheme: normal;
 
-  accent-color: var(--accent-color);
-  color-scheme: var(--color-scheme)
+  accent-color: var(--d-accent-color);
+  color-scheme: var(--d-color-scheme)
 }

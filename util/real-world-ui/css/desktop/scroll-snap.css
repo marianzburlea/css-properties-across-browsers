@@ -1,9 +1,9 @@
 .desktop.scroll-snap {
-  --scroll-snap-align: none;
-  --scroll-snap-stop: normal;
-  --scroll-snap-type: none;
+  --d-scroll-snap-align: none;
+  --d-scroll-snap-stop: normal;
+  --d-scroll-snap-type: none;
 
-  scroll-snap-align: var(--scroll-snap-align);
-  scroll-snap-stop: var(--scroll-snap-stop);
-  scroll-snap-type: var(--scroll-snap-type)
+  scroll-snap-align: var(--d-scroll-snap-align);
+  scroll-snap-stop: var(--d-scroll-snap-stop);
+  scroll-snap-type: var(--d-scroll-snap-type)
 }

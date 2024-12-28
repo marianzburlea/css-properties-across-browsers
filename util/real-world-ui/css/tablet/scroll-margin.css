@@ -1,9 +1,9 @@
 .tablet.scroll-margin {
-  --scroll-margin-top: 0;
-  --scroll-margin-right: 0;
-  --scroll-margin-bottom: 0;
-  --scroll-margin-left: 0;
-  --scrollMargin: 0;
+  --t-scroll-margin-top: 0;
+  --t-scroll-margin-right: 0;
+  --t-scroll-margin-bottom: 0;
+  --t-scroll-margin-left: 0;
+  --t-scrollMargin: 0;
 
-  scroll-margin: var(--scroll-margin, var(--scroll-margin-right) var(--scroll-margin-bottom) var(--scroll-margin-left))
+  scroll-margin: var(--t-scroll-margin, var(--t-scroll-margin-right) var(--t-scroll-margin-bottom) var(--t-scroll-margin-left))
 }

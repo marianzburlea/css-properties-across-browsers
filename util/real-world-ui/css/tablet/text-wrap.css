@@ -1,7 +1,7 @@
 .tablet.text-wrap {
-  --text-wrap-mode: normal;
-  --text-wrap-style: normal;
+  --t-text-wrap-mode: normal;
+  --t-text-wrap-style: normal;
 
-  text-wrap-mode: var(--text-wrap-mode);
-  text-wrap-style: var(--text-wrap-style)
+  text-wrap-mode: var(--t-text-wrap-mode);
+  text-wrap-style: var(--t-text-wrap-style)
 }

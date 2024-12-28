@@ -1,7 +1,7 @@
 .desktop.content {
-  --content: normal;
-  --content-visibility: visible;
+  --d-content: normal;
+  --d-content-visibility: visible;
 
-  content: var(--content);
-  content-visibility: var(--content-visibility)
+  content: var(--d-content);
+  content-visibility: var(--d-content-visibility)
 }

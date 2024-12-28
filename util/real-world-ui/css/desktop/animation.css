@@ -1,14 +1,14 @@
 .desktop.animation {
-  --animation-name: none;
-  --animation-duration: 0s;
-  --animation-timing-function: ease;
-  --animation-delay: 0s;
-  --animation-iteration-count: 1;
-  --animation-direction: normal;
-  --animation-fill-mode: none;
-  --animation-play-state: running;
-  --animation-composition: replace;
-  --animation: none;
+  --d-animation-name: none;
+  --d-animation-duration: 0s;
+  --d-animation-timing-function: ease;
+  --d-animation-delay: 0s;
+  --d-animation-iteration-count: 1;
+  --d-animation-direction: normal;
+  --d-animation-fill-mode: none;
+  --d-animation-play-state: running;
+  --d-animation-composition: replace;
+  --d-animation: none;
 
-  animation: var(--animation, var(--animation-duration) var(--animation-timing-function) var(--animation-delay) var(--animation-iteration-count) var(--animation-direction) var(--animation-fill-mode) var(--animation-play-state) var(--animation-composition))
+  animation: var(--d-animation, var(--d-animation-duration) var(--d-animation-timing-function) var(--d-animation-delay) var(--d-animation-iteration-count) var(--d-animation-direction) var(--d-animation-fill-mode) var(--d-animation-play-state) var(--d-animation-composition))
 }

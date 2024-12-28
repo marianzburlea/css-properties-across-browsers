@@ -1,11 +1,11 @@
 .tablet.overscroll-behavior {
-  --overscroll-behavior-block: auto;
-  --overscroll-behavior-inline: auto;
-  --overscroll-behavior-x: auto;
-  --overscroll-behavior-y: auto;
+  --t-overscroll-behavior-block: auto;
+  --t-overscroll-behavior-inline: auto;
+  --t-overscroll-behavior-x: auto;
+  --t-overscroll-behavior-y: auto;
 
-  overscroll-behavior-block: var(--overscroll-behavior-block);
-  overscroll-behavior-inline: var(--overscroll-behavior-inline);
-  overscroll-behavior-x: var(--overscroll-behavior-x);
-  overscroll-behavior-y: var(--overscroll-behavior-y)
+  overscroll-behavior-block: var(--t-overscroll-behavior-block);
+  overscroll-behavior-inline: var(--t-overscroll-behavior-inline);
+  overscroll-behavior-x: var(--t-overscroll-behavior-x);
+  overscroll-behavior-y: var(--t-overscroll-behavior-y)
 }

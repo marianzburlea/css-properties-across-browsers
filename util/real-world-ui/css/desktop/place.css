@@ -1,9 +1,9 @@
 .desktop.place {
-  --place-items: normal;
-  --place-content: normal;
-  --place-self: auto;
+  --d-place-items: normal;
+  --d-place-content: normal;
+  --d-place-self: auto;
 
-  place-items: var(--place-items);
-  place-content: var(--place-content);
-  place-self: var(--place-self)
+  place-items: var(--d-place-items);
+  place-content: var(--d-place-content);
+  place-self: var(--d-place-self)
 }

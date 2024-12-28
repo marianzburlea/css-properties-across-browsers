@@ -1,7 +1,7 @@
 .tablet.image {
-  --image-orientation: from-image;
-  --image-rendering: auto;
+  --t-image-orientation: from-image;
+  --t-image-rendering: auto;
 
-  image-orientation: var(--image-orientation);
-  image-rendering: var(--image-rendering)
+  image-orientation: var(--t-image-orientation);
+  image-rendering: var(--t-image-rendering)
 }

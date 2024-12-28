@@ -1,5 +1,5 @@
 .desktop.optimization {
-  --will-change: auto;
+  --d-will-change: auto;
 
-  will-change: var(--will-change)
+  will-change: var(--d-will-change)
 }

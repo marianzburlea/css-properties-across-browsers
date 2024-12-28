@@ -1,5 +1,5 @@
 .tablet.cursor {
-  --cursor: auto;
+  --t-cursor: auto;
 
-  cursor: var(--cursor)
+  cursor: var(--t-cursor)
 }

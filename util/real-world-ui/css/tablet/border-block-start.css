@@ -1,8 +1,8 @@
 .tablet.border-block-start {
-  --border-block-start-start-width: initial;
-  --border-block-start-start-style: initial;
-  --border-block-start-start-color: initial;
-  --borderBlockStart: initial;
+  --t-border-block-start-start-width: initial;
+  --t-border-block-start-start-style: initial;
+  --t-border-block-start-start-color: initial;
+  --t-borderBlockStart: initial;
 
-  border-block-start: var(--border-block-start, var(--border-block-start-start-style) var(--border-block-start-start-color))
+  border-block-start: var(--t-border-block-start, var(--t-border-block-start-start-style) var(--t-border-block-start-start-color))
 }

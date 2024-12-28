@@ -1,11 +1,11 @@
 .desktop.overscroll-behavior {
-  --overscroll-behavior-block: auto;
-  --overscroll-behavior-inline: auto;
-  --overscroll-behavior-x: auto;
-  --overscroll-behavior-y: auto;
+  --d-overscroll-behavior-block: auto;
+  --d-overscroll-behavior-inline: auto;
+  --d-overscroll-behavior-x: auto;
+  --d-overscroll-behavior-y: auto;
 
-  overscroll-behavior-block: var(--overscroll-behavior-block);
-  overscroll-behavior-inline: var(--overscroll-behavior-inline);
-  overscroll-behavior-x: var(--overscroll-behavior-x);
-  overscroll-behavior-y: var(--overscroll-behavior-y)
+  overscroll-behavior-block: var(--d-overscroll-behavior-block);
+  overscroll-behavior-inline: var(--d-overscroll-behavior-inline);
+  overscroll-behavior-x: var(--d-overscroll-behavior-x);
+  overscroll-behavior-y: var(--d-overscroll-behavior-y)
 }

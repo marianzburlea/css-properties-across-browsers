@@ -46,6 +46,10 @@ const camelToKebabCase = (str = '') => {
   return str.replace(/[A-Z]/g, (letter) => `-${letter.toLowerCase()}`)
 }
 
+// once upon a time there was a Gratiela
+// and more nice things are going to happen
+// doar ca acum el e pe centru
+
 // generate CSS class names and body
 for (const className of cssPropertyByGroupList) {
   const row: TRow = {
@@ -191,26 +195,33 @@ ${css}
 }`
 
 // Utility function to generate CSS for a specific device
-const generateCss = (prefix: string, mapKey: string): string => {
+const generateCss = (
+  prefix: string,
+  mapKey: string,
+  device = 'mobile',
+): string => {
   const className = finalCssClassMap[mapKey].className
 
   return `.${prefix ? `${prefix}.` : ''}${className} {
 ${finalCssClassMap[mapKey].row.reset
-  .map(({ left, right }) => `  --${left}: ${right}`)
+  .map(
+    ({ left, right }) =>
+      `  --${device === 'mobile' ? '' : `${device[0]}-`}${left}: ${right}`,
+  )
   .join(';\n')};
 
 ${finalCssClassMap[mapKey].row.declaration
   .map(({ left, right }) =>
     Array.isArray(right)
-      ? `  ${left}: var(--${right[0]}, ${right
+      ? `  ${left}: var(--${device === 'mobile' ? '' : `${device[0]}-`}${right[0]}, ${right
           .slice(2)
           .map((prop) =>
             cssCondensedPropertyMap[mapKey]?.prefix
-              ? `var(--${prop}-${right[0]})`
-              : `var(--${right[0]}-${prop})`,
+              ? `var(--${device === 'mobile' ? '' : `${device[0]}-`}${prop}-${right[0]})`
+              : `var(--${device === 'mobile' ? '' : `${device[0]}-`}${right[0]}-${prop})`,
           )
           .join(' ')})`
-      : `  ${left}: var(--${right})`,
+      : `  ${left}: var(--${device === 'mobile' ? '' : `${device[0]}-`}${right})`,
   )
   .join(';\n')}
 }`
@@ -223,7 +234,7 @@ const generateAndSaveCss = (
   breakPoint?: number,
 ) => {
   for (const mapKey of Object.keys(finalCssClassMap)) {
-    const cssRaw = generateCss(prefix, mapKey)
+    const cssRaw = generateCss(prefix, mapKey, device)
     allCss[device].push(cssRaw)
     fs.writeFileSync(
       `css/${device}/${finalCssClassMap[mapKey].className}.css`,

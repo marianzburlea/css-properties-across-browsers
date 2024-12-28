@@ -1,7 +1,7 @@
 .tablet.inset-inline {
-  --inset-inline-start: auto;
-  --inset-inline-end: auto;
-  --insetInline: initial;
+  --t-inset-inline-start: auto;
+  --t-inset-inline-end: auto;
+  --t-insetInline: initial;
 
-  inset-inline: var(--inset-inline, var(--inset-inline-end))
+  inset-inline: var(--t-inset-inline, var(--t-inset-inline-end))
 }

@@ -1,5 +1,5 @@
 .tablet.unicode {
-  --unicode-bidi: normal;
+  --t-unicode-bidi: normal;
 
-  unicode-bidi: var(--unicode-bidi)
+  unicode-bidi: var(--t-unicode-bidi)
 }

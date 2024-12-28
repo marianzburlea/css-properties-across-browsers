@@ -1,7 +1,7 @@
 .desktop.word {
-  --word-break: normal;
-  --word-spacing: 0;
+  --d-word-break: normal;
+  --d-word-spacing: 0;
 
-  word-break: var(--word-break);
-  word-spacing: var(--word-spacing)
+  word-break: var(--d-word-break);
+  word-spacing: var(--d-word-spacing)
 }

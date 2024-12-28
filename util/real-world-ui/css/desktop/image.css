@@ -1,7 +1,7 @@
 .desktop.image {
-  --image-orientation: from-image;
-  --image-rendering: auto;
+  --d-image-orientation: from-image;
+  --d-image-rendering: auto;
 
-  image-orientation: var(--image-orientation);
-  image-rendering: var(--image-rendering)
+  image-orientation: var(--d-image-orientation);
+  image-rendering: var(--d-image-rendering)
 }

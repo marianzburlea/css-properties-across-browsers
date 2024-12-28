@@ -1,7 +1,7 @@
 .tablet.scroll-padding-block {
-  --scroll-padding-block-start: 0;
-  --scroll-padding-block-end: 0;
+  --t-scroll-padding-block-start: 0;
+  --t-scroll-padding-block-end: 0;
 
-  scroll-padding-block-start: var(--scroll-padding-block-start);
-  scroll-padding-block-end: var(--scroll-padding-block-end)
+  scroll-padding-block-start: var(--t-scroll-padding-block-start);
+  scroll-padding-block-end: var(--t-scroll-padding-block-end)
 }

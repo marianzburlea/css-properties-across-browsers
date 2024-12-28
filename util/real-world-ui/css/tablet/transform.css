@@ -1,23 +1,23 @@
 .tablet.transform {
-  --backface-visibility: visible;
-  --perspective: none;
-  --perspective-origin: 50% 50%;
-  --rotate: none;
-  --scale: 1;
-  --transform: none;
-  --transform-box: border-box;
-  --transform-origin: 50% 50% 0;
-  --transform-style: flat;
-  --translate: none;
+  --t-backface-visibility: visible;
+  --t-perspective: none;
+  --t-perspective-origin: 50% 50%;
+  --t-rotate: none;
+  --t-scale: 1;
+  --t-transform: none;
+  --t-transform-box: border-box;
+  --t-transform-origin: 50% 50% 0;
+  --t-transform-style: flat;
+  --t-translate: none;
 
-  backface-visibility: var(--backface-visibility);
-  perspective: var(--perspective);
-  perspective-origin: var(--perspective-origin);
-  rotate: var(--rotate);
-  scale: var(--scale);
-  transform: var(--transform);
-  transform-box: var(--transform-box);
-  transform-origin: var(--transform-origin);
-  transform-style: var(--transform-style);
-  translate: var(--translate)
+  backface-visibility: var(--t-backface-visibility);
+  perspective: var(--t-perspective);
+  perspective-origin: var(--t-perspective-origin);
+  rotate: var(--t-rotate);
+  scale: var(--t-scale);
+  transform: var(--t-transform);
+  transform-box: var(--t-transform-box);
+  transform-origin: var(--t-transform-origin);
+  transform-style: var(--t-transform-style);
+  translate: var(--t-translate)
 }

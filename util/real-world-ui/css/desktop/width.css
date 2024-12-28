@@ -1,9 +1,9 @@
 .desktop.width {
-  --width: auto;
-  --min-width: auto;
-  --max-width: none;
+  --d-width: auto;
+  --d-min-width: auto;
+  --d-max-width: none;
 
-  width: var(--width);
-  min-width: var(--min-width);
-  max-width: var(--max-width)
+  width: var(--d-width);
+  min-width: var(--d-min-width);
+  max-width: var(--d-max-width)
 }

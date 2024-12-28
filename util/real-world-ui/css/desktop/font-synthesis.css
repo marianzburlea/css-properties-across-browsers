@@ -1,9 +1,9 @@
 .desktop.font-synthesis {
-  --font-synthesis-weight: auto;
-  --font-synthesis-style: auto;
-  --font-synthesis-small-caps: auto;
+  --d-font-synthesis-weight: auto;
+  --d-font-synthesis-style: auto;
+  --d-font-synthesis-small-caps: auto;
 
-  font-synthesis-weight: var(--font-synthesis-weight);
-  font-synthesis-style: var(--font-synthesis-style);
-  font-synthesis-small-caps: var(--font-synthesis-small-caps)
+  font-synthesis-weight: var(--d-font-synthesis-weight);
+  font-synthesis-style: var(--d-font-synthesis-style);
+  font-synthesis-small-caps: var(--d-font-synthesis-small-caps)
 }

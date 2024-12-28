@@ -1,5 +1,5 @@
 .tablet.appearance {
-  --appearance: none;
+  --t-appearance: none;
 
-  appearance: var(--appearance)
+  appearance: var(--t-appearance)
 }

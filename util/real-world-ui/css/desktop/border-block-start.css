@@ -1,8 +1,8 @@
 .desktop.border-block-start {
-  --border-block-start-start-width: initial;
-  --border-block-start-start-style: initial;
-  --border-block-start-start-color: initial;
-  --borderBlockStart: initial;
+  --d-border-block-start-start-width: initial;
+  --d-border-block-start-start-style: initial;
+  --d-border-block-start-start-color: initial;
+  --d-borderBlockStart: initial;
 
-  border-block-start: var(--border-block-start, var(--border-block-start-start-style) var(--border-block-start-start-color))
+  border-block-start: var(--d-border-block-start, var(--d-border-block-start-start-style) var(--d-border-block-start-start-color))
 }

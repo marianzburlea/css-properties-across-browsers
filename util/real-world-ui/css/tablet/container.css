@@ -1,7 +1,7 @@
 .tablet.container {
-  --container-name: none;
-  --container-type: none;
+  --t-container-name: none;
+  --t-container-type: none;
 
-  container-name: var(--container-name);
-  container-type: var(--container-type)
+  container-name: var(--t-container-name);
+  container-type: var(--t-container-type)
 }

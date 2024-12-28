@@ -1,9 +1,9 @@
 .desktop.scroll-padding {
-  --scroll-padding-top: 0;
-  --scroll-padding-right: 0;
-  --scroll-padding-bottom: 0;
-  --scroll-padding-left: 0;
-  --scrollPadding: 0;
+  --d-scroll-padding-top: 0;
+  --d-scroll-padding-right: 0;
+  --d-scroll-padding-bottom: 0;
+  --d-scroll-padding-left: 0;
+  --d-scrollPadding: 0;
 
-  scroll-padding: var(--scroll-padding, var(--scroll-padding-right) var(--scroll-padding-bottom) var(--scroll-padding-left))
+  scroll-padding: var(--d-scroll-padding, var(--d-scroll-padding-right) var(--d-scroll-padding-bottom) var(--d-scroll-padding-left))
 }

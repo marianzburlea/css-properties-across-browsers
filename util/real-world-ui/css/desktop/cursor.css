@@ -1,5 +1,5 @@
 .desktop.cursor {
-  --cursor: auto;
+  --d-cursor: auto;
 
-  cursor: var(--cursor)
+  cursor: var(--d-cursor)
 }

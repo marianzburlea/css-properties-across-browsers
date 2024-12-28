@@ -1,22 +1,22 @@
 .tablet.flex {
-  --align-content: normal;
-  --align-items: normal;
-  --flex-direction: row;
-  --flex-wrap: nowrap;
-  --justify-content: normal;
-  --justify-items: legacy;
-  --order: 0;
-  --flex-grow: 0;
-  --flex-shrink: 1;
-  --flex-basis: auto;
-  --flex: 0 1 auto;
+  --t-align-content: normal;
+  --t-align-items: normal;
+  --t-flex-direction: row;
+  --t-flex-wrap: nowrap;
+  --t-justify-content: normal;
+  --t-justify-items: legacy;
+  --t-order: 0;
+  --t-flex-grow: 0;
+  --t-flex-shrink: 1;
+  --t-flex-basis: auto;
+  --t-flex: 0 1 auto;
 
-  align-content: var(--align-content);
-  align-items: var(--align-items);
-  flex-direction: var(--flex-direction);
-  flex-wrap: var(--flex-wrap);
-  justify-content: var(--justify-content);
-  justify-items: var(--justify-items);
-  order: var(--order);
-  flex: var(--flex, var(--flex-shrink) var(--flex-basis))
+  align-content: var(--t-align-content);
+  align-items: var(--t-align-items);
+  flex-direction: var(--t-flex-direction);
+  flex-wrap: var(--t-flex-wrap);
+  justify-content: var(--t-justify-content);
+  justify-items: var(--t-justify-items);
+  order: var(--t-order);
+  flex: var(--t-flex, var(--t-flex-shrink) var(--t-flex-basis))
 }

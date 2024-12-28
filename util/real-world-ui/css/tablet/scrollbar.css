@@ -1,7 +1,7 @@
 .tablet.scrollbar {
-  --scrollbar-gutter: auto;
-  --scrollbar-width: auto;
+  --t-scrollbar-gutter: auto;
+  --t-scrollbar-width: auto;
 
-  scrollbar-gutter: var(--scrollbar-gutter);
-  scrollbar-width: var(--scrollbar-width)
+  scrollbar-gutter: var(--t-scrollbar-gutter);
+  scrollbar-width: var(--t-scrollbar-width)
 }

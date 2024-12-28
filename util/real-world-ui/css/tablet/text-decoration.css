@@ -1,13 +1,13 @@
 .tablet.text-decoration {
-  --text-decoration-color: currentcolor;
-  --text-decoration-line: none;
-  --text-decoration-skip-ink: auto;
-  --text-decoration-style: solid;
-  --text-decoration-thickness: auto;
+  --t-text-decoration-color: currentcolor;
+  --t-text-decoration-line: none;
+  --t-text-decoration-skip-ink: auto;
+  --t-text-decoration-style: solid;
+  --t-text-decoration-thickness: auto;
 
-  text-decoration-color: var(--text-decoration-color);
-  text-decoration-line: var(--text-decoration-line);
-  text-decoration-skip-ink: var(--text-decoration-skip-ink);
-  text-decoration-style: var(--text-decoration-style);
-  text-decoration-thickness: var(--text-decoration-thickness)
+  text-decoration-color: var(--t-text-decoration-color);
+  text-decoration-line: var(--t-text-decoration-line);
+  text-decoration-skip-ink: var(--t-text-decoration-skip-ink);
+  text-decoration-style: var(--t-text-decoration-style);
+  text-decoration-thickness: var(--t-text-decoration-thickness)
 }

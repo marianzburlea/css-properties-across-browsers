@@ -1,5 +1,5 @@
 .tablet.visibility {
-  --visibility: visible;
+  --t-visibility: visible;
 
-  visibility: var(--visibility)
+  visibility: var(--t-visibility)
 }

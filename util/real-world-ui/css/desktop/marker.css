@@ -1,9 +1,9 @@
 .desktop.marker {
-  --marker-end: none;
-  --marker-mid: none;
-  --marker-start: none;
+  --d-marker-end: none;
+  --d-marker-mid: none;
+  --d-marker-start: none;
 
-  marker-end: var(--marker-end);
-  marker-mid: var(--marker-mid);
-  marker-start: var(--marker-start)
+  marker-end: var(--d-marker-end);
+  marker-mid: var(--d-marker-mid);
+  marker-start: var(--d-marker-start)
 }
