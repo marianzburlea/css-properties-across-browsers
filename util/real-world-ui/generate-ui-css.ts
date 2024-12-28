@@ -6,6 +6,8 @@ import {
 import { cssDefaultPropertyValueMap } from './default-value-map'
 import { generateShortKeys } from './generate-short-key'
 
+const generateCssFile = false
+
 const shortCSSPropMap = generateShortKeys(cssDefaultPropertyValueMap)
 
 type TRow = {
@@ -236,10 +238,12 @@ const generateAndSaveCss = (
   for (const mapKey of Object.keys(finalCssClassMap)) {
     const cssRaw = generateCss(prefix, mapKey, device)
     allCss[device].push(cssRaw)
-    fs.writeFileSync(
-      `css/${device}/${finalCssClassMap[mapKey].className}.css`,
-      cssRaw,
-    )
+    if (generateCssFile) {
+      fs.writeFileSync(
+        `css/${device}/${finalCssClassMap[mapKey].className}.css`,
+        cssRaw,
+      )
+    }
   }
 
   const joinedCss = allCss[device].join('\n')
@@ -247,7 +251,9 @@ const generateAndSaveCss = (
     ? getMediaWrap(joinedCss, breakPoint)
     : joinedCss
 
-  fs.writeFileSync(`css/${device}.css`, wrappedCss)
+  if (generateCssFile) {
+    fs.writeFileSync(`css/${device}.css`, wrappedCss)
+  }
   return wrappedCss
 }
 
@@ -257,14 +263,16 @@ const allTablet = generateAndSaveCss('tablet', 'tablet', 768)
 const allDesktop = generateAndSaveCss('desktop', 'desktop', 1280)
 
 // Generate and save combined CSS
-fs.writeFileSync(
-  'css/all.css',
-  `
+if (generateCssFile) {
+  fs.writeFileSync(
+    'css/all.css',
+    `
 ${allMobile}
 ${allTablet}
 ${allDesktop}
 `,
-)
+  )
+}
 
 const transformStrings = (input: string[]): string[] => {
   return input.map((value) => {
@@ -281,3 +289,26 @@ const transformStrings = (input: string[]): string[] => {
     )
   })
 }
+
+const cssPropertyClassMap = Object.keys(cssCondensedPropertyMap).reduce(
+  (acc, cur) => {
+    const { className } = cssCondensedPropertyMap[cur]
+    acc[cur] = className
+
+    const subPropList = Object.keys(cssCondensedPropertyMap[cur].children)
+    for (const subProp of subPropList) {
+      console.log(subProp)
+      const subPropName = cssCondensedPropertyMap[cur].prefix
+        ? `${subProp}${cur[0].toUpperCase()}${cur.slice(1)}`
+        : `${cur}${subProp[0].toUpperCase()}${subProp.slice(1)}`
+      acc[subPropName] = className
+    }
+    return acc
+  },
+  cssPropertyMap,
+)
+console.log(cssPropertyClassMap)
+fs.writeFileSync(
+  'css-propety-class-map.ts',
+  `export const cssPropertyClassMap = ${JSON.stringify(cssPropertyClassMap, null, 2)}`,
+)
